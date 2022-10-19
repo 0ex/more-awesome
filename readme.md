@@ -1,214 +1,8 @@
-<div align="center">
-	<a href="https://vshymanskyy.github.io/StandWithUkraine">
-		<img width="500" height="350" src="media/logo-ua.svg" alt="Awesome">
-		<img src="https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg">
-	</a>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<h2><a href="https://www.producthunt.com/posts/one-thing">Check out: One Thing — Put a single task or goal in your menu bar</a></h2>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<hr>
-	<p>
-		<p>
-			<sup>
-				<a href="https://github.com/sponsors/sindresorhus">My open source work is supported by the community</a>
-			</sup>
-		</p>
-		<sup>Special thanks to:</sup>
-		<br>
-		<br>
-		<a href="https://standardresume.co/tech">
-			<img src="https://sindresorhus.com/assets/thanks/standard-resume-logo.svg" width="160"/>
-		</a>
-		<br>
-		<br>
-		<a href="https://retool.com/?utm_campaign=sindresorhus">
-			<img src="https://sindresorhus.com/assets/thanks/retool-logo.svg" width="210"/>
-		</a>
-		<br>
-		<br>
-		<a href="https://doppler.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=awesome&utm_source=github">
-			<div>
-				<img src="https://dashboard.doppler.com/imgs/logo-long.svg" width="230" alt="Doppler">
-			</div>
-			<b>All your environment variables, in one place</b>
-			<div>
-				<sub>Stop struggling with scattered API keys, hacking together home-brewed tools,</sub>
-				<br>
-				<sup>and avoiding access controls. Keep your team and servers in sync with Doppler.</sup>
-			</div>
-		</a>
-		<br>
-		<a href="https://workos.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=awesome&utm_source=github">
-			<div>
-				<img src="https://sindresorhus.com/assets/thanks/workos-logo-white-bg.svg" width="200" alt="WorkOS">
-			</div>
-			<b>Your app, enterprise-ready.</b>
-			<div>
-				<sub>Start selling to enterprise customers with just a few lines of code.</sub>
-				<br>
-				<sup>Add Single Sign-On (and more) in minutes instead of months.</sup>
-			</div>
-		</a>
-		<br>
-		<a href="https://strapi.io/?ref=sindresorhus">
-			<div>
-				<img src="https://sindresorhus.com/assets/thanks/strapi-logo-white-bg.png" width="200" alt="Strapi">
-			</div>
-			<b>Strapi is the leading open-source headless CMS.</b>
-			<div>
-				<sup>It’s 100% JavaScript, fully customizable, and developer-first.</sup>
-			</div>
-		</a>
-		<br>
-		<a href="https://oss.capital">
-			<div>
-				<img src="https://sindresorhus.com/assets/thanks/oss-capital-logo-white-bg.svg" width="300" alt="OSS Capital">
-			</div>
-			<div>
-				<sup><b>Founded in 2018, OSS Capital is the first and only venture capital platform focused<br>exclusively on supporting early-stage COSS (commercial open source) startup founders.</b></sup>
-			</div>
-		</a>
-		<br>
-		<br>
-		<a href="https://bit.io/?utm_campaign=github_repo&utm_medium=referral&utm_content=awesome&utm_source=github">
-			<div>
-				<img src="https://sindresorhus.com/assets/thanks/bitio-logo.svg" width="190" alt="bit.io">
-			</div>
-			<b>Instant, shareable cloud PostgreSQL database</b>
-			<div>
-				<sup>Import any dataset in seconds, share with anyone with a click, try without signing up</sup>
-			</div>
-		</a>
-		<br>
-		<br>
-		<a href="https://www.gitpod.io/?utm_campaign=sindresorhus&utm_medium=referral&utm_content=awesome&utm_source=github">
-			<div>
-				<img src="https://sindresorhus.com/assets/thanks/gitpod-logo-white-bg.svg" width="220" alt="Gitpod">
-			</div>
-			<b>Dev environments built for the cloud</b>
-			<div>
-				<sub>
-				Natively integrated with GitLab, GitHub, and Bitbucket, Gitpod automatically and continuously prebuilds dev
-				<br>
-				environments for all your branches. As a result team members can instantly start coding with fresh dev environments
-				<br>
-				for each new task - no matter if you are building a new feature, want to fix a bug, or work on a code review.
-				</sub>
-			</div>
-		</a>
-		<br>
-		<br>
-		<br>
-		<br>
-		<a href="https://getstream.io/chat/sdk/ios/?utm_source=Github&utm_medium=Github_Repo_Content_Ad&utm_content=Developer&utm_campaign=Github_Jan2022_iOSChatSDK&utm_term=Sindresorhus#gh-light-mode-only">
-			<div>
-				<img src="https://sindresorhus.com/assets/thanks/stream-logo.svg" width="220" alt="Stream">
-			</div>
-			<br>
-			<div>
-				<b>Build Scalable Feeds & Chat Applications with Powerful APIs and Front End Components</b>
-			</div>
-		</a>
-		<a href="https://getstream.io/chat/sdk/ios/?utm_source=Github&utm_medium=Github_Repo_Content_Ad&utm_content=Developer&utm_campaign=Github_Jan2022_iOSChatSDK&utm_term=Sindresorhus#gh-dark-mode-only">
-			<div>
-				<img src="https://sindresorhus.com/assets/thanks/stream-logo-dark.svg" width="220" alt="Stream">
-			</div>
-			<br>
-			<div>
-				<b>Build Scalable Feeds & Chat Applications with Powerful APIs and Front End Components</b>
-			</div>
-		</a>
-		<br>
-		<br>
-		<br>
-		<a href="https://www.useanvil.com/?utm_source=sindresorhus#gh-light-mode-only">
-			<div>
-				<img src="https://sindresorhus.com/assets/thanks/anvil-logo-light.svg" width="200" alt="Anvil">
-			</div>
-			<br>
-			<b>Paperwork that makes the data work.</b>
-			<div>
-				<sub>
-				Easy APIs for paperwork. PDF generation, e-signature and embeddable no-code webforms.
-				<br>
-				The easiest way to build paperwork automation into your product.
-				</sub>
-			</div>
-		</a>
-		<a href="https://www.useanvil.com/?utm_source=sindresorhus#gh-dark-mode-only">
-			<div>
-				<img src="https://sindresorhus.com/assets/thanks/anvil-logo-dark.svg" width="200" alt="Anvil">
-			</div>
-			<br>
-			<b>Paperwork that makes the data work.</b>
-			<div>
-				<sub>
-				Easy APIs for paperwork. PDF generation, e-signature and embeddable no-code webforms.
-				<br>
-				The easiest way to build paperwork automation into your product.
-				</sub>
-			</div>
-		</a>
-		<br>
-		<br>
-		<br>
-		<a href="https://sizzy.co/?utm_campaign=github_repo&utm_source=github&utm_medium=referral&utm_content=awesome&utm_term=sindre">
-			<div>
-				<img src="https://sindresorhus.com/assets/thanks/sizzy-logo.png" width="240" alt="Sizzy">
-			</div>
-			<div>
-				<sub>
-				<b>Before Sizzy:</b> web development is stressing you out, responsive design is hard, you have an overwhelming amount of opened tabs & apps.
-				<br>
-				<b>After Sizzy:</b> all the tools you need in one place, responsive design is a breeze, no more context switching.
-				</sub>
-			</div>
-		</a>
-		<br>
-		<br>
-	</p>
-	<hr>
-	<br>
-	<br>
-	<br>
-	<br>
-</div>
+# More Awesome Lists
 
-<p align="center">
-	<a href="awesome.md">What is an awesome list?</a>&nbsp;&nbsp;&nbsp;
-	<a href="contributing.md">Contribution guide</a>&nbsp;&nbsp;&nbsp;
-	<a href="create-list.md">Creating a list</a>&nbsp;&nbsp;&nbsp;
-	<a href="https://twitter.com/awesome__re">Twitter</a>&nbsp;&nbsp;&nbsp;
-	<a href="https://www.redbubble.com/people/sindresorhus/works/30364188-awesome-logo">Stickers & t-shirts</a>
-</p>
+This is a list of "awesome" lists. An awesome list is a list of resources and starting points for a particular topic.
 
-<br>
-
-<div align="center">
-	<b>Follow the <a href="https://twitter.com/awesome__re">Awesome Twitter account</a> for updates on new list additions.</b>
-</div>
-
-<br>
-
-<p align="center">
-	<sub>Just type <a href="https://awesome.re"><code>awesome.re</code></a> to go here. Check out my <a href="https://sindresorhus.com/apps">apps</a> and follow me on <a href="https://twitter.com/sindresorhus">Twitter</a>.</sub>
-</p>
-<br>
+I made this repo to be a more inclusive  version of [sindresorhus's awesome list](https://github.com/sindresorhus/awesome). We don't have any strict requirements for inclusion ­ as long as your "list" is useful and the description doesn't distract from other lists, I'll accept your PR.
 
 ## Contents
 
@@ -234,7 +28,7 @@
 - [Work](#work)
 - [Networking](#networking)
 - [Decentralized Systems](#decentralized-systems)
-- [Higher Education](#higher-education)
+- [Health and Social Science](#health-and-social-science)
 - [Events](#events)
 - [Testing](#testing)
 - [Miscellaneous](#miscellaneous)
@@ -580,7 +374,7 @@
 - [Game Development](https://github.com/ellisonleao/magictools#readme)
 - [Game Talks](https://github.com/hzoo/awesome-gametalks#readme)
 - [Godot](https://github.com/godotengine/awesome-godot#readme) - Game engine.
-- [Open Source Games](https://github.com/leereilly/games#readme)
+- [Open Source Games](https://github.com/michelpereira/awesome-open-source-games#readme)
 - [Unity](https://github.com/RyanNielson/awesome-unity#readme) - Game engine.
 - [Chess](https://github.com/hkirat/awesome-chess#readme)
 - [LÖVE](https://github.com/love2d-community/awesome-love2d#readme) - Game engine.
@@ -785,11 +579,17 @@
 - [Stacks](https://github.com/friedger/awesome-stacks-chain#readme) - A smart contract platform secured by Bitcoin.
 - [Algorand](https://github.com/aorumbayev/awesome-algorand#readme) - An open-source, proof of stake blockchain and smart contract computing platform.
 
-## Higher Education
+## Health and Social Science
 
+- [Biomedical Information Extraction](https://github.com/caufieldjh/awesome-bioie#readme) - How to extract information from unstructured biomedical data and text.
 - [Computational Neuroscience](https://github.com/eselkin/awesome-computational-neuroscience#readme) - A multidisciplinary science which uses computational approaches to study the nervous system.
+- [Diversity](https://github.com/folkswhocode/awesome-diversity#readme) - Creating a more inclusive and diverse tech community.
 - [Digital History](https://github.com/maehr/awesome-digital-history#readme) - Computer-aided scientific investigation of history.
-- [Scientific Writing](https://github.com/writing-resources/awesome-scientific-writing#readme) - Distraction-free scientific writing with Markdown, reStructuredText and Jupyter notebooks.
+- [Empathy in Engineering](https://github.com/KimberlyMunoz/empathy-in-engineering#readme) - Building and promoting more compassionate engineering cultures.
+- [Healthcare](https://github.com/kakoni/awesome-healthcare#readme) - Open source healthcare software for facilities, providers, developers, policy experts, and researchers.
+- [Humane Technology](https://github.com/humanetech-community/awesome-humane-tech#readme) - Open source projects that help improve society.
+- [Mental Health](https://github.com/dreamingechoes/awesome-mental-health#readme) - Mental health awareness and self-care in the software industry.
+- [Neuroscience](https://github.com/analyticalmonk/awesome-neuroscience#readme) - Study of the nervous system and brain.
 
 ## Events
 
@@ -812,6 +612,7 @@
 
 ## Miscellaneous
 
+- [Scientific Writing](https://github.com/writing-resources/awesome-scientific-writing#readme) - Distraction-free scientific writing with Markdown, reStructuredText and Jupyter notebooks.
 - [JSON](https://github.com/burningtree/awesome-json#readme) - Text based data interchange format.
 	- [GeoJSON](https://github.com/tmcw/awesome-geojson#readme)
 	- [Datasets](https://github.com/jdorfman/awesome-json-datasets#readme)
@@ -862,7 +663,6 @@
 - [Steam](https://github.com/scholtzm/awesome-steam#readme) - Digital distribution platform.
 - [Bots](https://github.com/hackerkid/bots#readme) - Building bots.
 - [Site Reliability Engineering](https://github.com/dastergon/awesome-sre#readme)
-- [Empathy in Engineering](https://github.com/KimberlyMunoz/empathy-in-engineering#readme) - Building and promoting more compassionate engineering cultures.
 - [DTrace](https://github.com/xen0l/awesome-dtrace#readme) - Dynamic tracing framework.
 - [Userscripts](https://github.com/bvolpato/awesome-userscripts#readme) - Enhance your browsing experience.
 - [Pokémon](https://github.com/tobiasbueschel/awesome-pokemon#readme) - Pokémon and Pokémon GO.
@@ -878,10 +678,8 @@
 - [Framer](https://github.com/podo/awesome-framer#readme) - Prototyping interactive UI designs.
 - [Markdown](https://github.com/BubuAnabelas/awesome-markdown#readme) - Markup language.
 - [Dev Fun](https://github.com/mislavcimpersak/awesome-dev-fun#readme) - Funny developer projects.
-- [Healthcare](https://github.com/kakoni/awesome-healthcare#readme) - Open source healthcare software for facilities, providers, developers, policy experts, and researchers.
 - [Magento 2](https://github.com/DavidLambauer/awesome-magento2#readme) - Open Source eCommerce built with PHP.
 - [TikZ](https://github.com/xiaohanyu/awesome-tikz#readme) - Graph drawing packages for TeX/LaTeX/ConTeXt.
-- [Neuroscience](https://github.com/analyticalmonk/awesome-neuroscience#readme) - Study of the nervous system and brain.
 - [Ad-Free](https://github.com/johnjago/awesome-ad-free#readme) - Ad-free alternatives.
 - [Esolangs](https://github.com/angrykoala/awesome-esolangs#readme) - Programming languages designed for experimentation or as jokes rather than actual use.
 - [Prometheus](https://github.com/roaldnefs/awesome-prometheus#readme) - Open-source monitoring system.
@@ -890,7 +688,6 @@
 - [Web Monetization](https://github.com/thomasbnt/awesome-web-monetization#readme) - A free open web standard service that allows you to send money directly in your browser.
 - [Uncopyright](https://github.com/johnjago/awesome-uncopyright#readme) - Public domain works.
 - [Crypto Currency Tools & Algorithms](https://github.com/Zheaoli/awesome-coins#readme) - Digital currency where encryption is used to regulate the generation of units and verify transfers.
-- [Diversity](https://github.com/folkswhocode/awesome-diversity#readme) - Creating a more inclusive and diverse tech community.
 - [Open Source Supporters](https://github.com/zachflower/awesome-open-source-supporters#readme) - Companies that offer their tools and services for free to open source projects.
 - [Design Principles](https://github.com/robinstickel/awesome-design-principles#readme) - Create better and more consistent designs and experiences.
 - [Theravada](https://github.com/johnjago/awesome-theravada#readme) - Teachings from the Theravada Buddhist tradition.
@@ -900,13 +697,11 @@
 - [Captcha](https://github.com/ZYSzys/awesome-captcha#readme) - A type of challenge–response test used in computing to determine whether or not the user is human.
 - [Jupyter](https://github.com/markusschanta/awesome-jupyter#readme) - Create and share documents that contain code, equations, visualizations and narrative text.
 - [FIRST Robotics Competition](https://github.com/andrewda/awesome-frc#readme) - International high school robotics championship.
-- [Humane Technology](https://github.com/humanetech-community/awesome-humane-tech#readme) - Open source projects that help improve society.
 - [Speakers](https://github.com/karlhorky/awesome-speakers#readme) - Conference and meetup speakers in the programming and design community.
 - [Board Games](https://github.com/edm00se/awesome-board-games#readme) - Table-top gaming fun for all.
 - [Software Patreons](https://github.com/uraimo/awesome-software-patreons#readme) - Fund individual programmers or the development of open source projects.
 - [Parasite](https://github.com/ecohealthalliance/awesome-parasite#readme) - Parasites and host-pathogen interactions.
 - [Food](https://github.com/jzarca01/awesome-food#readme) - Food-related projects on GitHub.
-- [Mental Health](https://github.com/dreamingechoes/awesome-mental-health#readme) - Mental health awareness and self-care in the software industry.
 - [Bitcoin Payment Processors](https://github.com/alexk111/awesome-bitcoin-payment-processors#readme) - Start accepting Bitcoin.
 - [Scientific Computing](https://github.com/nschloe/awesome-scientific-computing#readme) - Solving complex scientific problems using computers.
 - [Amazon Sellers](https://github.com/ScaleLeap/awesome-amazon-seller#readme)
@@ -921,7 +716,6 @@
 - [Advertising](https://github.com/cenoura/awesome-ads#readme) - Advertising and programmatic media for websites.
 - [Earth](https://github.com/philsturgeon/awesome-earth#readme) - Find ways to resolve the climate crisis.
 - [Naming](https://github.com/gruhn/awesome-naming#readme) - Naming things in computer science done right.
-- [Biomedical Information Extraction](https://github.com/caufieldjh/awesome-bioie#readme) - How to extract information from unstructured biomedical data and text.
 - [Web Archiving](https://github.com/iipc/awesome-web-archiving#readme) - An effort to preserve the Web for future generations.
 - [WP-CLI](https://github.com/schlessera/awesome-wp-cli#readme) - Command-line interface for WordPress.
 - [Credit Modeling](https://github.com/mourarthur/awesome-credit-modeling#readme) - Methods for classifying credit applicants into risk classes.
