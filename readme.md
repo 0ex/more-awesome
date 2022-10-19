@@ -254,6 +254,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 
 ## Back-End Development
 
+- [Django](https://github.com/wsvincent/awesome-django) - Python framework.
 - [Flask](https://github.com/mjhea0/awesome-flask#readme) - Python framework.
 - [Docker](https://github.com/veggiemonk/awesome-docker#readme)
 - [Vagrant](https://github.com/iJackUA/awesome-vagrant#readme) - Automation virtual machine environment.
@@ -737,3 +738,8 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Awesome CLI](https://github.com/umutphp/awesome-cli) - A simple command-line tool to dive into Awesome lists.
 - [Awesome Viewer](https://awesome.digitalbunker.dev) - A visualizer for all of the above Awesome lists.
 - [Track Awesome List](https://www.trackawesomelist.com) - View the latest updates of Awesome lists.
+
+## To Sort
+
+- https://github.com/zakarialaoui10/awesome-processing
+
