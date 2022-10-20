@@ -368,6 +368,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 
 - [Sublime Text](https://github.com/dreikanter/sublime-bookmarks#readme)
 - [Vim](https://github.com/mhinz/vim-galore#readme)
+        - alt: [Vim](http://vimawesome.com)
 - [Neovim](https://github.com/rockerBOO/awesome-neovim#readme) - Vim-fork focused on extensibility and usability.
 - [Emacs](https://github.com/emacs-tw/awesome-emacs#readme)
 - [Atom](https://github.com/mehcode/awesome-atom#readme) - Open-source and hackable text editor.
