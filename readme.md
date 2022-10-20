@@ -269,9 +269,9 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 	- [Education](https://github.com/fukuball/Awesome-Laravel-Education#readme)
 	- [TALL Stack](https://github.com/livewire/awesome-tall-stack#readme) - Full-stack development solution featuring libraries built by the Laravel community.
 - [Rails](https://github.com/gramantin/awesome-rails#readme) - Web app framework for Ruby.
-    - [by @dpaluy](https://github.com/dpaluy/awesome-rails)
-    - [by @ekremkaraca](https://github.com/ekremkaraca/awesome-rails)
 	- [Gems](https://github.com/hothero/awesome-rails-gem#readme) - Packages.
+	- [by @dpaluy](https://github.com/dpaluy/awesome-rails)
+	- [by @ekremkaraca](https://github.com/ekremkaraca/awesome-rails)
 - [Phalcon](https://github.com/phalcon/awesome-phalcon#readme) - PHP framework.
 - [Useful `.htaccess` Snippets](https://github.com/phanan/htaccess#readme)
 - [nginx](https://github.com/fcambus/nginx-resources#readme) - Web server.
@@ -751,3 +751,4 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 
 - https://github.com/zakarialaoui10/awesome-processing
 
+<!-- vi:set noet: -->
