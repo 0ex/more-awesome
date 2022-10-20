@@ -267,6 +267,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Symfony](https://github.com/sitepoint-editors/awesome-symfony#readme) - PHP framework.
 	- [Education](https://github.com/pehapkari/awesome-symfony-education#readme)
 - [Laravel](https://github.com/chiraggude/awesome-laravel#readme) - PHP framework.
+	- alt: [Laravel](https://github.com/tuwannu/awesome-laravel)
 	- [Education](https://github.com/fukuball/Awesome-Laravel-Education#readme)
 	- [TALL Stack](https://github.com/livewire/awesome-tall-stack#readme) - Full-stack development solution featuring libraries built by the Laravel community.
 - [Rails](https://github.com/gramantin/awesome-rails#readme) - Web app framework for Ruby.
