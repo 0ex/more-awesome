@@ -755,6 +755,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 ## To Sort
 
 - https://github.com/zakarialaoui10/awesome-processing
-- https://github.com/dh-tech/awesome-dhtools - Digital Humanities
+- [Digital Humanities](https://github.com/dh-tech/awesome-dhtools)
+- [SharePoint](https://github.com/siaf/awesome-SharePoint)
 
 <!-- vi:set noet: -->
