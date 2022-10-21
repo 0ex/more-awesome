@@ -174,6 +174,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 
 ## Front-End Development
 
+- [CSS](https://github.com/awesome-css-group/awesome-css)
 - [ES6 Tools](https://github.com/addyosmani/es6-tools#readme)
 - [Web Performance Optimization](https://github.com/davidsonfellipe/awesome-wpo#readme)
 - [Web Tools](https://github.com/lvwzhen/tools#readme)
