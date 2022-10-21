@@ -628,6 +628,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 
 ## Miscellaneous
 
+- [Internet of Things](https://github.com/phodal/awesome-iot)
 - [Mac Apps](https://github.com/justin-j/awesome-mac-apps)
 - [Code Schools](https://github.com/cfj/awesome-code-schools)
 - [Scientific Writing](https://github.com/writing-resources/awesome-scientific-writing#readme) - Distraction-free scientific writing with Markdown, reStructuredText and Jupyter notebooks.
