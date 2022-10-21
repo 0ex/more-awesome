@@ -628,6 +628,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 
 ## Miscellaneous
 
+- [Code Schools](https://github.com/cfj/awesome-code-schools)
 - [Scientific Writing](https://github.com/writing-resources/awesome-scientific-writing#readme) - Distraction-free scientific writing with Markdown, reStructuredText and Jupyter notebooks.
 - [JSON](https://github.com/burningtree/awesome-json#readme) - Text based data interchange format.
 	- [GeoJSON](https://github.com/tmcw/awesome-geojson#readme)
