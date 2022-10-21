@@ -259,6 +259,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 
 ## Back-End Development
 
+- [Flask](https://github.com/humiaozuzu/awesome-flask)
 - [Django](https://github.com/wsvincent/awesome-django) - Python framework.
 - [Flask](https://github.com/mjhea0/awesome-flask#readme) - Python framework.
 - [Docker](https://github.com/veggiemonk/awesome-docker#readme)
