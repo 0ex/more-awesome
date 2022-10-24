@@ -632,6 +632,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 ## Miscellaneous
 
 - [Awesome Gists](https://github.com/vsouza/awesome-gists)
+- [Coding entertainment](https://github.com/krmaxwell/coding-entertainment)
 - [Growth Hacking](https://github.com/bekatom/awesome-growth-hacking)
 - [Space](https://github.com/elburz/awesome-space)
 - [Answers (@ stackoverflow, quora, etc)](https://github.com/cyberglot/awesome-answers)
