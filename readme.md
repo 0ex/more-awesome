@@ -238,8 +238,8 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [React](https://github.com/enaqx/awesome-react#readme) - JavaScript library for building user interfaces.
 	- [Relay](https://github.com/expede/awesome-relay#readme) - Framework for building data-driven React apps.
 	- [React Hooks](https://github.com/glauberfc/awesome-react-hooks#readme) - Lets you use state and other React features without writing a class.
-- [Redux - Predictable state container for JavaScript apps](https://github.com/xgrommx/awesome-redux)
 - [Redux](https://github.com/brillout/awesome-redux#readme) - State container for JavaScript apps.
+	- alt: [Redux](https://github.com/xgrommx/awesome-redux)
 - [Remix](https://github.com/rjoydip/awesome-remix#readme) - Remix is a full stack web framework that lets you focus on the user interface and work back through web standards to deliver a fast, slick, and resilient user experience..
 - [SVG](https://github.com/willianjusten/awesome-svg#readme) - XML-based vector image format.
 - [Sass](https://github.com/Famolus/awesome-sass#readme) - CSS preprocessor.
@@ -298,7 +298,6 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 	- [by @dpaluy](https://github.com/dpaluy/awesome-rails)
 	- [by @ekremkaraca](https://github.com/ekremkaraca/awesome-rails)
 - [Serverless Framework](https://github.com/pmuens/awesome-serverless#readme) - Serverless computing and serverless architectures.
-- [Slim](https://github.com/xssc/awesome-slim)
 - [Slim](https://github.com/nekofar/awesome-slim#readme) - PHP framework.
 - [Symfony](https://github.com/sitepoint-editors/awesome-symfony#readme) - PHP framework.
 	- [Education](https://github.com/pehapkari/awesome-symfony-education#readme)
