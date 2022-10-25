@@ -133,6 +133,9 @@ GITHUB_TOKEN_PATH = '~/.private/0exi-github-token'
 
 FETCH_BRANCH_VER = 8
 
+IN_PATH = 'readme.md'
+OUT_PATH = 'README.md'
+
 gh = None
 db = None
 args = None
@@ -243,7 +246,7 @@ def sort_readme():
     section_parts = []
     in_section = False
 
-    with open('readme.md') as f:
+    with open(OUT_PATH) as f:
         for line in f:
             log('DLine', repr(line))
             if in_section:
@@ -268,7 +271,7 @@ def sort_readme():
                 
                 lines.append(line)
 
-    with open('readme.md', 'w') as f:
+    with open(OUT_PATH, 'w') as f:
         f.write(''.join(lines))
 
     log('ISorted')
@@ -358,7 +361,7 @@ def fetch_branch(srcpr):
     for rev in revs:
         sh(f'git revert {rev}')
  
-    diff = sh_out('git diff --color=always --merge-base main readme.md | tail -n +5')
+    diff = sh_out(f'git diff --color=always --merge-base main -- {IN_PATH} | tail -n +5')
     print('\nDIFF:\n\n', indent(diff, '   '), '\n') 
 
     sh(f'git checkout -q main && git push -q -u origin {branch}')
@@ -393,15 +396,15 @@ def rebase_pull(srcpr):
     
     sh('git merge -q -X theirs --no-commit --no-stat main')
 
-    # fix driver=union messing up readme.md
-    sh('git checkout main readme.md')
+    # fix driver=union messing up README
+    sh(f'git checkout main {OUT_PATH}')
     
     lines = []
     found_line = False
     found_section = False
     found_item = False
 
-    with open('readme.md') as f:
+    with open(OUT_PATH) as f:
         for line in f:
             # log('DLine', repr(line))
             if found_line:
@@ -445,7 +448,7 @@ def rebase_pull(srcpr):
         log('EBadRebase')
         return
 
-    with open('readme.md', 'w') as f:
+    with open(OUT_PATH, 'w') as f:
         f.write(''.join(lines))
     
     msg = quote(f'Merge {destpr} ({sum.title}) with main')
@@ -453,7 +456,7 @@ def rebase_pull(srcpr):
     sh(f'git commit -m {msg} -a')
     sh(f'git checkout -q main && git push -q -u origin {srcpr.branch}')
         
-    diff = sh_out(f'git diff --color=always main..{srcpr.branch} readme.md | tail -n +5')
+    diff = sh_out(f'git diff --color=always main..{srcpr.branch} | tail -n +5')
     print('  REBASED DIFF:\n\n', indent(diff, '   '), '\n') 
     
     log('IRebase', 'done')
@@ -791,7 +794,7 @@ def summarize_pr(srcpr) -> Summary:
         sh(f'git fetch -q up refs/{ref}:remotes/up/{ref}')
 
     try:
-        ret = sh_out(f'git diff --merge-base -U999 main up/{ref} readme.md')
+        ret = sh_out(f'git diff --merge-base -U999 main up/{ref} -- {IN_PATH}')
         diff = ret.splitlines()
         
         for line in diff:
@@ -886,11 +889,11 @@ def accept_pull(srcpr):
     else:
         # do a union merge
         sh(f'git merge -q -X ours {branch} --no-commit')
-        sh(f'git show $(git merge-base main {branch}):readme.md > readme.md.base')
-        sh(f'git show {branch}:readme.md > readme.md.theirs')
-        sh('git merge-file --union readme.md readme.md.base readme.md.theirs')
+        sh(f'git show $(git merge-base main {branch}):{OUT_PATH} > {OUT_PATH}.base')
+        sh(f'git show {branch}:{OUT_PATH} > {OUT_PATH}.theirs')
+        sh(f'git merge-file --union {OUT_PATH} {OUT_PATH}.base {OUT_PATH}.theirs')
         
-        diff = sh_out('git diff --color=always --merge-base main readme.md | tail -n +5')
+        diff = sh_out('git diff --color=always --merge-base main | tail -n +5')
         print('\nUNION MERGED DIFF:\n\n', indent(diff, '   '), '\n') 
 
     if confirm('merge'):
@@ -906,13 +909,13 @@ def accept_pull(srcpr):
 # Utilities
 
 def main_readme():
-    """Return readme.md contents from main - cache on first use."""
+    """Return README contents from main - cache on first use."""
     global _main_readme
 
     try:
         return _main_readme
     except NameError:
-        _main_readme = sh_out('git show main:readme.md')
+        _main_readme = sh_out(f'git show main:{OUT_PATH}')
         return _main_readme
 
 def confirm(question):
