@@ -393,11 +393,11 @@ def rebase_pull(srcpr):
         log('WExtra', 'cannot manage PRs without URL')
         sh('git merge --abort')
         return
-    
+   
+    sh('rm .gitattributes', check=False)
     sh('git merge -q -X theirs --no-commit --no-stat main')
 
-    # fix driver=union messing up README
-    sh(f'git checkout main {OUT_PATH}')
+    sh(f'git rm readme.md && git checkout main {OUT_PATH}')
     
     lines = []
     found_line = False
@@ -1004,7 +1004,7 @@ def all_pages(cmd, *args, **kw):
         yield from page
 
 
-def sh(cmd):
+def sh(cmd, check=True):
     log('DSh', cmd)
     proc = run(cmd, shell=True, stdout=PIPE, stderr=STDOUT, text=True)
     for line in proc.stdout.splitlines():
@@ -1012,7 +1012,7 @@ def sh(cmd):
         if not re.match(r'remote:', line):
             print('    ', line)
 
-    if proc.returncode != 0:
+    if check and proc.returncode != 0:
         raise RuntimeError(f'process failed: {proc.returncode} != 0')
 
 def sh_out(cmd):
