@@ -622,6 +622,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Malware Analysis](https://github.com/rshipp/awesome-malware-analysis#readme)
 - [Malware Persistence](https://github.com/Karneades/awesome-malware-persistence#readme) - Techniques that adversaries use to keep access to systems across restarts.
 - [Memory Forensics](https://github.com/digitalisx/awesome-memory-forensics#readme) - Forensic analysis of a computer's memory dump.
+- [Security Talks](https://github.com/PaulSec/awesome-sec-talks)
 - [Security](https://github.com/sbilly/awesome-security#readme)
 - [Vehicle Security and Car Hacking](https://github.com/jaredthecoder/awesome-vehicle-security#readme)
 - [Web Security](https://github.com/qazbnm456/awesome-web-security#readme) - Security of web apps & services.
