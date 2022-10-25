@@ -88,6 +88,8 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Robot Operating System 2.0](https://github.com/fkromer/awesome-ros2#readme) - Set of software libraries and tools that help you build robot apps.
 - [Salesforce](https://github.com/mailtoharshit/awesome-salesforce#readme)
 - [Smart TV](https://github.com/vitalets/awesome-smart-tv#readme) - Create apps for different TV platforms.
+- [Synthetic Biology](https://github.com/websemantics/awesome-synthetic-biology)
+- [Tensorflow](https://github.com/jtoy/awesome-tensorflow/)
 - [WebExtensions](https://github.com/fregante/Awesome-WebExtensions#readme) - Cross-browser extension system.
 - [Windows](https://github.com/Awesome-Windows/Awesome#readme)
 - [Xamarin](https://github.com/XamSome/awesome-xamarin#readme) - Mobile app development IDE, testing, and distribution.
@@ -150,12 +152,14 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Julia](https://github.com/svaksha/Julia.jl#readme) - High-level dynamic programming language designed to address the needs of high-performance numerical analysis and computational science.
 - [Kotlin](https://github.com/KotlinBy/awesome-kotlin#readme)
 - [Lua](https://github.com/LewisJEllis/awesome-lua#readme)
+- [MATLAB](https://github.com/mikecroucher/awesome-MATLAB)
 - [OCaml](https://github.com/ocaml-community/awesome-ocaml#readme)
 - [PHP](https://github.com/ziadoz/awesome-php#readme) - Server-side scripting language.
 	- [Composer](https://github.com/jakoch/awesome-composer#readme) - Package manager.
 - [Pascal](https://github.com/Fr0sT-Brutal/awesome-pascal#readme)
 - [Perl](https://github.com/hachiojipm/awesome-perl#readme)
 - [PureScript](https://github.com/passy/awesome-purescript#readme)
+- [Python Decorator](https://github.com/lord63/awesome-python-decorator)
 - [Python](https://github.com/vinta/awesome-python#readme) - General-purpose programming language designed for readability.
 	- [Asyncio](https://github.com/timofurrer/awesome-asyncio#readme) - Asynchronous I/O in Python 3.
 	- [Scientific Audio](https://github.com/faroit/awesome-python-scientific-audio#readme) - Scientific research in audio/music.
@@ -189,6 +193,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [BEM](https://github.com/sturobson/BEM-resources#readme)
 - [Backbone](https://github.com/sadcitizen/awesome-backbone#readme) - App framework.
 - [Blazor](https://github.com/AdrienTorris/awesome-blazor#readme) - .NET web framework using C#/Razor and HTML that runs in the browser with WebAssembly.
+- [Bookmarklets](https://github.com/marcobiedermann/awesome-bookmarklets)
 - [Bootstrap Themes](https://github.com/therebelrobot/awesome-bootstrap)
 - [Browserify](https://github.com/browserify/awesome-browserify#readme) - Module bundler.
 - [Building Blocks for Web Apps](https://github.com/componently-com/awesome-building-blocks-for-web-apps#readme) - Standalone features to be integrated into web apps.
@@ -212,6 +217,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Emails](https://github.com/jonathandion/awesome-emails#readme)
 - [Ember](https://github.com/ember-community-russia/awesome-ember#readme) - App framework.
 - [Flexbox](https://github.com/afonsopacifer/awesome-flexbox#readme)
+- [Grid](https://github.com/fancygrid/awesome-grid)
 - [HTML5](https://github.com/diegocard/awesome-html5#readme) - Markup language used for websites & web apps.
 - [Inertia.js](https://github.com/innocenzi/awesome-inertiajs#readme) - Make single-page apps without building an API.
 - [Inspiration](https://github.com/NoahBuscher/Inspire#readme)
@@ -241,6 +247,8 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Redux](https://github.com/brillout/awesome-redux#readme) - State container for JavaScript apps.
 	- alt: [Redux](https://github.com/xgrommx/awesome-redux)
 - [Remix](https://github.com/rjoydip/awesome-remix#readme) - Remix is a full stack web framework that lets you focus on the user interface and work back through web standards to deliver a fast, slick, and resilient user experience..
+- [Riot](https://github.com/pankajparashar-zz/awesome-riotjs)
+- [SEO](https://github.com/teles/awesome-seo)
 - [SVG](https://github.com/willianjusten/awesome-svg#readme) - XML-based vector image format.
 - [Sass](https://github.com/Famolus/awesome-sass#readme) - CSS preprocessor.
 - [Seed](https://github.com/seed-rs/awesome-seed-rs#readme) - Rust framework for creating web apps running in WebAssembly.
@@ -270,6 +278,53 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 	- [Tips](https://github.com/AllThingsSmitty/jquery-tips-everyone-should-know#readme)
 - [lit](https://github.com/web-padawan/awesome-lit#readme) - Library for building web components with a declarative template system.
 
+- [ES6 Tools](https://github.com/addyosmani/es6-tools)
+- [Web Performance Optimization](https://github.com/davidsonfellipe/awesome-wpo)
+- [Web Tools](https://github.com/lvwzhen/tools)
+- [CSS](https://github.com/sotayamashita/awesome-css)
+	- [Critical-Path (Above-the-fold) Tools](https://github.com/addyosmani/critical-path-css-tools)
+	- [Scalability](https://github.com/davidtheclark/scalable-css-reading-list)
+	- [Must-Watch Talks](https://github.com/AllThingsSmitty/must-watch-css)
+- [React](https://github.com/enaqx/awesome-react)
+- [Web Components](https://github.com/mateusortiz/webcomponents-the-right-way)
+- [Polymer](https://github.com/Granze/awesome-polymer)
+- [Angular 2](https://github.com/AngularClass/awesome-angular2)
+- [Angular](https://github.com/gianarb/awesome-angularjs)
+- [Backbone](https://github.com/sadcitizen/awesome-backbone)
+- [HTML5](https://github.com/diegocard/awesome-html5)
+- [SVG](https://github.com/willianjusten/awesome-svg)
+- [Canvas](https://github.com/raphamorim/awesome-canvas)
+- [KnockoutJS](https://github.com/dnbard/awesome-knockout)
+- [Dojo Toolkit](https://github.com/peterkokot/awesome-dojo)
+- [Inspiration](https://github.com/NoahBuscher/Inspire)
+- [Ember](https://github.com/nmec/awesome-ember)
+- [Android UI](https://github.com/wasabeef/awesome-android-ui)
+- [iOS UI](https://github.com/cjwirth/awesome-ios-ui)
+- [Meteor](https://github.com/Urigo/awesome-meteor)
+- [BEM](https://github.com/sturobson/BEM-resources)
+- [Flexbox](https://github.com/afonsopacifer/awesome-flexbox)
+- [Web Typography](https://github.com/deanhume/typography)
+- [Web Accessibility](https://github.com/brunopulis/awesome-a11y)
+- [Material Design](https://github.com/sachin1092/awesome-material)
+- [D3](https://github.com/wbkd/awesome-d3)
+- [Emails](https://github.com/jonathandion/awesome-emails)
+- [jQuery](https://github.com/peterkokot/awesome-jquery)
+- [Web Audio](https://github.com/notthetup/awesome-webaudio)
+- [Offline-First](https://github.com/pazguille/offline-first)
+- [Static Website Services](https://github.com/aharris88/awesome-static-website-services)
+- [A-Frame VR](https://github.com/aframevr/awesome-aframe) *(Virtual reality)*
+- [Cycle.js](https://github.com/vic/awesome-cyclejs)
+- [Motion UI Design](https://github.com/fliptheweb/motion-ui-design)
+- [Vue.js](https://github.com/vuejs/awesome-vue)
+- [Marionette.js](https://github.com/sadcitizen/awesome-marionette)
+- [Aurelia](https://github.com/behzad888/awesome-aurelia)
+- [Serverless](https://github.com/anaibol/awesome-serverless/)
+
+## Back-end Development
+
+- [Django](https://github.com/rosarior/awesome-django)
+- [OpenResty](https://github.com/bungle/awesome-resty)
+- [Phoenix](https://github.com/jonathanstiansen/awesome-phoenix)
 ## Back-End Development
 
 - [Apache Wicket](https://github.com/PhantomYdn/awesome-wicket#readme) - Java web app framework.
@@ -283,6 +338,23 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [FastAPI](https://github.com/mjhea0/awesome-fastapi#readme) - Python web app framework.
 - [Fiber](https://github.com/gofiber/awesome-fiber#readme) - Web framework built on top of Fasthttp, the fastest HTTP engine for Go.
 - [Flask](https://github.com/humiaozuzu/awesome-flask)
+- [Docker](https://github.com/veggiemonk/awesome-docker)
+- [Vagrant](https://github.com/iJackUA/awesome-vagrant)
+- [Pyramid](https://github.com/uralbash/awesome-pyramid)
+- [Play1 Framework](https://github.com/PerfectCarl/awesome-play1)
+- [CakePHP](https://github.com/friendsofcake/awesome-cakephp)
+- [Symfony](https://github.com/sitepoint/awesome-symfony)
+- [Laravel](https://github.com/chiraggude/awesome-laravel)
+    - [Education](https://github.com/fukuball/Awesome-Laravel-Education/blob/master/langs/en_US.md)
+- [Rails](https://github.com/ekremkaraca/awesome-rails)
+	- [Gems](https://github.com/hothero/awesome-rails-gem)
+- [Phalcon](https://github.com/sergeyklay/awesome-phalcon)
+- [Useful `.htaccess` Snippets](https://github.com/phanan/htaccess)
+- [nginx](https://github.com/fcambus/nginx-resources)
+- [Dropwizard](https://github.com/stve/awesome-dropwizard)
+- [Kubernetes](https://github.com/ramitsurana/awesome-kubernetes)
+- [Caddy](https://github.com/caddy-book/awesome-caddy)
+
 - [Flask](https://github.com/mjhea0/awesome-flask#readme) - Python framework.
 - [IAM](https://github.com/kdeldycke/awesome-iam#readme) - User accounts, authentication and authorization.
 - [Kubernetes](https://github.com/ramitsurana/awesome-kubernetes#readme) - Open-source platform that automates Linux container operations.
@@ -307,6 +379,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Vagrant](https://github.com/iJackUA/awesome-vagrant#readme) - Automation virtual machine environment.
 - [Vapor](https://github.com/vapor-community/awesome-vapor#readme) - Server-side development in Swift.
 - [Vert.x](https://github.com/vert-x3/vertx-awesome#readme) - Toolkit for building reactive apps on the JVM.
+- [WordPress](https://github.com/theandersonn/wp-snippets)
 - [nginx](https://github.com/fcambus/nginx-resources#readme) - Web server.
 
 ## Computer Science
@@ -383,6 +456,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Free Programming Books](https://github.com/EbookFoundation/free-programming-books#readme)
 - [Go Books](https://github.com/dariubs/GoBooks#readme)
 - [Mind Expanding Books](https://github.com/hackerkid/Mind-Expanding-Books#readme)
+- [Python Books](https://github.com/Junnplus/awesome-python-books)
 - [R Books](https://github.com/RomanTsegelskyi/rbooks#readme)
 
 ## Editors
@@ -426,6 +500,21 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 
 ## Development Environment
 
+- [Command-Line Apps](https://github.com/aharris88/awesome-cli-apps)
+- [Deployment](https://github.com/delirehberi/awesome-deployment)
+- [Dev Env](https://github.com/jondot/awesome-devenv)
+- [Dotfiles](https://github.com/webpro/awesome-dotfiles)
+- [Git Add-ons](https://github.com/stevemao/awesome-git-addons)
+- [Git Cheat Sheet](https://github.com/arslanbilal/git-cheat-sheet)
+- [Git Tips](https://github.com/git-tips/tips)
+- [GitHub](https://github.com/phillipadsmith/awesome-github)
+	- [Browser Extensions](https://github.com/stefanbuck/awesome-browser-extensions-for-github)
+	- [Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet)
+- [Quick Look Plugins](https://github.com/sindresorhus/quick-look-plugins)
+- [SSH](https://github.com/moul/awesome-ssh)
+- [Shell](https://github.com/alebcay/awesome-shell)
+- [ZSH Plugins](https://github.com/unixorn/awesome-zsh-plugins)
+
 - [Alfred Workflows](https://github.com/alfred-workflows/awesome-alfred-workflows#readme) - Productivity app for macOS.
 - [Command-Line Apps](https://github.com/agarrharr/awesome-cli-apps#readme)
 - [Dev Env](https://github.com/jondot/awesome-devenv#readme)
@@ -463,6 +552,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [CouchDB](https://github.com/quangv/awesome-couchdb#readme) - Document-oriented NoSQL database.
 - [Database Tools](https://github.com/mgramin/awesome-db-tools#readme) - Everything that makes working with databases easier.
 - [Database](https://github.com/numetriclabz/awesome-db#readme)
+- [Doctrine](https://github.com/biberlabs/awesome-doctrine)
 - [GEDCOM](https://github.com/todrobbins/awesome-gedcom)
 - [HBase](https://github.com/rayokota/awesome-hbase#readme) - Distributed, scalable, big data store.
 - [InfluxDB](https://github.com/mark-rushakoff/awesome-influxdb#readme)
@@ -474,6 +564,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Redis](https://github.com/JamzyWang/awesome-redis)
 - [RethinkDB](https://github.com/d3viant0ne/awesome-rethinkdb#readme)
 - [SQLAlchemy](https://github.com/dahlia/awesome-sqlalchemy#readme)
+- [SQLite](https://github.com/planetopendata/awesome-sqlite)
 - [TDengine](https://github.com/taosdata/awesome-tdengine#readme) - An open-source time-series database with high-performance, scalability, and SQL support.
 - [TinkerPop](https://github.com/mohataher/awesome-tinkerpop#readme) - Graph computing framework.
 - [TypeDB](https://github.com/vaticle/typedb-awesome#readme) - Logical database to organize large and complex networks of data as one body of knowledge.
@@ -484,15 +575,22 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Audiovisual](https://github.com/stingalleman/awesome-audiovisual#readme) - Lighting, audio and video in professional environments.
 - [Broadcasting](https://github.com/ebu/awesome-broadcasting#readme)
 - [Codeface](https://github.com/chrissimpkins/codeface#readme) - Text editor fonts.
+- [Codeface](https://github.com/chrissimpkins/codeface) *(Text editor fonts)*
 - [Creative Commons Media](https://github.com/shime/creative-commons-media#readme)
+- [Creative Commons Media](https://github.com/shime/creative-commons-media)
 - [FFmpeg](https://github.com/transitive-bullshit/awesome-ffmpeg#readme) - Cross-platform solution to record, convert and stream audio and video.
 - [Fonts](https://github.com/brabadu/awesome-fonts#readme)
+- [Fonts](https://github.com/brabadu/awesome-fonts)
 - [GIF](https://github.com/davisonio/awesome-gif#readme) - Image format known for animated images.
+- [GIF](https://github.com/ibaaj/awesome-gif)
 - [Icons](https://github.com/notlmn/awesome-icons#readme) - Downloadable SVG/PNG/font icon projects.
+- [Icons](https://github.com/vkarampinis/awesome-icons)
 - [Music](https://github.com/ciconia/awesome-music#readme)
+- [Music](https://github.com/ciconia/awesome-music)
 - [Open Source Documents](https://github.com/44bits/awesome-opensource-documents#readme)
 - [Pixel Art](https://github.com/Siilwyn/awesome-pixel-art#readme) - Pixel-level digital art.
 - [Stock Resources](https://github.com/neutraltone/awesome-stock-resources#readme)
+- [Stock Resources](https://github.com/neutraltone/awesome-stock-resources)
 - [VLC](https://github.com/mfkl/awesome-vlc#readme) - Cross-platform media player software and streaming server.
 
 ## Learn
@@ -514,8 +612,10 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 
 ## Security
 
+- [All In One Security](https://github.com/Hack-with-Github/Awesome-Hacking)
 - [Android Security](https://github.com/ashishb/android-security-awesome#readme)
 - [Application Security](https://github.com/paragonie/awesome-appsec#readme)
+- [Bug Bounty Programs](https://github.com/djadmin/awesome-bug-bounty) - Bug Bounty Programs and Security Write-ups
 - [CTF](https://github.com/apsdehal/awesome-ctf#readme) - Capture The Flag.
 - [Cyber Security University](https://github.com/brootware/awesome-cyber-security-university#readme) - Free educational resources that focus on learning by doing.
 - [Cybersecurity Blue Team](https://github.com/fabacab/awesome-cybersecurity-blueteam#readme) - Groups of individuals who identify security flaws in information technology systems.
@@ -534,6 +634,8 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Malware Analysis](https://github.com/rshipp/awesome-malware-analysis#readme)
 - [Malware Persistence](https://github.com/Karneades/awesome-malware-persistence#readme) - Techniques that adversaries use to keep access to systems across restarts.
 - [Memory Forensics](https://github.com/digitalisx/awesome-memory-forensics#readme) - Forensic analysis of a computer's memory dump.
+- [Penetration Testing](https://github.com/enaqx/awesome-pentest)
+- [Security Talks](https://github.com/PaulSec/awesome-sec-talks)
 - [Security](https://github.com/sbilly/awesome-security#readme)
 - [Vehicle Security and Car Hacking](https://github.com/jaredthecoder/awesome-vehicle-security#readme)
 - [Web Security](https://github.com/qazbnm456/awesome-web-security#readme) - Security of web apps & services.
@@ -648,8 +750,10 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 
 ## Miscellaneous
 
+- [3D-Printing](https://github.com/adius/awesome-3d-printing)
 - [AMA](https://github.com/sindresorhus/amas#readme) - Ask Me Anything.
 	- [Answers](https://github.com/stoeffel/awesome-ama-answers#readme)
+- [AMQP 1.0](https://github.com/xinchen10/awesome-amqp) - Advanced Message Queuing Protocol 1.0.
 - [Ad-Free](https://github.com/johnjago/awesome-ad-free#readme) - Ad-free alternatives.
 - [Advertising](https://github.com/cenoura/awesome-ads#readme) - Advertising and programmatic media for websites.
 - [Agriculture](https://github.com/brycejohnston/awesome-agriculture#readme) - Open source technology for farming and gardening.
@@ -664,6 +768,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics#readme)
 - [Biological Visualizations](https://github.com/keller-mark/awesome-biological-visualizations#readme) - Interactive visualization of biological data on the web.
 - [Bitcoin Payment Processors](https://github.com/alexk111/awesome-bitcoin-payment-processors#readme) - Start accepting Bitcoin.
+- [Bluetooth Beacons](https://github.com/beaconinside/awesome-beacon)
 - [Board Games](https://github.com/edm00se/awesome-board-games#readme) - Table-top gaming fun for all.
 - [Boilerplate Projects](https://github.com/melvin0008/awesome-projects-boilerplates#readme)
 - [Bots](https://github.com/hackerkid/bots#readme) - Building bots.
@@ -671,10 +776,12 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Calculators](https://github.com/xxczaki/awesome-calculators#readme) - Calculators for every platform.
 - [Captcha](https://github.com/ZYSzys/awesome-captcha#readme) - A type of challenge–response test used in computing to determine whether or not the user is human.
 - [ChatOps](https://github.com/exAspArk/awesome-chatops#readme) - Managing technical and business operations through a chat.
+- [Cheatsheet](https://github.com/detailyang/awesome-cheatsheet)
 - [Cheminformatics](https://github.com/hsiaoyi0504/awesome-cheminformatics#readme) - Informatics techniques applied to problems in chemistry.
 - [Citizen Science](https://github.com/dylanrees/citizen-science#readme) - For community-based and non-institutional scientists.
 - [Code Schools](https://github.com/cfj/awesome-code-schools)
 - [Coding Interview](https://github.com/Olshansk/interview)
+- [Coding Style Conventions and Standards](https://github.com/SalGnt/cscs)
 - [Coding entertainment](https://github.com/krmaxwell/coding-entertainment)
 - [Colorful](https://github.com/Siddharth11/Colorful#readme) - Choose your next color scheme.
 - [Community](https://github.com/phpearth/awesome-community)
@@ -702,15 +809,19 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Falsehood](https://github.com/kdeldycke/awesome-falsehood#readme) - Falsehoods programmers believe in.
 - [Food](https://github.com/jzarca01/awesome-food#readme) - Food-related projects on GitHub.
 - [For Girls](https://github.com/cristianoliveira/awesome4girls#readme)
+- [For Girls](https://github.com/cristianoliveira/awesome4girls)
 - [Framer](https://github.com/podo/awesome-framer#readme) - Prototyping interactive UI designs.
 - [Free Software](https://github.com/johnjago/awesome-free-software#readme) - Free as in freedom.
 - [Free for Developers](https://github.com/ripienaar/free-for-dev#readme)
 - [Funny Markov Chains](https://github.com/sublimino/awesome-funny-markov#readme)
+- [GitHub Badges](https://github.com/chetanraj/awesome-github-badges)
 - [GraphQL](https://github.com/chentsulin/awesome-graphql#readme)
 - [Growth Hacking](https://github.com/bekatom/awesome-growth-hacking)
 - [Gulp](https://github.com/alferov/awesome-gulp#readme) - Task runner.
 - [Gyazo](https://github.com/gyazo/awesome-gyazo)
+- [Hacking Spots](https://github.com/diasdavid/awesome-hacking-spots)
 - [Homematic](https://github.com/homematic-community/awesome-homematic#readme) - Smart home devices.
+- [Hubot](https://github.com/duxet/awesome-hubot)
 - [IRC](https://github.com/davisonio/awesome-irc#readme) - Open source messaging protocol.
 - [Internet of Things](https://github.com/phodal/awesome-iot)
 - [JSON](https://github.com/burningtree/awesome-json#readme) - Text based data interchange format.
@@ -718,17 +829,23 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 	- [Datasets](https://github.com/jdorfman/awesome-json-datasets#readme)
 - [Jupyter](https://github.com/markusschanta/awesome-jupyter#readme) - Create and share documents that contain code, equations, visualizations and narrative text.
 - [Katas](https://github.com/gamontal/awesome-katas#readme)
+- [Katas](https://github.com/gmontalvoriv/awesome-katas)
 - [LaTeX](https://github.com/egeerardyn/awesome-LaTeX#readme) - Typesetting language.
 - [Ledger](https://github.com/sfischer13/awesome-ledger#readme) - Double-entry accounting on the command-line.
 - [Linux Containers](https://github.com/Friz-zy/awesome-linux-containers)
+- [Lorem Ipsum](https://github.com/templeman/awesome-ipsum)
+- [MATLAB](https://github.com/uhub/awesome-matlab)
 - [MQTT](https://github.com/hobbyquaker/awesome-mqtt#readme) - "Internet of Things" connectivity protocol.
+- [MQTT](https://github.com/hobbyquaker/awesome-mqtt) *(an "Internet of Things" connectivity protocol)*
 - [Mac Apps](https://github.com/justin-j/awesome-mac-apps)
 - [MacOSX DevTools](https://github.com/marceloboeira/awesome-osx)
 - [Magento 2](https://github.com/DavidLambauer/awesome-magento2#readme) - Open Source eCommerce built with PHP.
 - [Markdown](https://github.com/BubuAnabelas/awesome-markdown#readme) - Markup language.
 - [Microservices](https://github.com/mfornos/awesome-microservices#readme)
+- [Monitoring](https://github.com/crazy-canux/awesome-monitoring) - Open source monitoring tools.
 - [Naming](https://github.com/gruhn/awesome-naming#readme) - Naming things in computer science done right.
 - [No-Login Web Apps](https://github.com/aviaryan/awesome-no-login-web-apps#readme) - Web apps that work without login.
+- [OKR Methodology](https://github.com/domenicosolazzo/awesome-okr) *(Goal setting & communication best practices)*
 - [Open Companies](https://github.com/opencompany/awesome-open-company)
 - [Open Source Maintainers](https://github.com/nayafia/awesome-maintainers#readme) - The experience of being an open source maintainer.
 - [Open Source Photography](https://github.com/ibaaj/awesome-OpenSourcePhotography#readme)
@@ -736,10 +853,12 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [OpenGL](https://github.com/eug/awesome-opengl#readme) - Cross-platform API for rendering 2D and 3D graphics.
 - [OpenStreetMap](https://github.com/osmlab/awesome-openstreetmap#readme) - An open data mapping project utilized by many apps and devices.
 - [Parasite](https://github.com/ecohealthalliance/awesome-parasite#readme) - Parasites and host-pathogen interactions.
+- [Peer-to-peer](https://github.com/kgryte/awesome-peer-to-peer)
 - [Pokémon](https://github.com/tobiasbueschel/awesome-pokemon#readme) - Pokémon and Pokémon GO.
 - [Prisma](https://github.com/catalinmiron/awesome-prisma#readme) - Turn your database into a GraphQL API.
 - [Product Design](https://github.com/ttt30ga/awesome-product-design#readme) - Design a product from the initial concept to production.
 - [Productivity](https://github.com/jyguyomarch/awesome-productivity)
+- [Programming Interviews](https://github.com/MaximAbramchuck/awesome-interviews)
 - [Prometheus](https://github.com/roaldnefs/awesome-prometheus#readme) - Open-source monitoring system.
 - [QR Code](https://github.com/make-github-pseudonymous-again/awesome-qr-code#readme) - A type of matrix barcode that can be used to store and share a small amount of information.
 - [Quantified Self](https://github.com/woop/awesome-quantified-self#readme) - Self-tracking through technology.
@@ -747,6 +866,8 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Radio](https://github.com/kyleterry/awesome-radio#readme)
 - [Readme](https://github.com/matiassingers/awesome-readme#readme)
 - [Research Tools](https://github.com/emptymalei/awesome-research#readme)
+- [Ripple](https://github.com/vhpoet/awesome-ripple) *(Open-source distributed settlement network)*
+- [Robotics](https://github.com/Kiloreux/awesome-robotics)
 - [SaltStack](https://github.com/hbokh/awesome-saltstack#readme) - Python-based config management system.
 - [Scientific Computing](https://github.com/nschloe/awesome-scientific-computing#readme) - Solving complex scientific problems using computers.
 - [Scientific Writing](https://github.com/writing-resources/awesome-scientific-writing#readme) - Distraction-free scientific writing with Markdown, reStructuredText and Jupyter notebooks.
@@ -759,14 +880,21 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Software Engineering Blogs](https://github.com/kilimchoi/engineering-blogs#readme)
 - [Software Patreons](https://github.com/uraimo/awesome-software-patreons#readme) - Fund individual programmers or the development of open source projects.
 - [Space](https://github.com/elburz/awesome-space)
+- [Spanish Natural Language Processing (NLP)](https://github.com/dav009/awesome-spanish-nlp)
 - [Speakers](https://github.com/karlhorky/awesome-speakers#readme) - Conference and meetup speakers in the programming and design community.
 - [Stacks](https://github.com/stackshareio/awesome-stacks#readme) - Tech stacks for building different apps and features.
+- [Startup](https://github.com/KrishMunot/awesome-startup)
 - [Steam](https://github.com/scholtzm/awesome-steam#readme) - Digital distribution platform.
+- [Subreddits](https://github.com/iCHAIT/awesome-subreddits)
+- [TAP](https://github.com/sindresorhus/awesome-tap) *(Test Anything Protocol)*
+- [Test Automation](https://github.com/atinfo/awesome-test-automation)
 - [Theravada](https://github.com/johnjago/awesome-theravada#readme) - Teachings from the Theravada Buddhist tradition.
 - [TikZ](https://github.com/xiaohanyu/awesome-tikz#readme) - Graph drawing packages for TeX/LaTeX/ConTeXt.
 - [Tools for Activism](https://github.com/drewrwilson/toolsforactivism#readme)
+- [Tools for Activism](https://github.com/drewrwilson/toolsforactivism)
 - [Transit](https://github.com/CUTR-at-USF/awesome-transit#readme)
 - [Translations](https://github.com/mbiesiad/awesome-translations#readme) - The transfer of the meaning of a text from one language to another.
+- [Umbraco](https://github.com/leekelleher/awesome-umbraco)
 - [Uncopyright](https://github.com/johnjago/awesome-uncopyright#readme) - Public domain works.
 - [Unicode](https://github.com/jagracey/Awesome-Unicode#readme) - Unicode standards, quirks, packages and resources.
 	- [Code Points](https://github.com/Codepoints/awesome-codepoints#readme)
@@ -774,6 +902,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Userscripts](https://github.com/bvolpato/awesome-userscripts#readme) - Enhance your browsing experience.
 - [Veganism](https://github.com/sdassow/awesome-veganism#readme) - Making the plant-based lifestyle easy and accessible.
 - [Vorpal](https://github.com/vorpaljs/awesome-vorpal#readme) - Node.js CLI framework.
+- [Vorpal](https://github.com/vorpaljs/awesome-vorpal) *(Node.js CLI framework)*
 - [Vulkan](https://github.com/vinjn/awesome-vulkan#readme) - Low-overhead, cross-platform 3D graphics and compute API.
 - [WP-CLI](https://github.com/schlessera/awesome-wp-cli#readme) - Command-line interface for WordPress.
 - [Web Archiving](https://github.com/iipc/awesome-web-archiving#readme) - An effort to preserve the Web for future generations.
