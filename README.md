@@ -833,6 +833,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Katas](https://github.com/gmontalvoriv/awesome-katas)
 - [LaTeX](https://github.com/egeerardyn/awesome-LaTeX#readme) - Typesetting language.
 - [Ledger](https://github.com/sfischer13/awesome-ledger#readme) - Double-entry accounting on the command-line.
+- [Libre Hosters](https://github.com/libresh/awesome-librehosters)
 - [Linux Containers](https://github.com/Friz-zy/awesome-linux-containers)
 - [Lorem Ipsum](https://github.com/templeman/awesome-ipsum)
 - [MATLAB](https://github.com/uhub/awesome-matlab)
