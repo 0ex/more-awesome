@@ -2,7 +2,7 @@
 
 This is a list of "awesome" lists. An awesome list is a list of resources and starting points for a particular topic.
 
-I made this repo to be a more inclusive  version of [sindresorhus's awesome list](https://github.com/sindresorhus/awesome). We don't have any strict requirements for inclusion ­ as long as your "list" is useful and the description doesn't distract from other lists, I'll accept your PR.
+I made this repo to be a more inclusive  version of [sindresorhus's awesome list](https://github.com/sindresorhus/awesome). There are no strict requirements for contributions. As long as your list is marginally useful and the description disruptive, I'll accept your PR.
 
 ## Contents
 
