@@ -211,16 +211,14 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Charting](https://github.com/zingchart/awesome-charting#readme)
 - [Chrome DevTools](https://github.com/ChromeDevTools/awesome-chrome-devtools#readme)
 - [Cycle.js](https://github.com/cyclejs-community/awesome-cyclejs#readme) - Functional and reactive JavaScript framework.
-- [Cycle.js](https://github.com/vic/awesome-cyclejs)
 - [D3](https://github.com/wbkd/awesome-d3#readme) - Library for producing dynamic, interactive data visualizations.
 - [Design systems](https://github.com/klaufel/awesome-design-systems#readme) - Collection of reusable components, guided by rules that ensure consistency and speed.
-- [Dojo Toolkit](https://github.com/peterkokot/awesome-dojo)
 - [Dojo Toolkit](https://github.com/petk/awesome-dojo#readme) - JavaScript toolkit.
 - [Draft.js](https://github.com/nikgraf/awesome-draft-js#readme) - Rich text editor framework for React.
 - [ES6 Tools](https://github.com/addyosmani/es6-tools#readme)
 - [Emails](https://github.com/jonathandion/awesome-emails#readme)
 - [Ember](https://github.com/ember-community-russia/awesome-ember#readme) - App framework.
-- [Ember](https://github.com/nmec/awesome-ember)
+	- alt: [Ember](https://github.com/nmec/awesome-ember)
 - [Flexbox](https://github.com/afonsopacifer/awesome-flexbox#readme)
 - [Grid](https://github.com/fancygrid/awesome-grid)
 - [HTML5](https://github.com/diegocard/awesome-html5#readme) - Markup language used for websites & web apps.
@@ -261,7 +259,6 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Serverless](https://github.com/anaibol/awesome-serverless/)
 - [Service Workers](https://github.com/TalAter/awesome-service-workers#readme)
 - [Static Website Services](https://github.com/agarrharr/awesome-static-website-services#readme)
-- [Static Website Services](https://github.com/aharris88/awesome-static-website-services)
 - [Storybook](https://github.com/lauthieb/awesome-storybook#readme) - Development environment for UI components.
 - [Svelte](https://github.com/TheComputerM/awesome-svelte#readme) - App framework.
 - [Tailwind CSS](https://github.com/aniftyco/awesome-tailwindcss#readme) - Utility-first CSS framework for rapid UI development.
@@ -271,7 +268,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Web Animation](https://github.com/sergey-pimenov/awesome-web-animation#readme) - Animations in the browser with JavaScript, CSS, SVG, etc.
 - [Web Audio](https://github.com/notthetup/awesome-webaudio#readme)
 - [Web Components](https://github.com/mateusortiz/webcomponents-the-right-way#readme)
-- [Web Components](https://github.com/obetomuniz/awesome-webcomponents)
+	- alt: [Web Components](https://github.com/obetomuniz/awesome-webcomponents)
 - [Web Performance Budget](https://github.com/pajaydev/awesome-web-performance-budget#readme) - Techniques to ensure certain performance metrics for a website.
 - [Web Performance Optimization](https://github.com/davidsonfellipe/awesome-wpo#readme)
 - [Web Tools](https://github.com/lvwzhen/tools#readme)
@@ -281,7 +278,6 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Yew](https://github.com/jetli/awesome-yew#readme) - Rust framework inspired by Elm and React for creating multi-threaded frontend web apps with WebAssembly.
 - [choo](https://github.com/choojs/awesome-choo#readme) - App framework.
 - [iOS UI](https://github.com/cjwirth/awesome-ios-ui#readme)
-- [jQuery](https://github.com/peterkokot/awesome-jquery)
 - [jQuery](https://github.com/petk/awesome-jquery#readme) - Easy to use JavaScript library for DOM manipulation.
 	- [Tips](https://github.com/AllThingsSmitty/jquery-tips-everyone-should-know#readme)
 - [lit](https://github.com/web-padawan/awesome-lit#readme) - Library for building web components with a declarative template system.
@@ -293,14 +289,13 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Caddy](https://github.com/caddy-book/awesome-caddy)
 - [CakePHP](https://github.com/friendsofcake/awesome-cakephp#readme) - PHP framework.
 - [Dash](https://github.com/ucg8j/awesome-dash#readme) - Python web app framework.
-- [Django](https://github.com/rosarior/awesome-django)
 - [Django](https://github.com/wsvincent/awesome-django#readme) - Python web app framework.
 - [Docker](https://github.com/veggiemonk/awesome-docker#readme)
 - [Dropwizard](https://github.com/stve/awesome-dropwizard#readme) - Java framework.
 - [FastAPI](https://github.com/mjhea0/awesome-fastapi#readme) - Python web app framework.
 - [Fiber](https://github.com/gofiber/awesome-fiber#readme) - Web framework built on top of Fasthttp, the fastest HTTP engine for Go.
-- [Flask](https://github.com/humiaozuzu/awesome-flask)
 - [Flask](https://github.com/mjhea0/awesome-flask#readme) - Python framework.
+	- alt: [Flask](https://github.com/humiaozuzu/awesome-flask)
 - [IAM](https://github.com/kdeldycke/awesome-iam#readme) - User accounts, authentication and authorization.
 - [Kubernetes](https://github.com/ramitsurana/awesome-kubernetes#readme) - Open-source platform that automates Linux container operations.
 - [Laravel](https://github.com/chiraggude/awesome-laravel#readme) - PHP framework.
@@ -311,7 +306,6 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Lumen](https://github.com/unicodeveloper/awesome-lumen#readme) - PHP micro-framework.
 - [OpenResty](https://github.com/bungle/awesome-resty)
 - [Phalcon](https://github.com/phalcon/awesome-phalcon#readme) - PHP framework.
-- [Phalcon](https://github.com/sergeyklay/awesome-phalcon)
 - [Phoenix](https://github.com/jonathanstiansen/awesome-phoenix)
 - [Play1 Framework](https://github.com/PerfectCarl/awesome-play1#readme)
 - [Pyramid](https://github.com/uralbash/awesome-pyramid#readme) - Python framework.
@@ -442,9 +436,8 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Haxe Game Development](https://github.com/Dvergar/awesome-haxe-gamedev#readme) - A high-level strongly typed programming language used to produce cross-platform native code.
 - [LÖVE](https://github.com/love2d-community/awesome-love2d#readme) - Game engine.
 - [Minecraft](https://github.com/bs-community/awesome-minecraft#readme) - Sandbox video game.
-- [Open Source Games](https://github.com/leereilly/games)
-- [Open Source Games](https://github.com/michelpereira/awesome-games#readme)
 - [Open Source Games](https://github.com/michelpereira/awesome-open-source-games#readme)
+	- alt: [Open Source Games](https://github.com/leereilly/games)
 - [Opensource ASCII Games](https://github.com/ligurio/awesome-ttygames) - The most complete list of ASCII games.
 - [PICO-8](https://github.com/pico-8/awesome-PICO-8#readme) - Fantasy console.
 - [PlayCanvas](https://github.com/playcanvas/awesome-playcanvas#readme) - Game engine.
@@ -522,9 +515,8 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [FFmpeg](https://github.com/transitive-bullshit/awesome-ffmpeg#readme) - Cross-platform solution to record, convert and stream audio and video.
 - [Fonts](https://github.com/brabadu/awesome-fonts#readme)
 - [GIF](https://github.com/davisonio/awesome-gif#readme) - Image format known for animated images.
-- [GIF](https://github.com/ibaaj/awesome-gif)
 - [Icons](https://github.com/notlmn/awesome-icons#readme) - Downloadable SVG/PNG/font icon projects.
-- [Icons](https://github.com/vkarampinis/awesome-icons)
+	- alt: [Icons](https://github.com/vkarampinis/awesome-icons)
 - [Music](https://github.com/ciconia/awesome-music#readme)
 - [Open Source Documents](https://github.com/44bits/awesome-opensource-documents#readme)
 - [Pixel Art](https://github.com/Siilwyn/awesome-pixel-art#readme) - Pixel-level digital art.
@@ -628,7 +620,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Programming Interviews](https://github.com/DopplerHQ/awesome-interview-questions#readme)
 - [Remote Jobs](https://github.com/lukasz-madon/awesome-remote-job#readme)
 - [Slack](https://github.com/matiassingers/awesome-slack#readme) - Team collaboration.
-	- [Communities](https://github.com/filipelinhares/awesome-slack#readme)
+	- [Slack Communities](https://github.com/filipelinhares/awesome-slack#readme)
 
 ## Networking
 
