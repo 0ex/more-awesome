@@ -81,8 +81,8 @@ class Pull:
         return f'{self.repo}/pull/{self.num}'
 
 @dataclass
-class Summary:
-    """Github Pull Request Summary."""
+class PullInfo:
+    """Github Pull Request Info."""
     title: str = ''
     head: str = ''
     desc: str = ''
@@ -95,12 +95,13 @@ class Summary:
     pull: str = ''
     code: int = 0
     created: datetime = None
+    error: str = ''
     extra: list[str] = field(default_factory=list)
     ver: int = 0
 
     def __str__(self):
         out = []
-        for f in 'title head desc url stars size redir'.split():
+        for f in 'title head desc url stars size redir error'.split():
             if v := getattr(self, f, None):
                 out.append((f, v))
         
@@ -179,10 +180,11 @@ def main():
         srcpr = Pull(SRC_REPO, prnum)
 
         if args.mirror:
-            args.fetch = args.copy = args.rebase = args.accept = True
+            fetch_branch(srcpr)
+            copy_ghpr(srcpr)
 
         if args.info:
-            info_pull(srcpr)
+            show_info(srcpr)
 
         if args.fetch:
             fetch_branch(srcpr)
@@ -191,9 +193,11 @@ def main():
             copy_ghpr(srcpr)
         
         if args.rebase:
-            rebase_pull(srcpr)
+            semantic_merge(srcpr)
+            show_diff(srcpr)
 
         if args.accept:
+            show_info(srcpr)
             accept_pull(srcpr)
     
     log('IDone')
@@ -245,6 +249,7 @@ def sort_readme():
     lines = []
     section_parts = []
     in_section = False
+    seen = set()
 
     with open(OUT_PATH) as f:
         for line in f:
@@ -256,6 +261,16 @@ def sort_readme():
                     lines += sorted(section_parts)
                     lines += ['\n']
                 elif line[0] == '-':
+                    # check for dups
+                    if m := re.match(r'\s*- *\[([^][]+)\] *\(https?://([^()#?]+)[^()]*\)(?: *- *(.*))?', line):
+                        log('DURL', m[2])
+                        url = m[2].lower()
+                        if url in seen:
+                            log('WDup', line.strip())
+                            continue
+                        else:
+                            seen.add(url)
+
                     section_parts.append(line)
                 elif not section_parts:
                     # leading blank lines and text
@@ -292,9 +307,9 @@ def scan_pulls(repo, page):
     for pr in pulls:
         srcpr = Pull(repo, pr.number)
 
-        info_pull(srcpr, ghpr=pr)
+        show_info(srcpr, ghpr=pr)
 
-def info_pull(srcpr, ghpr=None):
+def show_info(srcpr, ghpr=None):
     """Summarize PR."""
     if not ghpr:
         ghpr = gh.pulls.get(**srcpr.gh)
@@ -310,7 +325,7 @@ def info_pull(srcpr, ghpr=None):
     elif rec and rec.get('ver', 0) >= FETCH_BRANCH_VER:
         status = 'synced'
     else:
-        sum = summarize_pr(srcpr)
+        sum = build_info(srcpr)
         status = sum.status
 
     print(
@@ -370,34 +385,37 @@ def fetch_branch(srcpr):
     db.set(key, rec)
     return rec
 
-def rebase_pull(srcpr):
+def semantic_merge(srcpr):
     """Semantic Merge.
 
-    Notice: auto-merge never works and it can cause issues if a .gitattributes file exists
+    Add new entries into markdown file manually. We do this
+    because git auto-merge never works and can cause issues,
+    especially if a .gitattributes file specifies `driver=union`.
     """
-    print('\nREBASE:\n')
+    print('\nSEMANTIC_MERGE:\n')
     destpr = get_destpr(srcpr)
-    sum = summarize_pr(srcpr)
+    sum = build_info(srcpr)
 
     sh(f'git checkout --no-guess -q {srcpr.branch}')
 
     log('DMerge', 'attempting semantic merge')
     
-    if sum.extra:
-        log('WExtra', 'cannot semantic merge PRs with extra')
-        if not confirm('rebase'):
-            sh('git merge --abort')
-            return
+    # if sum.extra:
+    #    log('WExtra', 'cannot semantic merge PRs with extra')
+    #    if not confirm('rebase'):
+    #        sh('git merge --abort')
+    #        return
     
-    if not sum.url:
-        log('WExtra', 'cannot manage PRs without URL')
+    if sum.error:
+        log('WExtra', 'cannot manage PRs with errors')
         sh('git merge --abort')
         return
    
     sh('rm .gitattributes', check=False)
-    sh('git merge -q -X theirs --no-commit --no-stat main')
+    sh('git merge -q -X theirs --no-commit --no-stat main', check=False)
 
-    sh(f'git rm readme.md && git checkout main {OUT_PATH}')
+    sh('git rm readme.md', check=False)
+    sh(f'git checkout main {OUT_PATH}')
     
     lines = []
     found_line = False
@@ -445,8 +463,7 @@ def rebase_pull(srcpr):
             lines.append(line)
 
     if not found_line:
-        log('EBadRebase')
-        return
+        raise RuntimeError('EBadRebase')
 
     with open(OUT_PATH, 'w') as f:
         f.write(''.join(lines))
@@ -455,11 +472,12 @@ def rebase_pull(srcpr):
     
     sh(f'git commit -m {msg} -a')
     sh(f'git checkout -q main && git push -q -u origin {srcpr.branch}')
-        
-    diff = sh_out(f'git diff --color=always main..{srcpr.branch} | tail -n +5')
-    print('  REBASED DIFF:\n\n', indent(diff, '   '), '\n') 
     
     log('IRebase', 'done')
+
+def show_diff(srcpr):
+    diff = sh_out(f'git diff --color=always main..{srcpr.branch} | tail -n +5')
+    print('\nDIFF:\n\n', indent(diff, '  '), '\n') 
 
 
 def copy_ghpr(srcpr):
@@ -509,7 +527,7 @@ def copy_pull_desc(srcpr) -> Pull:
     
     body = f'Pull request from @{orig.user.login}.\n'
    
-    for line in str(summarize_pr(srcpr)).strip().splitlines():
+    for line in str(build_info(srcpr)).strip().splitlines():
         body += '- ' + line.strip() + '\n'
 
     if orig.body:
@@ -744,7 +762,15 @@ def test_clean_body():
    
 def strip_junk(body):
     out = re.sub(
-        '### By submitting this pull .* the top and read it again[^\n]*',
+        '#+ By submitting this pull .*',
+        '\\[ boilerplate snipped \\]', body, flags=re.S)
+
+    out = re.sub(
+        '<!-- Please fill in the .*',
+        '\\[ boilerplate snipped \\]', body, flags=re.S)
+    
+    out = re.sub(
+        '# ALL THE BELOW CHECKBOXES .*',
         '\\[ boilerplate snipped \\]', body, flags=re.S)
 
     return out
@@ -767,7 +793,7 @@ def test_strip_junk():
         \\[ boilerplate snipped \\]
     ''').strip()
 
-def summarize_pr(srcpr) -> Summary:
+def build_info(srcpr) -> PullInfo:
     ver = 8
     key = f'{srcpr.key()}/summary'
     rec = db.get(key)
@@ -780,12 +806,12 @@ def summarize_pr(srcpr) -> Summary:
     elif args.redo:
         redo = 'force'
     else:
-        return Summary(**rec)
+        return PullInfo(**rec)
 
     log('DCalc', redo, key, rec)
     pr = gh.pulls.get(**srcpr.gh)
 
-    out = Summary()
+    out = PullInfo()
     out.pull = pr.html_url
     out.created = pr.created_at
 
@@ -811,7 +837,7 @@ def summarize_pr(srcpr) -> Summary:
             elif re.match(r'[-+]', line):
                 out.extra.append(line.strip())
     except Exception as e:
-        out.extra.append(f'Error: {e}')
+        out.error = str(e)
             
     if not out.status and not out.title:
         out.status = 'bad'
@@ -826,7 +852,7 @@ def summarize_pr(srcpr) -> Summary:
             branch = gh.repos.get_branch(m[1], m[2], target.default_branch)
             out.updated = branch.commit.commit.committer.date
         except Exception as e:
-            out.extra.append(f'Error: {str(e).splitlines()[0]}')
+            out.error = str(e).splitlines()[0]
             out.status = 'bad'
 
     _check_url(out)
@@ -885,23 +911,14 @@ def accept_pull(srcpr):
 
     can_ff = 0 == sh_code(f'git merge-base --is-ancestor main {branch}')
     if can_ff:
-        log('IFF', 'can fast-forward')
+        log('IAccept', 'can fast-forward')
     else:
-        # do a union merge
-        sh(f'git merge -q -X ours {branch} --no-commit')
-        sh(f'git show $(git merge-base main {branch}):{OUT_PATH} > {OUT_PATH}.base')
-        sh(f'git show {branch}:{OUT_PATH} > {OUT_PATH}.theirs')
-        sh(f'git merge-file --union {OUT_PATH} {OUT_PATH}.base {OUT_PATH}.theirs')
-        
-        diff = sh_out('git diff --color=always --merge-base main | tail -n +5')
-        print('\nUNION MERGED DIFF:\n\n', indent(diff, '   '), '\n') 
+        semantic_merge(srcpr)
+    
+    show_diff(srcpr)
 
     if confirm('merge'):
-        if can_ff:
-            sh(f'git merge -q --ff-only {branch} --no-edit')
-        else:
-            sh('git commit --no-edit -a')
-
+        sh(f'git merge -q --ff-only {branch} --no-edit')
         sh(f'git push origin main :{branch} && git branch -d {branch}')
 
 
@@ -986,18 +1003,10 @@ class DB:
         if row := self.cur.fetchone():
             return self._decode(row[0])
 
-_req_count = 0
-
 def throttle():
     """Avoid secondary rate limits."""
-    global _req_count
-
-    if _req_count > 4:
-        log('IThrottle')
-        sleep(1) 
-        _req_count = 0
-    else:
-        _req_count += 1
+    sleep(1)
+    return
 
 def all_pages(cmd, *args, **kw):
     for page in paged(cmd, *args, **kw):
