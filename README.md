@@ -794,7 +794,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Scientific Computing](https://github.com/nschloe/awesome-scientific-computing#readme) - Solving complex scientific problems using computers.
 - [Scientific Writing](https://github.com/writing-resources/awesome-scientific-writing#readme) - Distraction-free scientific writing with Markdown, reStructuredText and Jupyter notebooks.
 - [Scriptable](https://github.com/dersvenhesse/awesome-scriptable#readme) - An iOS app for automations in JavaScript.
-- [Self Hosted](https://github.com/awesome-selfhosted/awesome-selfhosted#readme)
+- [Self Hosted](https://github.com/awesome-selfhosted/awesome-selfhosted#readme) - Free Software network services and Web applications.
 - [Services Engineering](https://github.com/mmcgrana/services-engineering#readme)
 - [Site Reliability Engineering](https://github.com/dastergon/awesome-sre#readme)
 - [Sketch](https://github.com/diessica/awesome-sketch#readme) - Design app for macOS.
