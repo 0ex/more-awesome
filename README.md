@@ -671,6 +671,8 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Electronics](https://github.com/kitspace/awesome-electronics#readme) - For electronic engineers and hobbyists.
 - [Internet of Things](https://github.com/HQarroum/awesome-iot#readme) - 🤖 A curated list of awesome Internet of Things projects and resources.
 - [LIDAR](https://github.com/szenergy/awesome-lidar#readme) - Sensor for measuring distances by illuminating the target with laser light.
+- [Eurorack Modules](https://github.com/newdigate/eurorack-awesome#readme) - Eurorack modules projects. DIY and open-source.
+- [DIY Synths](https://github.com/Atarity/diy-synths#readme) - List of standalone (non-modular) synths projects. All open-source.
 - [Open Hardware](https://github.com/delftopenhardware/awesome-open-hardware#readme) - Open-source hardware projects.
 - [Plotters](https://github.com/beardicus/awesome-plotters#readme) - Computer-controlled drawing machines and other visual art robots.
 - [Robotic Tooling](https://github.com/protontypes/awesome-robotic-tooling#readme) - Free and open tools for professional robotic development.
@@ -907,6 +909,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Scientific Writing](https://github.com/writing-resources/awesome-scientific-writing#readme) - Distraction-free scientific writing with Markdown, reStructuredText and Jupyter notebooks.
 - [Scriptable](https://github.com/dersvenhesse/awesome-scriptable#readme) - An iOS app for automations in JavaScript.
 - [Self Hosted](https://github.com/awesome-selfhosted/awesome-selfhosted#readme) - Free Software network services and Web applications.
+- [Deploy Your Own SaaS](https://github.com/Atarity/deploy-your-own-saas) - List of "only yours" cloud services for everyday needs.
 - [Services Engineering](https://github.com/mmcgrana/services-engineering#readme) - A reading list for services engineering, with a focus on cloud infrastructure services
 - [Shopify](https://github.com/julionc/awesome-shopify#readme) - Commercial and customizable eCommerce platform built on Ruby.
 - [Site Reliability Engineering](https://github.com/dastergon/awesome-sre#readme) - A curated list of Site Reliability and Production Engineering resources.
