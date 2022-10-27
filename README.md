@@ -77,7 +77,6 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Low Code](https://github.com/zenitysec/awesome-low-code#readme) - Allowing business professionals to address their needs on their own with little to no coding skills.
 - [Mac OS X](https://github.com/xyNNN/awesome-mac)
 - [Micro:bit](https://github.com/carlosperate/awesome-microbit) - Programmable chip on a board aimed at teaching kids programming.
-- [Micro:bit](https://github.com/carlosperate/awesome-microbit) - Tiny programmable computer, designed to make learning and teaching easy and fun.
 - [NW.js](https://github.com/nw-cn/awesome-nwjs)
 - [NativeScript](https://github.com/jbristowe/awesome-nativescript)
 - [Nix](https://github.com/nix-community/awesome-nix#readme) - Package manager for Linux and other Unix systems that makes package management reliable and reproducible.
@@ -103,10 +102,12 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Xamarin](https://github.com/XamSome/awesome-xamarin#readme) - Mobile app development IDE, testing, and distribution.
 - [iOS](https://github.com/vsouza/awesome-ios#readme) - Mobile operating system for Apple phones and tablets.
 - [watchOS](https://github.com/yenchenlin/awesome-watchos#readme) - Operating system for the Apple Watch.
-- macOS - Operating system for Apple's Mac computers.
-	- [Screensavers](https://github.com/agarrharr/awesome-macos-screensavers#readme)
-	- [Apps](https://github.com/jaywcjlove/awesome-mac#readme)
-	- [Open Source Apps](https://github.com/serhii-londar/open-source-mac-os-apps#readme)
+- macOS
+	- [Mac Apps](https://github.com/justin-j/awesome-mac-apps)
+	- [Mac Apps](https://github.com/jaywcjlove/awesome-mac#readme)
+	- [Mac DevTools](https://github.com/marceloboeira/awesome-osx)
+	- [Mac Screensavers](https://github.com/agarrharr/awesome-macos-screensavers#readme)
+	- [Mac Open Source Apps](https://github.com/serhii-londar/open-source-mac-os-apps#readme)
 
 ## Programming Languages
 
@@ -215,16 +216,15 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Bootstrap Themes](https://github.com/therebelrobot/awesome-bootstrap)
 - [Browserify](https://github.com/browserify/awesome-browserify#readme) - Module bundler.
 - [Building Blocks for Web Apps](https://github.com/componently-com/awesome-building-blocks-for-web-apps#readme) - Standalone features to be integrated into web apps.
-- CSS
-	- [CSS](https://github.com/awesome-css-group/awesome-css#readme)
+- [Canvas](https://github.com/raphamorim/awesome-canvas#readme)
+- [Charting](https://github.com/zingchart/awesome-charting#readme)
+- [Chrome DevTools](https://github.com/ChromeDevTools/awesome-chrome-devtools#readme)
+- [CSS](https://github.com/awesome-css-group/awesome-css#readme)
 	- [Critical-Path Tools](https://github.com/addyosmani/critical-path-css-tools#readme)
 	- [Scalability](https://github.com/davidtheclark/scalable-css-reading-list#readme)
 	- [Must-Watch Talks](https://github.com/AllThingsSmitty/must-watch-css#readme)
 	- [Protips](https://github.com/AllThingsSmitty/css-protips#readme)
 	- [Frameworks](https://github.com/troxler/awesome-css-frameworks#readme)
-- [Canvas](https://github.com/raphamorim/awesome-canvas#readme)
-- [Charting](https://github.com/zingchart/awesome-charting#readme)
-- [Chrome DevTools](https://github.com/ChromeDevTools/awesome-chrome-devtools#readme)
 - [Cycle.js](https://github.com/cyclejs-community/awesome-cyclejs#readme) - Functional and reactive JavaScript framework.
 - [D3](https://github.com/wbkd/awesome-d3#readme) - Library for producing dynamic, interactive data visualizations.
 - [Design systems](https://github.com/klaufel/awesome-design-systems#readme) - Collection of reusable components, guided by rules that ensure consistency and speed.
@@ -255,7 +255,6 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Mobile Web Development](https://github.com/myshov/awesome-mobile-web-development#readme) - Creating a great mobile web experience.
 - [Motion UI Design](https://github.com/fliptheweb/motion-ui-design#readme)
 - [Next.js](https://github.com/unicodeveloper/awesome-nextjs#readme) - Framework for server-rendered React apps.
-- [Nuxt.js](https://github.com/nuxt-community/awesome-nuxt) - App framework.
 - [Nuxt](https://github.com/nuxt-community/awesome-nuxt) - The Intuitive Web Framework, based on Vue 3.
 - [Offline-First](https://github.com/pazguille/offline-first#readme)
 - [PageSpeed Metrics](https://github.com/csabapalfi/awesome-pagespeed-metrics#readme) - Metrics to help understand page speed and user experience.
@@ -313,7 +312,6 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 ## Back-End Development
 
 - [AdonisJS](https://github.com/adonisjs-community/awesome-adonisjs) - MVC Framework For Node.js
-- [AdonisJS](https://github.com/adonisjs-community/awesome-adonisjs)
 - [Apache Wicket](https://github.com/PhantomYdn/awesome-wicket#readme) - Java web app framework.
 - [CDK](https://github.com/kolomied/awesome-cdk#readme) - Open-source software development framework for defining cloud infrastructure in code.
 - [Caddy](https://github.com/caddy-book/awesome-caddy)
@@ -348,7 +346,6 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 	- alt: [by @dpaluy](https://github.com/dpaluy/awesome-rails)
 	- alt: [by @ekremkaraca](https://github.com/ekremkaraca/awesome-rails)
 - [Scalability](https://github.com/binhnguyennus/awesome-scalability) - A curated list of selected readings to illustrate Scalability, Availability, and Stability Design Patterns in Back-end Development.
-- [Scalability](https://github.com/binhnguyennus/awesome-scalability) - Scalability, availability, and stability design patterns.
 - [Serverless Framework](https://github.com/pmuens/awesome-serverless#readme) - Serverless computing and serverless architectures.
 - [Slim](https://github.com/nekofar/awesome-slim#readme) - PHP framework.
 - [Symfony](https://github.com/sitepoint-editors/awesome-symfony#readme) - PHP framework.
@@ -466,8 +463,8 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [CHIP-8](https://github.com/tobiasvl/awesome-chip-8#readme) - Virtual computer game machine from the 70s.
 - [Chess](https://github.com/hkirat/awesome-chess#readme)
 - [Construct 2](https://github.com/ConstructCommunity/awesome-construct#readme) - Game engine.
-- [Discord](https://github.com/jacc/awesome-discord) - Chat platform for gamers.
 - [Discord Communities](https://github.com/mhxion/awesome-discord-communities#readme) - Chat with friends and communities.
+- [Discord](https://github.com/jacc/awesome-discord) - Chat platform for gamers.
 - [Esports](https://github.com/strift/awesome-esports#readme) - Video games played as a sport.
 - [Flame](https://github.com/flame-engine/awesome-flame#readme) - Game engine for Flutter.
 - [Game Boy Development](https://github.com/gbdev/awesome-gbdev#readme)
@@ -543,8 +540,8 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [MySQL](https://github.com/shlomi-noach/awesome-mysql#readme)
 - [Neo4j](https://github.com/neueda/awesome-neo4j#readme)
 - [NoSQL Guides](https://github.com/erictleung/awesome-nosql-guides#readme) - Help on using non-relational, distributed, open-source, and horizontally scalable databases.
-- [PostgreSQL](https://github.com/dhamaniasad/awesome-postgres/)
 - [PostgreSQL](https://github.com/dhamaniasad/awesome-postgres#readme) - Object-relational database.
+- [PostgreSQL](https://github.com/dhamaniasad/awesome-postgres/)
 - [Redis](https://github.com/JamzyWang/awesome-redis)
 - [RethinkDB](https://github.com/d3viant0ne/awesome-rethinkdb#readme)
 - [SQLAlchemy](https://github.com/dahlia/awesome-sqlalchemy#readme)
@@ -584,9 +581,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Computer History](https://github.com/watson/awesome-computer-history#readme)
 - [Dive into Machine Learning](https://github.com/hangtwenty/dive-into-machine-learning#readme)
 - [Educational Games](https://github.com/yrgo/awesome-educational-games#readme) - Learn while playing.
-- [Explorable Explanations](https://github.com/sp4ke/awesome-explorables) - Learn through active reading and reactive documents as defined by Bret Victor. 
 - [Free Courses](https://github.com/Leocardoso94/Free-Courses)
-- [FreeCourses](https://github.com/Leocardoso94/Free-Courses)
 - [JavaScript Learning](https://github.com/micromata/awesome-javascript-learning#readme)
 - [Learn to Program](https://github.com/karlhorky/learn-to-program#readme)
 - [Product Management](https://github.com/dend/awesome-product-management#readme) - Learn how to be a better product manager.
@@ -610,8 +605,8 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [EVM Security](https://github.com/kareniel/awesome-evm-security#readme) - Understanding the Ethereum Virtual Machine security ecosystem.
 - [Embedded and IoT Security](https://github.com/fkie-cad/awesome-embedded-and-iot-security#readme)
 - [Executable Packing](https://github.com/dhondta/awesome-executable-packing#readme) - Packing and unpacking executable formats.
-- [Fuzzing](https://github.com/secfigo/Awesome-Fuzzing) - The automated testing technique that involves providing invalid, unexpected, or random inputs to a program.
 - [Fuzzing](https://github.com/cpuu/awesome-fuzzing#readme) - Automated software testing technique that involves feeding pseudo-randomly generated input data.
+- [Fuzzing](https://github.com/secfigo/Awesome-Fuzzing) - The automated testing technique that involves providing invalid, unexpected, or random inputs to a program.
 - [GDPR](https://github.com/bakke92/awesome-gdpr#readme) - Regulation on data protection and privacy for all individuals within EU.
 - [Hacking Spots](https://github.com/daviddias/awesome-hacking-locations#readme)
 - [Hacking](https://github.com/carpedm20/awesome-hacking#readme)
@@ -696,7 +691,6 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Computer Networking](https://github.com/nyquist/awesome-networking) - A list of resources to design, implement and operate computer networks
 - [Network Analysis](https://github.com/briatte/awesome-network-analysis#readme)
 - [Network Automation](https://github.com/networktocode/awesome-network-automation) - The best network automation material in the universe.
-- [Network Automation](https://github.com/networktocode/awesome-network-automation)
 - [PCAPTools](https://github.com/caesar0301/awesome-pcaptools#readme)
 - [Real-Time Communications](https://github.com/rtckit/awesome-rtc#readme) - Network protocols for near simultaneous exchange of media and data.
 - [SNMP](https://github.com/eozer/awesome-snmp#readme) - A protocol for collecting, modifying, and organizing information about managed devices on IP networks.
@@ -843,8 +837,6 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Lorem Ipsum](https://github.com/templeman/awesome-ipsum)
 - [MATLAB](https://github.com/uhub/awesome-matlab)
 - [MQTT](https://github.com/hobbyquaker/awesome-mqtt#readme) - "Internet of Things" connectivity protocol.
-- [Mac Apps](https://github.com/justin-j/awesome-mac-apps)
-- [MacOSX DevTools](https://github.com/marceloboeira/awesome-osx)
 - [Magento 2](https://github.com/DavidLambauer/awesome-magento2#readme) - Open Source eCommerce built with PHP.
 - [Markdown](https://github.com/BubuAnabelas/awesome-markdown#readme) - Markup language.
 - [Mental Health](https://github.com/theimpossibleastronaut/awesome-mentalhealth) - Be the best version of your self with these Mental Health (selfcare) resources.
@@ -918,11 +910,9 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Web Monetization](https://github.com/thomasbnt/awesome-web-monetization#readme) - A free open web standard service that allows you to send money directly in your browser.
 - [WebXR](https://github.com/msub2/awesome-webxr#readme) - Enables immersive virtual reality and augmented reality content on the web.
 - [Websockets](https://github.com/facundofarias/awesome-websockets) - Websockets resources per language.
-- [Websockets](https://github.com/facundofarias/awesome-websockets)
 - [Weekly Newsletters](https://github.com/jondot/awesome-weekly)
 - [Wordpress](https://github.com/miziomon/awesome-wordpress)
 - [Workflow engines](https://github.com/meirwah/awesome-workflow-engines)
-- [XMPP](https://github.com/bluszcz/awesome-xmpp) - Communication protocol based on XML.
 - [XMPP](https://github.com/bluszcz/awesome-xmpp) - Communication protocol based on XML.
 - [inspectIT](https://github.com/inspectit-labs/awesome-inspectit#readme) - Open source Java app performance management tool.
 
