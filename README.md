@@ -332,6 +332,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 
 ## Computer Science
 
+- [3D reconstruction from images](https://github.com/openMVG/awesome_3DReconstruction_list)
 - [Computer Vision](https://github.com/jbhuang0604/awesome-computer-vision#readme)
 - [Conversational AI](https://github.com/jyguyomarch/awesome-conversational-ai#readme) - Build awesome chatbots and digital assistants.
 - [Cryptography](https://github.com/sobolevn/awesome-cryptography#readme)
