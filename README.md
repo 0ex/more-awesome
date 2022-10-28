@@ -56,6 +56,7 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 	- [iOS UI](https://github.com/cjwirth/awesome-ios-ui#readme) - iOS UI/UX libraries
 - [IoT](https://github.com/phodal/awesome-iot#readme) - Internet of Things.
 	- [IoT & Hybrid Apps](https://github.com/weblancaster/awesome-IoT-hybrid#readme) - Frameworks, tools, resources, videos, etc.
+	- [Alt by @HQarroum](https://github.com/HQarroum/awesome-iot#readme) - Internet of Things projects and resources.
 - [IPFS](https://github.com/ipfs/awesome-ipfs#readme) - P2P hypermedia protocol.
 - [JVM](https://github.com/deephacks/awesome-jvm#readme) - loosely performance related JVM stuff.
 - [KDE](https://github.com/francoism90/awesome-kde#readme) - A free software community dedicated to creating an open and user-friendly computing experience.
@@ -659,18 +660,18 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [All In One Security](https://github.com/Hack-with-Github/Awesome-Hacking#readme) - various awesome lists for hackers, pentesters and security researchers
 - [Android Security](https://github.com/ashishb/android-security-awesome#readme) - android security related resources
 - [Application Security](https://github.com/paragonie/awesome-appsec#readme) - resources for learning about application security
-- [Auth](https://github.com/casbin/awesome-auth#readme) - Authentication & Authorization. [@warrent-dev](https://github.com/warrant-dev/awesome-authorization#readme) - Application authorization and access control.
+- [Auth](https://github.com/casbin/awesome-auth#readme) - Authentication & Authorization. Also by [@warrent-dev](https://github.com/warrant-dev/awesome-authorization#readme)
 - [Bug Bounty Programs](https://github.com/djadmin/awesome-bug-bounty#readme) - Bug Bounty Programs and Security Write-ups
 - [Cloud Security](https://github.com/teamssix/awesome-cloud-security#readme) - Summary of Cloud Service Security and Cloud Native Security Resources.
 - [Container Security](https://github.com/kai5263499/awesome-container-security#readme) - OCI-compatible containers like Docker
 - [CTF](https://github.com/apsdehal/awesome-ctf#readme) - Capture The Flag.
 - [Cyber Security University](https://github.com/brootware/awesome-cyber-security-university#readme) - Free educational resources that focus on learning by doing.
 - [Cybersecurity Blue Team](https://github.com/fabacab/awesome-cybersecurity-blueteam#readme) - Groups of individuals who identify security flaws in information technology systems.
-- [DevSecOps](https://github.com/TaptuIT/awesome-devsecops#readme) - Integration of security practices into [DevOps](https://en.wikipedia.org/wiki/DevOps).
+- [DevSecOps](https://github.com/TaptuIT/awesome-devsecops#readme) - Integration of security practices into DevOps.
 - [Embedded and IoT Security](https://github.com/fkie-cad/awesome-embedded-and-iot-security#readme) - embedded and IoT security resources.
 - [EVM Security](https://github.com/kareniel/awesome-evm-security#readme) - Understanding the Ethereum Virtual Machine security ecosystem.
 - [Executable Packing](https://github.com/dhondta/awesome-executable-packing#readme) - Packing and unpacking executable formats.
-- [Fuzzing](https://github.com/cpuu/awesome-fuzzing#readme) - Automated software testing technique that involves feeding pseudo-randomly generated input data. [@secfigo](https://github.com/secfigo/Awesome-Fuzzing#readme)
+- [Fuzzing](https://github.com/cpuu/awesome-fuzzing#readme) - Automated software testing technique that involves feeding pseudo-randomly generated input data. Also by [@secfigo](https://github.com/secfigo/Awesome-Fuzzing#readme)
 - [GDPR](https://github.com/bakke92/awesome-gdpr#readme) - Regulation on data protection and privacy for all individuals within EU.
 - [GraphQL Security](https://github.com/Escape-Technologies/awesome-graphql-security#readme) - GraphQL security frameworks, libraries, software and resources.
 - [Hacking Spots](https://github.com/daviddias/awesome-hacking-locations#readme) - Locations, organised by country and city.
@@ -688,7 +689,7 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Object Capabilities and Capability-based Security](https://github.com/dckc/awesome-ocap#readme) - patterns of cooperation without vulnerability
 - [OSINT](https://github.com/jivoi/awesome-osint#readme) - Open source intelligence.
 - [Penetration Testing](https://github.com/enaqx/awesome-pentest#readme) - penetration testing resources, tools and other shiny things
-- [Privacy](https://github.com/KevinColemanInc/awesome-privacy#readme) - Limiting personal data leaks on the internet. [@paulaime](https://github.com/paulaime/Awesome-Privacy#readme) [@pluja](https://github.com/pluja/awesome-privacy#readme)
+- [Privacy](https://github.com/KevinColemanInc/awesome-privacy#readme) - Limiting personal data leaks on the internet. Also by [@paulaime](https://github.com/paulaime/Awesome-Privacy#readme) and [@pluja](https://github.com/pluja/awesome-privacy#readme).
 - [Reversing](https://github.com/ReversingID/awesome-reversing#readme) - Reverse Engineering tools, techniques, and references for various topics.
 - [Security Talks](https://github.com/PaulSec/awesome-sec-talks#readme) - A collected list of awesome security talks
 - [Security](https://github.com/sbilly/awesome-security#readme) - software, libraries, documents, books, resources and cools stuffs about security.
@@ -716,12 +717,12 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 
 ## Hardware
 
+- [3D-Printing](https://github.com/adius/awesome-3d-printing#readme) - 3D printing resources
 - [Bluetooth Beacons](https://github.com/rabschi/awesome-beacon#readme) - Bluetooth beacon software and tools.
 - [DIY Synths](https://github.com/Atarity/diy-synths#readme) - List of standalone (non-modular) synths projects. All open-source.
 - [Electric Guitar Specifications](https://github.com/gitfrage/guitarspecs#readme) - Checklist for building your own electric guitar.
 - [Electronics](https://github.com/kitspace/awesome-electronics#readme) - For electronic engineers and hobbyists.
 - [Eurorack Modules](https://github.com/newdigate/eurorack-awesome#readme) - Eurorack modules projects. DIY and open-source.
-- [Internet of Things](https://github.com/HQarroum/awesome-iot#readme) - 🤖 Internet of Things projects and resources.
 - [LIDAR](https://github.com/szenergy/awesome-lidar#readme) - Sensor for measuring distances by illuminating the target with laser light.
 - [Mechanical Keyboards](https://github.com/BenRoe/awesome-mechanical-keyboard#readme) - Open Source mechanical keyboard pcb's, cases and other resources.
 - [Mechatronics Engineering](https://github.com/engyasin/awesome-mechatronics#readme) - Mechatroincs engineering and Mechatronic applications resources.
@@ -832,7 +833,6 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 
 ## Miscellaneous
 
-- [3D-Printing](https://github.com/adius/awesome-3d-printing#readme) - 3D printing resources
 - [ACG](https://github.com/soruly/awesome-acg#readme) - technologies related to Anime, Comic and Games.
 - [Ad-Free](https://github.com/johnjago/awesome-ad-free#readme) - Ad-free alternatives.
 - [Advertising](https://github.com/cenoura/awesome-ads#readme) - Advertising and programmatic media for websites.
