@@ -44,7 +44,6 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Amazon Alexa](https://github.com/miguelmota/awesome-amazon-alexa#readme) - Virtual home assistant.
 - [Amazon Web Services](https://github.com/donnemartin/awesome-aws#readme) - A curated list of awesome Amazon Web Services (AWS) libraries, open source repos, guides, blogs, and other resources.  Featuring the Fiery Meter of AWSome.
 - [Android](https://github.com/JStumpp/awesome-android#readme) - Mobile operating system developed by Google.
-- [Apps](https://github.com/harrytran103/awesome-linux-apps#readme) - 🚀 A list of awesome applications for 🐧 Linux distributions.
 - [ArcGIS Developer](https://github.com/Esri/awesome-arcgis-developer#readme) - Mapping and location analysis platform for developers.
 - [Capacitor](https://github.com/riderx/awesome-capacitor#readme) - Cross-platform open source runtime for building Web Native apps.
 - [Chatbots](https://github.com/jstumpp/awesome-chatbots#readme) - A curated list of awesome Chatbot services and resources.
@@ -72,13 +71,12 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [JVM](https://github.com/deephacks/awesome-jvm#readme) - A curated list of awesome loosely performance related JVM stuff. Inspired by awesome-python.
 - [KDE](https://github.com/francoism90/awesome-kde#readme) - A free software community dedicated to creating an open and user-friendly computing experience.
 - [Linux](https://github.com/inputsh/awesome-linux#readme) - :penguin: A list of awesome projects and resources that make Linux even more awesome. :penguin:
-	- [Containers](https://github.com/Friz-zy/awesome-linux-containers#readme)
+	- [Linux Apps](https://github.com/harrytran103/awesome-linux-apps#readme) - 🚀 A list of awesome applications for 🐧 Linux distributions.
+	- [Linux Containers](https://github.com/Friz-zy/awesome-linux-containers#readme) - A curated list of awesome Linux Containers frameworks, libraries and software
 	- [eBPF](https://github.com/zoidbergwill/awesome-ebpf#readme) - Virtual machine that allows you to write more efficient and powerful tracing and monitoring for Linux systems.
 	- [Arch-based Projects](https://github.com/PandaFoss/Awesome-Arch#readme) - Linux distributions and projects based on Arch Linux.
 	- [AppImage](https://github.com/AppImage/awesome-appimage#readme) - Package apps in a single file that works on various mainstream Linux distributions.
 - [Low Code](https://github.com/zenitysec/awesome-low-code#readme) - Allowing business professionals to address their needs on their own with little to no coding skills.
-- [Mac OS X](https://github.com/xyNNN/awesome-mac#readme) - A curated list of amazingly awesome Mac OS X tools, applications and games.
-- [Macadmin Tools](https://github.com/smashism/awesome-macadmin-tools#readme) - 🕶 Awesome Mac Admin Tools list
 - [Micro:bit](https://github.com/carlosperate/awesome-microbit#readme) - Programmable chip on a board aimed at teaching kids programming.
 - [NW.js](https://github.com/nw-cn/awesome-nwjs#readme) - Awesome NW.js (node-webkit)
 - [NativeScript](https://github.com/jbristowe/awesome-nativescript#readme) - A curated list of awesome articles, plugins, and resources for NativeScript.
@@ -86,7 +84,6 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Node-RED](https://github.com/naimo84/awesome-nodered#readme) - A programming tool for wiring together hardware devices, APIs, and online services.
 - [Node.js](https://github.com/sindresorhus/awesome-nodejs#readme) - Async non-blocking event-driven JavaScript runtime built on Chrome's V8 JavaScript engine.
 	- [Cross-Platform](https://github.com/bcoe/awesome-cross-platform-nodejs#readme) - Writing cross-platform code on Node.js.
-- [OS X Command Line](https://git.herrbischoff.com/awesome-macos-command-line/about/)
 - [Odoo](https://github.com/dreispt/awesome-odoo#readme) - A curated list of awesome Odoo resources
 - [Qt](https://github.com/JesseTG/awesome-qt#readme) - Cross-platform GUI app framework.
 - [Raspberry Pi](https://github.com/thibmaek/awesome-raspberry-pi#readme) - Credit card-sized computer aimed at teaching kids programming, but capable of a lot more.
@@ -98,7 +95,6 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Software](https://github.com/luong-komorebi/Awesome-Linux-Software#readme) - A list of awesome applications, software, tools and other materials for Linux distros. 
 - [Synthetic Biology](https://github.com/websemantics/awesome-synthetic-biology#readme) - A curated list of Synthetic Biology / Genetic Engineering projects, articles and resources. The main idea is that everyone can contribute here, so we can have a central repository of informations about this fascinating subject that we all can keep up-to-date.
 - [Tensorflow](https://github.com/jtoy/awesome-tensorflow/#readme) - TensorFlow - A curated list of dedicated resources http://tensorflow.org
-- [Touchbar](https://github.com/z11h/awesome-touchbar#readme) - :point_right: :star2: delightful macOS resources for your touchbar
 - [UNIX](https://github.com/sirredbeard/Awesome-UNIX#readme) - A family of computer operating systems and principles derived from AT&T UNIX.
 - [WatchOS](https://github.com/yenchenlin/awesome-watchos#readme) - Operating system for the Apple Watch.
 - [WebExtensions](https://github.com/fregante/Awesome-WebExtensions#readme) - Cross-browser extension system.
@@ -106,11 +102,15 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Windows](https://github.com/Awesome-Windows/Awesome#readme) - :computer: 🎉 An awesome & curated list of best applications and tools for Windows.
 - [Xamarin](https://github.com/XamSome/awesome-xamarin#readme) - Mobile app development IDE, testing, and distribution.
 - macOS
+	- [Mac by @xyNNN](https://github.com/xyNNN/awesome-mac#readme) - macOS tools, applications and games.
+	- [Mac Command Line](https://git.herrbischoff.com/awesome-macos-command-line/about/)
 	- [Mac Apps](https://github.com/justin-j/awesome-mac-apps)
 	- [Mac Apps](https://github.com/jaywcjlove/awesome-mac#readme)
 	- [Mac DevTools](https://github.com/marceloboeira/awesome-osx)
 	- [Mac Screensavers](https://github.com/agarrharr/awesome-macos-screensavers#readme)
 	- [Mac Open Source Apps](https://github.com/serhii-londar/open-source-mac-os-apps#readme)
+	- [Touchbar](https://github.com/z11h/awesome-touchbar#readme) - :point_right: :star2: delightful macOS resources for your touchbar
+	- [Mac Admin Tools](https://github.com/smashism/awesome-macadmin-tools#readme) - 🕶 Awesome Mac Admin Tools list
 
 ## Programming Languages
 
@@ -187,7 +187,10 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 	- [Sphinx](https://github.com/yoloseem/awesome-sphinxdoc) - Python Documentation Generator
 - [Q#](https://github.com/ebraminio/awesome-qsharp#readme) - Domain-specific programming language used for expressing quantum algorithms.
 - [R](https://github.com/qinwf/awesome-R#readme) - Functional programming language and environment for statistical computing and graphics.
-	- [Learning](https://github.com/iamericfletcher/awesome-r-learning-resources#readme)
+	- [R Learning](https://github.com/iamericfletcher/awesome-r-learning-resources#readme)
+	- [R Blogs on the web](https://github.com/Jeet1994/awesome-R-blogs#readme) - A list of awesome R blogs on the web.
+	- [R Books](https://github.com/RomanTsegelskyi/rbooks#readme) - A curated list of #rstats books
+	- [R-Shiny](https://github.com/grabear/awesome-rshiny#readme) - Web Framework built with R.
 - [Racket](https://github.com/avelino/awesome-racket#readme) - A curated list of awesome Racket frameworks, libraries and software, maintained by Community
 - [Ruby](https://github.com/markets/awesome-ruby#readme) - :gem: A collection of awesome Ruby libraries, tools, frameworks and software
 	- [Ruby Events](https://github.com/planetruby/conferences) - Conferences, Camps, Meetups, etc.
@@ -277,7 +280,6 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Progressive Enhancement](https://github.com/jbmoelker/progressive-enhancement-resources#readme) - Resources on Progressive Enhancement. From concept and strategies to feature detection & testing methods. Complete with a list of (code) examples.
 - [Progressive Web Apps](https://github.com/TalAter/awesome-progressive-web-apps#readme) - :sunrise: A collection of awesome resources for building progressive web apps
 - [Quasar Framework](https://github.com/quasarframework/quasar-awesome#readme) - 🎉 A list of awesome things related to Quasar
-- [R-Shiny](https://github.com/grabear/awesome-rshiny#readme) - Web Framework built with R.
 - [React Components](https://github.com/brillout/awesome-react-components#readme) - Curated List of React Components & Libraries.
 - [React](https://github.com/enaqx/awesome-react#readme) - JavaScript library for building user interfaces.
 	- [Relay](https://github.com/expede/awesome-relay#readme) - Framework for building data-driven React apps.
@@ -359,12 +361,11 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Phoenix](https://github.com/jonathanstiansen/awesome-phoenix#readme) - A collection of awesome things related to the web framework phoenix! 
 - [Play1 Framework](https://github.com/PerfectCarl/awesome-play1#readme) - A collection of modules, tools and resources for play1 
 - [Pyramid](https://github.com/uralbash/awesome-pyramid#readme) - Python framework.
-- [Rails](https://github.com/ekremkaraca/awesome-rails#readme) - A curated list of awesome things related to Ruby on Rails
 	- [Gems](https://github.com/hothero/awesome-rails-gem)
 - [Rails](https://github.com/gramantin/awesome-rails#readme) - Web app framework for Ruby.
-	- [Gems](https://github.com/hothero/awesome-rails-gem#readme) - Packages.
-	- alt: [by @dpaluy](https://github.com/dpaluy/awesome-rails)
-	- alt: [by @ekremkaraca](https://github.com/ekremkaraca/awesome-rails)
+	- [Rails Gems](https://github.com/hothero/awesome-rails-gem#readme) - Packages.
+	- alt: [Rails by @dpaluy](https://github.com/dpaluy/awesome-rails)
+	- alt: [Rails by @ekremkaraca](https://github.com/ekremkaraca/awesome-rails)
 - [Scalability](https://github.com/binhnguyennus/awesome-scalability#readme) - A curated list of selected readings to illustrate Scalability, Availability, and Stability Design Patterns in Back-end Development.
 - [Serverless Framework](https://github.com/pmuens/awesome-serverless#readme) - Serverless computing and serverless architectures.
 - [Service Mesh](https://github.com/Festum/awesome-servicemesh#readme) - Next generation service mesh for serverless apps.
@@ -476,7 +477,6 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Go Books](https://github.com/dariubs/GoBooks#readme) - List of Golang books
 - [Mind Expanding Books](https://github.com/hackerkid/Mind-Expanding-Books#readme) - :books: Books everyone should read!
 - [Python Books](https://github.com/Junnplus/awesome-python-books#readme) - :books: Directory of Python books
-- [R Books](https://github.com/RomanTsegelskyi/rbooks#readme) - A curated list of #rstats books
 
 ## Editors
 
@@ -882,7 +882,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Free Software](https://github.com/johnjago/awesome-free-software#readme) - Free as in freedom.
 - [Free for Developers](https://github.com/ripienaar/free-for-dev#readme) - A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev
 - [Funny Markov Chains](https://github.com/sublimino/awesome-funny-markov#readme) - A curated list of delightfully amusing and facetious Markov chain output.
-- [GRPC](https://github.com/grpc-ecosystem/awesome-grpc#readme) - A curated list of useful resources for gRPC
+- [gRPC](https://github.com/grpc-ecosystem/awesome-grpc#readme) - A curated list of useful resources for gRPC
 - [GeoSpatial](https://github.com/sacridini/Awesome-Geospatial#readme) - Long list of geospatial tools and resources.
 - [GitHub Badges](https://github.com/chetanraj/awesome-github-badges#readme) - A curated list of awesome github README.md badges
 - [GraphQL](https://github.com/chentsulin/awesome-graphql#readme) - Awesome list of GraphQL
@@ -907,7 +907,6 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [LaTeX](https://github.com/egeerardyn/awesome-LaTeX#readme) - Typesetting language.
 - [Ledger](https://github.com/sfischer13/awesome-ledger#readme) - Double-entry accounting on the command-line.
 - [Libre Hosters](https://github.com/libresh/awesome-librehosters#readme) - A list of nice hosting providers
-- [Linux Containers](https://github.com/Friz-zy/awesome-linux-containers#readme) - A curated list of awesome Linux Containers frameworks, libraries and software
 - [LoRa & LoRaWAN](https://github.com/mcicolella/awesome-lora-lorawan#readme) - A curated list of LoRa and LoRaWAN resources.
 - [Lorem Ipsum](https://github.com/templeman/awesome-ipsum#readme) - A curated list of awesome lorem ipsum generators.
 - [MATLAB](https://github.com/uhub/awesome-matlab#readme) - A curated list of awesome Matlab frameworks, libraries and software.
@@ -941,7 +940,6 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Prometheus](https://github.com/roaldnefs/awesome-prometheus#readme) - Open-source monitoring system.
 - [QR Code](https://github.com/make-github-pseudonymous-again/awesome-qr-code#readme) - A type of matrix barcode that can be used to store and share a small amount of information.
 - [Quantified Self](https://github.com/woop/awesome-quantified-self#readme) - Self-tracking through technology.
-- [R Blogs on the web](https://github.com/Jeet1994/awesome-R-blogs#readme) - A list of awesome R blogs on the web.
 - [REST](https://github.com/marmelab/awesome-rest#readme) - A collaborative list of great resources about RESTful API architecture, development, test, and performance
 - [Radio](https://github.com/kyleterry/awesome-radio#readme) - Awesome radio stuff
 - [Readme](https://github.com/matiassingers/awesome-readme#readme) - A curated list of awesome READMEs
