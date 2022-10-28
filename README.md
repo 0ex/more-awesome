@@ -108,9 +108,6 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 
 ## Programming Languages
 
-- [Elixir](https://github.com/h4cc/awesome-elixir#readme) - amazingly awesome Elixir and Erlang libraries, resources and shiny things. Updates:
-	- [Elixir Books](https://github.com/sger/ElixirBooks#readme) - List of Elixir books
-	- [Phoenix](https://github.com/jonathanstiansen/awesome-phoenix#readme) - Elixer framework. [@droptheplot](https://github.com/droptheplot/awesome-phoenix#readme)
 - [ActionScript 3](https://github.com/robinrodricks/awesome-actionscript3#readme) - Object-oriented language targeting Adobe AIR.
 - [Ada/SPARK](https://github.com/ohenley/awesome-ada#readme) - Modern programming language designed for large, long-lived apps where reliability and efficiency are essential.
 - [AutoHotkey](https://github.com/ahkscript/awesome-AutoHotkey#readme) - AutoHotkey libraries, library distributions, scripts, tools and resources.
@@ -132,6 +129,9 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Dart](https://github.com/yissachar/awesome-dart#readme) - Dart frameworks, libraries, and software
 - [dhall-lang](https://github.com/dhall-lang/awesome-dhall#readme) - A configuration language guaranteed to terminate
 - [Education](https://github.com/quobit/awesome-python-in-education#readme) - Resources for Python teaching and self-learning.
+- [Elixir](https://github.com/h4cc/awesome-elixir#readme) - amazingly awesome Elixir and Erlang libraries, resources and shiny things. Updates:
+	- [Elixir Books](https://github.com/sger/ElixirBooks#readme) - List of Elixir books
+	- [Phoenix](https://github.com/jonathanstiansen/awesome-phoenix#readme) - Elixer framework. [@droptheplot](https://github.com/droptheplot/awesome-phoenix#readme)
 - [Elm](https://github.com/sporto/awesome-elm#readme) - useful Elm tutorials, libraries and software.
 - [Erlang](https://github.com/drobakowski/awesome-erlang#readme) - Erlang libraries, resources and shiny things.
 - [Eta](https://github.com/sfischer13/awesome-eta#readme) - Functional programming language for the JVM.
@@ -462,7 +462,6 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 
 ## Theory
 
-- [Synthetic Biology](https://github.com/websemantics/awesome-synthetic-biology#readme) - Genetic Engineering projects, articles and resources.
 - [AGI & CoCoSci](https://github.com/YuzheSHI/awesome-agi-cocosci#readme) - The reciprocation of Artificial General Intelligence (AGI) and Computational Cognitive Sciences (CoCoSci).
 - [AGI CoCoSci](https://github.com/YuzheSHI/awesome-agi-cocosci/#readme) - Artificial General Intelligence (AGI) and Computational Cognitive Sciences (CoCoSci).
 - [Algorithm Visualizations](https://github.com/enjalot/algovis#readme) - projects and links about algorithm visualization
@@ -480,6 +479,7 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Protocols](https://github.com/chrvadala/awesome-protocols#readme) - Main protocols and open standards with RFC links.
 - [Recursion Schemes](https://github.com/passy/awesome-recursion-schemes#readme) - Traversing nested data structures.
 - [Search Engine Optimization](https://github.com/marcobiedermann/search-engine-optimization#readme) - :mag: A helpful checklist/Search Engine Optimization (SEO) tips and techniques.
+- [Synthetic Biology](https://github.com/websemantics/awesome-synthetic-biology#readme) - Genetic Engineering projects, articles and resources.
 - [Talks](https://github.com/JanVanRyswyck/awesome-talks#readme) - Online talks and screencasts
 - [Topological Data Analysis](https://github.com/FatemehTarashi/awesome-TDA#readme) - topological data analysis (TDA) resources and links.
 
@@ -546,14 +546,6 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Dotfiles](https://github.com/webpro/awesome-dotfiles#readme) - dotfiles resources.
 - [Fish](https://github.com/jorgebucaran/awsm.fish#readme) - User-friendly shell.
 - [FOSS for Developers](https://github.com/tvvocold/FOSS-for-Dev#readme) - A hub of Free and open-source software for developers
-- Git
-	- [Git Add-ons](https://github.com/stevemao/awesome-git-addons#readme) - Enhance the `git` CLI.
-	- [Git Cheat Sheet & Git Flow](https://github.com/arslanbilal/git-cheat-sheet#readme) - :octocat: git and git flow cheat sheet
-	- [Git Hooks](https://githooks.com/) - Curated list of resources on and about git hooks.
-	- [Git Hooks](https://github.com/aitemr/awesome-git-hooks#readme) - are scripts that run automatically every time a particular event occurs in a Git repository.
-	- [Git Hooks](https://github.com/compscilauren/awesome-git-hooks#readme) - Scripts for automating tasks during `git` workflows.
-	- [Git Tips](https://github.com/git-tips/tips#readme) - Most commonly used git tips and tricks.
-	- [Gitea](https://gitea.com/gitea/awesome-gitea) - Community managed lightweight code hosting solution written in Go.
 - [GitHub](https://github.com/phillipadsmith/awesome-github#readme) - Hosting service for Git repositories.
 	- [GitHub Actions](https://github.com/sdras/awesome-actions#readme) - Create tasks to automate your workflow and share them with others on GitHub.
 	- [Browser Extensions](https://github.com/stefanbuck/awesome-browser-extensions-for-github#readme)
@@ -572,6 +564,14 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Terminals Are Sexy](https://github.com/k4m4/terminals-are-sexy#readme) - 💥 Terminal frameworks, plugins & resources for CLI lovers.
 - [Version Managers](https://github.com/bernardoduarte/awesome-version-managers#readme) - Tools to manage multiple versions of programming languages.
 - [ZSH Plugins](https://github.com/unixorn/awesome-zsh-plugins#readme) - ZSH frameworks, plugins, themes and tutorials.
+- Git
+	- [Git Add-ons](https://github.com/stevemao/awesome-git-addons#readme) - Enhance the `git` CLI.
+	- [Git Cheat Sheet & Git Flow](https://github.com/arslanbilal/git-cheat-sheet#readme) - :octocat: git and git flow cheat sheet
+	- [Git Hooks](https://githooks.com/) - Curated list of resources on and about git hooks.
+	- [Git Hooks](https://github.com/aitemr/awesome-git-hooks#readme) - are scripts that run automatically every time a particular event occurs in a Git repository.
+	- [Git Hooks](https://github.com/compscilauren/awesome-git-hooks#readme) - Scripts for automating tasks during `git` workflows.
+	- [Git Tips](https://github.com/git-tips/tips#readme) - Most commonly used git tips and tricks.
+	- [Gitea](https://gitea.com/gitea/awesome-gitea) - Community managed lightweight code hosting solution written in Go.
 
 ## Entertainment
 
@@ -704,10 +704,10 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 ## Content Management Systems
 
 - [CMS](https://github.com/postlight/awesome-cms#readme) - Content Management Systems.
-- [Headless CMS](https://github.com/n370/awesome-headless-cms#readme) - A curated list of Headless CMS tools, blogs and other resources.
 - [Craft CMS](https://github.com/craftcms/awesome#readme) - Content-first CMS.
 - [Directus](https://github.com/directus-community/awesome-directus#readme) - A real-time API and app dashboard for managing SQL database content.
 - [Drupal](https://github.com/nirgn975/awesome-drupal#readme) - Extensible PHP-based CMS.
+- [Headless CMS](https://github.com/n370/awesome-headless-cms#readme) - A curated list of Headless CMS tools, blogs and other resources.
 - [Plone](https://github.com/collective/awesome-plone#readme) - Open source Python CMS.
 - [Refinery CMS](https://github.com/refinerycms-contrib/awesome-refinerycms#readme) - Ruby on Rails CMS.
 - [Silverstripe CMS](https://github.com/wernerkrauss/awesome-silverstripe-cms#readme) - PHP MVC framework that serves as a classic or headless CMS.
@@ -799,7 +799,6 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 
 ## Health and Social Science
 
-- [Japanese Language](https://github.com/yudataguy/awesome-japanese#readme) - Japanese Learning Resources
 - [Biomedical Information Extraction](https://github.com/caufieldjh/awesome-bioie#readme) - How to extract information from unstructured biomedical data and text.
 - [Computational Neuroscience](https://github.com/eselkin/awesome-computational-neuroscience#readme) - Computational approaches to study the nervous system.
 - [Digital History](https://github.com/maehr/awesome-digital-history#readme) - Computer-aided scientific investigation of history.
@@ -808,6 +807,7 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Empathy in Engineering](https://github.com/KimberlyMunoz/empathy-in-engineering#readme) - Building and promoting more compassionate engineering cultures.
 - [Healthcare](https://github.com/kakoni/awesome-healthcare#readme) - FOSS for facilities, providers, developers, policy experts, and researchers.
 - [Humane Technology](https://github.com/humanetech-community/awesome-humane-tech#readme) - Open source projects that help improve society.
+- [Japanese Language](https://github.com/yudataguy/awesome-japanese#readme) - Japanese Learning Resources
 - [Mental Health](https://github.com/dreamingechoes/awesome-mental-health#readme) - Mental health awareness and self-care in the software industry.
 - [Neuroscience](https://github.com/analyticalmonk/awesome-neuroscience#readme) - Study of the nervous system and brain.
 
@@ -823,14 +823,14 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Gatling](https://github.com/aliesbelik/awesome-gatling#readme) - Open-source load and performance testing framework based on Scala, Akka, and Netty.
 - [JMeter](https://github.com/aliesbelik/awesome-jmeter#readme) - Load testing and performance measurement tool.
 - [K6](https://github.com/grafana/awesome-k6#readme) - Open-source, developer-centric performance monitoring and load testing solution.
+- [Mutation Testing](https://github.com/theofidry/awesome-mutation-testing#readme) - Better code by making bugs.
 - [Playwright](https://github.com/mxschmitt/awesome-playwright#readme) - Node.js library to automate Chromium, Firefox and WebKit with a single API.
 - [Quality Assurance Roadmap](https://github.com/fityanos/awesome-quality-assurance-roadmap#readme) - How to start & build a career in software testing.
+- [Robot Framework](https://github.com/fkromer/awesome-robotframework#readme) - Generic test automation framework for acceptance testing and ATDD.
 - [Selenium](https://github.com/christian-bromann/awesome-selenium#readme) - Open-source browser automation framework and ecosystem.
 - [TAP](https://github.com/sindresorhus/awesome-tap#readme) - Test Anything Protocol.
 - [Testing](https://github.com/TheJambo/awesome-testing#readme) - Software testing.
 - [Visual Regression Testing](https://github.com/mojoaxel/awesome-regression-testing#readme) - Ensures changes did not break the functionality or style.
-- [Mutation Testing](https://github.com/theofidry/awesome-mutation-testing#readme) - Better code by making bugs.
-- [Robot Framework](https://github.com/fkromer/awesome-robotframework#readme) - Generic test automation framework for acceptance testing and ATDD.
 
 ## Miscellaneous
 
@@ -876,7 +876,6 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Coding Interview](https://github.com/Olshansk/interview#readme) - Everything you need to prepare for your technical interview
 - [Coding Style Conventions and Standards](https://github.com/SalGnt/cscs#readme) - Coding Style Conventions and Standards.
 - [Colorful](https://github.com/Siddharth11/Colorful#readme) - Choose your next color scheme.
-- [Programming Community](https://github.com/phpearth/awesome-community#readme) - forums, groups, etc organized by programming language.
 - [Computational Biology](https://github.com/inoue0426/awesome-computational-biology#readme) - Computational approaches applied to problems in biology.
 - [Connectivity Data and Reports](https://github.com/stevesong/awesome-connectivity-info#readme) - Understand who has access to telecommunication and internet infrastructure.
 - [Continuous Integration and Continuous Delivery](https://github.com/cicdops/awesome-ciandcd#readme) - continuous integration and continuous delivery
@@ -969,6 +968,7 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Pokémon](https://github.com/tobiasbueschel/awesome-pokemon#readme) - Pokémon and Pokémon GO.
 - [Prisma](https://github.com/catalinmiron/awesome-prisma#readme) - Turn your database into a GraphQL API.
 - [Product Design](https://github.com/ttt30ga/awesome-product-design#readme) - Design a product from the initial concept to production.
+- [Programming Community](https://github.com/phpearth/awesome-community#readme) - forums, groups, etc organized by programming language.
 - [Programming Interviews](https://github.com/MaximAbramchuck/awesome-interviews#readme) - :octocat: lists of interview questions. Feel free to contribute! :mortar_board: 
 - [Prometheus](https://github.com/roaldnefs/awesome-prometheus#readme) - Open-source monitoring system.
 - [Python Chemistry](https://github.com/lmmentel/awesome-python-chemistry#readme) - A curated list of awesome Python frameworks, libraries, software and resources related to Chemistry.
