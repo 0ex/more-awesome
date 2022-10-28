@@ -73,6 +73,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Linux](https://github.com/inputsh/awesome-linux#readme) - :penguin: A list of awesome projects and resources that make Linux even more awesome. :penguin:
 	- [Linux Apps](https://github.com/harrytran103/awesome-linux-apps#readme) - 🚀 A list of awesome applications for 🐧 Linux distributions.
 	- [Linux Containers](https://github.com/Friz-zy/awesome-linux-containers#readme) - A curated list of awesome Linux Containers frameworks, libraries and software
+	- [Linux Software](https://github.com/luong-komorebi/Awesome-Linux-Software#readme) - A list of awesome applications, software, tools and other materials for Linux distros. 
 	- [eBPF](https://github.com/zoidbergwill/awesome-ebpf#readme) - Virtual machine that allows you to write more efficient and powerful tracing and monitoring for Linux systems.
 	- [Arch-based Projects](https://github.com/PandaFoss/Awesome-Arch#readme) - Linux distributions and projects based on Arch Linux.
 	- [AppImage](https://github.com/AppImage/awesome-appimage#readme) - Package apps in a single file that works on various mainstream Linux distributions.
@@ -92,14 +93,13 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Sailfish OS](https://github.com/sailfishos-community/awesome-sailfishos#readme) - Truly Independent Mobile OS
 - [Salesforce](https://github.com/mailtoharshit/awesome-salesforce#readme) - A curated list of delightful Salesforce Platform Resources
 - [Smart TV](https://github.com/vitalets/awesome-smart-tv#readme) - Create apps for different TV platforms.
-- [Software](https://github.com/luong-komorebi/Awesome-Linux-Software#readme) - A list of awesome applications, software, tools and other materials for Linux distros. 
 - [Synthetic Biology](https://github.com/websemantics/awesome-synthetic-biology#readme) - A curated list of Synthetic Biology / Genetic Engineering projects, articles and resources. The main idea is that everyone can contribute here, so we can have a central repository of informations about this fascinating subject that we all can keep up-to-date.
 - [Tensorflow](https://github.com/jtoy/awesome-tensorflow/#readme) - TensorFlow - A curated list of dedicated resources http://tensorflow.org
 - [UNIX](https://github.com/sirredbeard/Awesome-UNIX#readme) - A family of computer operating systems and principles derived from AT&T UNIX.
 - [WatchOS](https://github.com/yenchenlin/awesome-watchos#readme) - Operating system for the Apple Watch.
 - [WebExtensions](https://github.com/fregante/Awesome-WebExtensions#readme) - Cross-browser extension system.
-- [Windows Subsystem for Linux](https://github.com/sirredbeard/Awesome-WSL#readme) - Compatibility layer for running Linux applications on Windows.
 - [Windows](https://github.com/Awesome-Windows/Awesome#readme) - :computer: 🎉 An awesome & curated list of best applications and tools for Windows.
+	- [Windows Subsystem for Linux](https://github.com/sirredbeard/Awesome-WSL#readme) - Compatibility layer for running Linux applications on Windows.
 - [Xamarin](https://github.com/XamSome/awesome-xamarin#readme) - Mobile app development IDE, testing, and distribution.
 - macOS
 	- [Mac by @xyNNN](https://github.com/xyNNN/awesome-mac#readme) - macOS tools, applications and games.
@@ -723,7 +723,7 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 
 ## Work
 
-- [Cisco Spark](https://github.com/CiscoDevNet/awesome-webex#readme) - Calls, Video & Messaging for Teams collaboration.
+- [Cisco WebEx](https://github.com/CiscoDevNet/awesome-webex#readme) - Calls, Video & Messaging for Teams collaboration.
 - [Co-Working Spaces](https://github.com/ahmadnassri/awesome-coworking#readme) - co-working spaces around the globe.
 - [Code Review](https://github.com/joho/awesome-code-review#readme) - Reviewing code.
 - [Creative Technology](https://github.com/j0hnm4r5/awesome-creative-technology#readme) - Businesses & groups that specialize in combining computing, design, art, and user experience.
