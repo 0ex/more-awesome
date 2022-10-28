@@ -63,11 +63,12 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 	- [Linux Apps](https://github.com/harrytran103/awesome-linux-apps#readme) - 🚀 A list of awesome applications for 🐧 Linux distributions.
 	- [Linux Containers](https://github.com/Friz-zy/awesome-linux-containers#readme) - Linux Containers frameworks, libraries and software
 	- [Linux Software](https://github.com/luong-komorebi/Awesome-Linux-Software#readme) - A list of awesome applications, software, tools and other materials for Linux distros. 
-	- [eBPF](https://github.com/zoidbergwill/awesome-ebpf#readme) - Virtual machine that allows you to write more efficient and powerful tracing and monitoring for Linux systems.
+	- [eBPF](https://github.com/zoidbergwill/awesome-ebpf#readme) - Virtual machine for efficient tracing and monitoring for Linux systems.
 	- [Arch-based Projects](https://github.com/PandaFoss/Awesome-Arch#readme) - Linux distributions and projects based on Arch Linux.
 	- [AppImage](https://github.com/AppImage/awesome-appimage#readme) - Package apps in a single file that works on various mainstream Linux distributions.
 	- [Snapcraft](https://github.com/rjoydip/awesome-snapcraft#readme) - The app store for Linux
 	- [Flatpak](https://github.com/akvadrako/awesome-flatpak#readme) - Popular distro-independent packaging technology for your apps
+	- [Yocto Project](https://github.com/fkromer/awesome-yocto-project#readme) - It’s not an embedded Linux Distribution, It creates a custom one for you.
 - [Low Code](https://github.com/zenitysec/awesome-low-code#readme) - Allowing business professionals to address their needs on their own with little to no coding skills.
 - [Micro:bit](https://github.com/carlosperate/awesome-microbit#readme) - Programmable chip on a board aimed at teaching kids programming.
 - [NativeScript](https://github.com/jbristowe/awesome-nativescript#readme) - articles, plugins, and resources for NativeScript.
@@ -86,7 +87,6 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Shopify](https://github.com/julionc/awesome-shopify#readme) - A cloud-based ecommerce store platform.
 - [Smart TV](https://github.com/vitalets/awesome-smart-tv#readme) - Create apps for different TV platforms.
 - [Spring](https://github.com/ThomasVitale/awesome-spring#readme) - Java framework for writing web applications.
-- [Tensorflow](https://github.com/jtoy/awesome-tensorflow/#readme) - TensorFlow - dedicated resources http://tensorflow.org
 - [UNIX](https://github.com/sirredbeard/Awesome-UNIX#readme) - A family of computer operating systems and principles derived from AT&T UNIX.
 - [WatchOS](https://github.com/yenchenlin/awesome-watchos#readme) - Operating system for the Apple Watch.
 - [Web Browsers](https://github.com/cliffordfajardo/awesome-web-browsers#readme) - Various web browsers to use or develop for.
@@ -113,8 +113,8 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [AutoHotkey](https://github.com/ahkscript/awesome-AutoHotkey#readme) - AutoHotkey libraries, library distributions, scripts, tools and resources.
 - [AutoIt](https://github.com/J2TeaM/awesome-AutoIt#readme) - :star: UDFs, example scripts, tools and useful resources for AutoIt.
 - [Bash](https://github.com/awesome-lists/awesome-bash#readme) - A curated list of delightful Bash scripts and resources.
-- [C/C++](https://github.com/fffaraz/awesome-cpp#readme) - General-purpose language with a bias toward system programming and embedded, resource-constrained software.
 - [C](https://github.com/inputsh/awesome-c#readme) - The most used programming language. Alternatives: [@oz123](https://github.com/oz123/awesome-c#readme)
+- [C++](https://github.com/fffaraz/awesome-cpp#readme) - Systems programming language.
 - [CLI](https://github.com/Kikobeats/awesome-cli#readme) - Create your own CLI using JavaScript or be inspired by bests of UNIX philosophy and UX.
 - [Clojure](https://github.com/razum2um/awesome-clojure#readme) - Clojure libraries and resources.
 - [ClojureScript](https://github.com/hantuzun/awesome-clojurescript#readme) - A community driven list of ClojureScript frameworks, libraries and wrappers.
@@ -122,16 +122,16 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [CoffeeScript](https://github.com/uhub/awesome-coffeescript#readme) - CoffeeScript frameworks, libraries and software.
 - [ColdFusion](https://github.com/seancoyne/awesome-coldfusion#readme) - ColdFusion frameworks, libraries and software.
 - [Common Lisp](https://github.com/CodyReichert/awesome-cl#readme) - Powerful dynamic multiparadigm language that facilitates iterative and interactive development.
-	- [Learning](https://github.com/GustavBertram/awesome-common-lisp-learning#readme)
+	- [CL Learning Resources](https://github.com/GustavBertram/awesome-common-lisp-learning#readme)
 - [Coq](https://github.com/coq-community/awesome-coq#readme) - Formal language and environment for programming machine-checked proofs.
-- [Crystal](https://github.com/veelenga/awesome-crystal#readme) - :gem: Crystal libraries, tools, frameworks and software
+- [Crystal](https://github.com/veelenga/awesome-crystal#readme) - Crystal libraries, tools, frameworks and software
 - [D](https://github.com/dlang-community/awesome-d#readme) - D documents, frameworks, libraries and software.
 - [Dart](https://github.com/yissachar/awesome-dart#readme) - Dart frameworks, libraries, and software
-- [dhall-lang](https://github.com/dhall-lang/awesome-dhall#readme) - A configuration language guaranteed to terminate
+- [Dhall-lang](https://github.com/dhall-lang/awesome-dhall#readme) - A configuration language guaranteed to terminate
 - [Education](https://github.com/quobit/awesome-python-in-education#readme) - Resources for Python teaching and self-learning.
 - [Elixir](https://github.com/h4cc/awesome-elixir#readme) - amazingly awesome Elixir and Erlang libraries, resources and shiny things. Updates:
 	- [Elixir Books](https://github.com/sger/ElixirBooks#readme) - List of Elixir books
-	- [Phoenix](https://github.com/jonathanstiansen/awesome-phoenix#readme) - Elixer framework. [@droptheplot](https://github.com/droptheplot/awesome-phoenix#readme)
+	- [Phoenix](https://github.com/jonathanstiansen/awesome-phoenix#readme) - Elixer framework. Alternative: [@droptheplot](https://github.com/droptheplot/awesome-phoenix#readme)
 - [Elm](https://github.com/sporto/awesome-elm#readme) - useful Elm tutorials, libraries and software.
 - [Erlang](https://github.com/drobakowski/awesome-erlang#readme) - Erlang libraries, resources and shiny things.
 - [Eta](https://github.com/sfischer13/awesome-eta#readme) - Functional programming language for the JVM.
@@ -216,8 +216,8 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 
 - [A-Frame VR](https://github.com/aframevr/awesome-aframe#readme) - A-Frame WebVR framework.
 - [Android UI](https://github.com/wasabeef/awesome-android-ui#readme) - Android UI/UX libraries
-- [Angular 2](https://github.com/AngularClass/awesome-angular2#readme) - :page_facing_up: Angular resources
 - [Angular](https://github.com/PatrickJS/awesome-angular#readme) - App framework.
+	- [Angular 2](https://github.com/AngularClass/awesome-angular2#readme) - :page_facing_up: Angular resources
 - [Ant Design](https://github.com/websemantics/awesome-ant-design#readme) - Enterprise-class UI design language.
 - [Aurelia](https://github.com/aurelia-contrib/awesome-aurelia#readme) - App framework.
 - [Backbone](https://github.com/sadcitizen/awesome-backbone#readme) - App framework.
@@ -228,7 +228,7 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Browserify](https://github.com/browserify/awesome-browserify#readme) - Module bundler.
 - [Building Blocks for Web Apps](https://github.com/componently-com/awesome-building-blocks-for-web-apps#readme) - Standalone features to be integrated into web apps.
 - [Canvas](https://github.com/raphamorim/awesome-canvas#readme) - HTML5 Canvas with examples, related articles and posts.
-- [Charting](https://github.com/zingchart/awesome-charting#readme) - the best charting and dataviz resources that developers may find useful, including the best JavaScript charting libraries
+- [Charting](https://github.com/zingchart/awesome-charting#readme) - Including the best JavaScript charting libraries
 - [Choo](https://github.com/choojs/awesome-choo#readme) - App framework.
 - [Chrome DevTools](https://github.com/ChromeDevTools/awesome-chrome-devtools#readme) - resources in the Chrome DevTools & DevTools Protocol ecosystem.
 - [CSS](https://github.com/awesome-css-group/awesome-css#readme) - :art: amazing CSS :)
@@ -293,7 +293,7 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Sass](https://github.com/Famolus/awesome-sass#readme) - CSS preprocessor.
 - [Seed](https://github.com/seed-rs/awesome-seed-rs#readme) - Rust framework for creating web apps running in WebAssembly.
 - [SEO](https://github.com/teles/awesome-seo#readme) - :star2: SEO (Search Engine Optimization) links.
-- [Serverless](https://github.com/anaibol/awesome-serverless/#readme) - :cloud: services, solutions and resources for serverless / nobackend applications.
+- [Serverless](https://github.com/anaibol/awesome-serverless#readme) - :cloud: services, solutions and resources for serverless / nobackend applications.
 - [Service Workers](https://github.com/TalAter/awesome-service-workers#readme) - :nut_and_bolt: resources for learning Service Workers
 - [Spinners](https://github.com/yangshun/awesome-spinners#readme) - 💫 dazzling web spinners
 - [Static Website Services](https://github.com/agarrharr/awesome-static-website-services#readme) - 📄 🛠 static websites services
@@ -408,7 +408,9 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Image coloring](https://github.com/oskar-j/awesome-image-coloring#readme) - Software for Image Coloring.
 - [Information Retrieval](https://github.com/harpribot/awesome-information-retrieval#readme) - Learn to develop your own search engine.
 - [Linguistics](https://github.com/theimpossibleastronaut/awesome-linguistics#readme) - anything remotely related to linguistics
-- [Machine Learning](https://github.com/josephmisiti/awesome-machine-learning#readme) - Machine Learning frameworks, libraries and software.
+- [Artificial Intelligence](https://github.com/owainlewis/awesome-artificial-intelligence#readme) - Artificial Intelligence (AI) courses, books, video lectures and papers.
+	- [Machine Learning](https://github.com/josephmisiti/awesome-machine-learning#readme) - Machine Learning frameworks, libraries and software.
+	- [AGI & CoCoSci](https://github.com/YuzheSHI/awesome-agi-cocosci#readme) - Artificial General Intelligence and Computational Cognitive Sciences.
 	- [ML for Cyber Security](https://github.com/jivoi/awesome-ml-for-cybersecurity#readme) - datasets, papers, etc...
 	- [Dive into ML](https://github.com/hangtwenty/dive-into-machine-learning#readme) - Notebooks, courses, and other links using Python and Jupyter.
 	- [Deep Learning](https://github.com/ChristosChristofidis/awesome-deep-learning#readme) - Neural networks.
@@ -426,12 +428,12 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 	- [H2O](https://github.com/h2oai/awesome-h2o#readme) - Open source distributed machine learning platform written in Java with APIs in R, Python, and Scala.
 	- [Software Engineering for Machine Learning](https://github.com/SE-ML/awesome-seml#readme) - From experiment to production-level machine learning.
 	- [AI in Finance](https://github.com/georgezouq/awesome-ai-in-finance#readme) - Solving problems in finance with machine learning.
-	- [JAX](https://github.com/n2cholas/awesome-jax#readme) - Automatic differentiation and XLA compilation brought together for high-performance machine learning research.
+	- [JAX](https://github.com/n2cholas/awesome-jax#readme) - Automatic differentiation and XLA compilation for high-performance machine learning research.
 	- [XAI](https://github.com/altamiracorp/awesome-xai#readme) - Providing insight, explanations, and interpretability to machine learning methods.
 	- [ML Character](https://github.com/vincentbonnetcg-zz/awesome-ml-character#readme) - Digital characters with machine learning
 	- [Production Machine Learning](https://github.com/EthicalML/awesome-production-machine-learning#readme) - Frameworks to deploy, monitor & scale machine learning.
 	- [PyTorch](https://github.com/bharathgs/Awesome-pytorch-list#readme) - Deep Learning Library by Facebook
-	- [Quantum Machine Learning](https://github.com/krishnakumarsekar/awesome-quantum-machine-learning#readme) - Here you can get all the Quantum Machine learning Basics, Algorithms ,Study Materials ,Projects and the descriptions of the projects around the web
+	- [Quantum Machine Learning](https://github.com/krishnakumarsekar/awesome-quantum-machine-learning#readme) - Basics, Algorithms, Study Materials, Projects, etc.
 - [Open Source Society University](https://github.com/ossu/computer-science#readme) - :mortar_board: Path to a free self-taught education in Computer Science!
 - [Quantum Computing](https://github.com/desireevl/awesome-quantum-computing#readme) - Computing which utilizes quantum mechanics and qubits on quantum computers.
 - [Reproducible Research](https://github.com/leipzig/awesome-reproducible-research#readme) - Go from raw data to results in a repeatable and transparent manner
@@ -439,10 +441,10 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 	- [Spanish](https://github.com/dav009/awesome-spanish-nlp#readme)
 	- [NLP with Ruby](https://github.com/arbox/nlp-with-ruby#readme)
 	- [Question Answering](https://github.com/seriousran/awesome-qa#readme) - The science of asking and answering in natural language with a machine.
-	- [Natural Language Generation](https://github.com/accelerated-text/awesome-nlg#readme) - Generation of text used in data to text, conversational agents, and narrative generation applications.
+	- [Natural Language Generation](https://github.com/accelerated-text/awesome-nlg#readme) - Generation of text for conversational agents and narratives.
 	- [Sentence embeddings](https://github.com/Separius/awesome-sentence-embedding#readme) - Pretrained sentence and word embedding models
-- [Static Analysis & Code Quality](https://github.com/analysis-tools-dev/static-analysis#readme) - ⚙️ static analysis (SAST) tools for all programming languages, config files, build tools, and more. The focus is on tools which improve code quality.
-- [Theoretical Computer Science](https://github.com/mostafatouny/awesome-theoretical-computer-science#readme) - The interplay of computer science and pure mathematics, distinguished by its emphasis on mathematical rigour and technique.
+- [Static Analysis & Code Quality](https://github.com/analysis-tools-dev/static-analysis#readme) - SAST tools for all programming languages, config files, build tools, and more.
+- [Theoretical Computer Science](https://github.com/mostafatouny/awesome-theoretical-computer-science#readme) - Interplay of computer science and pure mathematics.
 - [University Courses](https://github.com/prakhar1989/awesome-courses#readme) - :books: university courses for learning Computer Science!
 
 ## Big Data
@@ -452,22 +454,19 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Big Data](https://github.com/0xnr/awesome-bigdata#readme) - big data frameworks, ressources and other awesomeness.
 - [Brazil Datasets](https://github.com/juliohm/awesome-brazil-data#readme) - Curated list of Brazilian datasets for anyone interested in studying the country.
 - [Data Engineering](https://github.com/igorbarinov/awesome-data-engineering#readme) - data engineering tools for software developers
-- [Elasticsearch](https://github.com/dzharii/awesome-elasticsearch) - Elasticsearch is an open-source, RESTful, distributed search and analytics engine built on Apache Lucene.
+- [Elasticsearch](https://github.com/dzharii/awesome-elasticsearch) - Open-source RESTful, distributed search and analytics engine.
 - [ETL](https://github.com/pawl/awesome-etl#readme) - ETL (extract, transform, load) frameworks, libraries and software.
 - [Hadoop](https://github.com/youngwookim/awesome-hadoop#readme) - Framework for distributed storage and processing of very large data sets.
 - [Public Datasets](https://github.com/awesomedata/awesome-public-datasets#readme) - A topic-centric list of HQ open datasets.
 - [Qlik](https://github.com/ambster-public/awesome-qlik#readme) - Business intelligence platform for data visualization, analytics, and reporting apps.
-- [Splunk](https://github.com/sduff/awesome-splunk#readme) - Platform for searching, monitoring, and analyzing structured and unstructured machine-generated big data in real-time.
+- [Splunk](https://github.com/sduff/awesome-splunk#readme) - Platform for searching, monitoring, and analyzing logs.
 - [Streaming](https://github.com/manuzhang/awesome-streaming#readme) - a curated list of awesome streaming frameworks, applications, etc
 
 ## Theory
 
-- [AGI & CoCoSci](https://github.com/YuzheSHI/awesome-agi-cocosci#readme) - The reciprocation of Artificial General Intelligence (AGI) and Computational Cognitive Sciences (CoCoSci).
-- [AGI CoCoSci](https://github.com/YuzheSHI/awesome-agi-cocosci/#readme) - Artificial General Intelligence (AGI) and Computational Cognitive Sciences (CoCoSci).
 - [Algorithm Visualizations](https://github.com/enjalot/algovis#readme) - projects and links about algorithm visualization
 - [Algorithms](https://github.com/tayllan/awesome-algorithms#readme) - places to learn and/or practice algorithms.
 	- [Education](https://github.com/gaerae/awesome-algorithms-education#readme) - Learning and practicing.
-- [Artificial Intelligence](https://github.com/owainlewis/awesome-artificial-intelligence#readme) - Artificial Intelligence (AI) courses, books, video lectures and papers.
 - [Audit Algorithms](https://github.com/erwanlemerrer/awesome-audit-algorithms#readme) - Algorithmic audits of algorithms.
 - [Competitive Programming](https://github.com/lnishan/awesome-competitive-programming#readme) - :gem: Competitive Programming, Algorithm and Data Structure resources
 - [Compilers](https://github.com/aalhour/awesome-compilers#readme) - :sunglasses: Curated list of awesome resources on Compilers, Interpreters and Runtimes
@@ -599,7 +598,7 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Neo4j](https://github.com/neueda/awesome-neo4j#readme) - Neo4j resources.
 - [NoSQL Guides](https://github.com/erictleung/awesome-nosql-guides#readme) - Help on using non-relational, distributed, open-source, and horizontally scalable databases.
 - [PostgreSQL](https://github.com/dhamaniasad/awesome-postgres#readme) - Object-relational database.
-- [PostgreSQL](https://github.com/dhamaniasad/awesome-postgres/#readme) - PostgreSQL software, libraries, tools and resources.
+- [PostgreSQL](https://github.com/dhamaniasad/awesome-postgres#readme) - PostgreSQL software, libraries, tools and resources.
 - [Redis](https://github.com/JamzyWang/awesome-redis#readme) - amazingly awesome redis and redis ecosystem resources. 
 - [RethinkDB](https://github.com/d3viant0ne/awesome-rethinkdb#readme) - RethinkDB resources, libraries, tools and applications
 - [Solr](https://github.com/xingh/awesome-solr#readme) - Document Index.
@@ -1032,7 +1031,6 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Workflow engines](https://github.com/meirwah/awesome-workflow-engines#readme) - open source workflow engines
 - [WP-CLI](https://github.com/schlessera/awesome-wp-cli#readme) - Command-line interface for WordPress.
 - [XMPP](https://github.com/bluszcz/awesome-xmpp) - Communication protocol based on XML. 
-- [Yocto Project](https://github.com/fkromer/awesome-yocto-project#readme) - It’s not an embedded Linux Distribution, It creates a custom one for you.
 
 ## Meta: Related Resources
 
