@@ -113,8 +113,8 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [AutoHotkey](https://github.com/ahkscript/awesome-AutoHotkey#readme) - AutoHotkey libraries, library distributions, scripts, tools and resources.
 - [AutoIt](https://github.com/J2TeaM/awesome-AutoIt#readme) - :star: UDFs, example scripts, tools and useful resources for AutoIt.
 - [Bash](https://github.com/awesome-lists/awesome-bash#readme) - A curated list of delightful Bash scripts and resources.
-- [C](https://github.com/inputsh/awesome-c#readme) - The most used programming language. Alternatives: [@oz123](https://github.com/oz123/awesome-c#readme)
 - [C++](https://github.com/fffaraz/awesome-cpp#readme) - Systems programming language.
+- [C](https://github.com/inputsh/awesome-c#readme) - The most used programming language. Alternatives: [@oz123](https://github.com/oz123/awesome-c#readme)
 - [CLI](https://github.com/Kikobeats/awesome-cli#readme) - Create your own CLI using JavaScript or be inspired by bests of UNIX philosophy and UX.
 - [Clojure](https://github.com/razum2um/awesome-clojure#readme) - Clojure libraries and resources.
 - [ClojureScript](https://github.com/hantuzun/awesome-clojurescript#readme) - A community driven list of ClojureScript frameworks, libraries and wrappers.
@@ -388,26 +388,6 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [3D reconstruction from images](https://github.com/openMVG/awesome_3DReconstruction_list#readme) - papers & resources linked to 3D reconstruction from images.
 - [Action Recognition](https://github.com/jinwchoi/awesome-action-recognition#readme) - action recognition and related area resources
 - [AI Audio Startups](https://github.com/csteinmetz1/ai-audio-startups#readme) - Community list of startups working with AI for audio and music tech.
-- [Computer Vision Models](https://github.com/gmalivenko/awesome-computer-vision-models#readme) - List of computer vision models.
-- [Computer Vision](https://github.com/jbhuang0604/awesome-computer-vision#readme) - computer vision resources
-- [Conversational AI](https://github.com/jyguyomarch/awesome-conversational-ai#readme) - Build awesome chatbots and digital assistants.
-- [CPUs](https://github.com/larsbrinkhoff/awesome-cpus#readme) - All CPU and MCU documentation in one place
-- [Cryptography](https://github.com/sobolevn/awesome-cryptography#readme) - cryptography resources and links.
-	- [Papers](https://github.com/pFarb/awesome-crypto-papers#readme) - Theory basics for using cryptography by non-cryptographers.
-- [Data Science with Python](https://github.com/r0f1/datascience#readme) - Libraries and other resources for data science with Python.
-- [Data Science](https://github.com/academic/awesome-datascience#readme) - :memo: An awesome Data Science repository to learn and apply for real world problems.
-	- [Tutorials](https://github.com/siboehm/awesome-learn-datascience#readme)
-- [Deep Vision](https://github.com/kjw0612/awesome-deep-vision#readme) - deep learning resources for computer vision 
-- [Distributed Systems](https://github.com/theanalyst/awesome-distributed-systems#readme) - to learn about distributed systems
-- [Empirical Software Engineering](https://github.com/dspinellis/awesome-msr#readme) - Evidence-based research on software systems.
-- [Formal Languages & Compilers](https://github.com/patrickporto/awesome-compilers-languages#readme) - language design, domain specific languages and homebrew compilers.
-- [Functional Programming](https://github.com/lucasviola/awesome-functional-programming#readme) - functional coding blog posts, communities, discussion topics, wikis and more.
-- [Graph Embedding](https://github.com/benedekrozemberczki/awesome-graph-classification#readme) - Learn representations of graphs.
-- [Graphics Programming](https://github.com/Graphics-Programming-Virtual-Meetup/resources#readme) - Write programs to synthesize and manipulate visual information.
-- [Image captioning](https://github.com/zhjohnchan/awesome-image-captioning#readme) - image captioning and related area resources. :-)
-- [Image coloring](https://github.com/oskar-j/awesome-image-coloring#readme) - Software for Image Coloring.
-- [Information Retrieval](https://github.com/harpribot/awesome-information-retrieval#readme) - Learn to develop your own search engine.
-- [Linguistics](https://github.com/theimpossibleastronaut/awesome-linguistics#readme) - anything remotely related to linguistics
 - [Artificial Intelligence](https://github.com/owainlewis/awesome-artificial-intelligence#readme) - Artificial Intelligence (AI) courses, books, video lectures and papers.
 	- [Machine Learning](https://github.com/josephmisiti/awesome-machine-learning#readme) - Machine Learning frameworks, libraries and software.
 	- [AGI & CoCoSci](https://github.com/YuzheSHI/awesome-agi-cocosci#readme) - Artificial General Intelligence and Computational Cognitive Sciences.
@@ -434,6 +414,26 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 	- [Production Machine Learning](https://github.com/EthicalML/awesome-production-machine-learning#readme) - Frameworks to deploy, monitor & scale machine learning.
 	- [PyTorch](https://github.com/bharathgs/Awesome-pytorch-list#readme) - Deep Learning Library by Facebook
 	- [Quantum Machine Learning](https://github.com/krishnakumarsekar/awesome-quantum-machine-learning#readme) - Basics, Algorithms, Study Materials, Projects, etc.
+- [Computer Vision Models](https://github.com/gmalivenko/awesome-computer-vision-models#readme) - List of computer vision models.
+- [Computer Vision](https://github.com/jbhuang0604/awesome-computer-vision#readme) - computer vision resources
+- [Conversational AI](https://github.com/jyguyomarch/awesome-conversational-ai#readme) - Build awesome chatbots and digital assistants.
+- [CPUs](https://github.com/larsbrinkhoff/awesome-cpus#readme) - All CPU and MCU documentation in one place
+- [Cryptography](https://github.com/sobolevn/awesome-cryptography#readme) - cryptography resources and links.
+	- [Papers](https://github.com/pFarb/awesome-crypto-papers#readme) - Theory basics for using cryptography by non-cryptographers.
+- [Data Science with Python](https://github.com/r0f1/datascience#readme) - Libraries and other resources for data science with Python.
+- [Data Science](https://github.com/academic/awesome-datascience#readme) - :memo: An awesome Data Science repository to learn and apply for real world problems.
+	- [Tutorials](https://github.com/siboehm/awesome-learn-datascience#readme)
+- [Deep Vision](https://github.com/kjw0612/awesome-deep-vision#readme) - deep learning resources for computer vision 
+- [Distributed Systems](https://github.com/theanalyst/awesome-distributed-systems#readme) - to learn about distributed systems
+- [Empirical Software Engineering](https://github.com/dspinellis/awesome-msr#readme) - Evidence-based research on software systems.
+- [Formal Languages & Compilers](https://github.com/patrickporto/awesome-compilers-languages#readme) - language design, domain specific languages and homebrew compilers.
+- [Functional Programming](https://github.com/lucasviola/awesome-functional-programming#readme) - functional coding blog posts, communities, discussion topics, wikis and more.
+- [Graph Embedding](https://github.com/benedekrozemberczki/awesome-graph-classification#readme) - Learn representations of graphs.
+- [Graphics Programming](https://github.com/Graphics-Programming-Virtual-Meetup/resources#readme) - Write programs to synthesize and manipulate visual information.
+- [Image captioning](https://github.com/zhjohnchan/awesome-image-captioning#readme) - image captioning and related area resources. :-)
+- [Image coloring](https://github.com/oskar-j/awesome-image-coloring#readme) - Software for Image Coloring.
+- [Information Retrieval](https://github.com/harpribot/awesome-information-retrieval#readme) - Learn to develop your own search engine.
+- [Linguistics](https://github.com/theimpossibleastronaut/awesome-linguistics#readme) - anything remotely related to linguistics
 - [Open Source Society University](https://github.com/ossu/computer-science#readme) - :mortar_board: Path to a free self-taught education in Computer Science!
 - [Quantum Computing](https://github.com/desireevl/awesome-quantum-computing#readme) - Computing which utilizes quantum mechanics and qubits on quantum computers.
 - [Reproducible Research](https://github.com/leipzig/awesome-reproducible-research#readme) - Go from raw data to results in a repeatable and transparent manner
@@ -598,7 +598,6 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Neo4j](https://github.com/neueda/awesome-neo4j#readme) - Neo4j resources.
 - [NoSQL Guides](https://github.com/erictleung/awesome-nosql-guides#readme) - Help on using non-relational, distributed, open-source, and horizontally scalable databases.
 - [PostgreSQL](https://github.com/dhamaniasad/awesome-postgres#readme) - Object-relational database.
-- [PostgreSQL](https://github.com/dhamaniasad/awesome-postgres#readme) - PostgreSQL software, libraries, tools and resources.
 - [Redis](https://github.com/JamzyWang/awesome-redis#readme) - amazingly awesome redis and redis ecosystem resources. 
 - [RethinkDB](https://github.com/d3viant0ne/awesome-rethinkdb#readme) - RethinkDB resources, libraries, tools and applications
 - [Solr](https://github.com/xingh/awesome-solr#readme) - Document Index.
