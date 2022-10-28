@@ -42,15 +42,15 @@ I made this repo to be a more inclusive  version of [sindresorhus's awesome list
 - [Actions on Google](https://github.com/ravirupareliya/awesome-actions-on-google#readme) - Developer platform for Google Assistant.
 - [Adafruit IO](https://github.com/adafruit/awesome-adafruitio#readme) - Visualize and store data from any device.
 - [Amazon Alexa](https://github.com/miguelmota/awesome-amazon-alexa#readme) - Virtual home assistant.
-- [Amazon Web Services](https://github.com/donnemartin/awesome-aws#readme) - Amazon Web Services (AWS) libraries, open source repos, guides, blogs, and other resources.  Featuring the Fiery Meter of AWSome.
+- [Amazon Web Services](https://github.com/donnemartin/awesome-aws#readme) - AWSome libraries, open source repos, guides, blogs, etc.
 - [Android](https://github.com/JStumpp/awesome-android#readme) - Mobile operating system developed by Google.
 - [ArcGIS Developer](https://github.com/Esri/awesome-arcgis-developer#readme) - Mapping and location analysis platform for developers.
 - [Capacitor](https://github.com/riderx/awesome-capacitor#readme) - Cross-platform open source runtime for building Web Native apps.
 - [Chatbots](https://github.com/jstumpp/awesome-chatbots#readme) - Chatbot services and resources.
 - [Cloudflare](https://github.com/irazasyed/awesome-cloudflare#readme) - CDN, DNS, DDoS protection, and security for your site.
 - [Cordova](https://github.com/busterc/awesome-cordova#readme) - JavaScript API for hybrid apps.
-- [DOS](https://github.com/balintkissdev/awesome-dos#readme) - Operating system for x86-based personal computers that was popular during the 1980s and early 1990s.
-- [Deno](https://github.com/denolib/awesome-deno#readme) - A secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.
+- [DOS](https://github.com/balintkissdev/awesome-dos#readme) - Operating system for x86 PC froms the 1980's.
+- [Deno](https://github.com/denolib/awesome-deno#readme) - A secure runtime for JavaScript and TypeScript build on V8.
 - [DigitalOcean](https://github.com/jonleibowitz/awesome-digitalocean#readme) - Cloud computing platform designed for developers.
 - [ESP](https://github.com/agucova/awesome-esp#readme) - Low-cost microcontrollers with WiFi and broad IoT applications.
 - [Electron](https://github.com/sindresorhus/awesome-electron#readme) - Cross-platform native desktop apps using JavaScript/HTML/CSS.
