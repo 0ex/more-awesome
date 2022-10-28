@@ -1040,6 +1040,8 @@ Github topics to find more awesome lists:
 - https://github.com/topics/lists
 - https://github.com/topics/resources
 
+Tools for Awesome lists:
+
 - [Awesome CLI](https://github.com/umutphp/awesome-cli#readme) - A simple command-line tool to dive into Awesome lists.
 - [Awesome Indexed](https://awesome-indexed.mathew-davies.co.uk) - Search the Awesome dataset.
 - [Awesome Search](https://awesomelists.top) - Quick search for Awesome lists.
