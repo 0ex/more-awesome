@@ -106,6 +106,8 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 	- [Mac Open Source Apps](https://github.com/serhii-londar/open-source-mac-os-apps#readme)
 	- [Touchbar](https://github.com/z11h/awesome-touchbar#readme) - :point_right: :star2: delightful macOS resources for your touchbar
 	- [Mac Admin Tools](https://github.com/smashism/awesome-macadmin-tools#readme) - Mac Admin Tools
+- Wechat Miniapp
+	- [awesome-wechat by @we-list](https://github.com/we-list/awesome-wechat) - Wechat official channel related project.
 
 ## Programming Languages
 
