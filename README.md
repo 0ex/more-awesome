@@ -108,6 +108,8 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 	- [Mac Admin Tools](https://github.com/smashism/awesome-macadmin-tools#readme) - Mac Admin Tools
 - Wechat Miniapp
 	- [awesome-wechat by @we-list](https://github.com/we-list/awesome-wechat) - Wechat official channel related project.
+	- [awesome-wechat-weapp by @justjavac](https://github.com/justjavac/awesome-wechat-weapp) - Third-party documentation, questions, and component libraries about wechat miniapp.
+	- [awesome-github-wechat-weapp by @opendigg](https://github.com/opendigg/awesome-github-wechat-weapp) - Some UI and framework libraries about wechat miniapp.
 
 ## Programming Languages
 
