@@ -740,7 +740,6 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 
 - [Billing](https://github.com/kdeldycke/awesome-billing#readme) - Payments, invoicing, pricing, accounting, marketplace, fraud, and business intelligence.
 - [Clean Tech](https://github.com/nglgzz/awesome-clean-tech#readme) - Fighting climate change with technology.
-- [Developer-First Products](https://github.com/agamm/awesome-developer-first#readme) - Products that target developers as the user. 
 - [Developer-First Products](https://github.com/agamm/awesome-developer-first#readme) - Products that target developers as the user.
 - [Engineering Team Management](https://github.com/kdeldycke/awesome-engineering-team-management#readme) - How to transition from software development to engineering management.
 - [Indie](https://github.com/mezod/awesome-indie#readme) - Independent developer businesses.
