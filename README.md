@@ -641,7 +641,7 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Computer History](https://github.com/watson/awesome-computer-history#readme) - Computer history videos, documentaries and related folklore
 - [CSS Learning](https://github.com/micromata/awesome-css-learning#readme) - Mainly about CSS – the language and the modules.
 - [Educational Games](https://github.com/yrgo/awesome-educational-games#readme) - Learn while playing.
-- [Explorables](https://github.com/sp4ke/awesome-explorables#readme) - Explorable explanations
+- [Explorables](https://github.com/blob42/awesome-explorables#readme) - Explorable explanations
 - [Free Courses](https://github.com/Leocardoso94/Free-Courses#readme) - free courses about programming :book:
 - [Hacker Laws](https://github.com/dwmkerr/hacker-laws#readme) - Laws, theories, principles and patterns relevant to developers and techies.
 - [JavaScript Learning](https://github.com/micromata/awesome-javascript-learning#readme) - A tiny list limited to the best JavaScript Learning Resources
