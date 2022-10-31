@@ -105,49 +105,49 @@ Tools for lists:
 
 ### Mobile
 
-- [Fuse](https://github.com/fuse-compound/awesome-fuse#readme) - Mobile development tools. *dead*
 - [Android](https://github.com/JStumpp/awesome-android#readme) - Mobile operating system developed by Google.
 	- [Android Apps](https://github.com/LinuxCafeFederation/awesome-android#readme) - Android applications, tutorials and resources.
+- [Fuse](https://github.com/fuse-compound/awesome-fuse#readme) - Mobile development tools. *dead*
 
 ### UNIX / Linux
 
-- [Nix](https://github.com/nix-community/awesome-nix#readme) - Reliable and reproducible package manager for Unixes.
-- [UNIX](https://github.com/sirredbeard/Awesome-UNIX#readme) - A family of computer operating systems and principles derived from AT&T UNIX.
-- [Linux](https://github.com/inputsh/awesome-linux#readme) - Open-source kernel
+- [AppImage](https://github.com/AppImage/awesome-appimage#readme) - Package apps in a single file that works on various mainstream Linux distributions.
+- [Arch-based Projects](https://github.com/PandaFoss/Awesome-Arch#readme) - Linux distributions and projects based on Arch Linux.
+- [eBPF](https://github.com/zoidbergwill/awesome-ebpf#readme) - Virtual machine for efficient tracing and monitoring for Linux systems.
+- [Flatpak](https://github.com/akvadrako/awesome-flatpak#readme) - Popular distro-independent packaging technology for your apps
 - [Linux Apps](https://github.com/harrytran103/awesome-linux-apps#readme) - Applications for Linux distributions.
 - [Linux Containers](https://github.com/Friz-zy/awesome-linux-containers#readme) - Linux Containers frameworks, libraries and software
 - [Linux Software](https://github.com/luong-komorebi/Awesome-Linux-Software#readme) - Applications, software, tools and other materials for Linux distros. 
-- [eBPF](https://github.com/zoidbergwill/awesome-ebpf#readme) - Virtual machine for efficient tracing and monitoring for Linux systems.
-- [Arch-based Projects](https://github.com/PandaFoss/Awesome-Arch#readme) - Linux distributions and projects based on Arch Linux.
-- [AppImage](https://github.com/AppImage/awesome-appimage#readme) - Package apps in a single file that works on various mainstream Linux distributions.
+- [Linux](https://github.com/inputsh/awesome-linux#readme) - Open-source kernel
+- [Nix](https://github.com/nix-community/awesome-nix#readme) - Reliable and reproducible package manager for Unixes.
 - [Snapcraft](https://github.com/rjoydip/awesome-snapcraft#readme) - The app store for Linux
-- [Flatpak](https://github.com/akvadrako/awesome-flatpak#readme) - Popular distro-independent packaging technology for your apps
+- [UNIX](https://github.com/sirredbeard/Awesome-UNIX#readme) - A family of computer operating systems and principles derived from AT&T UNIX.
 - [Yocto Project](https://github.com/fkromer/awesome-yocto-project#readme) - It’s not an embedded Linux Distribution, It creates a custom one for you.
 
 ### Windows
 
-- [Windows](https://github.com/Awesome-Windows/Awesome#readme) - Microsoft Windows apps and tools
-- [SharePoint](https://github.com/siaf/awesome-SharePoint#readme) - SharePoint frameworks, libraries and software.
-- [Windows Subsystem for Linux](https://github.com/sirredbeard/Awesome-WSL#readme) - Compatibility layer for running Linux applications on Windows.
-- [PowerShell](https://github.com/janikvonrotz/awesome-powershell#readme) - Cross-platform object-oriented shell.
 - [DOS](https://github.com/balintkissdev/awesome-dos#readme) - Operating system for x86 PC froms the 1980's.
 - [Dot NET](https://github.com/quozd/awesome-dotnet#readme) - .NET libraries, tools, frameworks and software
 	- [Core](https://github.com/thangchung/awesome-dotnet-core#readme)
 	- [Roslyn](https://github.com/ironcev/awesome-roslyn#readme) - Open-source compilers and code analysis APIs for C# and VB.NET languages.
+- [PowerShell](https://github.com/janikvonrotz/awesome-powershell#readme) - Cross-platform object-oriented shell.
+- [SharePoint](https://github.com/siaf/awesome-SharePoint#readme) - SharePoint frameworks, libraries and software.
+- [Windows Subsystem for Linux](https://github.com/sirredbeard/Awesome-WSL#readme) - Compatibility layer for running Linux applications on Windows.
+- [Windows](https://github.com/Awesome-Windows/Awesome#readme) - Microsoft Windows apps and tools
 
 ### macOS
 
+- [Alfred Workflows](https://github.com/alfred-workflows/awesome-alfred-workflows#readme) - Productivity app for macOS.
+- [Mac Admin Tools](https://github.com/smashism/awesome-macadmin-tools#readme) - Mac Admin Tools
+- [Mac Apps](https://github.com/jaywcjlove/awesome-mac#readme)
+- [Mac Apps](https://github.com/justin-j/awesome-mac-apps)
 - [Mac by @xyNNN](https://github.com/xyNNN/awesome-mac#readme) - macOS tools, applications and games.
 - [Mac Command Line](https://git.herrbischoff.com/awesome-macos-command-line/about/)
-- [Mac Apps](https://github.com/justin-j/awesome-mac-apps)
-- [Mac Apps](https://github.com/jaywcjlove/awesome-mac#readme)
 - [Mac DevTools](https://github.com/marceloboeira/awesome-osx)
-- [Mac Screensavers](https://github.com/agarrharr/awesome-macos-screensavers#readme)
 - [Mac Open Source Apps](https://github.com/serhii-londar/open-source-mac-os-apps#readme)
-- [Touchbar](https://github.com/z11h/awesome-touchbar#readme) - :point_right: :star2: delightful macOS resources for your touchbar
-- [Mac Admin Tools](https://github.com/smashism/awesome-macadmin-tools#readme) - Mac Admin Tools
+- [Mac Screensavers](https://github.com/agarrharr/awesome-macos-screensavers#readme)
 - [Quick Look Plugins](https://github.com/sindresorhus/quick-look-plugins#readme) - For macOS.
-- [Alfred Workflows](https://github.com/alfred-workflows/awesome-alfred-workflows#readme) - Productivity app for macOS.
+- [Touchbar](https://github.com/z11h/awesome-touchbar#readme) - :point_right: :star2: delightful macOS resources for your touchbar
 
 ## Programming Languages
 
@@ -528,11 +528,11 @@ Tools for lists:
 
 ## Science
 
-- [Jupyter](https://github.com/markusschanta/awesome-jupyter#readme) - Create and share documents that contain code, equations, visualizations and narrative text.
-- [LaTeX](https://github.com/egeerardyn/awesome-LaTeX#readme) - Typesetting language.
 - [Cheminformatics](https://github.com/hsiaoyi0504/awesome-cheminformatics#readme) - Informatics techniques applied to problems in chemistry.
 - [Citizen Science](https://github.com/dylanrees/citizen-science#readme) - For community-based and non-institutional scientists.
 - [Earth](https://github.com/philsturgeon/awesome-earth#readme) - Find ways to resolve the climate crisis.
+- [Jupyter](https://github.com/markusschanta/awesome-jupyter#readme) - Create and share documents that contain code, equations, visualizations and narrative text.
+- [LaTeX](https://github.com/egeerardyn/awesome-LaTeX#readme) - Typesetting language.
 - [Math](https://github.com/rossant/awesome-math#readme) - mathematics resources
 	- [Calculators](https://github.com/xxczaki/awesome-calculators#readme) - Calculators for every platform.
 	- [MATLAB](https://github.com/uhub/awesome-matlab#readme) - Matlab frameworks, libraries and software.
@@ -603,12 +603,12 @@ Tools for lists:
 
 ## Editors
 
-- [Online IDE](https://github.com/styfle/awesome-online-ide#readme) - Online Integrated Development Environments.
 - [Atom](https://github.com/mehcode/awesome-atom#readme) - Open-source and hackable text editor.
 - [Eclipse IDE](https://github.com/hrj/awesome-eclipse#readme) - plugins and other resources for eclipse IDE
 - [Emacs](https://github.com/emacs-tw/awesome-emacs#readme) - Emacs packages, libraries and other items.
 - [IDE and Text Editors](https://github.com/thewhitetulip/awesome-devtools#readme) - developer tools *dead* *poor*
 - [Neovim](https://github.com/rockerBOO/awesome-neovim#readme) - Vim-fork focused on extensibility and usability.
+- [Online IDE](https://github.com/styfle/awesome-online-ide#readme) - Online Integrated Development Environments.
 - [Sublime Text](https://github.com/dreikanter/sublime-bookmarks#readme) - Sublime Text essential plugins and resources
 - [Vim](https://github.com/mhinz/vim-galore#readme) - Modal, command-line text editor. Also see [VimAwesome](http://vimawesome.com).
 - [Visual Studio Code](https://github.com/viatsko/awesome-vscode#readme) - Cross-platform open-source text editor. (VSCode)
@@ -650,9 +650,26 @@ Tools for lists:
 
 ## Programming
 
+- [Beautiful Documentation](https://github.com/matheusfelipeog/beautiful-docs#readme) - Pointers to useful, well-written, and otherwise beautiful documentation.
+- [Boilerplate Projects](https://github.com/melvin0008/awesome-projects-boilerplates#readme) - Boilerplates for mobile and web apps
+- [Chinese Programming Terms](https://github.com/pohzipohzi/awesome-chinese-programming-terms#readme) - Programming terms in chinese.
 - [Code Review](https://github.com/joho/awesome-code-review#readme) - Reviewing code.
+- [Code Schools](https://github.com/cfj/awesome-code-schools#readme) - code schools.
+- [Coding entertainment](https://github.com/krmaxwell/coding-entertainment#readme) - Puzzles, challenges, games, CTFs, and other entertainment via coding
+- [Coding Interview](https://github.com/Olshansk/interview#readme) - Everything you need to prepare for your technical interview
+- [Coding Style Conventions and Standards](https://github.com/SalGnt/cscs#readme) - Coding Style Conventions and Standards.
+- [Creative Coding](https://github.com/terkelg/awesome-creative-coding#readme) - Programming something expressive instead of something functional.
+- [Design and Development Guides](https://github.com/NARKOZ/guides#readme) - Design and development guides
+- [Design patterns](https://github.com/DovAmir/awesome-design-patterns#readme) - List of software and architecture related design patterns.
 - [Dev Env](https://github.com/jondot/awesome-devenv#readme) - tools, resources and workflow tips making an development environment.
+- [Dev Fun](https://github.com/mislavcimpersak/awesome-dev-fun#readme) - Funny developer projects.
+- [Developer Advocacy](https://github.com/dmitryvinn/awesome-dev-advocacy#readme) - List of resources for Developer Advocates
+- [Discounts for Student Developers](https://github.com/AchoArnold/discount-for-student-dev#readme) - Discounts on software for developers who are students.
+- [Domain-Driven Design](https://github.com/heynickc/awesome-ddd#readme) - Software development approach.
+- [Falsehood](https://github.com/kdeldycke/awesome-falsehood#readme) - Falsehoods programmers believe in.
 - [FOSS for Developers](https://github.com/tvvocold/FOSS-for-Dev#readme) - A hub of Free and open-source software for developers
+- [Free for Developers](https://github.com/ripienaar/free-for-dev#readme) - SaaS, PaaS and IaaS offerings that have free tiers.
+- [Free Programming Books](https://github.com/EbookFoundation/free-programming-books#readme) - :books: Freely available programming books
 - [GitHub](https://github.com/phillipadsmith/awesome-github#readme) - Hosting service for Git repositories.
 	- [GitHub Actions](https://github.com/sdras/awesome-actions#readme) - Create tasks to automate your workflow and share them with others on GitHub.
 	- [Browser Extensions](https://github.com/stefanbuck/awesome-browser-extensions-for-github#readme)
@@ -661,30 +678,6 @@ Tools for lists:
 	- [Browser Extensions](https://github.com/stefanbuck/awesome-browser-extensions-for-github)
 	- [GitHub Badges](https://github.com/chetanraj/awesome-github-badges#readme) - github README.md badges
 	- [Github Profile Readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme#readme) - Interesting GitHub READMEs and related resources.
-- [Version Managers](https://github.com/bernardoduarte/awesome-version-managers#readme) - Tools to manage multiple versions of programming languages.
-- Git
-	- [Git Add-ons](https://github.com/stevemao/awesome-git-addons#readme) - Enhance the `git` CLI.
-	- [Git Cheat Sheet & Git Flow](https://github.com/arslanbilal/git-cheat-sheet#readme) - :octocat: git and git flow cheat sheet
-	- [Git Hooks](https://githooks.com/) - Scripts that run automatically every time a particular event occurs in a Git repository. Also by [@aitemr](https://github.com/aitemr/awesome-git-hooks#readme)  and [@compscilauren](https://github.com/compscilauren/awesome-git-hooks#readme).
-	- [Git Tips](https://github.com/git-tips/tips#readme) - Most commonly used git tips and tricks.
-	- [Gitea](https://gitea.com/gitea/awesome-gitea) - Community managed lightweight code hosting solution written in Go.
-- [Beautiful Documentation](https://github.com/matheusfelipeog/beautiful-docs#readme) - Pointers to useful, well-written, and otherwise beautiful documentation.
-- [Boilerplate Projects](https://github.com/melvin0008/awesome-projects-boilerplates#readme) - Boilerplates for mobile and web apps
-- [Chinese Programming Terms](https://github.com/pohzipohzi/awesome-chinese-programming-terms#readme) - Programming terms in chinese.
-- [Code Schools](https://github.com/cfj/awesome-code-schools#readme) - code schools.
-- [Coding entertainment](https://github.com/krmaxwell/coding-entertainment#readme) - Puzzles, challenges, games, CTFs, and other entertainment via coding
-- [Coding Interview](https://github.com/Olshansk/interview#readme) - Everything you need to prepare for your technical interview
-- [Coding Style Conventions and Standards](https://github.com/SalGnt/cscs#readme) - Coding Style Conventions and Standards.
-- [Creative Coding](https://github.com/terkelg/awesome-creative-coding#readme) - Programming something expressive instead of something functional.
-- [Design and Development Guides](https://github.com/NARKOZ/guides#readme) - Design and development guides
-- [Design patterns](https://github.com/DovAmir/awesome-design-patterns#readme) - List of software and architecture related design patterns.
-- [Dev Fun](https://github.com/mislavcimpersak/awesome-dev-fun#readme) - Funny developer projects.
-- [Developer Advocacy](https://github.com/dmitryvinn/awesome-dev-advocacy#readme) - List of resources for Developer Advocates
-- [Discounts for Student Developers](https://github.com/AchoArnold/discount-for-student-dev#readme) - Discounts on software for developers who are students.
-- [Domain-Driven Design](https://github.com/heynickc/awesome-ddd#readme) - Software development approach.
-- [Falsehood](https://github.com/kdeldycke/awesome-falsehood#readme) - Falsehoods programmers believe in.
-- [Free for Developers](https://github.com/ripienaar/free-for-dev#readme) - SaaS, PaaS and IaaS offerings that have free tiers.
-- [Free Programming Books](https://github.com/EbookFoundation/free-programming-books#readme) - :books: Freely available programming books
 - [Katas](https://github.com/gamontal/awesome-katas#readme) - an exercise in programming which helps hone your skills through practice and repetition.
 - [Naming](https://github.com/gruhn/awesome-naming#readme) - Naming things in computer science done right.
 - [Programming Community](https://github.com/phpearth/awesome-community#readme) - forums, groups, etc organized by programming language.
@@ -694,6 +687,13 @@ Tools for lists:
 - [Software Engineering Blogs](https://github.com/kilimchoi/engineering-blogs#readme) - engineering blogs
 - [Software Patreons](https://github.com/uraimo/awesome-software-patreons#readme) - Fund individual programmers or the development of open source projects.
 - [Swag for Developers](https://github.com/swapagarwal/swag-for-dev#readme) - swag opportunities for developers
+- [Version Managers](https://github.com/bernardoduarte/awesome-version-managers#readme) - Tools to manage multiple versions of programming languages.
+- Git
+	- [Git Add-ons](https://github.com/stevemao/awesome-git-addons#readme) - Enhance the `git` CLI.
+	- [Git Cheat Sheet & Git Flow](https://github.com/arslanbilal/git-cheat-sheet#readme) - :octocat: git and git flow cheat sheet
+	- [Git Hooks](https://githooks.com/) - Scripts that run automatically every time a particular event occurs in a Git repository. Also by [@aitemr](https://github.com/aitemr/awesome-git-hooks#readme)  and [@compscilauren](https://github.com/compscilauren/awesome-git-hooks#readme).
+	- [Git Tips](https://github.com/git-tips/tips#readme) - Most commonly used git tips and tricks.
+	- [Gitea](https://gitea.com/gitea/awesome-gitea) - Community managed lightweight code hosting solution written in Go.
 
 ## Libraries
 
@@ -845,8 +845,8 @@ Tools for lists:
 
 ## Hardware
 
-- [Adafruit IO](https://github.com/adafruit/awesome-adafruitio#readme) - Visualize and store data from any device.
 - [3D-Printing](https://github.com/adius/awesome-3d-printing#readme) - 3D printing resources
+- [Adafruit IO](https://github.com/adafruit/awesome-adafruitio#readme) - Visualize and store data from any device.
 - [Bluetooth Beacons](https://github.com/rabschi/awesome-beacon#readme) - Bluetooth beacon software and tools.
 - [DIY Synths](https://github.com/Atarity/diy-synths#readme) - List of standalone (non-modular) synths projects. All open-source.
 - [Electric Guitar Specifications](https://github.com/gitfrage/guitarspecs#readme) - Checklist for building your own electric guitar.
@@ -898,7 +898,6 @@ Tools for lists:
 
 ## Networking
 
-- [IPFS](https://github.com/ipfs/awesome-ipfs#readme) - P2P hypermedia protocol.
 - [AMQP 1.0](https://github.com/xinchen10/awesome-amqp#readme) - Advanced Message Queuing Protocol 1.0.
 - [Bluetooth Beacons](https://github.com/beaconinside/awesome-beacon#readme) - Bluetooth beacon software and tools.
 - [Bots](https://github.com/DopplerHQ/awesome-bots#readme) - Digital agents. [@hackerkid](https://github.com/hackerkid/bots#readme)
@@ -907,6 +906,7 @@ Tools for lists:
 - [Browser Automation](https://github.com/angrykoala/awesome-browser-automation#readme) - Web scrapers, headless browsers and testing.
 - [Computer Networking](https://github.com/nyquist/awesome-networking#readme) - To design, implement and operate computer networks.
 - [gRPC](https://github.com/grpc-ecosystem/awesome-grpc#readme) - useful resources for gRPC
+- [IPFS](https://github.com/ipfs/awesome-ipfs#readme) - P2P hypermedia protocol.
 - [LoRa & LoRaWAN](https://github.com/mcicolella/awesome-lora-lorawan#readme) - LoRa and LoRaWAN resources.
 - [MQTT](https://github.com/hobbyquaker/awesome-mqtt#readme) - "Internet of Things" connectivity protocol.
 - [Network Analysis](https://github.com/briatte/awesome-network-analysis#readme) - network analysis resources.
@@ -971,35 +971,35 @@ Tools for lists:
 
 System Engineering, DevOps
 
-- [Heroku](https://github.com/ianstormtaylor/awesome-heroku#readme) - Cloud platform as a service.
-- [Hyper](https://github.com/bnb/awesome-hyper#readme) - Cross-platform terminal app built on web technologies.
-- [Command-Line Apps](https://github.com/agarrharr/awesome-cli-apps#readme) - 🖥 📊 🕹 🛠 command line apps
-- [Deployment](https://github.com/delirehberi/awesome-deployment#readme) - amazing Deployment libraries, library distributions, scripts, tools and resources.
-- [Dev Ops](https://github.com/bregman-arie/devops-exercises#readme) - Great Dev Ops related Informations.
-- [Dotfiles](https://github.com/webpro/awesome-dotfiles#readme) - dotfiles resources.
-- [Fish](https://github.com/jorgebucaran/awsm.fish#readme) - User-friendly shell.
-- [Ricing](https://github.com/fosslife/awesome-ricing#readme) - tools and technology to help you out with ricing.
-- [Shell](https://github.com/alebcay/awesome-shell#readme) - command-line frameworks, toolkits, guides and gizmos.
-- [SSH](https://github.com/moul/awesome-ssh#readme) - :computer: SSH resources.
-- [Terminals Are Sexy](https://github.com/k4m4/terminals-are-sexy#readme) - 💥 Terminal frameworks, plugins & resources for CLI lovers.
-- [Zsh Plugins](https://github.com/unixorn/awesome-zsh-plugins#readme) - ZSH frameworks, plugins, themes and tutorials.
 - [Alerts](https://github.com/samber/awesome-prometheus-alerts#readme) - Prometheus queries and rules for alerting.
 - [Ansible](https://github.com/ansible-community/awesome-ansible#readme) - A Python-based, open source IT configuration management and automation platform.
 - [ChatOps](https://github.com/exAspArk/awesome-chatops#readme) - Managing technical and business operations through a chat.
+- [Command-Line Apps](https://github.com/agarrharr/awesome-cli-apps#readme) - 🖥 📊 🕹 🛠 command line apps
 - [Connectivity Data and Reports](https://github.com/stevesong/awesome-connectivity-info#readme) - Understand who has access to telecommunication and internet infrastructure.
 - [Continuous Integration and Continuous Delivery](https://github.com/cicdops/awesome-ciandcd#readme) - continuous integration and continuous delivery
 - [Continuous Integration](https://github.com/ligurio/awesome-ci#readme) - List of Continuous Integration services
+- [Deployment](https://github.com/delirehberi/awesome-deployment#readme) - amazing Deployment libraries, library distributions, scripts, tools and resources.
+- [Dev Ops](https://github.com/bregman-arie/devops-exercises#readme) - Great Dev Ops related Informations.
+- [Dotfiles](https://github.com/webpro/awesome-dotfiles#readme) - dotfiles resources.
 - [Emulators & Simulators](https://github.com/mcicolella/awesome-emulators-simulators#readme) - simulators of PCs, home computers, mainframes, consoles, robots, etc.
+- [Fish](https://github.com/jorgebucaran/awsm.fish#readme) - User-friendly shell.
+- [Heroku](https://github.com/ianstormtaylor/awesome-heroku#readme) - Cloud platform as a service.
+- [Hyper](https://github.com/bnb/awesome-hyper#readme) - Cross-platform terminal app built on web technologies.
 - [Microservices](https://github.com/mfornos/awesome-microservices#readme) - Microservice Architecture related principles and technologies.
 - [Monitoring](https://github.com/crazy-canux/awesome-monitoring#readme) - Open source monitoring tools.
+- [Ricing](https://github.com/fosslife/awesome-ricing#readme) - tools and technology to help you out with ricing.
 - [SaltStack](https://github.com/hbokh/awesome-saltstack#readme) - Python-based config management system.
 - [Self Hosted](https://github.com/awesome-selfhosted/awesome-selfhosted#readme) - Free Software network services and Web applications.
 - [Services Engineering](https://github.com/mmcgrana/services-engineering#readme) - A reading list for services engineering, with a focus on cloud infrastructure services
+- [Shell](https://github.com/alebcay/awesome-shell#readme) - command-line frameworks, toolkits, guides and gizmos.
 - [Site Reliability Engineering](https://github.com/dastergon/awesome-sre#readme) - Site Reliability and Production Engineering resources.
+- [SSH](https://github.com/moul/awesome-ssh#readme) - :computer: SSH resources.
 - [Sysadmin FOSS](https://github.com/awesome-foss/awesome-sysadmin#readme) - Free Software for system administrators.
 - [Sysadmin Tools](https://github.com/Spacial/awesome-systools#readme) - Daily handy tools.
 - [Tasker](https://github.com/guifelix/awesome-tasker#readme) - Android Automation app.
+- [Terminals Are Sexy](https://github.com/k4m4/terminals-are-sexy#readme) - 💥 Terminal frameworks, plugins & resources for CLI lovers.
 - [Workflow engines](https://github.com/meirwah/awesome-workflow-engines#readme) - open source workflow engines
+- [Zsh Plugins](https://github.com/unixorn/awesome-zsh-plugins#readme) - ZSH frameworks, plugins, themes and tutorials.
 
 ## Culture
 
