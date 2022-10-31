@@ -9,7 +9,7 @@ Setup:
 
 1. `pip install ghapi`
 2. Create token in Developer settings > Personal access tokens
-3. Put token in ~/.private/0exi-github-token
+3. Put token in ~/.private/github-token
 
 List a page of PRs:
 
@@ -22,7 +22,7 @@ Mirror PR number 10:
 For more help use `-h` flag and comments in this file.
 """
 
-import yaml, json, sys, re, logging
+import yaml, json, sys, re, os, logging
 import sqlite3
 import requests
 
@@ -81,23 +81,28 @@ class Pull:
         return f'{self.repo}/pull/{self.num}'
 
 @dataclass
-class PullInfo:
-    """Github Pull Request Info."""
+class ListInfo:
+    """Awesome List Metadata."""
+    url: str = ''
+    key: str = ''  # normalized url
     title: str = ''
     head: str = ''
     desc: str = ''
-    url: str = ''
     stars: int = 0
     updated: str = ''
     size: int = 0 
     status: str = ''
     redir: str = ''
-    pull: str = ''
     code: int = 0
-    created: datetime = None
     error: str = ''
-    extra: list[str] = field(default_factory=list)
     ver: int = 0
+    
+    def build_link(self):
+        link = f'- [{self.title}]({self.url})'
+        if self.desc:
+            link += f' - {self.desc}'
+
+        return link
 
     def __str__(self):
         out = []
@@ -108,21 +113,41 @@ class PullInfo:
         if self.code not in [0, 200]:
             out.append(('code', self.code))
 
-        for line in self.extra:
-            out.append(('extra', line))
-
         if self.updated:
             out.append(('updated', _format_time(self.updated)))
 
-        out.append(('created', _format_time(self.created)))
-        out.append(('pull', self.pull))
-
         return '\n'.join('%7s: %s' % i for i in out)
 
+@dataclass
+class PullInfo(ListInfo):
+    """Github Pull Request Info."""
+    num: int = 0  # srcpr.num
+    pull: str = ''
+    created: datetime = None
+    extra: list[str] = field(default_factory=list)  # extra lines in diff
+    
+    @property
+    def ref(self):
+        # use local ref if available
+        if 0 == sh_code(f'git rev-parse --verify pull/{self.num} >/dev/null 2>&1'):
+            ref = f'pull/{self.num}'
+        else:
+            ref = f'remotes/up/pull/{self.num}/head'
+            if 0 != sh_code(f'git rev-parse --verify {ref} >/dev/null 2>&1'):
+                sh(f'git fetch -q up refs/pull/{self.num}/head:{ref}')
 
-def _format_time(when):
-    w = datetime.strptime(when, '%Y-%m-%dT%H:%M:%S%z')
-    return f'{w:%Y-%m-%d %H:%M}'
+        return ref
+
+    def __str__(self):
+        out = ListInfo.__str__(self)
+        out += f'\ncreated: {_format_time(self.created)}'
+        out += f'\n   pull: {self.pull}'
+        
+        for line in self.extra:
+            out += f'\n  extra: {line}'
+
+        return out
+
 
 ###############################################################
 # Globals
@@ -130,14 +155,13 @@ def _format_time(when):
 SRC_REPO = Repo(owner="sindresorhus", repo="awesome")
 DEST_REPO = Repo(owner="0ex", repo="more-awesome")
 
-GITHUB_TOKEN_PATH = '~/.private/0exi-github-token'
-
 FETCH_BRANCH_VER = 8
 
 IN_PATH = 'readme.md'
 OUT_PATH = 'README.md'
 
 gh = None
+
 db = None
 args = None
 
@@ -184,7 +208,7 @@ def main():
             copy_ghpr(srcpr)
 
         if args.info:
-            show_info(srcpr)
+            show_info(srcpr, verbose=True)
 
         if args.fetch:
             fetch_branch(srcpr)
@@ -197,7 +221,7 @@ def main():
             show_diff(srcpr)
 
         if args.accept:
-            show_info(srcpr)
+            show_info(srcpr, verbose=True)
             accept_pull(srcpr)
     
     log('IDone')
@@ -213,12 +237,12 @@ def parse_args():
     p.add_argument('-r', '--redo', action='store_true')
     p.add_argument('-d', '--debug', action='store_true')
     p.add_argument('-v', '--verbose', action='store_true')
-    p.add_argument('-t', '--tag', action='store_true',
-        help='tag repos')
+    p.add_argument('-t', '--tag', action='store_true', help='tag repos')
     
     # repo operations
     p.add_argument('-s', '--scan', type=str, help='scan: ALL or page number')
     p.add_argument('--sort', action='store_true', help='sort readme')
+    p.add_argument('--fixup', action='store_true', help='fixup while sorting')
 
     # PR operations
     p.add_argument('prnum', type=int, nargs='*', help='pull numbers to handle (from source)')
@@ -236,7 +260,9 @@ def login():
 
     db = DB()
 
-    cfg = Path(GITHUB_TOKEN_PATH).expanduser()
+    path = os.getenv('GITHUB_TOKEN_PATH', '~/.private/github-token')
+
+    cfg = Path(path).expanduser()
     with open(cfg) as f:
         token = f.read().strip()
 
@@ -244,32 +270,36 @@ def login():
     # print(json.dumps(gh.rate_limit.get(), indent=4))
 
 def sort_readme():
+    """Sort and normalize."""
     print('\nSORT:\n')
     
     lines = []
     section_parts = []
-    in_section = False
+    section = False
     seen = set()
 
     with open(OUT_PATH) as f:
         for line in f:
             log('DLine', repr(line))
-            if in_section:
+            if section:
                 if section_parts and not line.strip():
                     # end of section
-                    in_section = False
-                    lines += sorted(section_parts)
+                    section = False
+                    lines += sorted(section_parts, key=lambda p: p.lower())
                     lines += ['\n']
                 elif line[0] == '-':
-                    # check for dups
-                    if m := re.match(r'\s*- *\[([^][]+)\] *\(https?://([^()#?]+)[^()]*\)(?: *- *(.*))?', line):
-                        log('DURL', m[2])
-                        url = m[2].lower()
-                        if url in seen:
+                    # extract title, url, desc
+                    info = parse_line(line, section)
+                    if info:
+                        log('DLink', repr(info.key), info.url, info.title)
+                        if info.key in seen:
                             log('WDup', line.strip())
                             continue
                         else:
-                            seen.add(url)
+                            seen.add(info.key)
+
+                        if args.fixup:
+                            line = info.build_link() + '\n'
 
                     section_parts.append(line)
                 elif not section_parts:
@@ -279,9 +309,9 @@ def sort_readme():
                     # append sub-lists to exiting part - do not sort
                     section_parts[-1] += line
             else:
-                if line.startswith('##'):
-                    log('ISection', line.strip())
-                    in_section = True
+                if m := re.match(r'##+ +(.*)', line):
+                    log('ISection', m[1])
+                    section = m[1]
                     section_parts = []
                 
                 lines.append(line)
@@ -309,7 +339,7 @@ def scan_pulls(repo, page):
 
         show_info(srcpr, ghpr=pr)
 
-def show_info(srcpr, ghpr=None):
+def show_info(srcpr, ghpr=None, verbose=False):
     """Summarize PR."""
     if not ghpr:
         ghpr = gh.pulls.get(**srcpr.gh)
@@ -325,6 +355,9 @@ def show_info(srcpr, ghpr=None):
     elif rec and rec.get('ver', 0) >= FETCH_BRANCH_VER:
         status = 'synced'
     else:
+        status = None
+
+    if not status or verbose:
         sum = build_info(srcpr)
         status = sum.status
 
@@ -332,10 +365,13 @@ def show_info(srcpr, ghpr=None):
         color(status, '#%-5d %7s %20.20s' % (srcpr.num, status, ghpr.head.label)),
         ghpr.title[:50])
 
-    if status in ['new', 'bad']:
+    if verbose or status in ['new', 'bad']:
         print()
         print(indent(str(sum), '  '))
         print()
+
+        diff = sh_out(f'git diff -U1 --color=always --merge-base main {sum.ref} | tail -n +5')
+        print('\nDIFF:\n\n', indent(diff, '   ')) 
 
 def get_fetch_branch(srcpr):
     key = f'branch/{srcpr.num}/create'
@@ -374,11 +410,11 @@ def fetch_branch(srcpr):
     ret = sh_out('git rev-list --grep="Meta tweaks" main..')
     revs = ret.strip().splitlines()
     for rev in revs:
-        sh(f'git revert {rev}')
+        try:
+            sh(f'git revert --no-edit {rev}')
+        except Exception as e:
+            log('WRevert', str(e))
  
-    diff = sh_out(f'git diff --color=always --merge-base main -- {IN_PATH} | tail -n +5')
-    print('\nDIFF:\n\n', indent(diff, '   '), '\n') 
-
     sh(f'git checkout -q main && git push -q -u origin {branch}')
 
     rec['ver'] = ver
@@ -392,7 +428,7 @@ def semantic_merge(srcpr):
     because git auto-merge never works and can cause issues,
     especially if a .gitattributes file specifies `driver=union`.
     """
-    print('\nSEMANTIC_MERGE:\n')
+    print('SEMANTIC_MERGE:\n')
     destpr = get_destpr(srcpr)
     sum = build_info(srcpr)
 
@@ -400,19 +436,13 @@ def semantic_merge(srcpr):
 
     log('DMerge', 'attempting semantic merge')
     
-    # if sum.extra:
-    #    log('WExtra', 'cannot semantic merge PRs with extra')
-    #    if not confirm('rebase'):
-    #        sh('git merge --abort')
-    #        return
-    
     if sum.error:
         log('WExtra', 'cannot manage PRs with errors')
         sh('git merge --abort')
         return
    
-    sh('rm .gitattributes', check=False)
-    sh('git merge -q -X theirs --no-commit --no-stat main', check=False)
+    #sh('rm .gitattributes', check=False)
+    sh('git merge -q -X theirs --no-commit --no-stat main >/dev/null', check=False)
 
     sh('git rm readme.md', check=False)
     sh(f'git checkout main {OUT_PATH}')
@@ -420,7 +450,7 @@ def semantic_merge(srcpr):
     lines = []
     found_line = False
     found_section = False
-    found_item = False
+    found_item = False  # seen at least one item in section
 
     with open(OUT_PATH) as f:
         for line in f:
@@ -435,16 +465,14 @@ def semantic_merge(srcpr):
                     pos = m[1]
                     found_item = True
                 elif found_item and not line.strip():
-                    pos = 'ZZZ'
+                    pos = 'zzz'
                 else:
                     pos = None
 
                 if pos and pos > sum.title:
                     found_line = True
-                    log('ILine', 'inserting before', line.strip())
-                    link = f'- [{sum.title}]({sum.url})'
-                    if sum.desc:
-                        link += f' - {sum.desc}'
+                    log('DInsert', 'inserting before', line.strip())
+                    link = sum.build_link()
                     lines.append(link + '\n')
             else:
                 # look for matching header
@@ -458,12 +486,12 @@ def semantic_merge(srcpr):
                     log('IToSort', 'missing section', sum.head)
                 elif m[1].lower() == sum.head.lower():
                     found_section = True
-                    log('ISection', 'found section', sum.head)
+                    log('DSection', 'found section', sum.head)
                 
             lines.append(line)
 
     if not found_line:
-        raise RuntimeError('EBadRebase')
+        raise RuntimeError('EBadMerge')
 
     with open(OUT_PATH, 'w') as f:
         f.write(''.join(lines))
@@ -473,11 +501,11 @@ def semantic_merge(srcpr):
     sh(f'git commit -m {msg} -a')
     sh(f'git checkout -q main && git push -q -u origin {srcpr.branch}')
     
-    log('IRebase', 'done')
+    log('IMerge', 'done')
 
 def show_diff(srcpr):
-    diff = sh_out(f'git diff --color=always main..{srcpr.branch} | tail -n +5')
-    print('\nDIFF:\n\n', indent(diff, '  '), '\n') 
+    diff = sh_out(f'git diff -U1 --color=always main..{srcpr.branch} | tail -n +5')
+    print('\nDIFF:\n\n', indent(diff, '  ')) 
 
 
 def copy_ghpr(srcpr):
@@ -534,7 +562,7 @@ def copy_pull_desc(srcpr) -> Pull:
         body += '\n' + orig.body.strip()
 
     body = strip_junk(body)
-    body = clean_body(srcpr, body, tag_repos=rec['tag'], tag_users=rec['tag'])
+    body = clean_body(srcpr, body, tag_repos=rec['tag'], pull_desc=rec['tag'])
 
     # find existing
     pulls = gh.pulls.list(
@@ -566,6 +594,7 @@ def copy_pull_desc(srcpr) -> Pull:
         throttle()
 
     rec['num'] = pr.number
+    rec['ver'] = ver
     db.set(key, rec)
 
     return Pull(DEST_REPO, rec['num']) 
@@ -621,6 +650,7 @@ def copy_issue_comments(srcpr, destpr):
             rec['idmap'][c.id] = cmt.id
 
         log('IEdit', 'edit' if new_id else 'new', c.id, '→', cmt.id, c.user.login)
+        throttle(1)
     
     rec['ver'] = ver
     db.set(key, rec)
@@ -700,6 +730,7 @@ def copy_review_comments(srcpr, destpr):
                 continue
 
         log('ICmt', cmt.id, cmt.user.login, cmt.line)
+        throttle(1)
     
     rec['ver'] = ver
     db.set(key, rec)
@@ -713,14 +744,15 @@ def attr_body(srcpr, comment, tag_repos=False):
     out += clean_body(srcpr, comment.body, tag_repos=tag_repos)
     return out
 
-def clean_body(srcpr, body, tag_repos=False, tag_users=False):
+def clean_body(srcpr, body, tag_repos=False, pull_desc=False):
     """Avoid tagging users/issues for every comment.
 
-    See "auto linked references" in github docs
+    See "auto linked references" in github docs.
+    If pull_desc is True, leave references to users.
     """
     
     # tag user in body, except sind.*
-    if tag_users:
+    if pull_desc:
         out = re.sub(r'@(sind.*)', r'**@-\1**', body)
     else:
         out = re.sub(r'@(\w[-\w]+)', r'**@-\1**', body)
@@ -730,10 +762,14 @@ def clean_body(srcpr, body, tag_repos=False, tag_users=False):
 
     # strip out auto-linked references
     if not tag_repos:
-        out = re.sub('([^ ]+)#([0-9]+)', r'**\1#-\2**', out)
+        out = re.sub(r'([^ ]+)#(\d+)', r'**\1#-\2**', out)
         out = re.sub(
             r'https?://github.com/([^/ ]+)/([^/ ]+)/(?:pull|issues)/(\d+)',
             r'**\1/\2#-\3**', out)
+
+    # always strip out refences to upstream repo in comments
+    if not pull_desc:
+        out = re.sub(rf'({srcpr.repo})#(\d+)', r'**\1#-\2**', out)
 
     return out.strip()
 
@@ -753,25 +789,33 @@ def test_clean_body():
     # with tag_repos=True
     assert 'but#333' == clean_body(srcpr, 'but#333', tag_repos=True)
     
-    # with tag_users=False
+    # with pull_desc=False
     assert '**@-maehr**.' == clean_body(srcpr, '@maehr.')
-    
-    # with tag_users=True
-    assert '@maehr.' == clean_body(srcpr, '@maehr.', tag_users=True)
-    assert '**@-sindre.**' == clean_body(srcpr, '@sindre.', tag_users=True)
+    assert 'see **xxx/yyy#-1363**.' == clean_body(srcpr, 'see xxx/yyy#1363.')
+
+    # with pull_desc=True
+    assert '@maehr.' == clean_body(srcpr, '@maehr.', pull_desc=True)
+    assert '**@-sindre.**' == clean_body(srcpr, '@sindre.', pull_desc=True)
+    assert 'see xxx/yyy#1363.' == clean_body(srcpr, 'see xxx/yyy#1363.',
+        tag_repos=True, pull_desc=True)
    
 def strip_junk(body):
+    out = body
     out = re.sub(
-        '#+ By submitting this pull .*',
-        '\\[ boilerplate snipped \\]', body, flags=re.S)
+        r'#+ By submitting this pull .*',
+        '\\[ boilerplate snipped \\]', out, flags=re.S)
 
     out = re.sub(
-        '<!-- Please fill in the .*',
-        '\\[ boilerplate snipped \\]', body, flags=re.S)
+        r'<!-- Please fill in the .*',
+        '\\[ boilerplate snipped \\]', out, flags=re.S)
     
     out = re.sub(
-        '# ALL THE BELOW CHECKBOXES .*',
-        '\\[ boilerplate snipped \\]', body, flags=re.S)
+        r'# ALL THE BELOW CHECKBOXES .*',
+        '\\[ boilerplate snipped \\]', out, flags=re.S)
+
+    out = re.sub(
+        r'[^\n]+I have read and understood the .*',
+        '\\[ boilerplate snipped \\]', out, flags=re.S)
 
     return out
 
@@ -793,11 +837,107 @@ def test_strip_junk():
         \\[ boilerplate snipped \\]
     ''').strip()
 
-def build_info(srcpr) -> PullInfo:
-    ver = 8
-    key = f'{srcpr.key()}/summary'
+def parse_line(line, section):
+    """Parse list from line."""
+    m = re.match(r"""
+        \s*-\s*
+        \[([^][]+)\]
+        \s*
+        \((https?://[^()]+)\)
+        (?:\s*-\s*(.*))?
+        """,
+        line,
+        flags=re.X,
+    )
+    if not m:
+        return None
+
+    return list_info(m[2], desc=m[3], title=m[1], section=section)
+
+
+def list_info(url, *, desc, title, section) -> ListInfo:
+    """Collect info about awesome list for a URL."""
+    
+    # normalize URL
+    if m := re.match(r'https?://([^#?]+)', url):
+        bare = re.sub(r'[^\w/.]+', '_', m[1].lower())
+    else:
+        return ListInfo(
+            url=url,
+            desc=desc,
+            title=title,
+            section=section,
+            status='bad',
+        )
+
+    ver = 2
+    key = f'list/{bare}/info'
     rec = db.get(key)
 
+    if not rec:
+        rec = dict()
+        redo = 'new'
+    elif rec['ver'] < ver:
+        redo = 'update'
+    elif args.redo:
+        redo = 'force'
+    else:
+        redo = None
+
+    rec.update(ver=ver, key=key, url=url)
+    out = ListInfo(**rec)
+
+    if desc:
+        out.desc = desc
+    if title:
+        out.title = title
+    if section:
+        out.head = section
+    
+    if not redo:
+        return out
+
+    log('DCalc', redo, key, rec)
+
+    # get extra metadata about github repos
+    if m := re.match(r'https?://github.com/([^/#]+)/([^/#]+)', out.url):
+    
+        if '#readme' not in out.url:
+            out.url = out.url + '#readme'
+        
+        try:
+            target = gh.repos.get(m[1], m[2])
+            out.stars = target.stargazers_count
+            out.size = target.size
+            
+            if not out.desc:
+                out.desc = target.description
+
+            branch = gh.repos.get_branch(m[1], m[2], target.default_branch)
+            out.updated = branch.commit.commit.committer.date
+        except Exception as e:
+            out.error = str(e).splitlines()[0]
+            out.status = 'bad'
+
+    out.desc = out.desc.strip()
+    _check_url(out)
+    
+    if not out.status:
+        if out.code not in [200, 0]:
+            out.status = str(out.code)
+        else:
+            out.status = 'new'
+    
+    # save
+    rec = asdict(out)
+    db.set(key, rec)
+    return out
+
+def build_info(srcpr) -> PullInfo:
+    ver = 9
+    key = f'{srcpr.key()}/summary'
+    rec = db.get(key)
+    
     if not rec:
         rec = dict(ver=0)
         redo = 'new'
@@ -806,68 +946,54 @@ def build_info(srcpr) -> PullInfo:
     elif args.redo:
         redo = 'force'
     else:
+        rec.update(num=srcpr.num)
         return PullInfo(**rec)
 
     log('DCalc', redo, key, rec)
     pr = gh.pulls.get(**srcpr.gh)
 
-    out = PullInfo()
+    out = PullInfo(num=srcpr.num)
     out.pull = pr.html_url
     out.created = pr.created_at
 
-    ref = f'pull/{pr.number}/head'
-    if sh_code(f'git rev-parse --verify remotes/up/{ref} >/dev/null 2>&1'):
-        sh(f'git fetch -q up refs/{ref}:remotes/up/{ref}')
+    info = None
+    section = None
+    error = None
 
+    # parse diff
     try:
-        ret = sh_out(f'git diff --merge-base -U999 main up/{ref} -- {IN_PATH}')
+        ret = sh_out(f'git diff --merge-base -U999 main {out.ref} -- {IN_PATH}')
         diff = ret.splitlines()
         
         for line in diff:
-            link_match = re.match(r'\+\s*- *\[([^][]+)\] *\(([^()]+)\)(?: *- *(.*))?', line)
-
-            if m := re.match(r' *#+ *(.*)', line):
-                if not out.title:
-                    out.head = m[1]
-            elif not out.title and link_match:
-                out.title, out.url, out.desc = link_match.groups()
+            
+            if line[0] == '+' and not info:
+                info = parse_line(line[1:], section)
+            elif m := re.match(r' *#+ *(.*)', line):
+                # capture heading
+                section = m[1]
             elif re.match(r'(---|\+\+\+)', line):
                 # skip file headers
                 continue
             elif re.match(r'[-+]', line):
                 out.extra.append(line.strip())
     except Exception as e:
-        out.error = str(e)
+        error = str(e)
             
-    if not out.status and not out.title:
+    # merge with ListInfo
+    if info:
+        rec = { **asdict(out), **asdict(info) }
+        out = PullInfo(**rec) 
+    elif not out.status:
         out.status = 'bad'
 
-    # get extra metadata about github repos
-    if m := re.match(r'https?://github.com/([^/#]+)/([^/#]+)', out.url):
-        try:
-            target = gh.repos.get(m[1], m[2])
-            out.stars = target.stargazers_count
-            out.size = target.size
-            
-            branch = gh.repos.get_branch(m[1], m[2], target.default_branch)
-            out.updated = branch.commit.commit.committer.date
-        except Exception as e:
-            out.error = str(e).splitlines()[0]
-            out.status = 'bad'
-
-    _check_url(out)
-    
-    if not out.status:
-        if out.code not in [200, 0]:
-            out.status = str(out.code)
-        else:
-            out.status = 'new'
+    if error and not out.error:
+        out.error = error
 
     # save
     rec = asdict(out)
     rec['ver'] = ver
     db.set(key, rec)
-
     return out
 
 def _check_dup(out):
@@ -904,8 +1030,13 @@ def _check_url(out):
         _check_dup(out)
 
 def accept_pull(srcpr):
-    print('\nACCEPT:\n')
     branch = srcpr.branch
+    
+    destpr = get_destpr(srcpr)
+    dest = gh.pulls.get(**destpr.gh)
+    if(dest.merged):
+        log('IMerged', 'already merged', srcpr)
+        return
 
     sh('git checkout -q main')
 
@@ -936,7 +1067,7 @@ def main_readme():
         return _main_readme
 
 def confirm(question):
-    ans = input(f'\ncontinue {question} (y/n) ? ')
+    ans = input(f'continue {question} (y/n) ? ')
     print()
 
     return ans.strip().lower().startswith('y')
@@ -1003,10 +1134,10 @@ class DB:
         if row := self.cur.fetchone():
             return self._decode(row[0])
 
-def throttle():
+def throttle(sec=60):
     """Avoid secondary rate limits."""
-    sleep(1)
-    return
+    log('IThrottle', sec)
+    sleep(sec)
 
 def all_pages(cmd, *args, **kw):
     for page in paged(cmd, *args, **kw):
@@ -1036,9 +1167,22 @@ def sh_code(cmd):
     proc = run(cmd, shell=True, check=False)
     return proc.returncode
 
+def _format_time(when):
+    try:
+        w = datetime.strptime(when, '%Y-%m-%dT%H:%M:%S%z')
+        return f'{w:%Y-%m-%d %H:%M}'
+    except Exception:
+        return 'invalid-time'
+
+from fastcore.net import HTTP403ForbiddenError
+
 if __name__ == '__main__':
     try:
         main()
+    except HTTP403ForbiddenError as e:
+        log('ERateLimit', str(e))
+        log('EHeaders', json.dumps(gh.recv_hdrs))
+        sys.exit(1)
     except KeyboardInterrupt:
         log('EInterrupt', 'exiting')
         sys.exit(1)
