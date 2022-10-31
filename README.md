@@ -1,15 +1,16 @@
 
-**more-awesome** is a list of lists.
-The linked lists are useful as starting points or deep research on a particular topic, broad or specific.
-They usually contain links to resources, like source code repos, books, websites, etc.
+This `0ex/more-awesomer` README is a list of lists.
+The linked lists are useful for discovering resources on a particular topic, broad or specific. Things
+like open source projects, tutorials, papers, tools, books, websites, libraries, etc.
 
-There are [other awesome lists](#lists-of-lists); this one aims to be very extensive and high-quality.
-The goal is to cover every topic which someone cares enough about that they created a decent list.
-For each topic the best maintained list will be linked as the primary one; our suggested starting point.
-Duplicates will also be listed to help those who want to dig deeper.
+There are [other awesome lists](#list-related) with different goals;
+this one aims to be very extensive and carefully maintained.
+A goal is to cover every topic which someone cares enough about that they created a decent list.
+For each topic the best maintained list will be linked; our suggested starting point.
+Competing lists are also listed at the end of the description for those who want more pointers.
 
-Contributions are welcome; please make a PR or issue with lists you have created or found. Suggest the most
-appropriate category and add a description of the target topic (not of the list itself).
+Contributions are welcome; please make a PR or issue with a list you have created or found. Suggest the most
+appropriate category and add a one-line description of the target topic (not of the list itself).
 
 ## Contents
 
@@ -25,18 +26,18 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 
 New Categories: Science | Operations | Programming | Culture | Local | Design
 
-## Lists of lists
+## List Related
 
 Other lists of lists:
 
-- [sindresorhus's awesome list](https://github.com/sindresorhus/awesome) - The most popular list and the parent fork of **more-awesome**.
+- [sindresorhus/awesome](https://github.com/sindresorhus/awesome) - The most popular list and the parent fork of `0ex/more-awesome`.
 - TODO 
 
-You can also find more resource lists by Github topic:
+You can also find more resource lists by browsing Github topics 
 [awesome](https://github.com/topics/awesome)
-| [awesome-lists](https://github.com/topics/awesome-list)
-| [lists](https://github.com/topics/lists)
-| [resources](https://github.com/topics/resources)
+, [awesome-lists](https://github.com/topics/awesome-list)
+, [lists](https://github.com/topics/lists)
+, and [resources](https://github.com/topics/resources).
 
 Tools for lists:
 
