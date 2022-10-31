@@ -1,9 +1,9 @@
 
-This `0ex/more-awesomer` README is a list of lists.
-The linked lists are useful for discovering resources on a particular topic, broad or specific. Things
-like open source projects, tutorials, papers, tools, books, websites, libraries, etc.
+This is a *list of lists* pertaining to a particular topics, broad or specific.
+The linked lists are useful for discovering resources on a particular topic, for example
+open source projects, tutorials, papers, tools, books, websites, libraries, etc.
 
-There are [other awesome lists](#list-related) with different goals;
+There are [other awesome lists](#list-related-resources) with different goals;
 this one aims to be very extensive and carefully maintained.
 A goal is to cover every topic which someone cares enough about that they created a decent list.
 For each topic the best maintained list will be linked; our suggested starting point.
@@ -26,7 +26,7 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 
 New Categories: Science | Operations | Programming | Culture | Local | Design
 
-## List Related
+## List Related Resources
 
 Other lists of lists:
 
@@ -34,10 +34,10 @@ Other lists of lists:
 - TODO 
 
 You can also find more resource lists by browsing Github topics 
-[awesome](https://github.com/topics/awesome)
-, [awesome-lists](https://github.com/topics/awesome-list)
-, [lists](https://github.com/topics/lists)
-, and [resources](https://github.com/topics/resources).
+[awesome](https://github.com/topics/awesome),
+[awesome-lists](https://github.com/topics/awesome-list),
+[lists](https://github.com/topics/lists),
+and [resources](https://github.com/topics/resources).
 
 Tools for lists:
 
