@@ -1,15 +1,15 @@
 
-This is a *list of lists* pertaining to a particular topics, broad or specific.
+This is a *list of lists*, each pertaining to some particular topic, broad or specific.
 The linked lists are useful for discovering resources on a particular topic, for example
 open source projects, tutorials, papers, tools, books, websites, libraries, etc.
 
 There are [other awesome lists](#list-related-resources) with different goals;
-this one aims to be very extensive and carefully maintained.
+this one aims to be very extensive, yet carefully maintained.
 A goal is to cover every topic which someone cares enough about that they created a decent list.
 For each topic the best maintained list will be linked; our suggested starting point.
 Competing lists are also listed at the end of the description for those who want more pointers.
 
-Contributions are welcome; please make a PR or issue with a list you have created or found. Suggest the most
+Contributions are welcome; please submit a pull request or issue with a list you have created or found. Suggest the most
 appropriate category and add a one-line description of the target topic (not of the list itself).
 
 ## Contents
@@ -152,6 +152,8 @@ Tools for lists:
 
 ## Programming Languages
 
+- [Esolangs](https://github.com/angrykoala/awesome-esolangs#readme) - Programming languages designed for experimentation or as jokes rather than actual use.
+- [Markdown](https://github.com/BubuAnabelas/awesome-markdown#readme) - Markup language.
 - [ActionScript 3](https://github.com/robinrodricks/awesome-actionscript3#readme) - Object-oriented language targeting Adobe AIR.
 - [Ada/SPARK](https://github.com/ohenley/awesome-ada#readme) - Modern programming language designed for large, long-lived apps where reliability and efficiency are essential.
 - [AutoHotkey](https://github.com/ahkscript/awesome-AutoHotkey#readme) - AutoHotkey libraries, library distributions, scripts, tools and resources.
@@ -1035,7 +1037,6 @@ System Engineering, DevOps
 - [Deploy Your Own SaaS](https://github.com/Atarity/deploy-your-own-saas) - List of "only yours" cloud services for everyday needs.
 - [DTrace](https://github.com/xen0l/awesome-dtrace#readme) - Dynamic tracing framework.
 - [Education](https://github.com/mehdihadeli/awesome-software-architecture#readme) - Learning and practicing software architecture.
-- [Esolangs](https://github.com/angrykoala/awesome-esolangs#readme) - Programming languages designed for experimentation or as jokes rather than actual use.
 - [Fetch](https://github.com/beucismis/awesome-fetch#readme) - Command-line fetch tools for system information.
 - [FIRST Robotics Competition](https://github.com/andrewda/awesome-frc#readme) - International high school robotics championship.
 - [Flights](https://github.com/kevit/awesome-flights#readme) - All about flights and how to find cheapest flight possible
@@ -1055,7 +1056,6 @@ System Engineering, DevOps
 - [IRC](https://github.com/davisonio/awesome-irc#readme) - Open source messaging protocol.
 - [Libre Hosters](https://github.com/libresh/awesome-librehosters#readme) - Nice hosting providers
 - [Maps](https://github.com/drushadrusha/awesome-maps#readme) - Interactive maps.
-- [Markdown](https://github.com/BubuAnabelas/awesome-markdown#readme) - Markup language.
 - [Minimalist frameworks](https://github.com/neiesc/awesome-minimalist#readme) - minimalist frameworks (simple and lightweight).
 - [Name conflicts](https://github.com/konopski/awsome-name-conflicts#readme) - Name conflicts in various projects.
 - [No-Login Web Apps](https://github.com/aviaryan/awesome-no-login-web-apps#readme) - Web apps that work without login.
