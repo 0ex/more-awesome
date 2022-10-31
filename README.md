@@ -29,7 +29,7 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Capacitor](https://github.com/riderx/awesome-capacitor#readme) - Cross-platform open source runtime for building Web Native apps.
 - [Chatbots](https://github.com/jstumpp/awesome-chatbots#readme) - Chatbot services and resources.
 - [Cloudflare](https://github.com/irazasyed/awesome-cloudflare#readme) - CDN, DNS, DDoS protection, and security for your site.
-- [Clubhouse](https://github.com/ehsanghaffar/awesome-clubhouse#readme) - A tools list for work with Clubhouse API.
+- [Clubhouse](https://github.com/ehsanghaffar/awesome-clubhouse#readme) - Social network based on voice.
 - [Cordova](https://github.com/busterc/awesome-cordova#readme) - JavaScript API for hybrid apps.
 - [Deno](https://github.com/denolib/awesome-deno#readme) - A secure runtime for JavaScript and TypeScript build on V8.
 - [DigitalOcean](https://github.com/jonleibowitz/awesome-digitalocean#readme) - Cloud computing platform designed for developers.
