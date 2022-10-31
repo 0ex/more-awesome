@@ -498,7 +498,7 @@ Misc: [Learn](#learn) | [Miscellaneous](#miscellaneous) | [Related](#related)
 - [Atom](https://github.com/mehcode/awesome-atom#readme) - Open-source and hackable text editor.
 - [Eclipse IDE](https://github.com/hrj/awesome-eclipse#readme) - plugins and other resources for eclipse IDE
 - [Emacs](https://github.com/emacs-tw/awesome-emacs#readme) - A community driven list of useful Emacs packages, libraries and other items.
-- [IDE and Text Editors](https://github.com/thewhitetulip/awesome-devtools#readme) - developer tools
+- [IDE and Text Editors](https://github.com/thewhitetulip/awesome-devtools#readme) - developer tools *dead* *poor*
 - [Neovim](https://github.com/rockerBOO/awesome-neovim#readme) - Vim-fork focused on extensibility and usability.
 - [Sublime Text](https://github.com/dreikanter/sublime-bookmarks#readme) - Sublime Text essential plugins and resources
 - [Vim](https://github.com/mhinz/vim-galore#readme) - :mortar_board: All things Vim!
