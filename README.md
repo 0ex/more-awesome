@@ -547,15 +547,6 @@ New Categories: Science | System Engineering | Programming | Culture | Local
 - [Mental Health](https://github.com/theimpossibleastronaut/awesome-mentalhealth#readme) - Be the best version of your self with these Mental Health (selfcare) resources.
 
 
-## Networking
-
-- [AMQP 1.0](https://github.com/xinchen10/awesome-amqp#readme) - Advanced Message Queuing Protocol 1.0.
-- [MQTT](https://github.com/hobbyquaker/awesome-mqtt#readme) - "Internet of Things" connectivity protocol.
-- [Protocols](https://github.com/chrvadala/awesome-protocols#readme) - Main protocols and open standards with RFC links.
-- [REST](https://github.com/marmelab/awesome-rest#readme) - RESTful API architecture, development, test, and performance.
-- [Websockets](https://github.com/facundofarias/awesome-websockets#readme) - Websockets resources per language.
-- [XMPP](https://github.com/bluszcz/awesome-xmpp) - Communication protocol based on XML. 
-
 ## Theory
 
 - [Algorithm Visualizations](https://github.com/enjalot/algovis#readme) - projects and links about algorithm visualization
@@ -886,21 +877,27 @@ New Categories: Science | System Engineering | Programming | Culture | Local
 
 ## Networking
 
+- [AMQP 1.0](https://github.com/xinchen10/awesome-amqp#readme) - Advanced Message Queuing Protocol 1.0.
 - [Bluetooth Beacons](https://github.com/beaconinside/awesome-beacon#readme) - Bluetooth beacon software and tools.
 - [Bots](https://github.com/DopplerHQ/awesome-bots#readme) - Digital agents. [@hackerkid](https://github.com/hackerkid/bots#readme)
 - [Browser Automation](https://github.com/angrykoala/awesome-browser-automation#readme) - Web scrapers, headless browsers and testing.
 - [Computer Networking](https://github.com/nyquist/awesome-networking#readme) - To design, implement and operate computer networks.
 - [gRPC](https://github.com/grpc-ecosystem/awesome-grpc#readme) - useful resources for gRPC
 - [LoRa & LoRaWAN](https://github.com/mcicolella/awesome-lora-lorawan#readme) - LoRa and LoRaWAN resources.
+- [MQTT](https://github.com/hobbyquaker/awesome-mqtt#readme) - "Internet of Things" connectivity protocol.
 - [Network Analysis](https://github.com/briatte/awesome-network-analysis#readme) - network analysis resources.
 - [Network Automation](https://github.com/networktocode/awesome-network-automation#readme) - The best network automation material in the universe.
 - [PCAPTools](https://github.com/caesar0301/awesome-pcaptools#readme) - tools to process network traces.
 - [Peer-to-peer](https://github.com/kgryte/awesome-peer-to-peer#readme) - Networks without servers.
+- [Protocols](https://github.com/chrvadala/awesome-protocols#readme) - Main protocols and open standards with RFC links.
 - [Proxy Servers](https://github.com/dariubs/awesome-proxy#readme) - Proxy servers and resources.
 - [Real-Time Communications](https://github.com/rtckit/awesome-rtc#readme) - Network protocols for near simultaneous exchange of media and data.
+- [REST](https://github.com/marmelab/awesome-rest#readme) - RESTful API architecture, development, test, and performance.
 - [SNMP](https://github.com/eozer/awesome-snmp#readme) - A protocol for collecting, modifying, and organizing information about managed devices on IP networks.
 - [Software-Defined Networking](https://github.com/sdnds-tw/awesome-sdn#readme) - Software Defined Network (SDN).
 - [Telegram Bots](https://github.com/ebertti/awesome-telegram#readme) - Collection great groups, channels, bots and libraries for Telegram.
+- [Websockets](https://github.com/facundofarias/awesome-websockets#readme) - Websockets resources per language.
+- [XMPP](https://github.com/bluszcz/awesome-xmpp) - Communication protocol based on XML. 
 
 ## Decentralized Systems
 
