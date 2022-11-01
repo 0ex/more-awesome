@@ -161,8 +161,6 @@ Tools for lists:
 
 ## Programming Languages
 
-- [Esolangs](https://github.com/angrykoala/awesome-esolangs#readme) - Programming languages designed for experimentation or as jokes rather than actual use.
-- [Markdown](https://github.com/BubuAnabelas/awesome-markdown#readme) - Markup language.
 - [ActionScript 3](https://github.com/robinrodricks/awesome-actionscript3#readme) - Object-oriented language targeting Adobe AIR.
 - [Ada/SPARK](https://github.com/ohenley/awesome-ada#readme) - Modern programming language designed for large, long-lived apps where reliability and efficiency are essential.
 - [AutoHotkey](https://github.com/ahkscript/awesome-AutoHotkey#readme) - AutoHotkey libraries, library distributions, scripts, tools and resources.
@@ -189,6 +187,7 @@ Tools for lists:
 	- [Elixir](https://github.com/h4cc/awesome-elixir#readme) - An alternative programming lanauge for the Erlang VM.
 	- [Elixir Books](https://github.com/sger/ElixirBooks#readme) - List of Elixir books
 	- [Phoenix](https://github.com/jonathanstiansen/awesome-phoenix#readme) - Elixer framework. Also by [@droptheplot](https://github.com/droptheplot/awesome-phoenix#readme).
+- [Esolangs](https://github.com/angrykoala/awesome-esolangs#readme) - Programming languages designed for experimentation or as jokes rather than actual use.
 - [Eta](https://github.com/sfischer13/awesome-eta#readme) - Functional programming language for the JVM.
 - [F#](https://github.com/fsprojects/awesome-fsharp) - Is a mature, open source, cross-platform, functional-first programming language.
 - [Fortran](https://github.com/rabbiabram/awesome-fortran#readme) - Fortran libs.
@@ -226,6 +225,7 @@ Tools for lists:
 - [Julia](https://github.com/svaksha/Julia.jl#readme) - High-level dynamic programming language for numerical analysis and computational science.
 - [Kotlin](https://github.com/KotlinBy/awesome-kotlin#readme) - Kotlin related stuff
 - [Lua](https://github.com/LewisJEllis/awesome-lua#readme) - quality Lua packages and resources.
+- [Markdown](https://github.com/BubuAnabelas/awesome-markdown#readme) - Markup language.
 - [MATLAB](https://github.com/mikecroucher/awesome-MATLAB#readme) - MATLAB toolboxes, applications, software and resources.
 - [MicroPython](https://github.com/ikuamike/Awesome_Micropython#readme) - Python 3 implementation optimized for microcontrollers.
 - [Motoko](https://github.com/motoko-unofficial/awesome-motoko#readme) - Modern type safe language for the blockchain.
@@ -288,7 +288,6 @@ Tools for lists:
 
 ## Front-End Development
 
-- [Web Monetization](https://github.com/thomasbnt/awesome-web-monetization#readme) - W3C standard to send money from the browser on websites.
 - [A-Frame VR](https://github.com/aframevr/awesome-aframe#readme) - A-Frame WebVR framework.
 - [Android UI](https://github.com/wasabeef/awesome-android-ui#readme) - Android UI/UX libraries
 - [Angular](https://github.com/PatrickJS/awesome-angular#readme) - App framework.
@@ -388,6 +387,7 @@ Tools for lists:
 - [Web Audio](https://github.com/notthetup/awesome-webaudio#readme) - WebAudio packages and resources.
 - [Web Components](https://github.com/mateusortiz/webcomponents-the-right-way#readme) - This is a guide intended to introduce to Web Components. Also by [@obetomuniz](https://github.com/obetomuniz/awesome-webcomponents).
 - [Web Effect](https://github.com/lindelof/awesome-web-effect#readme) - A series of exquisite and compact web page cool effects
+- [Web Monetization](https://github.com/thomasbnt/awesome-web-monetization#readme) - W3C standard to send money from the browser on websites.
 - [Web Performance Budget](https://github.com/pajaydev/awesome-web-performance-budget#readme) - Techniques to ensure certain performance metrics for a website.
 - [Web Performance Optimization](https://github.com/davidsonfellipe/awesome-wpo#readme) - :pencil: Web Performance Optimization. Everyone can contribute here!
 - [Web Tools](https://github.com/lvwzhen/tools#readme) - Tools Online
@@ -440,14 +440,12 @@ Tools for lists:
 
 ## Computer Science
 
-- [Compilers](https://github.com/aalhour/awesome-compilers#readme) - Compilers, Interpreters and Runtimes
 - [Algorithm Visualizations](https://github.com/enjalot/algovis#readme) - projects and links about algorithm visualization
 - [Algorithms](https://github.com/tayllan/awesome-algorithms#readme) - places to learn and/or practice algorithms.
 	- [Education](https://github.com/gaerae/awesome-algorithms-education#readme) - Learning and practicing.
 - [Audit Algorithms](https://github.com/erwanlemerrer/awesome-audit-algorithms#readme) - Algorithmic audits of algorithms.
-- [Papers We Love](https://github.com/papers-we-love/papers-we-love#readme) - Papers from the computer science community to read and discuss.
+- [Compilers](https://github.com/aalhour/awesome-compilers#readme) - Compilers, Interpreters and Runtimes
 - [Complex Systems science](https://github.com/sellisd/awesome-complexity#readme) - Complex systems science resources
-- [Recursion Schemes](https://github.com/passy/awesome-recursion-schemes#readme) - Traversing nested data structures.
 - [CPUs](https://github.com/larsbrinkhoff/awesome-cpus#readme) - All CPU and MCU documentation in one place
 - [Cryptography](https://github.com/sobolevn/awesome-cryptography#readme) - cryptography resources and links.
 	- [Papers](https://github.com/pFarb/awesome-crypto-papers#readme) - Theory basics for using cryptography by non-cryptographers.
@@ -460,7 +458,9 @@ Tools for lists:
 - [Image coloring](https://github.com/oskar-j/awesome-image-coloring#readme) - Software for Image Coloring.
 - [Information Retrieval](https://github.com/harpribot/awesome-information-retrieval#readme) - Learn to develop your own search engine.
 - [Open Source Society University](https://github.com/ossu/computer-science#readme) - :mortar_board: Path to a free self-taught education in Computer Science!
+- [Papers We Love](https://github.com/papers-we-love/papers-we-love#readme) - Papers from the computer science community to read and discuss.
 - [Quantum Computing](https://github.com/desireevl/awesome-quantum-computing#readme) - Computing which utilizes quantum mechanics and qubits on quantum computers.
+- [Recursion Schemes](https://github.com/passy/awesome-recursion-schemes#readme) - Traversing nested data structures.
 - [Reproducible Research](https://github.com/leipzig/awesome-reproducible-research#readme) - Go from raw data to results in a repeatable and transparent manner
 - [Static Analysis & Code Quality](https://github.com/analysis-tools-dev/static-analysis#readme) - SAST tools for all programming languages, config files, build tools, and more.
 - [Theoretical Computer Science](https://github.com/mostafatouny/awesome-theoretical-computer-science#readme) - Interplay of computer science and pure mathematics.
@@ -468,17 +468,16 @@ Tools for lists:
 
 ## Data Science
 
-- [Topological Data Analysis](https://github.com/FatemehTarashi/awesome-TDA#readme) - topological data analysis (TDA) resources and links.
-- [Analytics](https://github.com/0xnr/awesome-analytics#readme) - analytics frameworks, software and other tools.
-- [CSV](https://github.com/secretGeek/awesomeCSV#readme) - A text file format that stores tabular data and uses a comma to separate values.
 - [Action Recognition](https://github.com/jinwchoi/awesome-action-recognition#readme) - action recognition and related area resources
 - [AGI & CoCoSci](https://github.com/YuzheSHI/awesome-agi-cocosci#readme) - Artificial General Intelligence and Computational Cognitive Sciences.
 - [AI Audio Startups](https://github.com/csteinmetz1/ai-audio-startups#readme) - Startups working with AI for audio and music tech.
 - [AI in Finance](https://github.com/georgezouq/awesome-ai-in-finance#readme) - Solving problems in finance with machine learning.
+- [Analytics](https://github.com/0xnr/awesome-analytics#readme) - analytics frameworks, software and other tools.
 - [Artificial Intelligence](https://github.com/owainlewis/awesome-artificial-intelligence#readme) - Artificial Intelligence (AI) courses, books, video lectures and papers.
 - [Computer Vision Models](https://github.com/gmalivenko/awesome-computer-vision-models#readme) - List of computer vision models.
 - [Computer Vision](https://github.com/jbhuang0604/awesome-computer-vision#readme) - computer vision resources
 - [Core ML Models](https://github.com/likedan/Awesome-CoreML-Models#readme) - Models for Apple's machine learning framework.
+- [CSV](https://github.com/secretGeek/awesomeCSV#readme) - A text file format that stores tabular data and uses a comma to separate values.
 - [Data Science with Python](https://github.com/r0f1/datascience#readme) - Libraries and other resources for data science with Python.
 - [Data Science](https://github.com/academic/awesome-datascience#readme) - To learn and apply for real world problems.
 	- [Tutorials](https://github.com/siboehm/awesome-learn-datascience#readme)
@@ -512,6 +511,7 @@ Tools for lists:
 - [TensorFlow Lite](https://github.com/margaretmz/awesome-tensorflow-lite#readme) - Framework that optimizes TensorFlow models for on-device machine learning.
 - [TensorFlow.js](https://github.com/aaronhma/awesome-tensorflow-js#readme) - WebGL-accelerated machine learning JavaScript library for training and deploying models.
 - [TensorFlow](https://github.com/jtoy/awesome-tensorflow#readme) - Library for machine intelligence.
+- [Topological Data Analysis](https://github.com/FatemehTarashi/awesome-TDA#readme) - topological data analysis (TDA) resources and links.
 - [Tutorials](https://github.com/ujjwalkarn/Machine-Learning-Tutorials#readme)
 - [XAI](https://github.com/altamiracorp/awesome-xai#readme) - Providing insight, explanations, and interpretability to machine learning methods.
 
@@ -536,17 +536,17 @@ Tools for lists:
 
 ## Science
 
-- [Cytodata](https://github.com/cytodata/awesome-cytodata#readme) - Image-based profiling of biological phenotypes for computational biologists.
-- [Open Computational Neuroscience Resources](https://github.com/asoplata/open-computational-neuroscience-resources#readme) - Freely accessible scientific data and analysis/simulation tools for studying the brain using computers.
-- [Open Science Resources](https://github.com/asoplata/open-science-resources#readme) - Freely-accessible scientific data and analysis/simulation tools, useful for both learning and contributing to science.
 - [Cheminformatics](https://github.com/hsiaoyi0504/awesome-cheminformatics#readme) - Informatics techniques applied to problems in chemistry.
 - [Citizen Science](https://github.com/dylanrees/citizen-science#readme) - For community-based and non-institutional scientists.
+- [Cytodata](https://github.com/cytodata/awesome-cytodata#readme) - Image-based profiling of biological phenotypes for computational biologists.
 - [Earth](https://github.com/philsturgeon/awesome-earth#readme) - Find ways to resolve the climate crisis.
 - [Jupyter](https://github.com/markusschanta/awesome-jupyter#readme) - Create and share documents that contain code, equations, visualizations and narrative text.
 - [LaTeX](https://github.com/egeerardyn/awesome-LaTeX#readme) - Typesetting language.
 - [Math](https://github.com/rossant/awesome-math#readme) - mathematics resources
 	- [Calculators](https://github.com/xxczaki/awesome-calculators#readme) - Calculators for every platform.
 	- [MATLAB](https://github.com/uhub/awesome-matlab#readme) - Matlab frameworks, libraries and software.
+- [Open Computational Neuroscience Resources](https://github.com/asoplata/open-computational-neuroscience-resources#readme) - Freely accessible scientific data and analysis/simulation tools for studying the brain using computers.
+- [Open Science Resources](https://github.com/asoplata/open-science-resources#readme) - Freely-accessible scientific data and analysis/simulation tools, useful for both learning and contributing to science.
 - [Parasite](https://github.com/ecohealthalliance/awesome-parasite#readme) - Parasites and host-pathogen interactions.
 - [PhD](https://github.com/alirezasamar/awesome-phd#readme) - Advice, tips and resources for PhD/grad school. 
 - [Physics](https://github.com/wbierbower/awesome-physics#readme) - Software for exploring Physics concepts
@@ -583,6 +583,7 @@ Tools for lists:
 
 ### Health and Social Science
 
+- [](https://github.com/theimpossibleastronaut/awesome-mentalhealth#readme) - Be the best version of your self with these Mental Health (selfcare) resources.
 - [Autism](https://github.com/aspergirl-git/awesome-autism#readme) - Resources for ASD and Asperger's Syndrome.
 - [Digital History](https://github.com/maehr/awesome-digital-history#readme) - Computer-aided scientific investigation of history.
 - [Digital Humanities](https://github.com/dh-tech/awesome-dhtools#readme) - Software for humanities scholars using quantitative or computational methods.
@@ -594,7 +595,6 @@ Tools for lists:
 - [Healthcare](https://github.com/kakoni/awesome-healthcare#readme) - FOSS for facilities, providers, developers, policy experts, and researchers.
 - [Humane Technology](https://github.com/humanetech-community/awesome-humane-tech#readme) - Open source projects that help improve society.
 - [Mental Health](https://github.com/dreamingechoes/awesome-mental-health#readme) - Mental health awareness and self-care in the software industry.
-- [](https://github.com/theimpossibleastronaut/awesome-mentalhealth#readme) - Be the best version of your self with these Mental Health (selfcare) resources.
 
 ## Gaming
 
@@ -632,12 +632,6 @@ Tools for lists:
 
 ## Programming
 
-- [Competitive Programming](https://github.com/lnishan/awesome-competitive-programming#readme) - :gem: Competitive Programming, Algorithm and Data Structure resources
-- [Podcasts For Developers](https://github.com/rShetty/awesome-podcasts#readme) - Podcasts.
-- [QR Code](https://github.com/make-github-pseudonymous-again/awesome-qr-code#readme) - A type of matrix barcode that can be used to store and share a small amount of information.
-- [Gists](https://github.com/vsouza/awesome-gists#readme) - amazing gists
-- [Minimalist frameworks](https://github.com/neiesc/awesome-minimalist#readme) - minimalist frameworks (simple and lightweight).
-- [Stacks](https://github.com/stackshareio/awesome-stacks#readme) - Tech stacks for building different apps and features.
 - [Beautiful Documentation](https://github.com/matheusfelipeog/beautiful-docs#readme) - Pointers to useful, well-written, and otherwise beautiful documentation.
 - [Boilerplate Projects](https://github.com/melvin0008/awesome-projects-boilerplates#readme) - Boilerplates for mobile and web apps
 - [Chinese Programming Terms](https://github.com/pohzipohzi/awesome-chinese-programming-terms#readme) - Programming terms in chinese.
@@ -646,6 +640,7 @@ Tools for lists:
 - [Coding entertainment](https://github.com/krmaxwell/coding-entertainment#readme) - Puzzles, challenges, games, CTFs, and other entertainment via coding
 - [Coding Interview](https://github.com/Olshansk/interview#readme) - Everything you need to prepare for your technical interview
 - [Coding Style Conventions and Standards](https://github.com/SalGnt/cscs#readme) - Coding Style Conventions and Standards.
+- [Competitive Programming](https://github.com/lnishan/awesome-competitive-programming#readme) - :gem: Competitive Programming, Algorithm and Data Structure resources
 - [Creative Coding](https://github.com/terkelg/awesome-creative-coding#readme) - Programming something expressive instead of something functional.
 - [Design and Development Guides](https://github.com/NARKOZ/guides#readme) - Design and development guides
 - [Design patterns](https://github.com/DovAmir/awesome-design-patterns#readme) - List of software and architecture related design patterns.
@@ -658,6 +653,7 @@ Tools for lists:
 - [FOSS for Developers](https://github.com/tvvocold/FOSS-for-Dev#readme) - A hub of Free and open-source software for developers
 - [Free for Developers](https://github.com/ripienaar/free-for-dev#readme) - SaaS, PaaS and IaaS offerings that have free tiers.
 - [Free Programming Books](https://github.com/EbookFoundation/free-programming-books#readme) - :books: Freely available programming books
+- [Gists](https://github.com/vsouza/awesome-gists#readme) - amazing gists
 - [GitHub](https://github.com/phillipadsmith/awesome-github#readme) - Hosting service for Git repositories.
 	- [GitHub Actions](https://github.com/sdras/awesome-actions#readme) - Create tasks to automate your workflow and share them with others on GitHub.
 	- [Browser Extensions](https://github.com/stefanbuck/awesome-browser-extensions-for-github#readme)
@@ -667,14 +663,19 @@ Tools for lists:
 	- [GitHub Badges](https://github.com/chetanraj/awesome-github-badges#readme) - github README.md badges
 	- [Github Profile Readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme#readme) - Interesting GitHub READMEs and related resources.
 - [Katas](https://github.com/gamontal/awesome-katas#readme) - an exercise in programming which helps hone your skills through practice and repetition.
+- [Minimalist frameworks](https://github.com/neiesc/awesome-minimalist#readme) - minimalist frameworks (simple and lightweight).
 - [Naming](https://github.com/gruhn/awesome-naming#readme) - Naming things in computer science done right.
+- [Podcasts For Developers](https://github.com/rShetty/awesome-podcasts#readme) - Podcasts.
 - [Programming Community](https://github.com/phpearth/awesome-community#readme) - forums, groups, etc organized by programming language.
 - [Programming Interviews](https://github.com/MaximAbramchuck/awesome-interviews#readme) - :octocat: lists of interview questions. Feel free to contribute! :mortar_board: 
+- [QR Code](https://github.com/make-github-pseudonymous-again/awesome-qr-code#readme) - A type of matrix barcode that can be used to store and share a small amount of information.
 - [Regular Expressions](https://github.com/aloisdg/awesome-regex#readme) - Sequence of characters that define a search pattern
 - [Software Architecture](https://github.com/simskij/awesome-software-architecture#readme) - The discipline of designing and building software.
 - [Software Engineering Blogs](https://github.com/kilimchoi/engineering-blogs#readme) - engineering blogs
 - [Software Patreons](https://github.com/uraimo/awesome-software-patreons#readme) - Fund individual programmers or the development of open source projects.
+- [Stacks](https://github.com/stackshareio/awesome-stacks#readme) - Tech stacks for building different apps and features.
 - [Swag for Developers](https://github.com/swapagarwal/swag-for-dev#readme) - swag opportunities for developers
+- [Unique IDs](https://github.com/grantcarthew/awesome-unique-id#readme) - Unique identifier generation and hashing packages.
 - [Version Managers](https://github.com/bernardoduarte/awesome-version-managers#readme) - Tools to manage multiple versions of programming languages.
 - Git
 	- [Git Add-ons](https://github.com/stevemao/awesome-git-addons#readme) - Enhance the `git` CLI.
@@ -682,7 +683,6 @@ Tools for lists:
 	- [Git Hooks](https://githooks.com/) - Scripts that run automatically every time a particular event occurs in a Git repository. Also by [@aitemr](https://github.com/aitemr/awesome-git-hooks#readme)  and [@compscilauren](https://github.com/compscilauren/awesome-git-hooks#readme).
 	- [Git Tips](https://github.com/git-tips/tips#readme) - Most commonly used git tips and tricks.
 	- [Gitea](https://gitea.com/gitea/awesome-gitea) - Community managed lightweight code hosting solution written in Go.
-- [Unique IDs](https://github.com/grantcarthew/awesome-unique-id#readme) - Unique identifier generation and hashing packages.
 
 ### Editors
 
@@ -726,29 +726,29 @@ Tools for lists:
 
 Graphics, Design, Movies, Books, etc.
 
-- [Fantasy Literature](https://github.com/RichardLitt/awesome-fantasy#readme) - :european_castle: Fantasy literature worth reading
 - [ACG](https://github.com/soruly/awesome-acg#readme) - technologies related to Anime, Comic and Games.
-- [Mind Expanding Books](https://github.com/hackerkid/Mind-Expanding-Books#readme) - :books: Books everyone should read!
-- [Uncopyright](https://github.com/johnjago/awesome-uncopyright#readme) - Public domain works.
-- [IT Films](https://github.com/greybax/awesome-it-films#readme) - Movies, documentaries, and TV series about hackers, geeks, and information technology.
-- [Geek Podcasts](https://github.com/ayr-ton/awesome-geek-podcasts#readme) - podcasts we like to listen to. 
-- [Science Fiction](https://github.com/sindresorhus/awesome-scifi#readme) - Scifi.
 - [Audio Visualization](https://github.com/willianjusten/awesome-audio-visualization#readme) - Audio Visualization.
 - [Audiovisual](https://github.com/stingalleman/awesome-audiovisual#readme) - Lighting, audio and video in professional environments.
 - [Broadcasting](https://github.com/ebu/awesome-broadcasting#readme) - open source resources related to broadcast technologies.
 - [Codeface](https://github.com/chrissimpkins/codeface#readme) - Text editor fonts.
 - [Creative Commons Media](https://github.com/shime/creative-commons-media#readme) - resources that provide media licensed under Creative Commons licenses.
 - [Creative Portfolio Websites](https://github.com/iRaul/creative-portfolios#readme) - 🌀  Creative Portfolios
+- [Fantasy Literature](https://github.com/RichardLitt/awesome-fantasy#readme) - :european_castle: Fantasy literature worth reading
 - [FFmpeg](https://github.com/transitive-bullshit/awesome-ffmpeg#readme) - Cross-platform solution to record, convert and stream audio and video.
 - [Fonts](https://github.com/brabadu/awesome-fonts#readme) - Fonts.
+- [Geek Podcasts](https://github.com/ayr-ton/awesome-geek-podcasts#readme) - podcasts we like to listen to. 
 - [Generative art](https://github.com/kosmos/awesome-generative-art#readme) - Art made my machines.
 - [GIF](https://github.com/davisonio/awesome-gif#readme) - Image format known for animated images.
 - [Icons](https://github.com/notlmn/awesome-icons#readme) - Downloadable SVG/PNG/font icon projects. Also by [@vkarampinis](https://github.com/vkarampinis/awesome-icons).
 - [International Image Interoperability Framework](https://github.com/IIIF/awesome-iiif#readme) - Standard APIs for sharing and presenting media.
+- [IT Films](https://github.com/greybax/awesome-it-films#readme) - Movies, documentaries, and TV series about hackers, geeks, and information technology.
+- [Mind Expanding Books](https://github.com/hackerkid/Mind-Expanding-Books#readme) - :books: Books everyone should read!
 - [Open Source Documents](https://github.com/44bits/awesome-opensource-documents#readme) - :blue_book: open source or open source licensed documents, guides, books.
 - [Pixel Art](https://github.com/Siilwyn/awesome-pixel-art#readme) - Pixel-level digital art.
+- [Science Fiction](https://github.com/sindresorhus/awesome-scifi#readme) - Scifi.
 - [Stock Resources](https://github.com/neutraltone/awesome-stock-resources#readme) - Free stock photography, video and Illustration websites
 - [Typography](https://github.com/Jolg42/awesome-typography#readme) - TrueType & OpenType.
+- [Uncopyright](https://github.com/johnjago/awesome-uncopyright#readme) - Public domain works.
 - [VLC](https://github.com/mfkl/awesome-vlc#readme) - Cross-platform media player software and streaming server.
 
 ### Music
@@ -759,19 +759,19 @@ Graphics, Design, Movies, Books, etc.
 
 ### Design
 
-- [UI](https://github.com/tipoqueno/UI-Design#readme) - User Interface Design.
-- [Material Design](https://github.com/sachin1092/awesome-material#readme) - Google's material design libraries for different frameworks.
-- [Design systems](https://github.com/klaufel/awesome-design-systems#readme) - Collection of reusable components, guided by rules that ensure consistency and speed.
 - [Blender](https://github.com/agmmnn/awesome-blender#readme) - Open source 3D creation suite.
 - [Book Authoring](https://github.com/TalAter/awesome-book-authoring#readme) - :books: resources for technical book authors
 - [Colorful](https://github.com/Siddharth11/Colorful#readme) - Choose your next color scheme.
 - [Design Principles](https://github.com/robinstickel/awesome-design-principles#readme) - Create better and more consistent designs and experiences.
 - [Design Systems](https://github.com/alexpate/awesome-design-systems#readme) - Popular design systems, pattern libraries, and design documentation.
+- [Design systems](https://github.com/klaufel/awesome-design-systems#readme) - Collection of reusable components, guided by rules that ensure consistency and speed.
 - [Figma](https://github.com/react-figma/awesome-figma#readme) - The collaborative interface design tool.
 - [Framer](https://github.com/podo/awesome-framer#readme) - Prototyping interactive UI designs.
 - [Lorem Ipsum](https://github.com/templeman/awesome-ipsum#readme) - lorem ipsum generators.
+- [Material Design](https://github.com/sachin1092/awesome-material#readme) - Google's material design libraries for different frameworks.
 - [Product Design](https://github.com/ttt30ga/awesome-product-design#readme) - Design a product from the initial concept to production.
 - [Sketch](https://github.com/diessica/awesome-sketch#readme) - Design app for macOS.
+- [UI](https://github.com/tipoqueno/UI-Design#readme) - User Interface Design.
 - [Web Design](https://github.com/nicolesaidy/awesome-web-design#readme) - For digital designers.
 
 ### Graphics
@@ -779,22 +779,23 @@ Graphics, Design, Movies, Books, etc.
 - [3D reconstruction from images](https://github.com/openMVG/awesome_3DReconstruction_list#readme) - papers & resources linked to 3D reconstruction from images.
 - [Graphics Programming](https://github.com/Graphics-Programming-Virtual-Meetup/resources#readme) - Write programs to synthesize and manipulate visual information.
 - [OpenGL](https://github.com/eug/awesome-opengl#readme) - Cross-platform API for rendering 2D and 3D graphics.
-- [WebXR](https://github.com/msub2/awesome-webxr#readme) - Enables immersive virtual reality and augmented reality content on the web.
-- [Vulkan](https://github.com/vinjn/awesome-vulkan#readme) - Low-overhead, cross-platform 3D graphics and compute API.
 - [TikZ](https://github.com/xiaohanyu/awesome-tikz#readme) - Graph drawing packages for TeX/LaTeX/ConTeXt.
+- [Vulkan](https://github.com/vinjn/awesome-vulkan#readme) - Low-overhead, cross-platform 3D graphics and compute API.
+- [WebXR](https://github.com/msub2/awesome-webxr#readme) - Enables immersive virtual reality and augmented reality content on the web.
 
 ## Learn
 
 School, tutorials, etc.
 
-- [Talks](https://github.com/JanVanRyswyck/awesome-talks#readme) - Online talks and screencasts
-- [Cheatsheets](https://github.com/detailyang/awesome-cheatsheet#readme) - Cheatsheets. [@LeCoupa](https://github.com/LeCoupa/awesome-cheatsheets#readme)
 - [Beginner-Friendly Projects](https://github.com/MunGell/awesome-for-beginners#readme) - Beginners-friendly projects.
+- [Campus Ambassadors](https://github.com/palash25/awesome-campus-ambassadors#readme) - Programmes for computer science students.
+- [Cheatsheets](https://github.com/detailyang/awesome-cheatsheet#readme) - Cheatsheets. [@LeCoupa](https://github.com/LeCoupa/awesome-cheatsheets#readme)
 - [CLI Workshoppers](https://github.com/therebelrobot/awesome-workshopper#readme) - Interactive tutorials.
 - [Coding resources](https://github.com/georgegognadze/awesome-resources#readme) - Coding resources for all stages and ages
 - [Coding Style Conventions and Standards](https://github.com/Kristories/awesome-guidelines#readme) - high quality coding style conventions and standards.
 - [Computer History](https://github.com/watson/awesome-computer-history#readme) - Computer history videos, documentaries and related folklore
 - [CSS Learning](https://github.com/micromata/awesome-css-learning#readme) - Mainly about CSS – the language and the modules.
+- [Education](https://github.com/mehdihadeli/awesome-software-architecture#readme) - Learning and practicing software architecture.
 - [Educational Games](https://github.com/yrgo/awesome-educational-games#readme) - Learn while playing.
 - [Explorables](https://github.com/blob42/awesome-explorables#readme) - Explorable explanations
 - [Free Courses](https://github.com/Leocardoso94/Free-Courses#readme) - free courses about programming :book:
@@ -806,14 +807,12 @@ School, tutorials, etc.
 - [Programming for Kids](https://github.com/HollyAdele/awesome-programming-for-kids#readme) - resources for teaching kids programming. 
 - [Roadmaps](https://github.com/liuchong/awesome-roadmaps#readme) - Gives you a clear route to improve your knowledge and skills.
 - [Speaking](https://github.com/matteofigus/awesome-speaking#readme) - Resources about public speaking
+- [Talks](https://github.com/JanVanRyswyck/awesome-talks#readme) - Online talks and screencasts
 - [Tech Videos](https://github.com/lucasviola/awesome-tech-videos#readme) - :tv: tech conferences from youtube, vimeo, etc for us to get inspired ;)
 - [YouTubers](https://github.com/JoseDeFreitas/awesome-youtubers#readme) - Watch video tutorials from YouTubers that teach you about technology.
-- [Campus Ambassadors](https://github.com/palash25/awesome-campus-ambassadors#readme) - Programmes for computer science students.
-- [Education](https://github.com/mehdihadeli/awesome-software-architecture#readme) - Learning and practicing software architecture.
 
 ## Security
 
-- [Zero Knowledge Proofs](https://github.com/matter-labs/awesome-zero-knowledge-proofs#readme) - things related to learning Zero-Knowledge Proofs (ZKP).
 - [All In One Security](https://github.com/Hack-with-Github/Awesome-Hacking#readme) - For hackers, pentesters and security researchers.
 - [Android Security](https://github.com/ashishb/android-security-awesome#readme) - android security related resources
 - [Apple Security](https://github.com/BlackSquirrelz/awesome-apple-security#readme) - Apple Security resources.
@@ -857,11 +856,11 @@ School, tutorials, etc.
 - [Web Security](https://github.com/qazbnm456/awesome-web-security#readme) - Security of web apps & services.
 - [WebAuthn](https://github.com/herrjemand/awesome-webauthn#readme) - A new W3C standard for phishing proof passwordless authentication
 - [YARA](https://github.com/InQuest/awesome-yara#readme) - The pattern matching swiss knife for malware researchers (and everyone else).
+- [Zero Knowledge Proofs](https://github.com/matter-labs/awesome-zero-knowledge-proofs#readme) - things related to learning Zero-Knowledge Proofs (ZKP).
 
 ## Content Management Systems
 
 - [CMS](https://github.com/postlight/awesome-cms#readme) - Content Management Systems.
-- [Umbraco](https://github.com/leekelleher/awesome-umbraco#readme) - ASP.NET CMS
 - [Craft CMS](https://github.com/craftcms/awesome#readme) - Content-first CMS.
 - [Directus](https://github.com/directus-community/awesome-directus#readme) - A real-time API and app dashboard for managing SQL database content.
 - [Drupal](https://github.com/nirgn975/awesome-drupal#readme) - Extensible PHP-based CMS.
@@ -872,6 +871,7 @@ School, tutorials, etc.
 - [Silverstripe CMS](https://github.com/wernerkrauss/awesome-silverstripe-cms#readme) - PHP MVC framework that serves as a classic or headless CMS.
 - [Sitecore](https://github.com/MartinMiles/Awesome-Sitecore#readme) - .NET digital marketing platform that combines CMS with tools for managing multiple websites.
 - [Textpattern](https://github.com/drmonkeyninja/awesome-textpattern#readme) - Lightweight PHP-based CMS.
+- [Umbraco](https://github.com/leekelleher/awesome-umbraco#readme) - ASP.NET CMS
 - [Umbraco](https://github.com/umbraco-community/awesome-umbraco#readme) - Umbraco packages, resources and tools
 - [Wagtail](https://github.com/springload/awesome-wagtail#readme) - Django CMS focused on flexibility and user experience.
 - [Wordpress](https://github.com/miziomon/awesome-wordpress#readme) - Very popular PHP-based CMS.
@@ -903,21 +903,21 @@ School, tutorials, etc.
 
 ## Business
 
-- [Search Engine Optimization](https://github.com/marcobiedermann/search-engine-optimization#readme) - :mag: A helpful checklist/Search Engine Optimization (SEO) tips and techniques.
 - [Advertising](https://github.com/cenoura/awesome-ads#readme) - Advertising and programmatic media for websites.
 	- [Ad-Free](https://github.com/johnjago/awesome-ad-free#readme) - Ad-free alternatives.
-- [Growth Hacking](https://github.com/bekatom/awesome-growth-hacking#readme) - Growth Hacking resources
 - [Amazon Sellers](https://github.com/ScaleLeap/awesome-amazon-seller#readme) - tools and resources for Amazon sellers.
 - [Billing](https://github.com/kdeldycke/awesome-billing#readme) - Payments, invoicing, pricing, accounting, marketplace, fraud, and business intelligence.
 - [Clean Tech](https://github.com/nglgzz/awesome-clean-tech#readme) - Fighting climate change with technology.
 - [Developer-First Products](https://github.com/agamm/awesome-developer-first#readme) - Products that target developers as the user.
 - [Engineering Team Management](https://github.com/kdeldycke/awesome-engineering-team-management#readme) - How to transition from software development to engineering management.
+- [Growth Hacking](https://github.com/bekatom/awesome-growth-hacking#readme) - Growth Hacking resources
 - [Indie](https://github.com/mezod/awesome-indie#readme) - Independent developer businesses.
 - [Investing Resources](https://github.com/mr-karan/awesome-investing#readme) - Investment & finance related resources. 
 - [Leading and Managing](https://github.com/LappleApple/awesome-leading-and-managing#readme) - Leading people and being a manager in a technology company/environment.
 - [OKR Methodology](https://github.com/domenicosolazzo/awesome-okr#readme) - Goal setting & communication best practices.
 - [Open Companies](https://github.com/opencompany/awesome-open-company#readme) - A for-profit organization whose core practices are guided by principles of openness, transparency and interoperability.
 - [Places to Post Your Startup](https://github.com/mmccaff/PlacesToPostYourStartup#readme) - Links from "Ask HN: Where can I post my startup to get beta users?"
+- [Search Engine Optimization](https://github.com/marcobiedermann/search-engine-optimization#readme) - :mag: A helpful checklist/Search Engine Optimization (SEO) tips and techniques.
 - [Social Enterprise](https://github.com/RayBB/awesome-social-enterprise#readme) - Building an organization primarily focused on social impact, partially self-funded.
 - [Startup](https://github.com/KrishMunot/awesome-startup#readme) - :sunglasses: All the required resources to build your own startup
 - [Tools of the Trade](https://github.com/cjbarber/ToolsOfTheTrade#readme) - Tools used by companies on Hacker News.
@@ -943,12 +943,6 @@ School, tutorials, etc.
 
 Communication, Protocols
 
-- [Jitsi](https://github.com/xceejay/awesome-jitsi#readme) - Secure, fully featured, and completely free video conferencing.
-- [IRC](https://github.com/davisonio/awesome-irc#readme) - Open source messaging protocol.
-- [OpenAPI 3.x Tools](https://github.com/APIs-guru/awesome-openapi3#readme) - Projects related to the Open API Specification 3.x
-- [Captcha](https://github.com/ZYSzys/awesome-captcha#readme) - A type of challenge–response test used in computing to determine whether or not the user is human.
-- [GraphQL](https://github.com/chentsulin/awesome-graphql#readme) - Web query language.
-- [Prisma](https://github.com/catalinmiron/awesome-prisma#readme) - Turn your database into a GraphQL API.
 - [AMQP 1.0](https://github.com/xinchen10/awesome-amqp#readme) - Advanced Message Queuing Protocol 1.0.
 - [Bluetooth Beacons](https://github.com/beaconinside/awesome-beacon#readme) - Bluetooth beacon software and tools.
 - [Bots](https://github.com/DopplerHQ/awesome-bots#readme) - Digital agents. [@hackerkid](https://github.com/hackerkid/bots#readme)
@@ -956,13 +950,19 @@ Communication, Protocols
 	- [Conversational AI](https://github.com/jyguyomarch/awesome-conversational-ai#readme) - Chatbots and digital assistants.
 	- [Chatbots](https://github.com/jstumpp/awesome-chatbots#readme) - Chatbot services and resources.
 - [Browser Automation](https://github.com/angrykoala/awesome-browser-automation#readme) - Web scrapers, headless browsers and testing.
+- [Captcha](https://github.com/ZYSzys/awesome-captcha#readme) - A type of challenge–response test used in computing to determine whether or not the user is human.
 - [Computer Networking](https://github.com/nyquist/awesome-networking#readme) - To design, implement and operate computer networks.
+- [GraphQL](https://github.com/chentsulin/awesome-graphql#readme) - Web query language.
 - [gRPC](https://github.com/grpc-ecosystem/awesome-grpc#readme) - useful resources for gRPC
+- [IRC](https://github.com/davisonio/awesome-irc#readme) - Open source messaging protocol.
+- [Jitsi](https://github.com/xceejay/awesome-jitsi#readme) - Secure, fully featured, and completely free video conferencing.
 - [LoRa & LoRaWAN](https://github.com/mcicolella/awesome-lora-lorawan#readme) - LoRa and LoRaWAN resources.
 - [MQTT](https://github.com/hobbyquaker/awesome-mqtt#readme) - "Internet of Things" connectivity protocol.
 - [Network Analysis](https://github.com/briatte/awesome-network-analysis#readme) - network analysis resources.
 - [Network Automation](https://github.com/networktocode/awesome-network-automation#readme) - The best network automation material in the universe.
+- [OpenAPI 3.x Tools](https://github.com/APIs-guru/awesome-openapi3#readme) - Projects related to the Open API Specification 3.x
 - [PCAPTools](https://github.com/caesar0301/awesome-pcaptools#readme) - tools to process network traces.
+- [Prisma](https://github.com/catalinmiron/awesome-prisma#readme) - Turn your database into a GraphQL API.
 - [Protocols](https://github.com/chrvadala/awesome-protocols#readme) - Main protocols and open standards with RFC links.
 - [Proxy Servers](https://github.com/dariubs/awesome-proxy#readme) - Proxy servers and resources.
 - [Real-Time Communications](https://github.com/rtckit/awesome-rtc#readme) - Network protocols for near simultaneous exchange of media and data.
@@ -975,20 +975,20 @@ Communication, Protocols
 
 ### Decentralized Systems
 
-- [IPFS](https://github.com/ipfs/awesome-ipfs#readme) - P2P hypermedia protocol.
-- [Peer-to-peer](https://github.com/kgryte/awesome-peer-to-peer#readme) - Networks without servers.
 - [ActivityPub](https://github.com/BasixKOR/awesome-activitypub#readme) - Open standard decentralized and federated protocol.
+- [IPFS](https://github.com/ipfs/awesome-ipfs#readme) - P2P hypermedia protocol.
 - [Mastodon](https://github.com/tleb/awesome-mastodon#readme) - Open source decentralized microblogging network.
-	
+- [Peer-to-peer](https://github.com/kgryte/awesome-peer-to-peer#readme) - Networks without servers.
+
 ### Blockchain
 
 - [Algorand](https://github.com/aorumbayev/awesome-algorand#readme) - An open-source, proof of stake blockchain and smart contract computing platform.
-- [Cryptocurrency](https://github.com/Zheaoli/awesome-coins#readme) - Digital currency where encryption is used.
-- [Bitcoin](https://github.com/igorbarinov/awesome-bitcoin#readme) - Bitcoin services and tools for software developers.
 - [Bitcoin Cash](https://github.com/dsmurrell/awesome-bitcoin-cash#readme) - Bitcoin Cash resources.
 - [Bitcoin Payment Processors](https://github.com/alexk111/awesome-bitcoin-payment-processors#readme) - Start accepting Bitcoin.
+- [Bitcoin](https://github.com/igorbarinov/awesome-bitcoin#readme) - Bitcoin services and tools for software developers.
 - [Blockchain AI](https://github.com/steven2358/awesome-blockchain-ai#readme) - Blockchain projects for artificial intelligence and machine learning.
 - [Corda](https://github.com/chainstack/awesome-corda#readme) - Open source blockchain platform designed for business.
+- [Cryptocurrency](https://github.com/Zheaoli/awesome-coins#readme) - Digital currency where encryption is used.
 - [EOSIO](https://github.com/DanailMinchev/awesome-eosio#readme) - A decentralized operating system supporting industrial-scale apps.
 - [Ethereum](https://github.com/ttumiel/Awesome-Ethereum#readme) - Distributed computing platform for smart contract development.
 - [Golem](https://github.com/golemfactory/awesome-golem#readme) - Open source peer-to-peer marketplace for computing resources.
@@ -1026,37 +1026,34 @@ Communication, Protocols
 
 System Engineering, DevOps, Power User Tools
 
-- [Startpage](https://github.com/jnmcfly/awesome-startpage#readme) - A startpage will be shown when you start your browser, new tab or window.
-- [Fetch](https://github.com/beucismis/awesome-fetch#readme) - Command-line fetch tools for system information.
-- [Cloud Native](https://github.com/rootsongjc/awesome-cloud-native#readme) - Cloud native tools, software and tutorials.
-- [Free Software](https://github.com/johnjago/awesome-free-software#readme) - Free as in freedom.
-- [Gyazo](https://github.com/gyazo/awesome-gyazo#readme) - A tool to capture your screen.
-- [Homematic](https://github.com/homematic-community/awesome-homematic#readme) - Smart home devices.
-- [InspectIT](https://github.com/inspectit-labs/awesome-inspectit#readme) - Open source Java app performance management tool.
-- [Deploy Your Own SaaS](https://github.com/Atarity/deploy-your-own-saas) - List of "only yours" cloud services for everyday needs.
-- [DTrace](https://github.com/xen0l/awesome-dtrace#readme) - Dynamic tracing framework.
-- [Libre Hosters](https://github.com/libresh/awesome-librehosters#readme) - Nice hosting providers
-- [No-Login Web Apps](https://github.com/aviaryan/awesome-no-login-web-apps#readme) - Web apps that work without login.
-- [Cerebro](https://github.com/cerebroapp/awesome-cerebro#readme) - Pluggable quick search bar app for desktops.
-- [Prometheus](https://github.com/roaldnefs/awesome-prometheus#readme) - Open-source monitoring system.
-- [Userscripts](https://github.com/bvolpato/awesome-userscripts#readme) - Enhance your browsing experience.
-- [Web Archiving](https://github.com/iipc/awesome-web-archiving#readme) - An effort to preserve the Web for future generations.
 - [Alerts](https://github.com/samber/awesome-prometheus-alerts#readme) - Prometheus queries and rules for alerting.
 - [Ansible](https://github.com/ansible-community/awesome-ansible#readme) - A Python-based, open source IT configuration management and automation platform.
+- [Cerebro](https://github.com/cerebroapp/awesome-cerebro#readme) - Pluggable quick search bar app for desktops.
 - [ChatOps](https://github.com/exAspArk/awesome-chatops#readme) - Managing technical and business operations through a chat.
+- [Cloud Native](https://github.com/rootsongjc/awesome-cloud-native#readme) - Cloud native tools, software and tutorials.
 - [Command-Line Apps](https://github.com/agarrharr/awesome-cli-apps#readme) - 🖥 📊 🕹 🛠 command line apps
 - [Connectivity Data and Reports](https://github.com/stevesong/awesome-connectivity-info#readme) - Understand who has access to telecommunication and internet infrastructure.
 - [Continuous Integration and Continuous Delivery](https://github.com/cicdops/awesome-ciandcd#readme) - continuous integration and continuous delivery
 - [Continuous Integration](https://github.com/ligurio/awesome-ci#readme) - List of Continuous Integration services
+- [Deploy Your Own SaaS](https://github.com/Atarity/deploy-your-own-saas) - List of "only yours" cloud services for everyday needs.
 - [Deployment](https://github.com/delirehberi/awesome-deployment#readme) - amazing Deployment libraries, library distributions, scripts, tools and resources.
 - [Dev Ops](https://github.com/bregman-arie/devops-exercises#readme) - Great Dev Ops related Informations.
 - [Dotfiles](https://github.com/webpro/awesome-dotfiles#readme) - dotfiles resources.
+- [DTrace](https://github.com/xen0l/awesome-dtrace#readme) - Dynamic tracing framework.
 - [Emulators & Simulators](https://github.com/mcicolella/awesome-emulators-simulators#readme) - simulators of PCs, home computers, mainframes, consoles, robots, etc.
+- [Fetch](https://github.com/beucismis/awesome-fetch#readme) - Command-line fetch tools for system information.
 - [Fish](https://github.com/jorgebucaran/awsm.fish#readme) - User-friendly shell.
+- [Free Software](https://github.com/johnjago/awesome-free-software#readme) - Free as in freedom.
+- [Gyazo](https://github.com/gyazo/awesome-gyazo#readme) - A tool to capture your screen.
 - [Heroku](https://github.com/ianstormtaylor/awesome-heroku#readme) - Cloud platform as a service.
+- [Homematic](https://github.com/homematic-community/awesome-homematic#readme) - Smart home devices.
 - [Hyper](https://github.com/bnb/awesome-hyper#readme) - Cross-platform terminal app built on web technologies.
+- [InspectIT](https://github.com/inspectit-labs/awesome-inspectit#readme) - Open source Java app performance management tool.
+- [Libre Hosters](https://github.com/libresh/awesome-librehosters#readme) - Nice hosting providers
 - [Microservices](https://github.com/mfornos/awesome-microservices#readme) - Microservice Architecture related principles and technologies.
 - [Monitoring](https://github.com/crazy-canux/awesome-monitoring#readme) - Open source monitoring tools.
+- [No-Login Web Apps](https://github.com/aviaryan/awesome-no-login-web-apps#readme) - Web apps that work without login.
+- [Prometheus](https://github.com/roaldnefs/awesome-prometheus#readme) - Open-source monitoring system.
 - [Ricing](https://github.com/fosslife/awesome-ricing#readme) - tools and technology to help you out with ricing.
 - [SaltStack](https://github.com/hbokh/awesome-saltstack#readme) - Python-based config management system.
 - [Self Hosted](https://github.com/awesome-selfhosted/awesome-selfhosted#readme) - Free Software network services and Web applications.
@@ -1064,10 +1061,13 @@ System Engineering, DevOps, Power User Tools
 - [Shell](https://github.com/alebcay/awesome-shell#readme) - command-line frameworks, toolkits, guides and gizmos.
 - [Site Reliability Engineering](https://github.com/dastergon/awesome-sre#readme) - Site Reliability and Production Engineering resources.
 - [SSH](https://github.com/moul/awesome-ssh#readme) - :computer: SSH resources.
+- [Startpage](https://github.com/jnmcfly/awesome-startpage#readme) - A startpage will be shown when you start your browser, new tab or window.
 - [Sysadmin FOSS](https://github.com/awesome-foss/awesome-sysadmin#readme) - Free Software for system administrators.
 - [Sysadmin Tools](https://github.com/Spacial/awesome-systools#readme) - Daily handy tools.
 - [Tasker](https://github.com/guifelix/awesome-tasker#readme) - Android Automation app.
 - [Terminals Are Sexy](https://github.com/k4m4/terminals-are-sexy#readme) - 💥 Terminal frameworks, plugins & resources for CLI lovers.
+- [Userscripts](https://github.com/bvolpato/awesome-userscripts#readme) - Enhance your browsing experience.
+- [Web Archiving](https://github.com/iipc/awesome-web-archiving#readme) - An effort to preserve the Web for future generations.
 - [Workflow engines](https://github.com/meirwah/awesome-workflow-engines#readme) - open source workflow engines
 - [Zsh Plugins](https://github.com/unixorn/awesome-zsh-plugins#readme) - ZSH frameworks, plugins, themes and tutorials.
 
@@ -1084,29 +1084,29 @@ System Engineering, DevOps, Power User Tools
 - [AMA](https://github.com/sindresorhus/amas#readme) - Ask Me Anything.
 	- [Answers](https://github.com/stoeffel/awesome-ama-answers#readme)
 - [Answers](https://github.com/cyberglot/awesome-answers#readme) - Stack Overflow, Quora, etc.
+- [Email Newsletters](https://github.com/zudochkin/awesome-newsletters#readme) - Newsletters.
+	- [Weekly Newsletters](https://github.com/jondot/awesome-weekly#readme) - quality weekly subscription newsletters from the software world.
+- [Food](https://github.com/jzarca01/awesome-food#readme) - Food-related projects on GitHub.
+- [For Girls](https://github.com/cristianoliveira/awesome4girls#readme) - inclusive events/projects/initiatives for women in the tech area. :gift_heart:
+- [IT Quotes](https://github.com/victorlaerte/awesome-it-quotes#readme) - The aim is to collect all relevant quotes said over the history of IT.
+- [Name conflicts](https://github.com/konopski/awsome-name-conflicts#readme) - Name conflicts in various projects.
+- [Readme](https://github.com/matiassingers/awesome-readme#readme) - Great READMEs
 - [Subreddits](https://github.com/iCHAIT/awesome-subreddits#readme) - :memo: programming subreddits.
 - [Theravada](https://github.com/johnjago/awesome-theravada#readme) - Teachings from the Theravada Buddhist tradition.
 - [Tools for Activism](https://github.com/drewrwilson/toolsforactivism#readme) - Digital tools for activism things
-- [Email Newsletters](https://github.com/zudochkin/awesome-newsletters#readme) - Newsletters.
-	- [Weekly Newsletters](https://github.com/jondot/awesome-weekly#readme) - quality weekly subscription newsletters from the software world.
-- [IT Quotes](https://github.com/victorlaerte/awesome-it-quotes#readme) - The aim is to collect all relevant quotes said over the history of IT.
-- [Food](https://github.com/jzarca01/awesome-food#readme) - Food-related projects on GitHub.
-- [For Girls](https://github.com/cristianoliveira/awesome4girls#readme) - inclusive events/projects/initiatives for women in the tech area. :gift_heart:
-- [Name conflicts](https://github.com/konopski/awsome-name-conflicts#readme) - Name conflicts in various projects.
-- [Readme](https://github.com/matiassingers/awesome-readme#readme) - Great READMEs
 
 ### Travel
 
-- [Urban & Regional Planning](https://github.com/APA-Technology-Division/urban-and-regional-planning-resources#readme) - Concerning the built environment and communities.
-- [Transit](https://github.com/CUTR-at-USF/awesome-transit#readme) - Transit APIs, apps, datasets, research, and software.
 - [Flights](https://github.com/kevit/awesome-flights#readme) - All about flights and how to find cheapest flight possible
+- [GeoSpatial](https://github.com/sacridini/Awesome-Geospatial#readme) - Geospatial tools and resources.
 - [Maps](https://github.com/drushadrusha/awesome-maps#readme) - Interactive maps.
 - [OpenStreetMap](https://github.com/osmlab/awesome-openstreetmap#readme) - An open data mapping project utilized by many apps and devices.
-- [GeoSpatial](https://github.com/sacridini/Awesome-Geospatial#readme) - Geospatial tools and resources.
+- [Transit](https://github.com/CUTR-at-USF/awesome-transit#readme) - Transit APIs, apps, datasets, research, and software.
+- [Urban & Regional Planning](https://github.com/APA-Technology-Division/urban-and-regional-planning-resources#readme) - Concerning the built environment and communities.
 
 ## Local Resources
 
-- [Malaysia](https://github.com/jerrychong25/awesome-malaysia#readme) - Malaysian tech resources.
 - [Georgian Talks](https://github.com/getsadzeg/awesome-georgian-talks#readme) - This is mirror of previous awesome-georgian-talks.
+- [Malaysia](https://github.com/jerrychong25/awesome-malaysia#readme) - Malaysian tech resources.
 
 <!-- vi:set noet: -->
