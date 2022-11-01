@@ -665,7 +665,7 @@ Tools for lists:
 - [Katas](https://github.com/gamontal/awesome-katas#readme) - an exercise in programming which helps hone your skills through practice and repetition.
 - [Minimalist frameworks](https://github.com/neiesc/awesome-minimalist#readme) - minimalist frameworks (simple and lightweight).
 - [Naming](https://github.com/gruhn/awesome-naming#readme) - Naming things in computer science done right.
-- [Podcasts For Developers](https://github.com/rShetty/awesome-podcasts#readme) - Podcasts.
+- [Podcasts For Developers](https://github.com/rShetty/awesome-podcasts#readme) - Podcasts for Software Engineers in several languages.
 - [Programming Community](https://github.com/phpearth/awesome-community#readme) - forums, groups, etc organized by programming language.
 - [Programming Interviews](https://github.com/MaximAbramchuck/awesome-interviews#readme) - :octocat: lists of interview questions. Feel free to contribute! :mortar_board: 
 - [QR Code](https://github.com/make-github-pseudonymous-again/awesome-qr-code#readme) - A type of matrix barcode that can be used to store and share a small amount of information.
