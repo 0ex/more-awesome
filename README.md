@@ -14,9 +14,10 @@ appropriate category and add a one-line description of the target topic (not of 
 
 ## Contents
 
-[Programming](#programming): [Platforms](#platforms)
+Coding:
+[Programming](#programming)
+| [Platforms](#platforms)
 | [Languages](#programming-languages)
-| [Testing](#testing)
 | [Back-End](#back-end-development)
 | [Front-End](#front-end-development) 
 
@@ -27,11 +28,11 @@ Tech: [Gaming](#gaming) | [Hardware](#hardware)
 | [Databases](#databases)
 | [Operations](#operations)
 
-Humanities: [Business](#business) | [Culture](#culture) | [Events](#events) | [Work](#work) | [Media](#media)
+Life: [Culture](#culture) | [Work](#work) | [Media](#media)
 
-[Science](#science): [Computer Science](#computer-science) | [Data Science](#data-science)
+Academics: [Learn](#learn) | [Science](#science) | [Computer Science](#computer-science) | [Data Science](#data-science)
 
-Misc: [Learn](#learn) | [List-Related Resources](#list-related-resources) | [Local](#local) 
+Other: [List-Related Resources](#list-related-resources) | [Local](#local) 
 
 ## List-Related Resources
 
@@ -583,7 +584,6 @@ Tools for lists:
 
 ### Health and Social Science
 
-- [](https://github.com/theimpossibleastronaut/awesome-mentalhealth#readme) - Be the best version of your self with these Mental Health (selfcare) resources.
 - [Autism](https://github.com/aspergirl-git/awesome-autism#readme) - Resources for ASD and Asperger's Syndrome.
 - [Digital History](https://github.com/maehr/awesome-digital-history#readme) - Computer-aided scientific investigation of history.
 - [Digital Humanities](https://github.com/dh-tech/awesome-dhtools#readme) - Software for humanities scholars using quantitative or computational methods.
@@ -594,7 +594,7 @@ Tools for lists:
 - [Empathy in Engineering](https://github.com/KimberlyMunoz/empathy-in-engineering#readme) - Building and promoting more compassionate engineering cultures.
 - [Healthcare](https://github.com/kakoni/awesome-healthcare#readme) - FOSS for facilities, providers, developers, policy experts, and researchers.
 - [Humane Technology](https://github.com/humanetech-community/awesome-humane-tech#readme) - Open source projects that help improve society.
-- [Mental Health](https://github.com/dreamingechoes/awesome-mental-health#readme) - Mental health awareness and self-care in the software industry.
+- [Mental Health](https://github.com/dreamingechoes/awesome-mental-health#readme) - Mental health awareness and self-care in the software industry. Also by [@theimpossibleastronaut](https://github.com/theimpossibleastronaut/awesome-mentalhealth#readme).
 
 ## Gaming
 
@@ -684,6 +684,23 @@ Tools for lists:
 	- [Git Tips](https://github.com/git-tips/tips#readme) - Most commonly used git tips and tricks.
 	- [Gitea](https://gitea.com/gitea/awesome-gitea) - Community managed lightweight code hosting solution written in Go.
 
+### Testing
+
+- [Appium](https://github.com/SrinivasanTarget/awesome-appium#readme) - Test automation tool for apps.
+- [Gatling](https://github.com/aliesbelik/awesome-gatling#readme) - Open-source load and performance testing framework based on Scala, Akka, and Netty.
+- [JMeter](https://github.com/aliesbelik/awesome-jmeter#readme) - Load testing and performance measurement tool.
+- [K6](https://github.com/grafana/awesome-k6#readme) - Open-source, developer-centric performance monitoring and load testing solution.
+- [Mutation Testing](https://github.com/theofidry/awesome-mutation-testing#readme) - Better code by making bugs.
+- [Playwright](https://github.com/mxschmitt/awesome-playwright#readme) - Node.js library to automate Chromium, Firefox and WebKit with a single API.
+- [Quality Assurance Roadmap](https://github.com/fityanos/awesome-quality-assurance-roadmap#readme) - How to start & build a career in software testing.
+- [Robot Framework](https://github.com/fkromer/awesome-robotframework#readme) - Generic test automation framework for acceptance testing and ATDD.
+- [Selenium](https://github.com/christian-bromann/awesome-selenium#readme) - Open-source browser automation framework and ecosystem.
+- [TAP](https://github.com/sindresorhus/awesome-tap#readme) - Test Anything Protocol.
+- [Test Automation](https://github.com/atinfo/awesome-test-automation#readme) - test automation frameworks, tools, libraries, and software for different programming languages. Sponsored by http://sdclabs.com
+- [Testing](https://github.com/TheJambo/awesome-testing#readme) - Software testing.
+- [Visual Regression Testing](https://github.com/mojoaxel/awesome-regression-testing#readme) - Ensures changes did not break the functionality or style.
+
+
 ### Editors
 
 - [Atom](https://github.com/mehcode/awesome-atom#readme) - Open-source and hackable text editor.
@@ -726,6 +743,7 @@ Tools for lists:
 
 Graphics, Design, Movies, Books, etc.
 
+- [Creative Tech Events](https://github.com/danvoyce/awesome-creative-tech-events#readme) - Events around the globe for creative coding, tech, design, music, arts and cool stuff.
 - [ACG](https://github.com/soruly/awesome-acg#readme) - technologies related to Anime, Comic and Games.
 - [Audio Visualization](https://github.com/willianjusten/awesome-audio-visualization#readme) - Audio Visualization.
 - [Audiovisual](https://github.com/stingalleman/awesome-audiovisual#readme) - Lighting, audio and video in professional environments.
@@ -901,7 +919,23 @@ School, tutorials, etc.
 - [Robotic Tooling](https://github.com/protontypes/awesome-robotic-tooling#readme) - Free and open tools for professional robotic development.
 - [Robotics](https://github.com/Kiloreux/awesome-robotics#readme) - Robotics resources.
 
-## Business
+## Work
+
+- [Cisco WebEx](https://github.com/CiscoDevNet/awesome-webex#readme) - Calls, Video & Messaging for Teams collaboration.
+- [Co-Working Spaces](https://github.com/ahmadnassri/awesome-coworking#readme) - co-working spaces around the globe.
+- [Creative Technology](https://github.com/j0hnm4r5/awesome-creative-technology#readme) - Businesses & groups combine computing, design, art, and user experience.
+- [Digital Nomads](https://github.com/cbovis/awesome-digital-nomads#readme) - 🏝 resources for Digital Nomads.
+- [Engineering Team Principles](https://github.com/posquit0/awesome-engineering-team-principles#readme) - How to respond to situations and make decisions as a team player.
+- [Internships](https://github.com/lodthe/awesome-internships#readme) - CV writing guides and companies that hire interns.
+- [Niche Job Boards](https://github.com/tramcar/awesome-job-boards#readme)
+- [Open Source Jobs](https://github.com/t9tio/open-source-jobs#readme) - Open Source projects offering jobs
+- [Productivity](https://github.com/jyguyomarch/awesome-productivity#readme) - delightful productivity resources.
+- [Programming Interviews](https://github.com/DopplerHQ/awesome-interview-questions#readme) - :octocat: lists of interview questions. Feel free to contribute! :mortar_board: 
+- [Remote Jobs](https://github.com/lukasz-madon/awesome-remote-job#readme) - remote jobs and resources.
+- [Slack](https://github.com/matiassingers/awesome-slack#readme) - Team collaboration chat tool.
+	- [Slack Communities](https://github.com/filipelinhares/awesome-slack#readme)
+
+### Business
 
 - [Advertising](https://github.com/cenoura/awesome-ads#readme) - Advertising and programmatic media for websites.
 	- [Ad-Free](https://github.com/johnjago/awesome-ad-free#readme) - Ad-free alternatives.
@@ -922,22 +956,6 @@ School, tutorials, etc.
 - [Startup](https://github.com/KrishMunot/awesome-startup#readme) - :sunglasses: All the required resources to build your own startup
 - [Tools of the Trade](https://github.com/cjbarber/ToolsOfTheTrade#readme) - Tools used by companies on Hacker News.
 - [Wardley Maps](https://github.com/wardley-maps-community/awesome-wardley-maps#readme) - Provides high situational awareness to help improve strategic planning and decision making.
-
-## Work
-
-- [Cisco WebEx](https://github.com/CiscoDevNet/awesome-webex#readme) - Calls, Video & Messaging for Teams collaboration.
-- [Co-Working Spaces](https://github.com/ahmadnassri/awesome-coworking#readme) - co-working spaces around the globe.
-- [Creative Technology](https://github.com/j0hnm4r5/awesome-creative-technology#readme) - Businesses & groups combine computing, design, art, and user experience.
-- [Digital Nomads](https://github.com/cbovis/awesome-digital-nomads#readme) - 🏝 resources for Digital Nomads.
-- [Engineering Team Principles](https://github.com/posquit0/awesome-engineering-team-principles#readme) - How to respond to situations and make decisions as a team player.
-- [Internships](https://github.com/lodthe/awesome-internships#readme) - CV writing guides and companies that hire interns.
-- [Niche Job Boards](https://github.com/tramcar/awesome-job-boards#readme)
-- [Open Source Jobs](https://github.com/t9tio/open-source-jobs#readme) - Open Source projects offering jobs
-- [Productivity](https://github.com/jyguyomarch/awesome-productivity#readme) - delightful productivity resources.
-- [Programming Interviews](https://github.com/DopplerHQ/awesome-interview-questions#readme) - :octocat: lists of interview questions. Feel free to contribute! :mortar_board: 
-- [Remote Jobs](https://github.com/lukasz-madon/awesome-remote-job#readme) - remote jobs and resources.
-- [Slack](https://github.com/matiassingers/awesome-slack#readme) - Team collaboration chat tool.
-	- [Slack Communities](https://github.com/filipelinhares/awesome-slack#readme)
 
 ## Networking
 
@@ -999,29 +1017,6 @@ Communication, Protocols
 - [Substrate](https://github.com/substrate-developer-hub/awesome-substrate#readme) - Framework for writing scalable, upgradeable blockchains in Rust.
 - [Waves](https://github.com/msmolyakov/awesome-waves#readme) - Open source blockchain platform for Web 3.0 apps.
 
-## Events
-
-- [Creative Tech Events](https://github.com/danvoyce/awesome-creative-tech-events#readme) - Events around the globe for creative coding, tech, design, music, arts and cool stuff.
-- [Events in Italy](https://github.com/ildoc/awesome-italy-events#readme) - Tech-related events in Italy.
-- [Events in the Netherlands](https://github.com/awkward/awesome-netherlands-events#readme) - Tech-related events in the Netherlands.
-- [Speakers](https://github.com/karlhorky/awesome-speakers#readme) - Conference and meetup speakers in the programming and design community.
-
-## Testing
-
-- [Appium](https://github.com/SrinivasanTarget/awesome-appium#readme) - Test automation tool for apps.
-- [Gatling](https://github.com/aliesbelik/awesome-gatling#readme) - Open-source load and performance testing framework based on Scala, Akka, and Netty.
-- [JMeter](https://github.com/aliesbelik/awesome-jmeter#readme) - Load testing and performance measurement tool.
-- [K6](https://github.com/grafana/awesome-k6#readme) - Open-source, developer-centric performance monitoring and load testing solution.
-- [Mutation Testing](https://github.com/theofidry/awesome-mutation-testing#readme) - Better code by making bugs.
-- [Playwright](https://github.com/mxschmitt/awesome-playwright#readme) - Node.js library to automate Chromium, Firefox and WebKit with a single API.
-- [Quality Assurance Roadmap](https://github.com/fityanos/awesome-quality-assurance-roadmap#readme) - How to start & build a career in software testing.
-- [Robot Framework](https://github.com/fkromer/awesome-robotframework#readme) - Generic test automation framework for acceptance testing and ATDD.
-- [Selenium](https://github.com/christian-bromann/awesome-selenium#readme) - Open-source browser automation framework and ecosystem.
-- [TAP](https://github.com/sindresorhus/awesome-tap#readme) - Test Anything Protocol.
-- [Test Automation](https://github.com/atinfo/awesome-test-automation#readme) - test automation frameworks, tools, libraries, and software for different programming languages. Sponsored by http://sdclabs.com
-- [Testing](https://github.com/TheJambo/awesome-testing#readme) - Software testing.
-- [Visual Regression Testing](https://github.com/mojoaxel/awesome-regression-testing#readme) - Ensures changes did not break the functionality or style.
-
 ## Operations
 
 System Engineering, DevOps, Power User Tools
@@ -1081,6 +1076,7 @@ System Engineering, DevOps, Power User Tools
 
 ## Culture
 
+- [Speakers](https://github.com/karlhorky/awesome-speakers#readme) - Conference and meetup speakers in the programming and design community.
 - [AMA](https://github.com/sindresorhus/amas#readme) - Ask Me Anything.
 	- [Answers](https://github.com/stoeffel/awesome-ama-answers#readme)
 - [Answers](https://github.com/cyberglot/awesome-answers#readme) - Stack Overflow, Quora, etc.
@@ -1108,5 +1104,7 @@ System Engineering, DevOps, Power User Tools
 
 - [Georgian Talks](https://github.com/getsadzeg/awesome-georgian-talks#readme) - This is mirror of previous awesome-georgian-talks.
 - [Malaysia](https://github.com/jerrychong25/awesome-malaysia#readme) - Malaysian tech resources.
+- [Events in Italy](https://github.com/ildoc/awesome-italy-events#readme) - Tech-related events in Italy.
+- [Events in the Netherlands](https://github.com/awkward/awesome-netherlands-events#readme) - Tech-related events in the Netherlands.
 
 <!-- vi:set noet: -->
