@@ -1100,7 +1100,7 @@ System Engineering, DevOps, Power User Tools
 - [Transit](https://github.com/CUTR-at-USF/awesome-transit#readme) - Transit APIs, apps, datasets, research, and software.
 - [Urban & Regional Planning](https://github.com/APA-Technology-Division/urban-and-regional-planning-resources#readme) - Concerning the built environment and communities.
 
-## Local Resources
+## Local
 
 - [Georgian Talks](https://github.com/getsadzeg/awesome-georgian-talks#readme) - This is mirror of previous awesome-georgian-talks.
 - [Malaysia](https://github.com/jerrychong25/awesome-malaysia#readme) - Malaysian tech resources.
