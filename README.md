@@ -504,12 +504,10 @@ and [resources](https://github.com/topics/resources).
 - [Quantum Machine Learning](https://github.com/krishnakumarsekar/awesome-quantum-machine-learning#readme) - Basics, Algorithms, Study Materials, Projects, etc.
 - [Software Engineering for Machine Learning](https://github.com/SE-ML/awesome-seml#readme) - From experiment to production-level machine learning.
 - [Speech and Natural Language Processing](https://github.com/edobashira/speech-language-processing#readme) - speech and natural language processing resources
-	- [Spanish](https://github.com/dav009/awesome-spanish-nlp#readme)
 	- [NLP with Ruby](https://github.com/arbox/nlp-with-ruby#readme)
 	- [Question Answering](https://github.com/seriousran/awesome-qa#readme) - The science of asking and answering in natural language with a machine.
 	- [Natural Language Generation](https://github.com/accelerated-text/awesome-nlg#readme) - Generation of text for conversational agents and narratives.
 	- [Sentence embeddings](https://github.com/Separius/awesome-sentence-embedding#readme) - Pretrained sentence and word embedding models
-	- [Spanish Natural Language Processing (NLP)](https://github.com/dav009/awesome-spanish-nlp#readme) - Linguistic Resources for doing NLP & CL on Spanish
 - [TensorFlow Lite](https://github.com/margaretmz/awesome-tensorflow-lite#readme) - Framework that optimizes TensorFlow models for on-device machine learning.
 - [TensorFlow.js](https://github.com/aaronhma/awesome-tensorflow-js#readme) - WebGL-accelerated machine learning JavaScript library for training and deploying models.
 - [TensorFlow](https://github.com/jtoy/awesome-tensorflow#readme) - Library for machine intelligence.
@@ -1107,5 +1105,11 @@ System Engineering, DevOps, Power User Tools
 - [Events in the Netherlands](https://github.com/awkward/awesome-netherlands-events#readme) - Tech-related events in the Netherlands.
 - [Georgian Talks](https://github.com/getsadzeg/awesome-georgian-talks#readme) - This is mirror of previous awesome-georgian-talks.
 - [Malaysia](https://github.com/jerrychong25/awesome-malaysia#readme) - Malaysian tech resources.
+- Portuguese
+	- [Git Commands](https://github.com/theandersonn/comandos-git)
+- Chinese
+	- [Github](https://github.com/AntBranch/awesome-github)
+- Spanish
+	- [Spanish NLP](https://github.com/dav009/awesome-spanish-nlp#readme) - Linguistic Resources for doing Natural Language Processing in Spanish
 
 <!-- vi:set noet: -->
