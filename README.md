@@ -1101,6 +1101,9 @@ System Engineering, DevOps, Power User Tools
 
 ## Local
 
+Persian
+- [Persian NLP](https://github.com/mhbashari/awesome-persian-nlp-ir#readme) - Natural Language Processing in Persian
+
 - [Events in Italy](https://github.com/ildoc/awesome-italy-events#readme) - Tech-related events in Italy.
 - [Events in the Netherlands](https://github.com/awkward/awesome-netherlands-events#readme) - Tech-related events in the Netherlands.
 - [Georgian Talks](https://github.com/getsadzeg/awesome-georgian-talks#readme) - This is mirror of previous awesome-georgian-talks.
