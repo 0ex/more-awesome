@@ -1,18 +1,12 @@
+# More Awesome
 
-This is a *list of lists*, each pertaining to some particular topic, broad or specific.
-The linked lists are useful for discovering resources on a particular topic, for example
-open source projects, tutorials, papers, tools, books, websites, libraries, etc.
+This is a curated list of other "awesome" lists, which contain starting points and resources to
+facilitate discovery on particular topics. It aims to be the most complete and carefully maintained *list of lists*, compated to the [others](#other-lists-of-lists).
 
-There are [other awesome lists](#list-related-resources) with different goals;
-this one aims to be very extensive, yet carefully maintained.
-A goal is to cover every topic which someone cares enough about that they created a decent list.
-For each topic the best maintained list will be linked; our suggested starting point.
-Competing lists are also listed at the end of the description for those who want more pointers.
+If you have know of a list on a topic not covered below or a better list than I have linked,
+please submit an [pull request](https://github.com/0ex/more-awesome/edit/main/README.md). Suggest the most appropriate category and add a one-line description of the target topic (not of the list itself).
 
-Contributions are welcome; please submit a pull request or issue with a list you have created or found. Suggest the most
-appropriate category and add a one-line description of the target topic (not of the list itself).
-
-## Contents
+## Topics
 
 Coding:
 [Programming](#programming)
@@ -28,26 +22,33 @@ Tech: [Gaming](#gaming) | [Hardware](#hardware)
 | [Databases](#databases)
 | [Operations](#operations)
 
-Life: [Culture](#culture) | [Work](#work) | [Media](#media)
-
 Academics: [Learn](#learn) | [Science](#science) | [Computer Science](#computer-science) | [Data Science](#data-science)
 
-Other: [List-Related Resources](#list-related-resources) | [Local](#local) 
+Life: [Culture](#culture) | [Work](#work) | [Media](#media) | [Local](#local) | [Meta](#meta)
 
-## List-Related Resources
+## Meta
 
-Other lists of lists:
+Each linked list pertains to some particular topic, broad or specific.
+They are useful for discovering resources on a particular topic, for example
+open source projects, tutorials, papers, tools, books, websites, libraries, etc.
 
-- [sindresorhus/awesome](https://github.com/sindresorhus/awesome) - The most popular list and the parent fork of `0ex/more-awesome`.
-- TODO 
+The goals of this *list of lists* are:
+- to be very extensive, covering every topic which someone cares enough about that they created a decent list.
+- to have no irrelevant requirements for submission, like specific formatting.
+- to highlight the best maintained list on each topic; our suggested starting point.
+- to include alternatives at the end of each description, for those who seek more pointers.
 
-You can also find more resource lists by browsing Github topics 
+### Other Lists of Lists
+
+- [sindresorhus/awesome](https://github.com/sindresorhus/awesome) - The most popular list and the parent fork of `0ex/more-awesome`. Links have many requirements, some that help with quality, but many arbitrary. Does not allow alternatives on one topic.
+
+You can also find more resource lists by browsing the Github topics 
 [awesome](https://github.com/topics/awesome),
 [awesome-lists](https://github.com/topics/awesome-list),
 [lists](https://github.com/topics/lists),
 and [resources](https://github.com/topics/resources).
 
-Tools for lists:
+### List-related tools
 
 - [Awesome CLI](https://github.com/umutphp/awesome-cli#readme) - A simple command-line tool to dive into Awesome lists.
 - [Awesome Indexed](https://awesome-indexed.mathew-davies.co.uk) - Search the Awesome dataset.
