@@ -461,7 +461,6 @@ and [resources](https://github.com/topics/resources).
 - [Information Retrieval](https://github.com/harpribot/awesome-information-retrieval#readme) - Learn to develop your own search engine.
 - [Open Source Society University](https://github.com/ossu/computer-science#readme) - :mortar_board: Path to a free self-taught education in Computer Science!
 - [Papers We Love](https://github.com/papers-we-love/papers-we-love#readme) - Papers from the computer science community to read and discuss.
-- [Persian](https://github.com/mhbashari/awesome-persian-nlp-ir#readme) - Curated List of Persian Natural Language Processing and Information Retrieval Tools and Resources
 - [Quantum Computing](https://github.com/desireevl/awesome-quantum-computing#readme) - Computing which utilizes quantum mechanics and qubits on quantum computers.
 - [Recursion Schemes](https://github.com/passy/awesome-recursion-schemes#readme) - Traversing nested data structures.
 - [Reproducible Research](https://github.com/leipzig/awesome-reproducible-research#readme) - Go from raw data to results in a repeatable and transparent manner
@@ -1103,6 +1102,9 @@ System Engineering, DevOps, Power User Tools
 - [Urban & Regional Planning](https://github.com/APA-Technology-Division/urban-and-regional-planning-resources#readme) - Concerning the built environment and communities.
 
 ## Local
+
+Persian
+- [Persian NLP](https://github.com/mhbashari/awesome-persian-nlp-ir#readme) - Natural Language Processing in Persian
 
 - [Events in Italy](https://github.com/ildoc/awesome-italy-events#readme) - Tech-related events in Italy.
 - [Events in the Netherlands](https://github.com/awkward/awesome-netherlands-events#readme) - Tech-related events in the Netherlands.
