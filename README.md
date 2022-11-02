@@ -60,23 +60,18 @@ and [resources](https://github.com/topics/resources).
 ## Platforms
 
 - [Amazon Alexa](https://github.com/miguelmota/awesome-amazon-alexa#readme) - Virtual home assistant.
-- [Amazon Web Services](https://github.com/donnemartin/awesome-aws#readme) - AWSome libraries, open source repos, guides, blogs, etc.
 - [ArcGIS Developer](https://github.com/Esri/awesome-arcgis-developer#readme) - Mapping and location analysis platform for developers.
 - [Avalonia UI](https://github.com/AvaloniaCommunity/awesome-avalonia#readme) - A cross platform XAML Framework for .NET Framework, .NET Core and Mono
 - [Azure Architecture](https://github.com/lukemurraynz/awesome-azure-architecture#readme) - AWESOME-Azure-Architecture - https://aka.ms/AwesomeAzureArchitecture
-- [Capacitor](https://github.com/riderx/awesome-capacitor#readme) - Cross-platform open source runtime for building Web Native apps.
 - [Cloudflare](https://github.com/irazasyed/awesome-cloudflare#readme) - CDN, DNS, DDoS protection, and security for your site.
 - [Clubhouse](https://github.com/ehsanghaffar/awesome-clubhouse#readme) - Social network based on voice.
-- [Cordova](https://github.com/busterc/awesome-cordova#readme) - JavaScript API for hybrid apps.
 - [Deno](https://github.com/denolib/awesome-deno#readme) - A secure runtime for JavaScript and TypeScript build on V8.
 - [DigitalOcean](https://github.com/jonleibowitz/awesome-digitalocean#readme) - Cloud computing platform designed for developers.
 - [Electron](https://github.com/sindresorhus/awesome-electron#readme) - Cross-platform native desktop apps using JavaScript/HTML/CSS.
 - [ESP](https://github.com/agucova/awesome-esp#readme) - Low-cost microcontrollers with WiFi and broad IoT applications.
 - [Firebase](https://github.com/jthegedus/awesome-firebase#readme) - App development platform built on Google Cloud Platform.
-- [Flash](https://github.com/hawbox/awesome-flash#readme) - Multimedia platform for creating rich internet applications.
 - [Flutter](https://github.com/Solido/awesome-flutter#readme) - Google's mobile SDK for building native iOS and Android apps from a single codebase written in Dart.
 - [Frontend Development](https://github.com/dypsilon/frontend-dev-bookmarks#readme) - Resources for frontend web developers.
-- [GNOME](https://github.com/Kazhnuz/awesome-gnome#readme) - Simple and distraction-free desktop environment for Linux.
 - [Google Assistant](https://github.com/ravirupareliya/awesome-actions-on-google#readme) - Developer platform AoG(Action on Google). 
 - [Home Assistant Francophone](https://github.com/hacf-fr/awesome-francophone-home-assistant#readme) - Open source home automation for french speakers.
 - [Home Assistant](https://github.com/frenck/awesome-home-assistant#readme) - Open source home automation that puts local control and privacy first.
@@ -88,11 +83,9 @@ and [resources](https://github.com/topics/resources).
 - [IoT](https://github.com/phodal/awesome-iot#readme) - Internet of Things.
 	- [IoT & Hybrid Apps](https://github.com/weblancaster/awesome-IoT-hybrid#readme) - Frameworks, tools, resources, videos, etc.
 	- [Alt by @HQarroum](https://github.com/HQarroum/awesome-iot#readme) - Internet of Things projects and resources.
-- [JVM](https://github.com/deephacks/awesome-jvm#readme) - loosely performance related JVM stuff.
 - [KDE](https://github.com/francoism90/awesome-kde#readme) - A free software community dedicated to creating an open and user-friendly computing experience.
 - [Low Code](https://github.com/zenitysec/awesome-low-code#readme) - Allowing business professionals to address their needs on their own with little to no coding skills.
 - [Micro:bit](https://github.com/carlosperate/awesome-microbit#readme) - Programmable chip on a board aimed at teaching kids programming.
-- [NativeScript](https://github.com/jbristowe/awesome-nativescript#readme) - articles, plugins, and resources for NativeScript.
 - [Node-RED](https://github.com/naimo84/awesome-nodered#readme) - A programming tool for wiring together hardware devices, APIs, and online services.
 - [Node.js](https://github.com/sindresorhus/awesome-nodejs#readme) - Async non-blocking event-driven JavaScript runtime built on Chrome's V8 JavaScript engine.
 	- [Node.js Security](https://github.com/lirantal/awesome-nodejs-security#readme) - Node.js Security resources
@@ -101,21 +94,27 @@ and [resources](https://github.com/topics/resources).
 - [Odoo](https://github.com/dreispt/awesome-odoo#readme) - Odoo resources
 - [Qt](https://github.com/JesseTG/awesome-qt#readme) - Cross-platform GUI app framework.
 - [Raspberry Pi](https://github.com/thibmaek/awesome-raspberry-pi#readme) - Credit card-sized computer aimed at teaching kids programming, but capable of a lot more.
-- [React Native](https://github.com/jondot/awesome-react-native#readme) - JavaScript framework for writing natively rendering mobile apps for iOS and Android.
 - [Robot Operating System 2.0](https://github.com/fkromer/awesome-ros2#readme) - Set of software libraries and tools that help you build robot apps.
-- [Sailfish OS](https://github.com/sailfishos-community/awesome-sailfishos#readme) - Truly Independent Mobile OS
-- [Salesforce](https://github.com/mailtoharshit/awesome-salesforce#readme) - delightful Salesforce Platform Resources
-- [Shopify](https://github.com/julionc/awesome-shopify#readme) - A cloud-based ecommerce store platform.
 - [Smart TV](https://github.com/vitalets/awesome-smart-tv#readme) - Create apps for different TV platforms.
-- [Spring](https://github.com/ThomasVitale/awesome-spring#readme) - Java framework for writing web applications.
-- [WatchOS](https://github.com/yenchenlin/awesome-watchos#readme) - Operating system for the Apple Watch.
+- [Wechat](https://github.com/justjavac/awesome-wechat-weapp) - Chat platform. Also by [@we-list](https://github.com/we-list/awesome-wechat) and [@opendigg](https://github.com/opendigg/awesome-github-wechat-weapp).
+
+**Web Browser Platform**
+
 - [Web Browsers](https://github.com/cliffordfajardo/awesome-web-browsers#readme) - Various web browsers to use or develop for.
 - [WebExtensions](https://github.com/fregante/Awesome-WebExtensions#readme) - Cross-browser extension system.
-- [Wechat](https://github.com/justjavac/awesome-wechat-weapp) - Chat platform. Also by [@we-list](https://github.com/we-list/awesome-wechat) and [@opendigg](https://github.com/opendigg/awesome-github-wechat-weapp).
-- [Xamarin](https://github.com/XamSome/awesome-xamarin#readme) - Mobile app development IDE, testing, and distribution.
+- [Salesforce](https://github.com/mailtoharshit/awesome-salesforce#readme) - delightful Salesforce Platform Resources
+- [Shopify](https://github.com/julionc/awesome-shopify#readme) - A cloud-based ecommerce store platform.
+- [Flash](https://github.com/hawbox/awesome-flash#readme) - Multimedia platform for creating rich internet applications.
 
 **Mobile**
 
+- [Capacitor](https://github.com/riderx/awesome-capacitor#readme) - Cross-platform open source runtime for building Web Native apps.
+- [Cordova](https://github.com/busterc/awesome-cordova#readme) - JavaScript API for hybrid apps.
+- [NativeScript](https://github.com/jbristowe/awesome-nativescript#readme) - articles, plugins, and resources for NativeScript.
+- [React Native](https://github.com/jondot/awesome-react-native#readme) - JavaScript framework for writing natively rendering mobile apps for iOS and Android.
+- [Sailfish OS](https://github.com/sailfishos-community/awesome-sailfishos#readme) - Truly Independent Mobile OS
+- [WatchOS](https://github.com/yenchenlin/awesome-watchos#readme) - Operating system for the Apple Watch.
+- [Xamarin](https://github.com/XamSome/awesome-xamarin#readme) - Mobile app development IDE, testing, and distribution.
 - [Android](https://github.com/JStumpp/awesome-android#readme) - Mobile operating system developed by Google.
 	- [Android Apps](https://github.com/LinuxCafeFederation/awesome-android#readme) - Android applications, tutorials and resources.
 - [Fuse](https://github.com/fuse-compound/awesome-fuse#readme) - Mobile development tools. *dead*
@@ -124,6 +123,7 @@ and [resources](https://github.com/topics/resources).
 
 **UNIX / Linux**
 
+- [GNOME](https://github.com/Kazhnuz/awesome-gnome#readme) - Simple and distraction-free desktop environment for Linux.
 - [AppImage](https://github.com/AppImage/awesome-appimage#readme) - Package apps in a single file that works on various mainstream Linux distributions.
 - [Arch-based Projects](https://github.com/PandaFoss/Awesome-Arch#readme) - Linux distributions and projects based on Arch Linux.
 - [eBPF](https://github.com/zoidbergwill/awesome-ebpf#readme) - Virtual machine for efficient tracing and monitoring for Linux systems.
@@ -204,6 +204,8 @@ and [resources](https://github.com/topics/resources).
 - [Idris](https://github.com/joaomilho/awesome-idris#readme) - General purpose pure functional programming language with dependent types.
 - [Imba](https://github.com/koolamusic/awesome-imba#readme) - Programming language inspired by Ruby and Python and compiles to performant JavaScript.
 - [Java](https://github.com/akullpp/awesome-java#readme) - Popular secure object-oriented language designed for flexibility to "write once, run anywhere".
+	- [JVM](https://github.com/deephacks/awesome-jvm#readme) - loosely performance related JVM stuff.
+	- [Spring](https://github.com/ThomasVitale/awesome-spring#readme) - Java framework for writing web applications.
 	- [Java Security](https://github.com/guardrailsio/awesome-java-security#readme) - Java Security Resources
 	- [RxJava](https://github.com/eleventigers/awesome-rxjava#readme)
 - [JavaFX](https://github.com/mhrimaz/AwesomeJavaFX#readme) - JavaFX libraries, books, frameworks, etc...
@@ -314,13 +316,6 @@ and [resources](https://github.com/topics/resources).
 - [Charting](https://github.com/zingchart/awesome-charting#readme) - Including the best JavaScript charting libraries
 - [Choo](https://github.com/choojs/awesome-choo#readme) - App framework.
 - [Chrome DevTools](https://github.com/ChromeDevTools/awesome-chrome-devtools#readme) - resources in the Chrome DevTools & DevTools Protocol ecosystem.
-- [CSS](https://github.com/awesome-css-group/awesome-css#readme) - :art: amazing CSS :)
-	- [Critical-Path Tools](https://github.com/addyosmani/critical-path-css-tools#readme)
-	- [Scalability](https://github.com/davidtheclark/scalable-css-reading-list#readme)
-	- [Must-Watch Talks](https://github.com/AllThingsSmitty/must-watch-css#readme)
-	- [Protips](https://github.com/AllThingsSmitty/css-protips#readme)
-	- [Frameworks](https://github.com/troxler/awesome-css-frameworks#readme)
-- [Cycle.js](https://github.com/cyclejs-community/awesome-cyclejs#readme) - Functional and reactive JavaScript framework.
 - [D3](https://github.com/wbkd/awesome-d3#readme) - Library for producing dynamic, interactive data visualizations.
 - [Dojo Toolkit](https://github.com/petk/awesome-dojo#readme) - JavaScript toolkit.
 - [Draft.js](https://github.com/nikgraf/awesome-draft-js#readme) - Rich text editor framework for React.
@@ -329,24 +324,20 @@ and [resources](https://github.com/topics/resources).
 - [Ember](https://github.com/ember-community-russia/awesome-ember#readme) - App framework. Also by [@nmec](https://github.com/nmec/awesome-ember).
 - [ES6 Tools](https://github.com/addyosmani/es6-tools#readme) - An aggregation of tooling for using ES6 today
 - [ExtJS](https://github.com/abenhamdine/awesome-extjs) - Complete Javascript framework with UI components
-- [Flexbox](https://github.com/afonsopacifer/awesome-flexbox#readme) - :eyeglasses: CSS Flexible Box Layout Module or only Flexbox.
-- [Grid](https://github.com/fancygrid/awesome-grid#readme) - grid(table) libraries and resources that developers may find useful.
-- [HTML5](https://github.com/diegocard/awesome-html5#readme) - Markup language used for websites & web apps.
+- [HTML](https://github.com/diegocard/awesome-html5#readme) - Markup language used for websites & web apps.
+	- [HTML Meta tags](https://github.com/RALMAZ/Awesome-meta-tags#readme) - Collection of all used meta tags.
 - [Inertia.js](https://github.com/innocenzi/awesome-inertiajs#readme) - Make single-page apps without building an API.
 - [Inferno](https://github.com/iamgbayer/awesome-inferno#readme) - Fast React like library.
 - [Inspiration](https://github.com/NoahBuscher/Inspire#readme) - Collection of frontend dev and web design links :bulb:
 - [Ionic Framework 2](https://github.com/candelibas/awesome-ionic#readme) - Ionic resources 
 - [JAMstack](https://github.com/automata/awesome-jamstack#readme) - Modern web stack with client-side JavaScript, reusable APIs, and prebuilt markup.
 - [JQuery](https://github.com/petk/awesome-jquery#readme) - Easy to use JavaScript library for DOM manipulation.
-	- [Tips](https://github.com/AllThingsSmitty/jquery-tips-everyone-should-know#readme)
+	- [JQuery Tips](https://github.com/AllThingsSmitty/jquery-tips-everyone-should-know#readme)
 - [KnockoutJS](https://github.com/dnbard/awesome-knockout#readme) - JavaScript library.
-- [Less](https://github.com/LucasBassetti/awesome-less#readme) - CSS preprocessor.
 - [Lit](https://github.com/web-padawan/awesome-lit#readme) - Library for building web components with a declarative template system.
 - [Marionette.js](https://github.com/sadcitizen/awesome-marionette#readme) - App framework.
-- [Master CSS](https://github.com/master-co/awesome-master-css#readme) - A Virtual CSS language with enhanced syntax.
 - [Material-UI](https://github.com/nadunindunil/awesome-material-ui#readme) - Material Design React components for faster and easier web development.
 - [MDBootstrap](https://github.com/mdbootstrap/awesome-mdbootstrap#readme) - Templates, layouts, components, and widgets to rapidly build websites.
-- [Meta tags](https://github.com/RALMAZ/Awesome-meta-tags#readme) - Collection of all used meta tags.
 - [Meteor](https://github.com/Urigo/awesome-meteor#readme) - Document database.
 - [Micro-Frontends](https://github.com/rajasegar/awesome-micro-frontends#readme) - Extending the microservice idea to frontend development.
 - [Mithril](https://github.com/orbitbot/awesome-mithril#readme) - A modern, tiny, and fast framework for building Single Page Applications
@@ -359,7 +350,6 @@ and [resources](https://github.com/topics/resources).
 - [Offline-First](https://github.com/pazguille/offline-first#readme) - :electric_plug: Everything you need to know to create offline-first web apps.
 - [PageSpeed Metrics](https://github.com/csabapalfi/awesome-pagespeed-metrics#readme) - Metrics to help understand page speed and user experience.
 - [Polymer](https://github.com/Granze/awesome-polymer#readme) - JavaScript library to develop Web Components.
-- [PostCSS](https://github.com/jdrgomes/awesome-postcss#readme) - CSS tool.
 - [Preact](https://github.com/preactjs/awesome-preact#readme) - App framework.
 - [Progressive Enhancement](https://github.com/jbmoelker/progressive-enhancement-resources#readme) - From concept and strategies to feature detection & testing methods.
 - [Progressive Web Apps](https://github.com/TalAter/awesome-progressive-web-apps#readme) - :sunrise: resources for building progressive web apps
@@ -380,12 +370,9 @@ and [resources](https://github.com/topics/resources).
 - [StimulusJS](https://github.com/skatkov/awesome-stimulusjs#readme) - A modest front-end framework to add sprinkles of JavaScript for your existing HTML.
 - [Storybook](https://github.com/lauthieb/awesome-storybook#readme) - Development environment for UI components.
 - [Styled-Components](https://github.com/styled-components/awesome-styled-components#readme) - Visual primitives for the component age.
-- [Stylelint](https://github.com/stylelint/awesome-stylelint#readme) - Stylelint plugins, configs, etc.
-- [Stylus](https://github.com/diogomoretti/awesome-stylus#readme) - CSS preprocessor.
 - [Svelte](https://github.com/TheComputerM/awesome-svelte#readme) - App framework.
 	- [Svelte Components](https://github.com/rocketlaunchr/awesome-svelte#readme) - Useful resources for developing Svelte applications
 - [SVG](https://github.com/willianjusten/awesome-svg#readme) - XML-based vector image format.
-- [Tailwind CSS](https://github.com/aniftyco/awesome-tailwindcss#readme) - Utility-first CSS framework for rapid UI development.
 - [Text Editing](https://github.com/dok/awesome-text-editing#readme) - Collection of text editing resources and libraries for the web
 - [Three.js](https://github.com/mrdoob/three.js#readme) - JavaScript 3D library. 
 - [Vite](https://github.com/vitejs/awesome-vite#readme) - Module bundler.
@@ -407,6 +394,24 @@ and [resources](https://github.com/topics/resources).
 - [WordPress-Gatsby](https://github.com/henrikwirth/awesome-wordpress-gatsby#readme) - Web Stack with WordPress as a back end and Gatsby as a front end.
 - [WYSIWYG](https://github.com/JefMari/awesome-wysiwyg#readme) - WYSIWYG editors
 - [Yew](https://github.com/jetli/awesome-yew#readme) - Rust framework inspired by Elm and React for creating web apps with WebAssembly.
+
+**CSS**
+
+- [CSS](https://github.com/awesome-css-group/awesome-css#readme) - :art: amazing CSS :)
+- [CSS Critical-Path Tools](https://github.com/addyosmani/critical-path-css-tools#readme)
+- [CSS Scalability](https://github.com/davidtheclark/scalable-css-reading-list#readme)
+- [CSS Must-Watch Talks](https://github.com/AllThingsSmitty/must-watch-css#readme)
+- [CSS Protips](https://github.com/AllThingsSmitty/css-protips#readme)
+- [CSS Frameworks](https://github.com/troxler/awesome-css-frameworks#readme)
+- [CSS Flexbox](https://github.com/afonsopacifer/awesome-flexbox#readme) - :eyeglasses: CSS Flexible Box Layout Module or only Flexbox.
+- [CSS Grid](https://github.com/fancygrid/awesome-grid#readme) - grid(table) libraries and resources that developers may find useful.
+- [Less](https://github.com/LucasBassetti/awesome-less#readme) - CSS preprocessor.
+- [Master CSS](https://github.com/master-co/awesome-master-css#readme) - A Virtual CSS language with enhanced syntax.
+- [Stylelint](https://github.com/stylelint/awesome-stylelint#readme) - Stylelint plugins, configs, etc.
+- [PostCSS](https://github.com/jdrgomes/awesome-postcss#readme) - CSS tool.
+- [Stylus](https://github.com/diogomoretti/awesome-stylus#readme) - CSS preprocessor.
+- [Tailwind CSS](https://github.com/aniftyco/awesome-tailwindcss#readme) - Utility-first CSS framework for rapid UI development.
+- [Cycle.js](https://github.com/cyclejs-community/awesome-cyclejs#readme) - Functional and reactive JavaScript framework.
 
 ## Back-End Development
 
@@ -755,7 +760,7 @@ and [resources](https://github.com/topics/resources).
 
 Graphics, Design, Movies, Books, etc.
 
-- [ACG](https://github.com/soruly/awesome-acg#readme) - technologies related to Anime, Comic and Games.
+- [Anime, Comics and Games](https://github.com/soruly/awesome-acg#readme) - technologies related to ACG.
 - [Audio Visualization](https://github.com/willianjusten/awesome-audio-visualization#readme) - Audio Visualization.
 - [Audiovisual](https://github.com/stingalleman/awesome-audiovisual#readme) - Lighting, audio and video in professional environments.
 - [Broadcasting](https://github.com/ebu/awesome-broadcasting#readme) - open source resources related to broadcast technologies.
@@ -1034,7 +1039,8 @@ Communication, Protocols
 
 System Engineering, DevOps, Power User Tools
 
-- [Alerts](https://github.com/samber/awesome-prometheus-alerts#readme) - Prometheus queries and rules for alerting.
+- [Amazon Web Services](https://github.com/donnemartin/awesome-aws#readme) - AWSome libraries, open source repos, guides, blogs, etc.
+- [Prometheus Alerts](https://github.com/samber/awesome-prometheus-alerts#readme) - Prometheus queries and rules for alerting.
 - [Ansible](https://github.com/ansible-community/awesome-ansible#readme) - A Python-based, open source IT configuration management and automation platform.
 - [Cerebro](https://github.com/cerebroapp/awesome-cerebro#readme) - Pluggable quick search bar app for desktops.
 - [ChatOps](https://github.com/exAspArk/awesome-chatops#readme) - Managing technical and business operations through a chat.
