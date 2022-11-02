@@ -38,9 +38,12 @@ The goals of this *list of lists* are:
 - to highlight the best maintained list on each topic; our suggested starting point.
 - to include alternatives at the end of each description, for those who seek more pointers.
 
-**Other Lists of Lists**
+**Other Top-level Lists**
 
-- [sindresorhus/awesome](https://github.com/sindresorhus/awesome) - The most popular list and the parent fork of `0ex/more-awesome`. Links have many requirements, some that help with quality, but many arbitrary. Does not allow alternatives on one topic.
+The following lists serve as the basis for this list, as they are the best other top-level lists I could find. I have incorporated their links after checking the quality and gone through their rejected links for missing gems.
+
+- [sindresorhus/awesome](https://github.com/sindresorhus/awesome) - A high quality, but picky list with several arbitrary requirements. Does not allow alternatives for one topic. Public Domain.
+- [bayandin/awesome-awesomeness](https://github.com/bayandin/awesome-awesomeness) - A very tech-focused list with no descriptions, light requirements and duplicates. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) License.
 
 You can also find more resource lists by browsing the Github topics 
 [awesome](https://github.com/topics/awesome),
