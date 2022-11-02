@@ -81,6 +81,13 @@ class Pull:
         return f'{self.repo}/pull/{self.num}'
 
 @dataclass
+class Record:
+    """Generic DB Record."""
+    key: str = ''  # normalized url
+    ver: int = 0
+    more: dict = field(default_factory=dict)
+
+@dataclass
 class ListInfo:
     """Awesome List Metadata."""
     url: str = ''
@@ -195,6 +202,10 @@ def main():
     if args.sort:
         sort_readme()
         return
+    
+    if args.untagged:
+        list_untagged()
+        return
 
     if not args.prnum:
         log('EArgs', 'No Pull numbers given')
@@ -243,6 +254,7 @@ def parse_args():
     p.add_argument('-s', '--scan', type=str, help='scan: ALL or page number')
     p.add_argument('--sort', action='store_true', help='sort readme')
     p.add_argument('--fixup', action='store_true', help='fixup while sorting')
+    p.add_argument('--untagged', action='store_true', help='list untagged PRs')
 
     # PR operations
     p.add_argument('prnum', type=int, nargs='*', help='pull numbers to handle (from source)')
@@ -338,6 +350,17 @@ def scan_pulls(repo, page):
         srcpr = Pull(repo, pr.number)
 
         show_info(srcpr, ghpr=pr)
+
+def list_untagged():
+    """List PRs which are merged but untagged."""
+    for rec in db.scan('branch/pull/%'):
+        tag = rec.more.get('tag')
+        if not tag:
+            destpr = Pull(DEST_REPO, rec.more['num'])
+            dest = gh.pulls.get(**destpr.gh)
+            if dest.merged:
+                srcpr_num = re.match(r'branch/pull/(\d+)/', rec.key)[1]
+                print(srcpr_num)
 
 def show_info(srcpr, ghpr=None, verbose=False):
     """Summarize PR."""
@@ -444,7 +467,7 @@ def semantic_merge(srcpr):
     #sh('rm .gitattributes', check=False)
     sh('git merge -q -X theirs --no-commit --no-stat main >/dev/null', check=False)
 
-    sh('git rm readme.md', check=False)
+    sh('test -f readme.md && git rm readme.md', check=False)
     sh(f'git checkout main {OUT_PATH}')
     
     lines = []
@@ -473,7 +496,10 @@ def semantic_merge(srcpr):
                     found_line = True
                     log('DInsert', 'inserting before', line.strip())
                     link = sum.build_link()
-                    lines.append(link + '\n')
+                    if link.strip() == line.strip():
+                        log('WDup', 'avoiding duplicate line')
+                    else:
+                        lines.append(link + '\n')
             else:
                 # look for matching header
                 m = re.match(r'#+ *(.*)', line)
@@ -495,7 +521,11 @@ def semantic_merge(srcpr):
 
     with open(OUT_PATH, 'w') as f:
         f.write(''.join(lines))
-    
+  
+    if 0 == sh_code('git diff --quiet'):
+        log('WMerge', 'no differences')
+        return
+
     msg = quote(f'Merge {destpr} ({sum.title}) with main')
     
     sh(f'git commit -m {msg} -a')
@@ -1133,8 +1163,21 @@ class DB:
         self("""SELECT v FROM kv WHERE k = ?""", str(key))
         if row := self.cur.fetchone():
             return self._decode(row[0])
+    
+    def scan(self, pattern):
+        """Return None if doesn't exist."""
+        self("""SELECT k, v FROM kv WHERE k LIKE ? ORDER BY k""", pattern)
+        for row in self.cur:
+            more = self._decode(row[1])
+            if isinstance(more, dict):
+                ver = more.pop('ver', 0)
+            else:
+                ver = 0
+                more = dict(value=more)
 
-def throttle(sec=60):
+            yield Record(key=row[0], ver=ver, more=more)
+
+def throttle(sec=1):
     """Avoid secondary rate limits."""
     log('IThrottle', sec)
     sleep(sec)
