@@ -153,13 +153,11 @@ and [resources](https://github.com/topics/resources).
 
 - [Alfred Workflows](https://github.com/alfred-workflows/awesome-alfred-workflows#readme) - Productivity app for macOS.
 - [Mac Admin Tools](https://github.com/smashism/awesome-macadmin-tools#readme) - Mac Admin Tools
-- [Mac Apps](https://github.com/jaywcjlove/awesome-mac#readme)
-- [Mac Apps](https://github.com/justin-j/awesome-mac-apps)
-- [Mac by @xyNNN](https://github.com/xyNNN/awesome-mac#readme) - macOS tools, applications and games.
+- [Mac Apps](https://github.com/jaywcjlove/awesome-mac#readme) - Apps for Mac. Also by [@justin-j](https://github.com/justin-j/awesome-mac-apps) and [@xyNNN](https://github.com/xyNNN/awesome-mac#readme).
 - [Mac Command Line](https://git.herrbischoff.com/awesome-macos-command-line/about/)
-- [Mac DevTools](https://github.com/marceloboeira/awesome-osx)
-- [Mac Open Source Apps](https://github.com/serhii-londar/open-source-mac-os-apps#readme)
-- [Mac Screensavers](https://github.com/agarrharr/awesome-macos-screensavers#readme)
+- [Mac DevTools](https://github.com/marceloboeira/awesome-osx) - :package: Awesome stuff for OSX
+- [Mac Open Source Apps](https://github.com/serhii-londar/open-source-mac-os-apps#readme) - FOSS Apps for Mac.
+- [Mac Screensavers](https://github.com/agarrharr/awesome-macos-screensavers#readme) - Animations that run when your away from your computer.
 - [Quick Look Plugins](https://github.com/sindresorhus/quick-look-plugins#readme) - For macOS.
 - [Touchbar](https://github.com/z11h/awesome-touchbar#readme) - :point_right: :star2: delightful macOS resources for your touchbar
 
@@ -397,13 +395,13 @@ and [resources](https://github.com/topics/resources).
 
 **CSS**
 
-- [CSS Critical-Path Tools](https://github.com/addyosmani/critical-path-css-tools#readme)
+- [CSS Critical-Path Tools](https://github.com/addyosmani/critical-path-css-tools#readme) - Tools to prioritize above-the-fold (critical-path) CSS
 - [CSS Flexbox](https://github.com/afonsopacifer/awesome-flexbox#readme) - :eyeglasses: CSS Flexible Box Layout Module or only Flexbox.
-- [CSS Frameworks](https://github.com/troxler/awesome-css-frameworks#readme)
+- [CSS Frameworks](https://github.com/troxler/awesome-css-frameworks#readme) - Large libraries for CSS.
 - [CSS Grid](https://github.com/fancygrid/awesome-grid#readme) - grid(table) libraries and resources that developers may find useful.
-- [CSS Must-Watch Talks](https://github.com/AllThingsSmitty/must-watch-css#readme)
-- [CSS Protips](https://github.com/AllThingsSmitty/css-protips#readme)
-- [CSS Scalability](https://github.com/davidtheclark/scalable-css-reading-list#readme)
+- [CSS Must-Watch Talks](https://github.com/AllThingsSmitty/must-watch-css#readme) - Talks covering CSS Grid, flexbox, custom variables, etc.
+- [CSS Protips](https://github.com/AllThingsSmitty/css-protips#readme) - Tips for CSS.
+- [CSS Scalability](https://github.com/davidtheclark/scalable-css-reading-list#readme) - Dispatches from The Quest for Scalable CSS
 - [CSS](https://github.com/awesome-css-group/awesome-css#readme) - :art: amazing CSS :)
 - [Cycle.js](https://github.com/cyclejs-community/awesome-cyclejs#readme) - Functional and reactive JavaScript framework.
 - [Less](https://github.com/LucasBassetti/awesome-less#readme) - CSS preprocessor.
@@ -497,9 +495,9 @@ and [resources](https://github.com/topics/resources).
 	- [Tutorials](https://github.com/siboehm/awesome-learn-datascience#readme)
 - [Data Visualization](https://github.com/javierluraschi/awesome-dataviz#readme) - :chart_with_upwards_trend:  data visualization libraries and resources.
 - [Deep Learning](https://github.com/ChristosChristofidis/awesome-deep-learning#readme) - Neural networks.
+	- [Deep Learning References](https://github.com/guillaume-chevalier/awesome-deep-learning-resources#readme) - Deep learning resources for reference.
 - [Deep Vision](https://github.com/kjw0612/awesome-deep-vision#readme) - deep learning resources for computer vision 
 - [Dive into ML](https://github.com/hangtwenty/dive-into-machine-learning#readme) - Notebooks, courses, and other links using Python and Jupyter.
-- [Education](https://github.com/guillaume-chevalier/awesome-deep-learning-resources#readme)
 - [Funny Markov Chains](https://github.com/sublimino/awesome-funny-markov#readme) - delightfully amusing and facetious Markov chain output.
 - [GPT-3](https://github.com/elyase/awesome-gpt3#readme) - An autoregressive language model that uses deep learning to produce human-like text
 - [H2O](https://github.com/h2oai/awesome-h2o#readme) - Open source distributed machine learning platform written in Java with APIs in R, Python, and Scala.
@@ -524,7 +522,7 @@ and [resources](https://github.com/topics/resources).
 - [TensorFlow.js](https://github.com/aaronhma/awesome-tensorflow-js#readme) - WebGL-accelerated machine learning JavaScript library for training and deploying models.
 - [TensorFlow](https://github.com/jtoy/awesome-tensorflow#readme) - Library for machine intelligence.
 - [Topological Data Analysis](https://github.com/FatemehTarashi/awesome-TDA#readme) - topological data analysis (TDA) resources and links.
-- [Tutorials](https://github.com/ujjwalkarn/Machine-Learning-Tutorials#readme)
+- [ML Tutorials](https://github.com/ujjwalkarn/Machine-Learning-Tutorials#readme) - machine learning tutorials, articles, etc.
 - [XAI](https://github.com/altamiracorp/awesome-xai#readme) - Providing insight, explanations, and interpretability to machine learning methods.
 
 ## Data Engineering
@@ -543,12 +541,12 @@ and [resources](https://github.com/topics/resources).
 
 **Data Formats**
 
-- [GeoJSON](https://github.com/tmcw/awesome-geojson#readme)
+- [GeoJSON](https://github.com/tmcw/awesome-geojson#readme) - Format to represent geographical features.
 - [JSON](https://github.com/burningtree/awesome-json#readme) - Text based data interchange format.
 
 **Datasets**
 	
-- [JSON Datasets](https://github.com/jdorfman/awesome-json-datasets#readme)
+- [JSON Datasets](https://github.com/jdorfman/awesome-json-datasets#readme) - Sources of data in JSON format.
 - [Public Datasets](https://github.com/awesomedata/awesome-public-datasets#readme) - High quality open datasets.
 - [World Datasets](https://github.com/planetopendata/awesome-world#readme) - countries, cities, codes, flags, languages, latitude/longitude, etc.
 
