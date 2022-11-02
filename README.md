@@ -1123,7 +1123,7 @@ non-english and regional lists
 	- [Berlin](https://github.com/AwesomeCities/awesome-berlin#readme)
 	- [Kassel](https://github.com/AwesomeCities/awesome-kassel#readme)
 - Indonesia
-	[Indonesian Repos](https://github.com/GitIndonesia/awesome-indonesia-repo) - repos created by Indonesian people.
+	- [Indonesian Repos](https://github.com/GitIndonesia/awesome-indonesia-repo) - repos created by Indonesian people.
 - Iran
 	- [Persian NLP](https://github.com/mhbashari/awesome-persian-nlp-ir#readme) - Natural Language Processing in Persian
 - Italy
@@ -1142,6 +1142,6 @@ non-english and regional lists
 - Spain
 	- [Spanish NLP](https://github.com/dav009/awesome-spanish-nlp#readme) - Linguistic Resources for doing Natural Language Processing in Spanish
 - USA
-	- [Oregon Tech](https://github.com/tedder/awesome-portland-oregon-tech) - tech things in Portlang, Oregon
+	- [Oregon Tech](https://github.com/tedder/awesome-portland-oregon-tech) - tech things in Portland, Oregon
 
 <!-- vi:set noet: -->
