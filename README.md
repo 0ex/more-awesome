@@ -95,6 +95,7 @@ and [resources](https://github.com/topics/resources).
 - [NativeScript](https://github.com/jbristowe/awesome-nativescript#readme) - articles, plugins, and resources for NativeScript.
 - [Node-RED](https://github.com/naimo84/awesome-nodered#readme) - A programming tool for wiring together hardware devices, APIs, and online services.
 - [Node.js](https://github.com/sindresorhus/awesome-nodejs#readme) - Async non-blocking event-driven JavaScript runtime built on Chrome's V8 JavaScript engine.
+	- [Node.js Security](https://github.com/lirantal/awesome-nodejs-security#readme) - Node.js Security resources
 	- [Cross-Platform](https://github.com/bcoe/awesome-cross-platform-nodejs#readme) - Writing cross-platform code on Node.js.
 - [NW.js](https://github.com/nw-cn/awesome-nwjs#readme) - Node Webkit.
 - [Odoo](https://github.com/dreispt/awesome-odoo#readme) - Odoo resources
@@ -140,6 +141,7 @@ and [resources](https://github.com/topics/resources).
 
 - [DOS](https://github.com/balintkissdev/awesome-dos#readme) - Operating system for x86 PC froms the 1980's.
 - [Dot NET](https://github.com/quozd/awesome-dotnet#readme) - .NET libraries, tools, frameworks and software
+	- [.NET Security](https://github.com/guardrailsio/awesome-dotnet-security#readme) - .NET Security Resources
 	- [Core](https://github.com/thangchung/awesome-dotnet-core#readme)
 	- [Roslyn](https://github.com/ironcev/awesome-roslyn#readme) - Open-source compilers and code analysis APIs for C# and VB.NET languages.
 - [PowerShell](https://github.com/janikvonrotz/awesome-powershell#readme) - Cross-platform object-oriented shell.
@@ -195,12 +197,14 @@ and [resources](https://github.com/topics/resources).
 - [Fortran](https://github.com/rabbiabram/awesome-fortran#readme) - Fortran libs.
 - [Frege](https://github.com/sfischer13/awesome-frege#readme) - Haskell for the JVM.
 - [Go](https://github.com/avelino/awesome-go#readme) - Go frameworks, libraries and software
+	- [Golang Security](https://github.com/guardrailsio/awesome-golang-security#readme) - Golang Security resources
 	- [Go Books](https://github.com/dariubs/GoBooks#readme) - List of Golang books
 - [Groovy](https://github.com/kdabir/awesome-groovy#readme) - groovy libraries, frameworks and resources
 - [Haskell](https://github.com/krispo/awesome-haskell#readme) - Haskell links, frameworks, libraries and software.
 - [Idris](https://github.com/joaomilho/awesome-idris#readme) - General purpose pure functional programming language with dependent types.
 - [Imba](https://github.com/koolamusic/awesome-imba#readme) - Programming language inspired by Ruby and Python and compiles to performant JavaScript.
 - [Java](https://github.com/akullpp/awesome-java#readme) - Popular secure object-oriented language designed for flexibility to "write once, run anywhere".
+	- [Java Security](https://github.com/guardrailsio/awesome-java-security#readme) - Java Security Resources
 	- [RxJava](https://github.com/eleventigers/awesome-rxjava#readme)
 - [JavaFX](https://github.com/mhrimaz/AwesomeJavaFX#readme) - JavaFX libraries, books, frameworks, etc...
 - [JavaScript](https://github.com/sorrycc/awesome-javascript#readme) - 🐢 browser-side  JavaScript libraries, resources and shiny things.
@@ -236,6 +240,7 @@ and [resources](https://github.com/topics/resources).
 - [Pascal](https://github.com/Fr0sT-Brutal/awesome-pascal#readme) - Open Source Delphi/FreePascal/(any)Pascal frameworks, libraries, resources, and shiny things.
 - [Perl](https://github.com/hachiojipm/awesome-perl#readme) - Perl frameworks and libraries. Come on Pull Requests!
 - [PHP](https://github.com/ziadoz/awesome-php#readme) - Server-side scripting language.
+	- [PHP Security](https://github.com/guardrailsio/awesome-php-security#readme) - PHP Security Resources
 	- [Composer](https://github.com/jakoch/awesome-composer#readme) - Package manager.
 	- [Doctrine](https://github.com/biberlabs/awesome-doctrine#readme) - ORM.
 	- [Shopware](https://github.com/shyim/awesome-shopware#readme) - Open Source eCommerce built with PHP.
@@ -255,6 +260,7 @@ and [resources](https://github.com/topics/resources).
 - [Prolog](https://github.com/klaudiosinani/awesome-prolog#readme) - A logic-based programming language.
 - [PureScript](https://github.com/passy/awesome-purescript#readme) - PureScript libraries, resources, etc.
 - [Python](https://github.com/vinta/awesome-python#readme) - General-purpose programming language designed for readability.
+	- [Python Security](https://github.com/guardrailsio/awesome-python-security#readme) - Python Security resources
 	- [Python Books](https://github.com/Junnplus/awesome-python-books#readme) - :books: Directory of Python books
 	- [Asyncio](https://github.com/timofurrer/awesome-asyncio#readme) - Asynchronous I/O in Python 3.
 	- [Python Decorators](https://github.com/lord63/awesome-python-decorator)
@@ -272,6 +278,7 @@ and [resources](https://github.com/topics/resources).
 	- [R-Shiny](https://github.com/grabear/awesome-rshiny#readme) - Web Framework built with R.
 - [Racket](https://github.com/avelino/awesome-racket#readme) - Racket frameworks, libraries and software, maintained by Community
 - [Ruby](https://github.com/markets/awesome-ruby#readme) - :gem: Ruby libraries, tools, frameworks and software
+	- [Ruby Security](https://github.com/pxlpnk/awesome-ruby-security#readme) - Ruby Security resources
 	- [Ruby Events](https://github.com/planetruby/conferences) - Conferences, Camps, Meetups, etc.
 - [Rust](https://github.com/rust-unofficial/awesome-rust#readme) - Rust code and resources.
 - [RxSwift](https://github.com/LeoMobileDeveloper/awesome-rxswift#readme) - RxSwift library and learning material
@@ -858,7 +865,6 @@ School, tutorials, etc.
 - [Hacking Spots](https://github.com/daviddias/awesome-hacking-locations#readme) - Locations, organised by country and city.
 - [Hacking](https://github.com/carpedm20/awesome-hacking#readme) - Hacking tutorials, tools and resources
 - [Honeypots](https://github.com/paralax/awesome-honeypots#readme) - Deception trap, designed to entice an attacker into attempting to compromise IT systems.
-- [I2P](https://github.com/mikalv/awesome-i2p#readme) - A fully decentralized anonymous overlay mix-network.
 - [Incident Response](https://github.com/meirwah/awesome-incident-response#readme) - tools for incident response
 - [Information security](https://github.com/onlurking/awesome-infosec#readme) - infosec courses and training resources.
 - [JSON Web Tokens](https://github.com/iamchathu/awesome-jwt#readme) - Token based authentication.
@@ -999,6 +1005,7 @@ Communication, Protocols
 
 **Decentralized Systems**
 
+- [I2P](https://github.com/mikalv/awesome-i2p#readme) - A fully decentralized anonymous overlay mix-network.
 - [ActivityPub](https://github.com/BasixKOR/awesome-activitypub#readme) - Open standard decentralized and federated protocol.
 - [IPFS](https://github.com/ipfs/awesome-ipfs#readme) - P2P hypermedia protocol.
 - [Mastodon](https://github.com/tleb/awesome-mastodon#readme) - Open source decentralized microblogging network.
