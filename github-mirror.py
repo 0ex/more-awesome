@@ -321,7 +321,10 @@ def sort_readme():
                     # append sub-lists to exiting part - do not sort
                     section_parts[-1] += line
             else:
-                if m := re.match(r'##+ +(.*)', line):
+                m = re.match(r'##+ +(.*)', line)
+                if not m:
+                    m = re.match(r'\*\*(.*)\*\*', line)
+                if m:
                     log('ISection', m[1])
                     section = m[1]
                     section_parts = []

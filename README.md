@@ -38,7 +38,7 @@ The goals of this *list of lists* are:
 - to highlight the best maintained list on each topic; our suggested starting point.
 - to include alternatives at the end of each description, for those who seek more pointers.
 
-### Other Lists of Lists
+**Other Lists of Lists**
 
 - [sindresorhus/awesome](https://github.com/sindresorhus/awesome) - The most popular list and the parent fork of `0ex/more-awesome`. Links have many requirements, some that help with quality, but many arbitrary. Does not allow alternatives on one topic.
 
@@ -48,7 +48,7 @@ You can also find more resource lists by browsing the Github topics
 [lists](https://github.com/topics/lists),
 and [resources](https://github.com/topics/resources).
 
-### List-related tools
+**List-related tools**
 
 - [Awesome CLI](https://github.com/umutphp/awesome-cli#readme) - A simple command-line tool to dive into Awesome lists.
 - [Awesome Indexed](https://awesome-indexed.mathew-davies.co.uk) - Search the Awesome dataset.
@@ -113,7 +113,7 @@ and [resources](https://github.com/topics/resources).
 - [Wechat](https://github.com/justjavac/awesome-wechat-weapp) - Chat platform. Also by [@we-list](https://github.com/we-list/awesome-wechat) and [@opendigg](https://github.com/opendigg/awesome-github-wechat-weapp).
 - [Xamarin](https://github.com/XamSome/awesome-xamarin#readme) - Mobile app development IDE, testing, and distribution.
 
-### Mobile
+**Mobile**
 
 - [Android](https://github.com/JStumpp/awesome-android#readme) - Mobile operating system developed by Google.
 	- [Android Apps](https://github.com/LinuxCafeFederation/awesome-android#readme) - Android applications, tutorials and resources.
@@ -121,7 +121,7 @@ and [resources](https://github.com/topics/resources).
 - iOS
 	- [Scriptable](https://github.com/dersvenhesse/awesome-scriptable#readme) - An iOS app for automations in JavaScript.
 
-### UNIX / Linux
+**UNIX / Linux**
 
 - [AppImage](https://github.com/AppImage/awesome-appimage#readme) - Package apps in a single file that works on various mainstream Linux distributions.
 - [Arch-based Projects](https://github.com/PandaFoss/Awesome-Arch#readme) - Linux distributions and projects based on Arch Linux.
@@ -136,7 +136,7 @@ and [resources](https://github.com/topics/resources).
 - [UNIX](https://github.com/sirredbeard/Awesome-UNIX#readme) - A family of computer operating systems and principles derived from AT&T UNIX.
 - [Yocto Project](https://github.com/fkromer/awesome-yocto-project#readme) - It’s not an embedded Linux Distribution, It creates a custom one for you.
 
-### Windows
+**Windows**
 
 - [DOS](https://github.com/balintkissdev/awesome-dos#readme) - Operating system for x86 PC froms the 1980's.
 - [Dot NET](https://github.com/quozd/awesome-dotnet#readme) - .NET libraries, tools, frameworks and software
@@ -147,7 +147,7 @@ and [resources](https://github.com/topics/resources).
 - [Windows Subsystem for Linux](https://github.com/sirredbeard/Awesome-WSL#readme) - Compatibility layer for running Linux applications on Windows.
 - [Windows](https://github.com/Awesome-Windows/Awesome#readme) - Microsoft Windows apps and tools
 
-### macOS
+**macOS**
 
 - [Alfred Workflows](https://github.com/alfred-workflows/awesome-alfred-workflows#readme) - Productivity app for macOS.
 - [Mac Admin Tools](https://github.com/smashism/awesome-macadmin-tools#readme) - Mac Admin Tools
@@ -560,7 +560,7 @@ and [resources](https://github.com/topics/resources).
 - [Space](https://github.com/elburz/awesome-space#readme) - resources related to Outer Space
 	- [Astronomy](https://github.com/mbiesiad/awesome-astronomy#readme) - Astronomy, astronomical phenomenons and celestial mechanics.
 
-### Language
+**Language**
 
 - [English](https://github.com/yvoronoy/awesome-english#readme) - study resources for learners of English.
 - [Japanese Language](https://github.com/yudataguy/awesome-japanese#readme) - Japanese Learning Resources
@@ -569,7 +569,7 @@ and [resources](https://github.com/topics/resources).
 - [Unicode](https://github.com/jagracey/Awesome-Unicode#readme) - Unicode standards, quirks, packages and resources.
 	- [Code Points](https://github.com/Codepoints/awesome-codepoints#readme)
 
-### Biology
+**Biology**
 
 - [Agriculture](https://github.com/brycejohnston/awesome-agriculture#readme) - Open source technology for farming and gardening.
 - [Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics#readme) - Bioinformatics libraries and software.
@@ -583,7 +583,7 @@ and [resources](https://github.com/topics/resources).
 - [Synthetic Biology](https://github.com/websemantics/awesome-synthetic-biology#readme) - Genetic Engineering projects, articles and resources.
 - [Veganism](https://github.com/sdassow/awesome-veganism#readme) - Making the plant-based lifestyle easy and accessible.
 
-### Health and Social Science
+**Health and Social Science**
 
 - [Autism](https://github.com/aspergirl-git/awesome-autism#readme) - Resources for ASD and Asperger's Syndrome.
 - [Digital History](https://github.com/maehr/awesome-digital-history#readme) - Computer-aided scientific investigation of history.
@@ -685,7 +685,7 @@ and [resources](https://github.com/topics/resources).
 	- [Git Tips](https://github.com/git-tips/tips#readme) - Most commonly used git tips and tricks.
 	- [Gitea](https://gitea.com/gitea/awesome-gitea) - Community managed lightweight code hosting solution written in Go.
 
-### Testing
+**Testing**
 
 - [Appium](https://github.com/SrinivasanTarget/awesome-appium#readme) - Test automation tool for apps.
 - [Gatling](https://github.com/aliesbelik/awesome-gatling#readme) - Open-source load and performance testing framework based on Scala, Akka, and Netty.
@@ -702,7 +702,7 @@ and [resources](https://github.com/topics/resources).
 - [Visual Regression Testing](https://github.com/mojoaxel/awesome-regression-testing#readme) - Ensures changes did not break the functionality or style.
 
 
-### Editors
+**Editors**
 
 - [Atom](https://github.com/mehcode/awesome-atom#readme) - Open-source and hackable text editor.
 - [Eclipse IDE](https://github.com/hrj/awesome-eclipse#readme) - plugins and other resources for eclipse IDE
@@ -744,7 +744,6 @@ and [resources](https://github.com/topics/resources).
 
 Graphics, Design, Movies, Books, etc.
 
-- [Creative Tech Events](https://github.com/danvoyce/awesome-creative-tech-events#readme) - Events around the globe for creative coding, tech, design, music, arts and cool stuff.
 - [ACG](https://github.com/soruly/awesome-acg#readme) - technologies related to Anime, Comic and Games.
 - [Audio Visualization](https://github.com/willianjusten/awesome-audio-visualization#readme) - Audio Visualization.
 - [Audiovisual](https://github.com/stingalleman/awesome-audiovisual#readme) - Lighting, audio and video in professional environments.
@@ -752,6 +751,7 @@ Graphics, Design, Movies, Books, etc.
 - [Codeface](https://github.com/chrissimpkins/codeface#readme) - Text editor fonts.
 - [Creative Commons Media](https://github.com/shime/creative-commons-media#readme) - resources that provide media licensed under Creative Commons licenses.
 - [Creative Portfolio Websites](https://github.com/iRaul/creative-portfolios#readme) - 🌀  Creative Portfolios
+- [Creative Tech Events](https://github.com/danvoyce/awesome-creative-tech-events#readme) - Events around the globe for creative coding, tech, design, music, arts and cool stuff.
 - [Fantasy Literature](https://github.com/RichardLitt/awesome-fantasy#readme) - :european_castle: Fantasy literature worth reading
 - [FFmpeg](https://github.com/transitive-bullshit/awesome-ffmpeg#readme) - Cross-platform solution to record, convert and stream audio and video.
 - [Fonts](https://github.com/brabadu/awesome-fonts#readme) - Fonts.
@@ -770,13 +770,13 @@ Graphics, Design, Movies, Books, etc.
 - [Uncopyright](https://github.com/johnjago/awesome-uncopyright#readme) - Public domain works.
 - [VLC](https://github.com/mfkl/awesome-vlc#readme) - Cross-platform media player software and streaming server.
 
-### Music
+**Music**
 
 - [Guitar](https://github.com/sfischer13/awesome-guitar#readme) - Useful resources for guitar players.
 - [Music DSP](https://github.com/olilarkin/awesome-musicdsp#readme) - Music DSP and Audio Programming.
 - [Music](https://github.com/ciconia/awesome-music#readme) - Music projects.
 
-### Design
+**Design**
 
 - [Blender](https://github.com/agmmnn/awesome-blender#readme) - Open source 3D creation suite.
 - [Book Authoring](https://github.com/TalAter/awesome-book-authoring#readme) - :books: resources for technical book authors
@@ -793,7 +793,7 @@ Graphics, Design, Movies, Books, etc.
 - [UI](https://github.com/tipoqueno/UI-Design#readme) - User Interface Design.
 - [Web Design](https://github.com/nicolesaidy/awesome-web-design#readme) - For digital designers.
 
-### Graphics
+**Graphics**
 
 - [3D reconstruction from images](https://github.com/openMVG/awesome_3DReconstruction_list#readme) - papers & resources linked to 3D reconstruction from images.
 - [Graphics Programming](https://github.com/Graphics-Programming-Virtual-Meetup/resources#readme) - Write programs to synthesize and manipulate visual information.
@@ -914,7 +914,7 @@ School, tutorials, etc.
 - [Plotters](https://github.com/beardicus/awesome-plotters#readme) - Computer-controlled drawing machines and other visual art robots.
 - [Radio](https://github.com/kyleterry/awesome-radio#readme) - Radio stuff.
 
-### Robotics
+**Robotics**
 
 - [FIRST Robotics Competition](https://github.com/andrewda/awesome-frc#readme) - International high school robotics championship.
 - [Robotic Tooling](https://github.com/protontypes/awesome-robotic-tooling#readme) - Free and open tools for professional robotic development.
@@ -936,7 +936,7 @@ School, tutorials, etc.
 - [Slack](https://github.com/matiassingers/awesome-slack#readme) - Team collaboration chat tool.
 	- [Slack Communities](https://github.com/filipelinhares/awesome-slack#readme)
 
-### Business
+**Business**
 
 - [Advertising](https://github.com/cenoura/awesome-ads#readme) - Advertising and programmatic media for websites.
 	- [Ad-Free](https://github.com/johnjago/awesome-ad-free#readme) - Ad-free alternatives.
@@ -992,14 +992,14 @@ Communication, Protocols
 - [Websockets](https://github.com/facundofarias/awesome-websockets#readme) - Websockets resources per language.
 - [XMPP](https://github.com/bluszcz/awesome-xmpp) - Communication protocol based on XML. 
 
-### Decentralized Systems
+**Decentralized Systems**
 
 - [ActivityPub](https://github.com/BasixKOR/awesome-activitypub#readme) - Open standard decentralized and federated protocol.
 - [IPFS](https://github.com/ipfs/awesome-ipfs#readme) - P2P hypermedia protocol.
 - [Mastodon](https://github.com/tleb/awesome-mastodon#readme) - Open source decentralized microblogging network.
 - [Peer-to-peer](https://github.com/kgryte/awesome-peer-to-peer#readme) - Networks without servers.
 
-### Blockchain
+**Blockchain**
 
 - [Algorand](https://github.com/aorumbayev/awesome-algorand#readme) - An open-source, proof of stake blockchain and smart contract computing platform.
 - [Bitcoin Cash](https://github.com/dsmurrell/awesome-bitcoin-cash#readme) - Bitcoin Cash resources.
@@ -1067,7 +1067,7 @@ System Engineering, DevOps, Power User Tools
 - [Workflow engines](https://github.com/meirwah/awesome-workflow-engines#readme) - open source workflow engines
 - [Zsh Plugins](https://github.com/unixorn/awesome-zsh-plugins#readme) - ZSH frameworks, plugins, themes and tutorials.
 
-### Open Source
+**Open Source**
 
 - [FOSS Production Apps](https://github.com/DataDaoDe/awesome-foss-apps#readme) - production grade free and open source software organized by category
 - [Open Source Documentations](https://github.com/saintmalik/awesome-oss-docs#readme) - Open Source Documentations for people whole love contributing to docs.
@@ -1077,7 +1077,6 @@ System Engineering, DevOps, Power User Tools
 
 ## Culture
 
-- [Speakers](https://github.com/karlhorky/awesome-speakers#readme) - Conference and meetup speakers in the programming and design community.
 - [AMA](https://github.com/sindresorhus/amas#readme) - Ask Me Anything.
 	- [Answers](https://github.com/stoeffel/awesome-ama-answers#readme)
 - [Answers](https://github.com/cyberglot/awesome-answers#readme) - Stack Overflow, Quora, etc.
@@ -1088,11 +1087,12 @@ System Engineering, DevOps, Power User Tools
 - [IT Quotes](https://github.com/victorlaerte/awesome-it-quotes#readme) - The aim is to collect all relevant quotes said over the history of IT.
 - [Name conflicts](https://github.com/konopski/awsome-name-conflicts#readme) - Name conflicts in various projects.
 - [Readme](https://github.com/matiassingers/awesome-readme#readme) - Great READMEs
+- [Speakers](https://github.com/karlhorky/awesome-speakers#readme) - Conference and meetup speakers in the programming and design community.
 - [Subreddits](https://github.com/iCHAIT/awesome-subreddits#readme) - :memo: programming subreddits.
 - [Theravada](https://github.com/johnjago/awesome-theravada#readme) - Teachings from the Theravada Buddhist tradition.
 - [Tools for Activism](https://github.com/drewrwilson/toolsforactivism#readme) - Digital tools for activism things
 
-### Travel
+**Travel**
 
 - [Flights](https://github.com/kevit/awesome-flights#readme) - All about flights and how to find cheapest flight possible
 - [GeoSpatial](https://github.com/sacridini/Awesome-Geospatial#readme) - Geospatial tools and resources.
@@ -1103,9 +1103,9 @@ System Engineering, DevOps, Power User Tools
 
 ## Local
 
-- [Georgian Talks](https://github.com/getsadzeg/awesome-georgian-talks#readme) - This is mirror of previous awesome-georgian-talks.
-- [Malaysia](https://github.com/jerrychong25/awesome-malaysia#readme) - Malaysian tech resources.
 - [Events in Italy](https://github.com/ildoc/awesome-italy-events#readme) - Tech-related events in Italy.
 - [Events in the Netherlands](https://github.com/awkward/awesome-netherlands-events#readme) - Tech-related events in the Netherlands.
+- [Georgian Talks](https://github.com/getsadzeg/awesome-georgian-talks#readme) - This is mirror of previous awesome-georgian-talks.
+- [Malaysia](https://github.com/jerrychong25/awesome-malaysia#readme) - Malaysian tech resources.
 
 <!-- vi:set noet: -->
