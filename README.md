@@ -140,7 +140,8 @@ and [resources](https://github.com/topics/resources).
 **Windows**
 
 - [DOS](https://github.com/balintkissdev/awesome-dos#readme) - Operating system for x86 PC froms the 1980's.
-- [Dot NET](https://github.com/quozd/awesome-dotnet#readme) - .NET libraries, tools, frameworks and software
+- [Dot NET](https://github.com/quozd/awesome-dotnet#readme) - .NET libraries, tools, frameworks and software.
+	- Also by [@mehdihadeli](https://github.com/mehdihadeli/awesome-dotnet-core-education#readme) and [@tallesl](https://github.com/tallesl/net-libraries-that-make-your-life-easier#readme).
 	- [.NET Security](https://github.com/guardrailsio/awesome-dotnet-security#readme) - .NET Security Resources
 	- [Core](https://github.com/thangchung/awesome-dotnet-core#readme)
 	- [Roslyn](https://github.com/ironcev/awesome-roslyn#readme) - Open-source compilers and code analysis APIs for C# and VB.NET languages.
@@ -169,9 +170,9 @@ and [resources](https://github.com/topics/resources).
 - [AutoIt](https://github.com/J2TeaM/awesome-AutoIt#readme) - :star: UDFs, example scripts, tools and useful resources for AutoIt.
 - [Bash](https://github.com/awesome-lists/awesome-bash#readme) - Bourne-again unix shell
 - [C++](https://github.com/fffaraz/awesome-cpp#readme) - Systems programming language.
-- [C](https://github.com/inputsh/awesome-c#readme) - The most used programming language. Also by [@oz123](https://github.com/oz123/awesome-c#readme).
+- [C](https://github.com/inputsh/awesome-c#readme) - The most used programming language. Also by [@oz123](https://github.com/oz123/awesome-c#readme) and [@koz.ross](https://notabug.org/koz.ross/awesome-c).
 - [CLI](https://github.com/Kikobeats/awesome-cli#readme) - Create your own CLI using JavaScript or be inspired by bests of UNIX philosophy and UX.
-- [Clojure](https://github.com/razum2um/awesome-clojure#readme) - Clojure libraries and resources.
+- [Clojure](https://github.com/razum2um/awesome-clojure#readme) - Clojure libraries and resources. Also by [@mbuczko](https://github.com/mbuczko/awesome-clojure#readme).
 - [ClojureScript](https://github.com/hantuzun/awesome-clojurescript#readme) - Frameworks, libraries and wrappers.
 - [CMake](https://github.com/onqtam/awesome-cmake#readme) - Build, test, and package software.
 - [CoffeeScript](https://github.com/uhub/awesome-coffeescript#readme) - CoffeeScript frameworks, libraries and software.
@@ -186,6 +187,7 @@ and [resources](https://github.com/topics/resources).
 - [Education](https://github.com/quobit/awesome-python-in-education#readme) - Resources for Python teaching and self-learning.
 - [Elm](https://github.com/sporto/awesome-elm#readme) - useful Elm tutorials, libraries and software.
 - [Erlang](https://github.com/drobakowski/awesome-erlang#readme) - A distributed and fault-tolerant VM.
+    - Also by [@unbalancedparentheses](https://github.com/unbalancedparentheses/spawnedshelter#readme) and [@0xAX](https://github.com/0xAX/erlang-bookmarks#readme).
 	- [Elixir](https://github.com/h4cc/awesome-elixir#readme) - An alternative programming lanauge for the Erlang VM.
 	- [Elixir Books](https://github.com/sger/ElixirBooks#readme) - List of Elixir books
 	- [Phoenix](https://github.com/jonathanstiansen/awesome-phoenix#readme) - Elixer framework. Also by [@droptheplot](https://github.com/droptheplot/awesome-phoenix#readme).
@@ -197,6 +199,7 @@ and [resources](https://github.com/topics/resources).
 - [Go](https://github.com/avelino/awesome-go#readme) - Go frameworks, libraries and software
 	- [Golang Security](https://github.com/guardrailsio/awesome-golang-security#readme) - Golang Security resources
 	- [Go Books](https://github.com/dariubs/GoBooks#readme) - List of Golang books
+	- [Go Patterns](https://github.com/tmrts/go-patterns#readme) - Go design patterns, recipes and idioms.
 - [Groovy](https://github.com/kdabir/awesome-groovy#readme) - groovy libraries, frameworks and resources
 - [Haskell](https://github.com/krispo/awesome-haskell#readme) - Haskell links, frameworks, libraries and software.
 - [Idris](https://github.com/joaomilho/awesome-idris#readme) - General purpose pure functional programming language with dependent types.
@@ -208,6 +211,8 @@ and [resources](https://github.com/topics/resources).
 	- [RxJava](https://github.com/eleventigers/awesome-rxjava#readme)
 - [JavaFX](https://github.com/mhrimaz/AwesomeJavaFX#readme) - JavaFX libraries, books, frameworks, etc...
 - [JavaScript](https://github.com/sorrycc/awesome-javascript#readme) - 🐢 browser-side  JavaScript libraries, resources and shiny things.
+	- [Node ESM](https://github.com/talentlessguy/awesome-node-esm#readme) - Node.js Native ESM modules and resources.
+	- [Koa](https://github.com/ellerbrock/awesome-koa#readme) - Awesome Koa.js Web Framework.
 	- [30 Seconds of Code](https://github.com/30-seconds/30-seconds-of-code#readme) - Code snippets you can understand in 30 seconds.
 	- [AVA](https://github.com/avajs/awesome-ava#readme) - Test runner.
 	- [ESLint](https://github.com/dustinspecker/awesome-eslint#readme) - Linter.
@@ -230,14 +235,15 @@ and [resources](https://github.com/topics/resources).
 	- [Summernote](https://github.com/summernote/awesome-summernote#readme) - JS library that helps you create WYSIWYG editors.
 - [Julia](https://github.com/svaksha/Julia.jl#readme) - High-level dynamic programming language for numerical analysis and computational science.
 - [Kotlin](https://github.com/KotlinBy/awesome-kotlin#readme) - Kotlin related stuff
-- [Lua](https://github.com/LewisJEllis/awesome-lua#readme) - quality Lua packages and resources.
+	- [Kotlin/Native](https://github.com/bipinvaylu/awesome-kotlin-native#readme) - Kotlin Multiplatform libraries & resources.
+- [Lua](https://github.com/LewisJEllis/awesome-lua#readme) - quality Lua packages and resources. Also by [@forhappy](https://github.com/forhappy/awesome-lua#readme).
 - [Markdown](https://github.com/BubuAnabelas/awesome-markdown#readme) - Markup language.
 - [MATLAB](https://github.com/mikecroucher/awesome-MATLAB#readme) - MATLAB toolboxes, applications, software and resources.
 - [MicroPython](https://github.com/ikuamike/Awesome_Micropython#readme) - Python 3 implementation optimized for microcontrollers.
 - [Motoko](https://github.com/motoko-unofficial/awesome-motoko#readme) - Modern type safe language for the blockchain.
-- [Nim](https://github.com/ringabout/awesome-nim#readme) - A statically typed compiled systems programming language.
+- [Nim](https://github.com/ringabout/awesome-nim#readme) - A statically typed compiled systems programming language. Also by [@VPashkov](https://github.com/VPashkov/awesome-nim#readme).
 - [OCaml](https://github.com/ocaml-community/awesome-ocaml#readme) - A functional programming language.
-- [Pascal](https://github.com/Fr0sT-Brutal/awesome-pascal#readme) - Open Source Delphi/FreePascal/(any)Pascal frameworks, libraries, resources, and shiny things.
+- [Pascal](https://github.com/Fr0sT-Brutal/awesome-pascal#readme) - Open Source Delphi/FreePascal/(any)Pascal resources.
 - [Perl](https://github.com/hachiojipm/awesome-perl#readme) - Perl frameworks and libraries. Come on Pull Requests!
 - [PHP](https://github.com/ziadoz/awesome-php#readme) - Server-side scripting language.
 	- [PHP Security](https://github.com/guardrailsio/awesome-php-security#readme) - PHP Security Resources
@@ -259,7 +265,7 @@ and [resources](https://github.com/topics/resources).
 	- [Education](https://github.com/pehapkari/awesome-symfony-education#readme)
 - [Prolog](https://github.com/klaudiosinani/awesome-prolog#readme) - A logic-based programming language.
 - [PureScript](https://github.com/passy/awesome-purescript#readme) - PureScript libraries, resources, etc.
-- [Python](https://github.com/vinta/awesome-python#readme) - General-purpose programming language designed for readability.
+- [Python](https://github.com/vinta/awesome-python#readme) - General-purpose programming language designed for readability. Also by [@trekhleb](https://github.com/trekhleb/learn-python#readme). Also by [@svaksha](https://github.com/svaksha/pythonidae#readme). Also by [@kirang89](https://github.com/kirang89/pycrumbs#readme).
 	- [Python Security](https://github.com/guardrailsio/awesome-python-security#readme) - Python Security resources
 	- [Python Books](https://github.com/Junnplus/awesome-python-books#readme) - :books: Directory of Python books
 	- [Asyncio](https://github.com/timofurrer/awesome-asyncio#readme) - Asynchronous I/O in Python 3.
@@ -277,19 +283,20 @@ and [resources](https://github.com/topics/resources).
 	- [R Books](https://github.com/RomanTsegelskyi/rbooks#readme) - #rstats books
 	- [R-Shiny](https://github.com/grabear/awesome-rshiny#readme) - Web Framework built with R.
 - [Racket](https://github.com/avelino/awesome-racket#readme) - Racket frameworks, libraries and software, maintained by Community
-- [Ruby](https://github.com/markets/awesome-ruby#readme) - :gem: Ruby libraries, tools, frameworks and software
+- [Ruby](https://github.com/markets/awesome-ruby#readme) - :gem: Ruby libraries, tools, frameworks and software Also by [@asyraffff](https://github.com/asyraffff/Open-Source-Ruby-and-Rails-Apps#readme). Also by [@Sdogruyol](https://github.com/Sdogruyol/awesome-ruby#readme). Also by [@dreikanter](https://github.com/dreikanter/ruby-bookmarks#readme).
 	- [Ruby Security](https://github.com/pxlpnk/awesome-ruby-security#readme) - Ruby Security resources
 	- [Ruby Events](https://github.com/planetruby/conferences) - Conferences, Camps, Meetups, etc.
 - [Rust](https://github.com/rust-unofficial/awesome-rust#readme) - Rust code and resources.
 - [RxSwift](https://github.com/LeoMobileDeveloper/awesome-rxswift#readme) - RxSwift library and learning material
+- [SAS](https://github.com/huyingjie/awesome-SAS#readme) - A curated list of awesome SAS.
 - [Scala](https://github.com/lauris/awesome-scala#readme) - Scala libraries, frameworks and software.
 	- [Scala Native](https://github.com/tindzk/awesome-scala-native#readme) - Optimizing ahead-of-time compiler for Scala based on LLVM.
 - [Scheme](https://github.com/theodesp/awesome-scheme#readme) - Minimalistic prophet and pioneer programming language.
 - [Solidity](https://github.com/bkrem/awesome-solidity#readme) - Object-oriented, high-level language for implementing Ethereum smart contracts.
-- [Swift](https://github.com/matteocrippa/awesome-swift#readme) - Apple's compiled programming language that is secure, modern, programmer-friendly, and fast. Also by [@edubits](https://awesome-swift.zeef.com/robin.eggenkamp).
+- [Swift](https://github.com/matteocrippa/awesome-swift#readme) - Apple's compiled programming language that is secure, modern, programmer-friendly, and fast. Also by [@edubits](https://awesome-swift.zeef.com/robin.eggenkamp). Also by [@Wolg](https://github.com/Wolg/awesome-swift#readme). Also by [@MaxChen](https://github.com/MaxChen/awesome-swift-and-tutorial-resources#readme).
 	- [Education](https://github.com/hsavit1/Awesome-Swift-Education#readme)
 	- [Playgrounds](https://github.com/uraimo/Awesome-Swift-Playgrounds#readme)
-- [TypeScript](https://github.com/dzharii/awesome-typescript#readme) - Resources for client-side and server-side development.
+- [TypeScript](https://github.com/dzharii/awesome-typescript#readme) - Resources for client-side and server-side development. Also by [@ellerbrock](https://github.com/ellerbrock/awesome-typescript#readme). Also by [@brookshi](https://github.com/brookshi/awesome-typescript-projects#readme).
 - [V](https://github.com/vlang/awesome-v#readme) - Simple, fast, safe, compiled language for developing maintainable software.
 - [Vala](https://github.com/desiderantes/awesome-vala#readme) - Programming language designed to take full advantage of the GLib and GNOME ecosystems.
 - [WebAssembly](https://github.com/mbasso/awesome-wasm#readme) - A binary instruction format for a stack-based virtual machine.
@@ -557,6 +564,7 @@ and [resources](https://github.com/topics/resources).
 - [Cytodata](https://github.com/cytodata/awesome-cytodata#readme) - Image-based profiling of biological phenotypes for computational biologists.
 - [Earth](https://github.com/philsturgeon/awesome-earth#readme) - Find ways to resolve the climate crisis.
 - [Jupyter](https://github.com/markusschanta/awesome-jupyter#readme) - Create and share documents that contain code, equations, visualizations and narrative text.
+	- [Notebooks](https://github.com/jupyter-naas/awesome-notebooks#readme) - Ready to use data science templates.
 - [LaTeX](https://github.com/egeerardyn/awesome-LaTeX#readme) - Typesetting language.
 - [Math](https://github.com/rossant/awesome-math#readme) - mathematics resources
 	- [Calculators](https://github.com/xxczaki/awesome-calculators#readme) - Calculators for every platform.
@@ -1038,7 +1046,7 @@ Communication, Protocols
 System Engineering, DevOps, Power User Tools
 
 - [Amazon Web Services](https://github.com/donnemartin/awesome-aws#readme) - AWSome libraries, open source repos, guides, blogs, etc.
-- [Ansible](https://github.com/ansible-community/awesome-ansible#readme) - A Python-based, open source IT configuration management and automation platform.
+- [Ansible](https://github.com/ansible-community/awesome-ansible#readme) - A Python-based, open source IT configuration management and automation platform. Also by [@jdauphant](https://github.com/jdauphant/awesome-ansible#readme).
 - [Cerebro](https://github.com/cerebroapp/awesome-cerebro#readme) - Pluggable quick search bar app for desktops.
 - [ChatOps](https://github.com/exAspArk/awesome-chatops#readme) - Managing technical and business operations through a chat.
 - [Cloud Native](https://github.com/rootsongjc/awesome-cloud-native#readme) - Cloud native tools, software and tutorials.
@@ -1157,6 +1165,94 @@ non-english and regional lists
 
 ## To Sort
 
+- General
+    - [XMPP: Ejabberd](https://github.com/shantanu-deshmukh/awesome-ejabberd#readme) - A curated list of all awesome stuff of the ejabberd ecosystem.
+    - [Vim: by @matteocrippa](https://github.com/matteocrippa/awesome-vim#readme) - A collaborative list of awesome vim resources. Feel free to contribute!.
+    - [Vim: by @akrawchyk](https://github.com/akrawchyk/awesome-vim#readme) - The Vim plugin shortlist.
+    - [UI Styleguide: UI Components for Styleguide](https://github.com/anubhavsrivastava/awesome-ui-component-library#readme) - Curated list of framework component libraries for UI styles/toolkit.
+    - [UI Styleguide](https://github.com/kevinwuhoo/ui-styleguides#readme) - A curated list of UI styleguides --.
+    - [Twilio](https://github.com/Twilio-org/awesome-twilio#readme) - Curated repository of useful and generally awesome Twilio tools and technologies.
+    - [Threat Intelligence](https://github.com/hslatman/awesome-threat-intelligence#readme) - A curated list of Awesome Threat Intelligence resources.
+    - [Taglines](https://github.com/miketheman/awesome-taglines#readme) - Awesome list of software taglines.
+    - [Sysadmin](https://github.com/kahun/awesome-sysadmin#readme) - A curated list of amazingly awesome open source sysadmin resources inspired by Awesome PHP.
+    - [Swedish](https://github.com/gurre/awesome-swedish-opensource#readme) - A currated list of open-source projects from Swedes.
+    - [Styleguides](https://github.com/RichardLitt/awesome-styleguides#readme) - A list of styleguides.
+    - [Space: Books and manuals](https://github.com/Hunter-Github/awesome-space-books#readme) - A list of space exploration related books (some are online, some are on paper).
+    - [Sound](https://github.com/hwclass/awesome-sound#readme) - A curated list of delightful sound packages and resources.
+    - [Service Fabric](https://github.com/lawrencegripper/awesome-servicefabric#readme) - A curated list of useful Service Fabric stuff.
+    - [Serverless Security](https://github.com/puresec/awesome-serverless-security/#readme) - A curated list of awesome serverless security resources such as (e)books, articles, whitepapers, blogs and research papers.
+    - [Search Engine Optimization : by @sneg55](https://github.com/sneg55/curatedseotools#readme) - Best SEO Tools Stash.
+    - [RNN](https://github.com/kjw0612/awesome-rnn#readme) - Recurrent Neural Network - A curated list of resources dedicated to RNN.
+    - [Remote Work](https://github.com/hugo53/awesome-RemoteWork#readme) - Resources for remote workers: approaches, hiring page, remote life and more.
+    - [Raspberry Pi: by @blackout314](https://github.com/blackout314/awesome-raspberry-pi#readme) - curated list of projects with raspberry pi.
+    - [Random-Forest](https://github.com/kjw0612/awesome-random-forest#readme) - Random Forest - a curated list of resources regarding random forest.
+    - [Pentest Cheat Sheets](https://github.com/coreb1t/awesome-pentest-cheat-sheets#readme) - Collection of the cheat sheets useful for pentesting.
+    - [Protocols: OSC](https://github.com/amir-arad/awesome-osc#readme) - A curated list of useful open-sound-control applications, libraries, resources and shiny things.
+    - [Product Manager](https://github.com/hugo53/awesome-ProductManager#readme) - A curated list of awesome book, tool and other resource for Product Managers. Inspired by 'awesome-' repos.
+    - [Pipelines](https://github.com/pditommaso/awesome-pipeline#readme) - A curated list of awesome pipeline toolkits inspired by Awesome Sysadmin.
+    - [Philosophy](https://github.com/HussainAther/awesome-philosophy#readme) - A curated list of awesome philosophy.
+    - [Podcasts](https://github.com/Ghosh/awesome-podcasts#readme) - 🎙 Curated podcasts for designers, developers, product managers, entrepreneurs and hustlers.
+    - [Open Science](https://github.com/silky/awesome-open-science#readme) - some links to projects/tools related to "open science".
+    - [Newsletters: by @mpron](https://github.com/mpron/awesome-newsletters#readme) - A curated list of developer newsletters (e.g. NoSQL Weekly, Python Weekly, etc.).
+    - [Newsletters: by @webpro](https://github.com/webpro/awesome-newsletters#readme) - The best (weekly) newsletters.
+    - [Motion Design for Web](https://github.com/lucasmaiaesilva/awesome-motion-design-web#readme)
+    - [Monitoring: Prometheus alerting rules: Monte Carlo Tree Search Papers](https://github.com/benedekrozemberczki/awesome-monte-carlo-tree-search-papers#readme) - A curated list of Monte Carlo tree search papers with implementations.
+    - [Mobile marketing and development](https://github.com/alec-c4/awesome-mobile#readme) - Awesome instruments for mobile marketing and development.
+    - [MLOps](https://github.com/kelvins/awesome-mlops#readme) - A curated list of awesome MLOps tools.
+    - [Lists: by @jnv](https://github.com/jnv/lists#readme) - The definitive list of lists (of lists) curated on GitHub and elsewhere.
+    - [Lists: by @bayandin](https://github.com/bayandin/awesome-awesomeness#readme) - A curated list of awesome awesomeness.
+    - [Linux resources](https://github.com/itech001/awesome-linux-resources#readme) - linux resources for the begainners and advanced users.
+    - [Koans](https://github.com/ahmdrefat/awesome-koans#readme) - A list of all available kōans.
+    - [Kafka](https://github.com/monksy/awesome-kafka#readme) - A collection of kafka-resources.
+    - [iOS: Open Source Apps](https://github.com/dkhamsing/open-source-ios-apps#readme) - Collaborative List of Open-Source iOS Apps.
+    - [iOS: Cocoa Controls](https://github.com/v-braun/awesome-cocoa#readme) - A curated list of awesome Cocoa controls for iOS, watchOS and macOS.
+    - [Internationalization](https://github.com/jpomykala/awesome-i18n#readme) - 🌍 A curated list of i18n resources for all kind of languages and frameworks.
+    - [Images](https://github.com/heyalexej/awesome-images#readme) - A curated list of amazingly awesome free (stock) photo resources inspired by all the other awesomes.
+    - [Styleguides](https://github.com/RichardLitt/awesome-styleguides#readme) - A list of styleguides.
+    - [Gradient Boosting Papers](https://github.com/benedekrozemberczki/awesome-gradient-boosting-papers#readme) - A curated list of gradient boosting research papers with implementations.
+    - [GitHub](https://github.com/Kikobeats/awesome-github#readme) - An exquisite list of awesome secrets.
+    - [Git](https://github.com/dictcp/awesome-git#readme) - A curated list of amazingly awesome Git tools, resources and shiny things.
+    - [GIF: by @Kikobeats](https://github.com/Kikobeats/awesome-gif#readme) - A curated list of awesome gif's resources.
+    - [Frontend: by @moklick](https://github.com/moklick/frontend-stuff#readme) - 📝 A continuously expanded list of frameworks, libraries and tools I used/want to use for building things on the web. Mostly JavaScript.
+    - [Fraud Detection Papers](https://github.com/benedekrozemberczki/awesome-fraud-detection-papers#readme) - A curated list of data mining papers about fraud detection.
+    - [Free Open Source Software (FOSS)](https://github.com/ishanvyas22/awesome-open-source-systems#readme) - A curated list of awesome Free Open Source Softwares(FOSS).
+    - [FluidApp Resources](https://github.com/lborgav/awesome-fluidapp#readme) - Icons, Userstyles and Userscripts for Fluid Apps.
+    - [Ethics](https://github.com/HussainAther/awesome-ethics#readme) - A curated list of awesome ethics.
+    - [Embedded](https://github.com/nhivp/Awesome-Embedded#readme) - A curated list of awesome embedded programming.
+    - [DevOps](https://github.com/joubertredrat/awesome-devops#readme) - This is my awesome list with all open source and free applications that you can use in your management.
+    - [Design](https://github.com/gztchan/awesome-design#readme) - 🌟 Curated design resources from all over the world.
+    - [Decision Tree Papers](https://github.com/benedekrozemberczki/awesome-decision-tree-papers#readme) - A collection of research papers on decision, classification and regression trees with implementations.
+    - [Deep Learning: by @tigerneil](https://github.com/tigerneil/awesome-deep-rl#readme) - For deep RL and the future of AI.
+    - [Cryptography: by @coinpride](https://github.com/coinpride/CryptoList#readme) - Curated collection of blockchain & cryptocurrency resources.
+    - [Cryptography: by @MaciejCzyzewski](https://github.com/MaciejCzyzewski/retter#readme) - A collection of hash functions, ciphers, tools, libraries, and materials related to cryptography & security.     (project was renamed, libchaos is main).
+    - [Conversational UI](https://github.com/mortenjust/awesome-conversational/#readme)
+    - [Community Detection](https://github.com/benedekrozemberczki/awesome-community-detection#readme) - A curated list of community detection research papers with implementations.
+    - [Code Formatters](https://github.com/rishirdua/awesome-code-formatters#readme) - A curated list of awesome code formatting tools and libraries.
+    - [Challenges](https://github.com/mauriciovieira/awesome-challenges#readme) - A curated list of algorithmic challenges websites.
+    - [Landing Page](https://github.com/nordicgiant2/awesome-landing-page#readme) - A series of beautiful and practical landing page templates.
+    - [BSD Software](https://github.com/SaintFenix/Awesome-BSD-Ports-Programs-And-Projects#readme) - A Repo Detailing BSD Ports, Programs, and Projects.
+    - [Blockchain: Ethereum: awesome-ethereum-virtual-machine](https://github.com/pirapira/awesome-ethereum-virtual-machine#readme) - Ethereum Virtual Machine Awesome List.
+    - [Blockchain: Bitcoin: by @btcbrdev](https://github.com/btcbrdev/awesome-btcdev#readme) - List of resources of bitcoin development.
+    - [Blockchain: by @openblockchains](https://github.com/openblockchains/awesome-blockchains#readme) - A collection about awesome blockchains - open distributed public databases w/ crypto hashes incl. git ;-).  Blockchains are the new tulips   . Distributed is the new centralized.
+    - [Blockchain: by @igorbarinov](https://github.com/igorbarinov/awesome-blockchain#readme) - Curated list of the bitcoin blockchain services.
+    - [Blockchain: by @iNiKe](https://github.com/iNiKe/awesome-blockchain#readme) - Awesome of Blockchain, ICO, ₿itcoin, Cryptocurrencies.
+    - [Blockchain: by @hitripod](https://github.com/hitripod/awesome-blockchain#readme) - Curated list of blockchain, Awesome Awesomeness.
+    - [Blockchain: by @imbaniac](https://github.com/imbaniac/awesome-blockchain#readme) - Curated list of blockchain services and exchanges 🔥🏦🔥🏦🔥🏦🔥.
+    - [Blockchain: by @0xtokens](https://github.com/0xtokens/awesome-blockchain#readme) - Curated List of awesome Blockchain and Crytocurrency Resources.
+    - [Big data: by @zenkay](https://github.com/zenkay/bigdata-ecosystem#readme) - BigData Ecosystem Dataset.
+    - [Apple: OS X](https://github.com/iCHAIT/awesome-macOS#readme) -  A curated list of awesome applications, softwares, tools and shiny things for macOS.
+    - [Apple](https://github.com/joeljfischer/awesome-apple#readme) - An opinionated, curated list of awesome libraries, plugins, and resources for Apple platform development.
+    - [API: by @toddmotto](https://github.com/toddmotto/public-apis#readme) - A collective list of free APIs.
+    - [API: by @Kikobeats](https://github.com/Kikobeats/awesome-api#readme) - A curated list of awesome resources for design and implement RESTful API's.
+    - [Arduino](https://github.com/Lembed/Awesome-arduino#readme) - A curated list of awesome Arduino hardwares, libraries and softwares with update script.
+    - [ARM Exploitation](https://github.com/HenryHoggard/awesome-arm-exploitation#readme) - A collection of awesome videos, articles, books and resources about ARM exploitation.
+    - [Android: Android Release Notes](https://github.com/pedronveloso/awesome-android-release-notes#readme) - Awesome Android Release Notes is a useful directory for a developer to keep up-to-date with all the things related with Android software development.
+    - [Algorithms: Big O Notation](https://github.com/okulbilisim/awesome-big-o#readme) - A curated list of awesome materials about Big O notation.
+    - [Algolia](https://github.com/algolia/awesome-algolia#readme) - 🔍👋  START HERE! A curated list of Algolia libraries, resources and projects.
+    - [Agile](https://github.com/lorabv/awesome-agile#readme) - Awesome List of resources on Agile Software Development.
+    - [Accessibility: by @a11yproject](https://github.com/a11yproject/a11yproject.com#readme) - The A11Y Project is a community-driven effort to make digital accessibility easier.
+- Programming Languages Package Manager
+    - [Package-Manager](https://github.com/damon-kwok/awesome-package-manager#readme) - ☘ Awesome package manager resources.
 - nothing here
 
 <!-- vi:set noet: -->
