@@ -6,7 +6,7 @@ facilitate discovery on particular topics. It aims to be the most complete and c
 If you have know of a list on a topic not covered below or a better list than I have linked,
 please submit an [pull request](https://github.com/0ex/more-awesome/edit/main/README.md). Suggest the most appropriate category and add a one-line description of the target topic (not of the list itself).
 
-## Topics
+**Topics**
 
 Coding:
 [Programming](#programming)
