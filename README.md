@@ -504,12 +504,10 @@ and [resources](https://github.com/topics/resources).
 - [Quantum Machine Learning](https://github.com/krishnakumarsekar/awesome-quantum-machine-learning#readme) - Basics, Algorithms, Study Materials, Projects, etc.
 - [Software Engineering for Machine Learning](https://github.com/SE-ML/awesome-seml#readme) - From experiment to production-level machine learning.
 - [Speech and Natural Language Processing](https://github.com/edobashira/speech-language-processing#readme) - speech and natural language processing resources
-	- [Spanish](https://github.com/dav009/awesome-spanish-nlp#readme)
 	- [NLP with Ruby](https://github.com/arbox/nlp-with-ruby#readme)
 	- [Question Answering](https://github.com/seriousran/awesome-qa#readme) - The science of asking and answering in natural language with a machine.
 	- [Natural Language Generation](https://github.com/accelerated-text/awesome-nlg#readme) - Generation of text for conversational agents and narratives.
 	- [Sentence embeddings](https://github.com/Separius/awesome-sentence-embedding#readme) - Pretrained sentence and word embedding models
-	- [Spanish Natural Language Processing (NLP)](https://github.com/dav009/awesome-spanish-nlp#readme) - Linguistic Resources for doing NLP & CL on Spanish
 - [TensorFlow Lite](https://github.com/margaretmz/awesome-tensorflow-lite#readme) - Framework that optimizes TensorFlow models for on-device machine learning.
 - [TensorFlow.js](https://github.com/aaronhma/awesome-tensorflow-js#readme) - WebGL-accelerated machine learning JavaScript library for training and deploying models.
 - [TensorFlow](https://github.com/jtoy/awesome-tensorflow#readme) - Library for machine intelligence.
@@ -522,19 +520,25 @@ and [resources](https://github.com/topics/resources).
 - [Apache Flink](https://github.com/wuchong/awesome-flink#readme) - A stream processing framework with powerful stream- and batch-processing capabilities.
 - [Apache Spark](https://github.com/awesome-spark/awesome-spark#readme) - Unified engine for large-scale data processing.
 - [Big Data](https://github.com/0xnr/awesome-bigdata#readme) - big data frameworks, ressources and other awesomeness.
-- [Brazil Datasets](https://github.com/juliohm/awesome-brazil-data#readme) - Brazilian datasets for anyone interested in studying the country.
 - [Data Engineering](https://github.com/igorbarinov/awesome-data-engineering#readme) - data engineering tools for software developers
 - [Elasticsearch](https://github.com/dzharii/awesome-elasticsearch) - Open-source RESTful, distributed search and analytics engine.
 - [ETL](https://github.com/pawl/awesome-etl#readme) - ETL (extract, transform, load) frameworks, libraries and software.
 - [Hadoop](https://github.com/youngwookim/awesome-hadoop#readme) - Framework for distributed storage and processing of very large data sets.
 - [HBase](https://github.com/rayokota/awesome-hbase#readme) - Distributed, scalable, big data store.
-- [JSON](https://github.com/burningtree/awesome-json#readme) - Text based data interchange format.
-	- [GeoJSON](https://github.com/tmcw/awesome-geojson#readme)
-	- [Datasets](https://github.com/jdorfman/awesome-json-datasets#readme)
-- [Public Datasets](https://github.com/awesomedata/awesome-public-datasets#readme) - High quality open datasets.
 - [Qlik](https://github.com/ambster-public/awesome-qlik#readme) - Business intelligence platform for data visualization, analytics, and reporting apps.
 - [Splunk](https://github.com/sduff/awesome-splunk#readme) - Platform for searching, monitoring, and analyzing logs.
 - [Streaming](https://github.com/manuzhang/awesome-streaming#readme) - Streaming frameworks, applications, etc
+
+**Data Formats**
+
+- [GeoJSON](https://github.com/tmcw/awesome-geojson#readme)
+- [JSON](https://github.com/burningtree/awesome-json#readme) - Text based data interchange format.
+
+**Datasets**
+	
+- [JSON Datasets](https://github.com/jdorfman/awesome-json-datasets#readme)
+- [Public Datasets](https://github.com/awesomedata/awesome-public-datasets#readme) - High quality open datasets.
+- [World Datasets](https://github.com/planetopendata/awesome-world#readme) - countries, cities, codes, flags, languages, latitude/longitude, etc.
 
 ## Science
 
@@ -563,8 +567,8 @@ and [resources](https://github.com/topics/resources).
 **Language**
 
 - [English](https://github.com/yvoronoy/awesome-english#readme) - study resources for learners of English.
-- [Japanese Language](https://github.com/yudataguy/awesome-japanese#readme) - Japanese Learning Resources
 - [Linguistics](https://github.com/theimpossibleastronaut/awesome-linguistics#readme) - anything remotely related to linguistics
+- [Low Resource Languages](https://github.com/RichardLitt/low-resource-languages#readme) - endangered languages.
 - [Translations](https://github.com/mbiesiad/awesome-translations#readme) - The transfer of the meaning of a text from one language to another.
 - [Unicode](https://github.com/jagracey/Awesome-Unicode#readme) - Unicode standards, quirks, packages and resources.
 	- [Code Points](https://github.com/Codepoints/awesome-codepoints#readme)
@@ -813,6 +817,7 @@ School, tutorials, etc.
 - [Coding resources](https://github.com/georgegognadze/awesome-resources#readme) - Coding resources for all stages and ages
 - [Coding Style Conventions and Standards](https://github.com/Kristories/awesome-guidelines#readme) - high quality coding style conventions and standards.
 - [Computer History](https://github.com/watson/awesome-computer-history#readme) - Computer history videos, documentaries and related folklore
+- [Conferences](https://github.com/RichardLitt/awesome-conferences) - places for talks.
 - [CSS Learning](https://github.com/micromata/awesome-css-learning#readme) - Mainly about CSS – the language and the modules.
 - [Education](https://github.com/mehdihadeli/awesome-software-architecture#readme) - Learning and practicing software architecture.
 - [Educational Games](https://github.com/yrgo/awesome-educational-games#readme) - Learn while playing.
@@ -1103,12 +1108,40 @@ System Engineering, DevOps, Power User Tools
 
 ## Local
 
-Persian
-- [Persian NLP](https://github.com/mhbashari/awesome-persian-nlp-ir#readme) - Natural Language Processing in Persian
+non-english and regional lists
 
-- [Events in Italy](https://github.com/ildoc/awesome-italy-events#readme) - Tech-related events in Italy.
-- [Events in the Netherlands](https://github.com/awkward/awesome-netherlands-events#readme) - Tech-related events in the Netherlands.
-- [Georgian Talks](https://github.com/getsadzeg/awesome-georgian-talks#readme) - This is mirror of previous awesome-georgian-talks.
-- [Malaysia](https://github.com/jerrychong25/awesome-malaysia#readme) - Malaysian tech resources.
+- Bosnia
+	- [Bosnia](https://github.com/inputsh/awesome-bosnia) - things specific to Bosnia & Herzegovina region.
+- Brazil
+	- [Brazil Datasets](https://github.com/juliohm/awesome-brazil-data#readme) - Brazilian datasets for anyone interested in studying the country.
+- China
+	- [Github](https://github.com/AntBranch/awesome-github)
+- Georgia
+	- [Georgian Talks](https://github.com/getsadzeg/awesome-georgian-talks#readme) - This is mirror of previous awesome-georgian-talks.
+	- [Georgia](https://github.com/Stichoza/awesome-georgia) - Libraries and packages related to Gergia.
+- Germany
+	- [Berlin](https://github.com/AwesomeCities/awesome-berlin#readme)
+	- [Kassel](https://github.com/AwesomeCities/awesome-kassel#readme)
+- Indonesia
+	[Indonesian Repos](https://github.com/GitIndonesia/awesome-indonesia-repo) - repos created by Indonesian people.
+- Iran
+	- [Persian NLP](https://github.com/mhbashari/awesome-persian-nlp-ir#readme) - Natural Language Processing in Persian
+- Italy
+	- [Events in Italy](https://github.com/ildoc/awesome-italy-events#readme) - Tech-related events in Italy.
+- Japan
+	- [Japanese Language](https://github.com/yudataguy/awesome-japanese#readme) - Japanese Learning Resources
+- Malaysia
+	- [Malaysia](https://github.com/jerrychong25/awesome-malaysia#readme) - Malaysian tech resources.
+- Netherlands
+	- [Events in the Netherlands](https://github.com/awkward/awesome-netherlands-events#readme) - Tech-related events in the Netherlands.
+- Portugual
+	- [Git Commands](https://github.com/theandersonn/comandos-git)
+- Singapore
+	- [Singapore Travel](https://github.com/rubysg/singapore#readme) - Singapore Guide Book
+	- [Singapore Tech Events](https://engineers.sg/events)
+- Spain
+	- [Spanish NLP](https://github.com/dav009/awesome-spanish-nlp#readme) - Linguistic Resources for doing Natural Language Processing in Spanish
+- USA
+	- [Oregon Tech](https://github.com/tedder/awesome-portland-oregon-tech) - tech things in Portlang, Oregon
 
 <!-- vi:set noet: -->
