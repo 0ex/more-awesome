@@ -37,6 +37,7 @@ from datetime import datetime
 from shlex import quote
 
 from ghapi.all import GhApi, paged
+from urllib.error import HTTPError
 
 ###############################################################
 # Classes
@@ -80,12 +81,28 @@ class Pull:
     def key(self):
         return f'{self.repo}/pull/{self.num}'
 
-@dataclass
 class Record:
     """Generic DB Record."""
     key: str = ''  # normalized url
     ver: int = 0
-    more: dict = field(default_factory=dict)
+
+    def __init__(self, **kw):
+        self.__dict__ = kw
+
+    def __setitem__(self, k, v):
+        setattr(self, k, v)
+    
+    def __getitem__(self, k):
+        return getattr(self, k)
+
+    def get(self, key, default=None):
+        return getattr(self, key, default)
+
+    def keys(self):
+        return self.__dict__.keys()
+
+    def __str__(self):
+        return 'Record(%s)' % self.__dict__
 
 @dataclass
 class ListInfo:
@@ -93,7 +110,7 @@ class ListInfo:
     url: str = ''
     key: str = ''  # normalized url
     title: str = ''
-    head: str = ''
+    topic: str = ''
     desc: str = ''
     stars: int = 0
     updated: str = ''
@@ -103,9 +120,15 @@ class ListInfo:
     code: int = 0
     error: str = ''
     ver: int = 0
+    owner: str = ''  # ignored
+    head: str = ''  # ignored - old
     
-    def build_link(self):
-        link = f'- [{self.title}]({self.url})'
+    def build_link(self, prefix=None):
+        title = self.title
+        if prefix:
+            title = ': '.join([*prefix, title])
+
+        link = f'- [{title}]({self.url})'
         if self.desc:
             link += f' - {self.desc}'
 
@@ -113,28 +136,50 @@ class ListInfo:
 
     def __str__(self):
         out = []
-        for f in 'title head desc url stars size redir error'.split():
+        for f in 'topic desc url stars size redir error status'.split():
             if v := getattr(self, f, None):
                 out.append((f, v))
-        
+       
         if self.code not in [0, 200]:
             out.append(('code', self.code))
 
         if self.updated:
-            out.append(('updated', _format_time(self.updated)))
+            out.append(('mtime', _format_time(self.updated)))
 
-        return '\n'.join('%7s: %s' % i for i in out)
+        if m := re.match(r'https?://github.com/([^/#]+)/([^/#]+)', self.url):
+            head = f'{self.title} from @{m[1]}'
+        else:
+            head = f'{self.title}'
+
+        return head + ':\n' + '\n'.join('%7s: %s' % i for i in out)
 
 @dataclass
-class PullInfo(ListInfo):
+class PullInfo:
     """Github Pull Request Info."""
     num: int = 0  # srcpr.num
+    ver: int = 0
     pull: str = ''
+    head: str = ''  # repo:branch
     created: datetime = None
+    status: str = ''
+    error: str = ''
+    links: list[str] = field(default_factory=list)  # links to lists
     extra: list[str] = field(default_factory=list)  # extra lines in diff
     
     @property
+    def title(self):
+        if self.links:
+            return get_list_info(self.links[0]).title
+        else:
+            return 'no links'
+
+    @property
     def ref(self):
+        """Return best ref for this PR."""
+        # use head if a local PR
+        if self.head and self.head.startswith(DEST_REPO.owner):
+            return self.head.split(':')[1]
+
         # use local ref if available
         if 0 == sh_code(f'git rev-parse --verify pull/{self.num} >/dev/null 2>&1'):
             ref = f'pull/{self.num}'
@@ -144,14 +189,29 @@ class PullInfo(ListInfo):
                 sh(f'git fetch -q up refs/pull/{self.num}/head:{ref}')
 
         return ref
+    
+    @property
+    def branch(self):
+        """Return local branch name for this PR."""
+        # use head if a local PR
+        if self.head and self.head.startswith(DEST_REPO.owner):
+            return self.head.split(':')[1]
+        else:
+            return f'pull/{self.num}'
+
 
     def __str__(self):
-        out = ListInfo.__str__(self)
+        out = f'   pull: {self.pull}'
         out += f'\ncreated: {_format_time(self.created)}'
-        out += f'\n   pull: {self.pull}'
-        
+       
+        if self.head:
+            out += f'\n  head: {self.head}'
+
         for line in self.extra:
             out += f'\n  extra: {line}'
+        
+        for link in self.links:
+            out += '\n\n' + str(get_list_info(link))
 
         return out
 
@@ -159,18 +219,25 @@ class PullInfo(ListInfo):
 ###############################################################
 # Globals
 
-SRC_REPO = Repo(owner="sindresorhus", repo="awesome")
+WORKDIR = Path('./work')
+
 DEST_REPO = Repo(owner="0ex", repo="more-awesome")
+
+SRC_REPOS = dict(
+    sind=Repo(owner="sindresorhus", repo="awesome"),
+    more=DEST_REPO,
+)
 
 FETCH_BRANCH_VER = 8
 
-IN_PATH = 'readme.md'
+IN_PATH = 'readme.md README.md'
 OUT_PATH = 'README.md'
 
 gh = None
 
 db = None
 args = None
+sess = requests.Session()
 
 ###############################################################
 # Main and top-level commands
@@ -194,9 +261,17 @@ def main():
     
     if args.verbose:
         getLogger('root').setLevel(DEBUG)
-    
+
+    if not (WORKDIR / '.git').exists():
+        WORKDIR.mkdir(exists_ok=True, parents=True)
+        sh('git clone . work')
+
+    os.chdir(WORKDIR)
+
+    src_repo = SRC_REPOS[args.src]
+
     if args.scan is not None:
-        scan_pulls(SRC_REPO, args.scan)
+        scan_pulls(src_repo, args.scan)
         return
     
     if args.sort:
@@ -208,18 +283,18 @@ def main():
         return
 
     if not args.prnum:
-        log('EArgs', 'No Pull numbers given')
+        log('EArgs', 'No pull requests given')
         return
        
     for prnum in args.prnum:
-        srcpr = Pull(SRC_REPO, prnum)
+        srcpr = Pull(src_repo, prnum)
 
         if args.mirror:
             fetch_branch(srcpr)
             copy_ghpr(srcpr)
 
         if args.info:
-            show_info(srcpr, verbose=True)
+            show_info(srcpr, long=True, diff=not args.brief)
 
         if args.fetch:
             fetch_branch(srcpr)
@@ -232,7 +307,7 @@ def main():
             show_diff(srcpr)
 
         if args.accept:
-            show_info(srcpr, verbose=True)
+            show_info(srcpr, long=True, diff=not args.brief)
             accept_pull(srcpr)
     
     log('IDone')
@@ -245,19 +320,23 @@ def parse_args():
     p = ArgumentParser()
     
     # global behavior
-    p.add_argument('-r', '--redo', action='store_true')
+    p.add_argument('-r', '--redo', type=str, default='')
     p.add_argument('-d', '--debug', action='store_true')
     p.add_argument('-v', '--verbose', action='store_true')
     p.add_argument('-t', '--tag', action='store_true', help='tag repos')
+    p.add_argument('-T', '--throttle', type=int, default=0, help='throttle')
+    p.add_argument('-B', '--brief', action='store_true')
     
     # repo operations
     p.add_argument('-s', '--scan', type=str, help='scan: ALL or page number')
     p.add_argument('--sort', action='store_true', help='sort readme')
     p.add_argument('--fixup', action='store_true', help='fixup while sorting')
     p.add_argument('--untagged', action='store_true', help='list untagged PRs')
+    p.add_argument('-S', '--src', type=str,
+                   default='more', choices=list(SRC_REPOS), help='source repo')
 
     # PR operations
-    p.add_argument('prnum', type=int, nargs='*', help='pull numbers to handle (from source)')
+    p.add_argument('prnum', type=int, nargs='*', help='pull requests')
     p.add_argument('-f', '--fetch', action='store_true', help='fetch branch')
     p.add_argument('-b', '--rebase', action='store_true', help='rebase pr with main')
     p.add_argument('-c', '--copy', action='store_true', help='copy github PR')
@@ -268,7 +347,7 @@ def parse_args():
     args = p.parse_args()
 
 def login():
-    global gh, SRC_REPO, DEST_REPO, db
+    global gh, db
 
     db = DB()
 
@@ -286,22 +365,22 @@ def sort_readme():
     print('\nSORT:\n')
     
     lines = []
-    section_parts = []
-    section = False
+    topic_parts = []
+    topic = False
     seen = set()
 
     with open(OUT_PATH) as f:
         for line in f:
             log('DLine', repr(line))
-            if section:
-                if section_parts and not line.strip():
-                    # end of section
-                    section = False
-                    lines += sorted(section_parts, key=lambda p: p.lower())
+            if topic:
+                if topic_parts and not line.strip():
+                    # end of topic
+                    topic = False
+                    lines += sorted(topic_parts, key=lambda p: p.lower())
                     lines += ['\n']
                 elif line[0] == '-':
                     # extract title, url, desc
-                    info = parse_line(line, section)
+                    info = parse_line(line, [topic])
                     if info:
                         log('DLink', repr(info.key), info.url, info.title)
                         if info.key in seen:
@@ -313,21 +392,21 @@ def sort_readme():
                         if args.fixup:
                             line = info.build_link() + '\n'
 
-                    section_parts.append(line)
-                elif not section_parts:
+                    topic_parts.append(line)
+                elif not topic_parts:
                     # leading blank lines and text
                     lines.append(line)
                 else:
                     # append sub-lists to exiting part - do not sort
-                    section_parts[-1] += line
+                    topic_parts[-1] += line
             else:
                 m = re.match(r'##+ +(.*)', line)
                 if not m:
                     m = re.match(r'\*\*(.*)\*\*', line)
                 if m:
                     log('ISection', m[1])
-                    section = m[1]
-                    section_parts = []
+                    topic = m[1]
+                    topic_parts = []
                 
                 lines.append(line)
 
@@ -357,47 +436,52 @@ def scan_pulls(repo, page):
 def list_untagged():
     """List PRs which are merged but untagged."""
     for rec in db.scan('branch/pull/%'):
-        tag = rec.more.get('tag')
+        tag = rec.get('tag')
         if not tag:
-            destpr = Pull(DEST_REPO, rec.more['num'])
+            destpr = Pull(DEST_REPO, rec.num)
             dest = gh.pulls.get(**destpr.gh)
             if dest.merged:
                 srcpr_num = re.match(r'branch/pull/(\d+)/', rec.key)[1]
                 print(srcpr_num)
 
-def show_info(srcpr, ghpr=None, verbose=False):
+def show_info(srcpr, ghpr=None, long=False, diff=True):
     """Summarize PR."""
     if not ghpr:
         ghpr = gh.pulls.get(**srcpr.gh)
 
-    rec = get_fetch_branch(srcpr)
-
     # high-level status estimation
     if ghpr.merged_at:
         status = 'merged'
-    elif ghpr.user.login == SRC_REPO.owner:
-        # internal PRs
-        status = 'self'
-    elif rec and rec.get('ver', 0) >= FETCH_BRANCH_VER:
-        status = 'synced'
+    elif srcpr.repo == DEST_REPO:
+        status = 'local'
     else:
-        status = None
+        # Pull from another repo
+        rec = get_fetch_branch(srcpr)
 
-    if not status or verbose:
-        sum = build_info(srcpr)
+        if ghpr.user.login == srcpr.repo.owner:
+            # internal PRs
+            status = 'self'
+        elif rec and rec.get('ver', 0) >= FETCH_BRANCH_VER:
+            status = 'synced'
+        else:
+            status = None
+
+    if not status or long:
+        sum = build_pull_info(srcpr)
         status = sum.status
 
     print(
         color(status, '#%-5d %7s %20.20s' % (srcpr.num, status, ghpr.head.label)),
         ghpr.title[:50])
 
-    if verbose or status in ['new', 'bad']:
+    if long or status in ['new', 'bad']:
         print()
         print(indent(str(sum), '  '))
         print()
 
-        diff = sh_out(f'git diff -U1 --color=always --merge-base main {sum.ref} | tail -n +5')
-        print('\nDIFF:\n\n', indent(diff, '   ')) 
+        if diff:
+            diff = sh_out(f'git diff -U1 --color=always --merge-base main {sum.ref} | tail -n +5')
+            print('\nDIFF:\n\n', indent(diff, '   ')) 
 
 def get_fetch_branch(srcpr):
     key = f'branch/{srcpr.num}/create'
@@ -415,7 +499,7 @@ def fetch_branch(srcpr):
         redo = 'new'
     elif rec['ver'] < ver:
         redo = 'update'
-    elif args.redo:
+    elif 'branch' in args.redo:
         redo = 'force'
     else:
         log('DGot', key, rec)
@@ -447,6 +531,82 @@ def fetch_branch(srcpr):
     db.set(key, rec)
     return rec
 
+def add_link(info: ListInfo):
+    """Add link to README."""
+    lines = []
+    found_line = False
+    found_topic = False
+    found_item = False  # seen at least one item in topic
+
+    topic_list = info.topic.split(': ')
+    extra_topic = []
+
+    log('DInsert', info.topic, info.title)
+
+    with open(OUT_PATH) as f:
+        for line in f:
+            #log('DLine', repr(line))
+            if found_line:
+                # just copy everything for here on out
+                pass
+            elif found_topic:
+                # look for alphabetical location
+                m = re.match(r'- *(?:\[([^][]+)\]|([\w ]+))', line)
+                if m:
+                    pos = m[1] or m[2]
+                    found_item = True
+                elif found_item and not line.strip():
+                    pos = 'zzz'
+                else:
+                    pos = None
+
+                if extra_topic:
+                    target_pos = extra_topic[0]
+                else:
+                    target_pos = info.title
+
+                if pos and pos >= target_pos:
+                    found_line = True
+                    link = info.build_link(extra_topic[1:] if extra_topic else None)
+                    if link.strip() == line.strip():
+                        log('WDup', 'avoiding duplicate line')
+                    elif pos == target_pos:
+                        log('DInsert', 'inserting after', line.strip())
+                        lines.append(line)
+                        lines.append('\t' + link + '\n')
+                        continue
+                    else:
+                        log('DInsert', 'inserting before', line.strip())
+                        if extra_topic:
+                            lines.append(f'- {extra_topic[0]}\n')
+                            lines.append('\t' + link + '\n')
+                        else:
+                            lines.append(link + '\n')
+            else:
+                # look for matching header
+                m = re.match(r'#+ *(.*)', line)
+                # log('DHead', m[1] if m else 'no match')
+                if not m:
+                    pass
+                elif m[1].lower() == 'to sort':
+                    found_topic = True
+                    extra_topic = topic_list
+                    log('IToSort', 'missing topic', info.topic)
+                else:
+                    for i, part in enumerate(topic_list):
+                        if m[1].lower() == part.lower():
+                            found_topic = True
+                            extra_topic = topic_list[i+1:]
+                            log('DSection', 'found topic', info.topic, 'extra=', extra_topic)
+                
+            lines.append(line)
+
+    if not found_line:
+        raise RuntimeError('EBadMerge')
+
+    with open(OUT_PATH, 'w') as f:
+        f.write(''.join(lines))
+
 def semantic_merge(srcpr):
     """Semantic Merge.
 
@@ -456,9 +616,9 @@ def semantic_merge(srcpr):
     """
     print('SEMANTIC_MERGE:\n')
     destpr = get_destpr(srcpr)
-    sum = build_info(srcpr)
+    sum = build_pull_info(srcpr)
 
-    sh(f'git checkout --no-guess -q {srcpr.branch}')
+    sh(f'git checkout --no-guess -q {sum.branch}')
 
     log('DMerge', 'attempting semantic merge')
     
@@ -472,58 +632,11 @@ def semantic_merge(srcpr):
 
     sh('test -f readme.md && git rm readme.md', check=False)
     sh(f'git checkout main {OUT_PATH}')
-    
-    lines = []
-    found_line = False
-    found_section = False
-    found_item = False  # seen at least one item in section
-
-    with open(OUT_PATH) as f:
-        for line in f:
-            # log('DLine', repr(line))
-            if found_line:
-                # just copy everything for here on out
-                pass
-            elif found_section:
-                # look for alphabetical location
-                m = re.match(r'- *\[(.+)', line)
-                if m:
-                    pos = m[1]
-                    found_item = True
-                elif found_item and not line.strip():
-                    pos = 'zzz'
-                else:
-                    pos = None
-
-                if pos and pos > sum.title:
-                    found_line = True
-                    log('DInsert', 'inserting before', line.strip())
-                    link = sum.build_link()
-                    if link.strip() == line.strip():
-                        log('WDup', 'avoiding duplicate line')
-                    else:
-                        lines.append(link + '\n')
-            else:
-                # look for matching header
-                m = re.match(r'#+ *(.*)', line)
-                # log('DHead', m[1] if m else 'no match')
-                if not m:
-                    pass
-                elif m[1].lower() == 'to sort':
-                    sum.desc = sum.head + (f': {sum.desc}' if sum.desc else '')
-                    found_section = True
-                    log('IToSort', 'missing section', sum.head)
-                elif m[1].lower() == sum.head.lower():
-                    found_section = True
-                    log('DSection', 'found section', sum.head)
-                
-            lines.append(line)
-
-    if not found_line:
-        raise RuntimeError('EBadMerge')
-
-    with open(OUT_PATH, 'w') as f:
-        f.write(''.join(lines))
+   
+    for link in sum.links:
+        info = get_list_info(link)
+        if info.status == 'new':
+            add_link(info)
   
     if 0 == sh_code('git diff --quiet'):
         log('WMerge', 'no differences')
@@ -532,12 +645,13 @@ def semantic_merge(srcpr):
     msg = quote(f'Merge {destpr} ({sum.title}) with main')
     
     sh(f'git commit -m {msg} -a')
-    sh(f'git checkout -q main && git push -q -u origin {srcpr.branch}')
+    sh(f'git checkout -q main && git push -q -u origin {sum.branch}')
     
     log('IMerge', 'done')
 
 def show_diff(srcpr):
-    diff = sh_out(f'git diff -U1 --color=always main..{srcpr.branch} | tail -n +5')
+    sum = build_pull_info(srcpr)
+    diff = sh_out(f'git diff -U1 --color=always main..{sum.branch} | tail -n +5')
     print('\nDIFF:\n\n', indent(diff, '  ')) 
 
 
@@ -553,12 +667,15 @@ def copy_ghpr(srcpr):
 
 def get_destpr(srcpr) -> Pull:
     """Return {num=PR number}."""
+    if srcpr.repo == DEST_REPO:
+        return srcpr
+
     rec = db.get(f'branch/{srcpr.branch}/pull')
     return Pull(DEST_REPO, rec['num'])
 
 def copy_pull_desc(srcpr) -> Pull:
     """Create or update PR in github, except comments."""
-    ver = 3
+    ver = 5
     key = f'branch/{srcpr.branch}/pull'
     rec = db.get(key)
     
@@ -566,7 +683,7 @@ def copy_pull_desc(srcpr) -> Pull:
         redo = 'new'
         rec = {'idmap': {}, 'ver': 0, 'tag': False}
         
-    elif args.redo:
+    elif 'copy' in args.redo:
         redo = 'force'
 
     elif rec['ver'] < ver:
@@ -588,8 +705,8 @@ def copy_pull_desc(srcpr) -> Pull:
     
     body = f'Pull request from @{orig.user.login}.\n'
    
-    for line in str(build_info(srcpr)).strip().splitlines():
-        body += '- ' + line.strip() + '\n'
+    for line in str(build_pull_info(srcpr)).strip().splitlines():
+        body += line + '\n'
 
     if orig.body:
         body += '\n' + orig.body.strip()
@@ -641,7 +758,7 @@ def copy_issue_comments(srcpr, destpr):
         redo = 'new'
         rec = {'idmap': {}}
         
-    elif args.redo:
+    elif 'comments' in args.redo:
         redo = 'force'
 
     elif rec.get('ver', 0) < ver:
@@ -697,7 +814,7 @@ def copy_review_comments(srcpr, destpr):
         redo = 'new'
         rec = {'idmap': {}}
         
-    elif args.redo:
+    elif 'comments' in args.redo:
         redo = 'force'
 
     elif rec.get('ver', 0) < ver:
@@ -758,7 +875,7 @@ def copy_review_comments(srcpr, destpr):
                     start_side=c.start_side,
                 )
                 rec['idmap'][c.id] = cmt.id
-            except Exception as e:
+            except HTTPError as e:
                 log('WReviewComment', e)
                 continue
 
@@ -835,6 +952,10 @@ def test_clean_body():
 def strip_junk(body):
     out = body
     out = re.sub(
+        r'## Requirements for your pull request.*',
+        '\\[ boilerplate snipped \\]', out, flags=re.S)
+
+    out = re.sub(
         r'#+ By submitting this pull .*',
         '\\[ boilerplate snipped \\]', out, flags=re.S)
 
@@ -870,10 +991,10 @@ def test_strip_junk():
         \\[ boilerplate snipped \\]
     ''').strip()
 
-def parse_line(line, section):
+def parse_line(line: str, topic: list[str]) -> ListInfo:
     """Parse list from line."""
     m = re.match(r"""
-        \s*-\s*
+        (\s*)-\s*
         \[([^][]+)\]
         \s*
         \((https?://[^()]+)\)
@@ -885,26 +1006,46 @@ def parse_line(line, section):
     if not m:
         return None
 
-    return list_info(m[2], desc=m[3], title=m[1], section=section)
+    return list_info(m[3], desc=m[4], title=m[2],
+        topic=': '.join(topic))
 
-
-def list_info(url, *, desc, title, section) -> ListInfo:
-    """Collect info about awesome list for a URL."""
-    
-    # normalize URL
+def _url_key(url: str):
     if m := re.match(r'https?://([^#?]+)', url):
-        bare = re.sub(r'[^\w/.]+', '_', m[1].lower())
+        url = m[1]
+
+    return re.sub(r'[^\w/.]+', '_', url.lower())
+
+def _list_key(url):
+    """Return key for list."""
+    return f'list/{_url_key(url)}/info'
+
+def get_list_info(url) -> ListInfo:
+    """Return existing list info."""
+    key = _list_key(url)
+    rec = db.get(key)
+    if rec:
+        return ListInfo(**rec)
     else:
+        return ListInfo(
+            url=url,
+            status='no-data',
+        )
+
+
+def list_info(url, *, desc, title, topic) -> ListInfo:
+    """Collect info about awesome list for a URL."""
+    key = _list_key(url)
+
+    if not key:
         return ListInfo(
             url=url,
             desc=desc,
             title=title,
-            section=section,
+            topic=topic,
             status='bad',
         )
 
-    ver = 2
-    key = f'list/{bare}/info'
+    ver = 3
     rec = db.get(key)
 
     if not rec:
@@ -912,7 +1053,7 @@ def list_info(url, *, desc, title, section) -> ListInfo:
         redo = 'new'
     elif rec['ver'] < ver:
         redo = 'update'
-    elif args.redo:
+    elif 'list' in args.redo:
         redo = 'force'
     else:
         redo = None
@@ -924,13 +1065,16 @@ def list_info(url, *, desc, title, section) -> ListInfo:
         out.desc = desc
     if title:
         out.title = title
-    if section:
-        out.head = section
+    if topic:
+        out.topic = topic
     
     if not redo:
         return out
 
-    log('DCalc', redo, key, rec)
+    log('DCalc', redo, key, str(rec)[:30] + '...')
+
+    out.error = None
+    out.status = None
 
     # get extra metadata about github repos
     if m := re.match(r'https?://github.com/([^/#]+)/([^/#]+)', out.url):
@@ -939,35 +1083,56 @@ def list_info(url, *, desc, title, section) -> ListInfo:
             out.url = out.url + '#readme'
         
         try:
-            target = gh.repos.get(m[1], m[2])
-            out.stars = target.stargazers_count
+            target = cache('repo/info', 1, _get_repo, m[1], m[2])
+            out.stars = target.stars
             out.size = target.size
             
             if not out.desc:
-                out.desc = target.description
+                out.desc = target.desc
 
-            branch = gh.repos.get_branch(m[1], m[2], target.default_branch)
-            out.updated = branch.commit.commit.committer.date
-        except Exception as e:
-            out.error = str(e).splitlines()[0]
+            branch = cache('repo/branch', 1, _get_branch, m[1], m[2], target.branch)
+            out.updated = branch.updated
+        except HTTPError as e:
+            out.error = 'HTTP Error: ' + str(e).splitlines()[0]
             out.status = 'bad'
 
-    out.desc = out.desc.strip()
+    if out.desc:
+        if not out.desc.endswith('.'):
+            out.desc = out.desc + '.'
+
+        # remove emoji
+        out.desc = re.sub(r'\s*:\w+:\s*', ' ', out.desc)
+        out.desc = out.desc.strip()
+
     _check_url(out)
     
     if not out.status:
         if out.code not in [200, 0]:
             out.status = str(out.code)
-        else:
-            out.status = 'new'
+
+    if not out.status:
+        out.status = 'new'
     
     # save
     rec = asdict(out)
     db.set(key, rec)
     return out
 
-def build_info(srcpr) -> PullInfo:
-    ver = 9
+def _get_repo(owner, repo):
+    rec = gh.repos.get(owner, repo)
+    return Record(
+        stars=rec.stargazers_count,
+        size=rec.size,
+        desc=rec.description,
+        branch=rec.default_branch,
+    )
+
+def _get_branch(owner, repo, branch):
+    rec = gh.repos.get_branch(owner, repo, branch)
+    return Record(updated=rec.commit.commit.committer.date)
+
+def build_pull_info(srcpr) -> PullInfo:
+    ver = 14
     key = f'{srcpr.key()}/summary'
     rec = db.get(key)
     
@@ -976,7 +1141,7 @@ def build_info(srcpr) -> PullInfo:
         redo = 'new'
     elif rec['ver'] < ver:
         redo = 'update'
-    elif args.redo:
+    elif 'pull' in args.redo:
         redo = 'force'
     else:
         rec.update(num=srcpr.num)
@@ -985,40 +1150,55 @@ def build_info(srcpr) -> PullInfo:
     log('DCalc', redo, key, rec)
     pr = gh.pulls.get(**srcpr.gh)
 
-    out = PullInfo(num=srcpr.num)
+    out = PullInfo(num=srcpr.num, head=pr.head.label)
     out.pull = pr.html_url
     out.created = pr.created_at
 
-    info = None
-    section = None
     error = None
+    topic = []
+    indents = []  # for topics, except top-level
 
     # parse diff
     try:
         ret = sh_out(f'git diff --merge-base -U999 main {out.ref} -- {IN_PATH}')
         diff = ret.splitlines()
-        
+
         for line in diff:
-            
-            if line[0] == '+' and not info:
-                info = parse_line(line[1:], section)
-            elif m := re.match(r' *#+ *(.*)', line):
+            # dedent
+            if m := re.match(r'[+ ](\s*)', line):
+                while indents and len(indents[-1]) >= len(m[1]):
+                    topic.pop()
+                    indents.pop()
+
+            if line[0] == '+':
+                info = parse_line(line[1:], topic)
+                if info:
+                    out.links.append(info.url)
+
+            elif m := re.match(r'[+ ]#+ *(.*)', line):
                 # capture heading
-                section = m[1]
+                topic = [m[1]]
+                indents = []
             elif re.match(r'(---|\+\+\+)', line):
                 # skip file headers
                 continue
             elif re.match(r'[-+]', line):
                 out.extra.append(line.strip())
-    except Exception as e:
+
+            # topic can be "- topic" or "- [topic]..."
+            if m := re.match(r'[+ ](\s*)- (?:([\w ]+)|\[([^][]+)\])', line):
+                topic.append(m[2] or m[3])
+                indents.append(m[1])
+
+    except HTTPError as e:
         error = str(e)
+        if args.debug:
+            raise
             
-    # merge with ListInfo
-    if info:
-        rec = { **asdict(out), **asdict(info) }
-        out = PullInfo(**rec) 
-    elif not out.status:
-        out.status = 'bad'
+    if not out.links:
+        out.status = 'no-links'
+    else:
+        out.status = get_list_info(out.links[0]).status
 
     if error and not out.error:
         out.error = error
@@ -1041,6 +1221,46 @@ def _check_dup(out):
         out.status = 'dup'
         return True
 
+def cache(name, ver, func, *params):
+    """Generic caching function."""
+    key = f'cache/{name}/' + '/'.join(_url_key(a) for a in params)
+    print('cache', key)
+    if raw := db.get(key):
+        rec = Record(key=key, **raw)
+    else:
+        rec = None
+    
+    if not rec:
+        rec = Record(ver=0)
+        redo = 'new'
+    elif rec['ver'] < ver:
+        redo = 'update'
+    elif name in args.redo:
+        redo = 'force'
+    else:
+        return rec
+
+    log('DCalc', redo, name, params)
+
+    rec = func(*params)
+
+    # save
+    rec.ver = ver
+    db.set(key, dict(rec))
+    return rec
+
+def fetch_url(url):
+    try:
+        r = sess.head(url, stream=False, allow_redirects=True)
+    except HTTPError as e:
+        return Record(error=str(e))
+
+    print('RET', r.url)
+    return Record(
+        code=r.status_code,
+        url=r.url,
+    )
+
 def _check_url(out):
     # no URL is unusual, but could be worth looking at
     if not out.url:
@@ -1049,22 +1269,23 @@ def _check_url(out):
     if _check_dup(out):
         return
 
-    try:
-        r = requests.get(out.url)
-        out.code = r.status_code
-    except Exception as e:
+    result = cache('fetch', 2, fetch_url, out.url)
+
+    if e := result.get('error'):
         out.status = 'bad'
         out.code = 'URL Error: ' + str(e)
         return
+       
+    out.code = result['code']
 
-    if r.url != out.url:
+    if result['url'] != out.url:
         out.redir = out.url
-        out.url = r.url
+        out.url = result['url']
         _check_dup(out)
 
 def accept_pull(srcpr):
-    branch = srcpr.branch
-    
+    """Semantic Merge PR and prompt to accept."""
+    srcinfo = build_pull_info(srcpr)
     destpr = get_destpr(srcpr)
     dest = gh.pulls.get(**destpr.gh)
     if(dest.merged):
@@ -1073,17 +1294,18 @@ def accept_pull(srcpr):
 
     sh('git checkout -q main')
 
-    can_ff = 0 == sh_code(f'git merge-base --is-ancestor main {branch}')
+    can_ff = 0 == sh_code(f'git merge-base --is-ancestor main {srcinfo.branch}')
     if can_ff:
         log('IAccept', 'can fast-forward')
     else:
         semantic_merge(srcpr)
     
-    show_diff(srcpr)
+    if not args.brief:
+        show_diff(srcpr)
 
     if confirm('merge'):
-        sh(f'git merge -q --ff-only {branch} --no-edit')
-        sh(f'git push origin main :{branch} && git branch -d {branch}')
+        sh(f'git merge -q --ff-only {srcinfo.branch} --no-edit')
+        sh(f'git push origin main :{srcinfo.branch} && git branch -d {srcinfo.branch}')
 
 
 ###############################################################
@@ -1171,19 +1393,17 @@ class DB:
         """Return None if doesn't exist."""
         self("""SELECT k, v FROM kv WHERE k LIKE ? ORDER BY k""", pattern)
         for row in self.cur:
-            more = self._decode(row[1])
-            if isinstance(more, dict):
-                ver = more.pop('ver', 0)
-            else:
-                ver = 0
-                more = dict(value=more)
+            value = self._decode(row[1])
+            if not isinstance(value, dict):
+                value = dict(ver=0, value=value)
 
-            yield Record(key=row[0], ver=ver, more=more)
+            yield Record(key=row[0], **value)
 
 def throttle(sec=1):
     """Avoid secondary rate limits."""
-    log('IThrottle', sec)
-    sleep(sec)
+    if args.throttle:
+        log('IThrottle', args.throttle)
+        sleep(args.throttle)
 
 def all_pages(cmd, *args, **kw):
     for page in paged(cmd, *args, **kw):
@@ -1217,7 +1437,7 @@ def _format_time(when):
     try:
         w = datetime.strptime(when, '%Y-%m-%dT%H:%M:%S%z')
         return f'{w:%Y-%m-%d %H:%M}'
-    except Exception:
+    except ValueError:
         return 'invalid-time'
 
 from fastcore.net import HTTP403ForbiddenError
