@@ -1144,13 +1144,9 @@ def list_info(url, *, desc, title, topic) -> ListInfo:
             out.error = 'HTTP Error: ' + str(e).splitlines()[0]
             out.status = 'bad'
 
+    # cleanup description
     if out.desc:
-        if not out.desc.endswith('.'):
-            out.desc = out.desc + '.'
-
-        # remove emoji
-        out.desc = re.sub(r'\s*:\w+:\s*', ' ', out.desc)
-        out.desc = out.desc.strip()
+        out.desc = clean_desc(out.desc)
 
     _check_url(out)
     
@@ -1165,6 +1161,42 @@ def list_info(url, *, desc, title, topic) -> ListInfo:
     rec = asdict(out)
     db.set(key, rec)
     return out
+
+TO_REMOVE_TITLE = """
+    ^awesome-
+"""
+
+TO_REMOVE_DESC = [
+    'A curated list of',
+    'A curated list',
+    'Curated list of',
+    'Awesome list of',
+    'awesome list',
+    'A collection of',
+    'A collaborative list of '
+    'resources on',
+    'collection of',
+    'all awesome stuff of',
+    'awesome',
+    '[\U0001F600-\U0001F64F]',  # emoticons
+    '[\U0001F300-\U0001F5FF]',  # symbols & pictographs
+    '[\U0001F680-\U0001F6FF]',  # transport & map symbols
+    '[\U0001F1E0-\U0001F1FF]',  # flags
+    r':\w+:',  # Emoji symbols
+    r'\s\s+',  # Extra space
+]
+    
+def clean_desc(desc):
+    # always period
+    if not desc.endswith('.'):
+        desc = desc + '.'
+
+    for junk in TO_REMOVE_DESC:
+        desc = re.sub(junk, ' ', desc, re.I)
+
+    desc = desc.strip()
+
+    return desc[0].upper() + desc[1:]
 
 def _get_repo(owner, repo):
     rec = gh.repos.get(owner, repo)
