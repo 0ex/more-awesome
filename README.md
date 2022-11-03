@@ -42,9 +42,9 @@ The goals of this *list of lists* are:
 
 The following lists serve as the basis for this list, as they are the best other top-level lists I could find. I have incorporated their links after checking the quality and gone through their rejected links for missing gems.
 
-- [sindresorhus/awesome](https://github.com/sindresorhus/awesome) - A high quality, but picky list with several arbitrary requirements. Does not allow alternatives for one topic. Public Domain.
 - [bayandin/awesome-awesomeness](https://github.com/bayandin/awesome-awesomeness) - A very tech-focused list with no descriptions, light requirements and duplicates. [CC-BY](https://creativecommons.org/licenses/by/4.0/).
 - [emijrp/awesome-awesome](https://github.com/emijrp/awesome-awesome) - A small list. Public Domain.
+- [sindresorhus/awesome](https://github.com/sindresorhus/awesome) - A high quality, but picky list with several arbitrary requirements. Does not allow alternatives for one topic. Public Domain.
 
 You can also find more resource lists by browsing the Github topics 
 [awesome](https://github.com/topics/awesome),
@@ -129,19 +129,19 @@ and [resources](https://github.com/topics/resources).
 
 - [AppImage](https://github.com/AppImage/awesome-appimage#readme) - Package apps in a single file that works on various mainstream Linux distributions.
 - [Arch-based Projects](https://github.com/PandaFoss/Awesome-Arch#readme) - Linux distributions and projects based on Arch Linux.
+- [AwesomeWM](https://github.com/atsepkov/awesome-awesome-wm#readme) - A window manager for X11.
 - [eBPF](https://github.com/zoidbergwill/awesome-ebpf#readme) - Virtual machine for efficient tracing and monitoring for Linux systems.
 - [Flatpak](https://github.com/akvadrako/awesome-flatpak#readme) - Popular distro-independent packaging technology for your apps
 - [GNOME](https://github.com/Kazhnuz/awesome-gnome#readme) - Simple and distraction-free desktop environment for Linux.
 - [Linux Apps](https://github.com/harrytran103/awesome-linux-apps#readme) - Applications for Linux distributions.
 - [Linux Containers](https://github.com/Friz-zy/awesome-linux-containers#readme) - Linux Containers frameworks, libraries and software
+- [Linux resources](https://github.com/itech001/awesome-linux-resources#readme) - linux resources for the begainners and advanced users.
 - [Linux Software](https://github.com/luong-komorebi/Awesome-Linux-Software#readme) - Applications, software, tools and other materials for Linux distros. 
 - [Linux](https://github.com/inputsh/awesome-linux#readme) - Open-source kernel
 - [Nix](https://github.com/nix-community/awesome-nix#readme) - Reliable and reproducible package manager for Unixes.
 - [Snapcraft](https://github.com/rjoydip/awesome-snapcraft#readme) - The app store for Linux
 - [UNIX](https://github.com/sirredbeard/Awesome-UNIX#readme) - A family of computer operating systems and principles derived from AT&T UNIX.
 - [Yocto Project](https://github.com/fkromer/awesome-yocto-project#readme) - It’s not an embedded Linux Distribution, It creates a custom one for you.
-- [Linux resources](https://github.com/itech001/awesome-linux-resources#readme) - linux resources for the begainners and advanced users.
-- [AwesomeWM](https://github.com/atsepkov/awesome-awesome-wm#readme) - A window manager for X11.
 
 **Windows**
 
@@ -165,10 +165,10 @@ and [resources](https://github.com/topics/resources).
 - [Mac DevTools](https://github.com/marceloboeira/awesome-osx) - :package: Awesome stuff for OSX
 - [Mac Open Source Apps](https://github.com/serhii-londar/open-source-mac-os-apps#readme) - FOSS Apps for Mac.
 - [Mac Screensavers](https://github.com/agarrharr/awesome-macos-screensavers#readme) - Animations that run when your away from your computer.
-- [Quick Look Plugins](https://github.com/sindresorhus/quick-look-plugins#readme) - For macOS.
-- [Touchbar](https://github.com/z11h/awesome-touchbar#readme) - :point_right: :star2: delightful macOS resources for your touchbar
 - [macOS Security](https://github.com/kai5263499/osx-security-awesome#readme) - OSX vulnerability List.
     - [Apple](https://github.com/joeljfischer/awesome-apple#readme) - An opinionated, curated list of awesome libraries, plugins, and resources for Apple platform development.
+- [Quick Look Plugins](https://github.com/sindresorhus/quick-look-plugins#readme) - For macOS.
+- [Touchbar](https://github.com/z11h/awesome-touchbar#readme) - :point_right: :star2: delightful macOS resources for your touchbar
 
 ## Programming Languages
 
@@ -183,6 +183,7 @@ and [resources](https://github.com/topics/resources).
 - [Clojure](https://github.com/razum2um/awesome-clojure#readme) - Clojure libraries and resources. Also by [@mbuczko](https://github.com/mbuczko/awesome-clojure#readme).
 - [ClojureScript](https://github.com/hantuzun/awesome-clojurescript#readme) - Frameworks, libraries and wrappers.
 - [CMake](https://github.com/onqtam/awesome-cmake#readme) - Build, test, and package software.
+- [Cobol](https://github.com/mickaelandrieu/awesome-cobol#readme) - An old-school language mostly used in finance.
 - [CoffeeScript](https://github.com/uhub/awesome-coffeescript#readme) - CoffeeScript frameworks, libraries and software.
 - [ColdFusion](https://github.com/seancoyne/awesome-coldfusion#readme) - ColdFusion frameworks, libraries and software.
 - [Common Lisp](https://github.com/CodyReichert/awesome-cl#readme) - Powerful dynamic multiparadigm language that facilitates iterative and interactive development.
@@ -309,7 +310,6 @@ and [resources](https://github.com/topics/resources).
 - [Vala](https://github.com/desiderantes/awesome-vala#readme) - Programming language designed to take full advantage of the GLib and GNOME ecosystems.
 - [WebAssembly](https://github.com/mbasso/awesome-wasm#readme) - A binary instruction format for a stack-based virtual machine.
 - [Zig](https://github.com/C-BJ/awesome-zig#readme) - low-level language and toolchain. Also by [@catdevnull](https://github.com/catdevnull/awesome-zig#readme).
-- [Cobol](https://github.com/mickaelandrieu/awesome-cobol#readme) - An old-school language mostly used in finance.
 
 ## Front-End Development
 
@@ -523,6 +523,7 @@ and [resources](https://github.com/topics/resources).
 - [Machine Learning](https://github.com/josephmisiti/awesome-machine-learning#readme) - Machine Learning frameworks, libraries and software.
 - [ML Character](https://github.com/vincentbonnetcg-zz/awesome-ml-character#readme) - Digital characters with machine learning
 - [ML for Cyber Security](https://github.com/jivoi/awesome-ml-for-cybersecurity#readme) - datasets, papers, etc...
+- [ML Tutorials](https://github.com/ujjwalkarn/Machine-Learning-Tutorials#readme) - machine learning tutorials, articles, etc.
 - [ML with Ruby](https://github.com/arbox/machine-learning-with-ruby#readme) - Learning, implementing, and applying Machine Learning using Ruby.
 - [Papers](https://github.com/terryum/awesome-deep-learning-papers#readme) - The most cited deep learning papers.
 - [Production Machine Learning](https://github.com/EthicalML/awesome-production-machine-learning#readme) - Frameworks to deploy, monitor & scale machine learning.
@@ -538,7 +539,6 @@ and [resources](https://github.com/topics/resources).
 - [TensorFlow.js](https://github.com/aaronhma/awesome-tensorflow-js#readme) - WebGL-accelerated machine learning JavaScript library for training and deploying models.
 - [TensorFlow](https://github.com/jtoy/awesome-tensorflow#readme) - Library for machine intelligence.
 - [Topological Data Analysis](https://github.com/FatemehTarashi/awesome-TDA#readme) - topological data analysis (TDA) resources and links.
-- [ML Tutorials](https://github.com/ujjwalkarn/Machine-Learning-Tutorials#readme) - machine learning tutorials, articles, etc.
 - [XAI](https://github.com/altamiracorp/awesome-xai#readme) - Providing insight, explanations, and interpretability to machine learning methods.
 
 ## Data Engineering
@@ -564,8 +564,8 @@ and [resources](https://github.com/topics/resources).
 	
 - [JSON Datasets](https://github.com/jdorfman/awesome-json-datasets#readme) - Sources of data in JSON format.
 - [Public Datasets](https://github.com/awesomedata/awesome-public-datasets#readme) - High quality open datasets.
-- [World Datasets](https://github.com/planetopendata/awesome-world#readme) - countries, cities, codes, flags, languages, latitude/longitude, etc.
 - [Wikipedia](https://github.com/emijrp/awesome-wikipedia#readme) - A user-sourced encyclopedia.
+- [World Datasets](https://github.com/planetopendata/awesome-world#readme) - countries, cities, codes, flags, languages, latitude/longitude, etc.
 
 ## Science
 
@@ -1111,6 +1111,7 @@ System Engineering, DevOps, Power User Tools
 
 ## Culture
 
+- [All Human Knowledge](https://github.com/emijrp/all-human-knowledge#readme) - The catalogue of catalogues...
 - [AMA](https://github.com/sindresorhus/amas#readme) - Ask Me Anything.
 	- [Answers](https://github.com/stoeffel/awesome-ama-answers#readme)
 - [Answers](https://github.com/cyberglot/awesome-answers#readme) - Stack Overflow, Quora, etc.
@@ -1125,7 +1126,6 @@ System Engineering, DevOps, Power User Tools
 - [Subreddits](https://github.com/iCHAIT/awesome-subreddits#readme) - :memo: programming subreddits.
 - [Theravada](https://github.com/johnjago/awesome-theravada#readme) - Teachings from the Theravada Buddhist tradition.
 - [Tools for Activism](https://github.com/drewrwilson/toolsforactivism#readme) - Digital tools for activism things
-- [All Human Knowledge](https://github.com/emijrp/all-human-knowledge#readme) - The catalogue of catalogues...
 
 **Travel**
 
