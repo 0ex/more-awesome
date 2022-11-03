@@ -305,6 +305,8 @@ and [resources](https://github.com/topics/resources).
 - [Vala](https://github.com/desiderantes/awesome-vala#readme) - Programming language designed to take full advantage of the GLib and GNOME ecosystems.
 - [WebAssembly](https://github.com/mbasso/awesome-wasm#readme) - A binary instruction format for a stack-based virtual machine.
 - [Zig](https://github.com/C-BJ/awesome-zig#readme) - low-level language and toolchain. Also by [@catdevnull](https://github.com/catdevnull/awesome-zig#readme).
+- [awesome-cobol](https://github.com/mickaelandrieu/awesome-cobol#readme) - Web frameworks, template engine, forms, authentication & OAuth, database, e-mail, messaging, imagery, text processing, machine learning, testing, audio, video and logging.
+- [awesome-julia](https://github.com/melvin0008/awesome-julia#readme) - List of Julia resources and packages.
 
 ## Front-End Development
 
@@ -888,6 +890,7 @@ School, tutorials, etc.
 - [Malware Analysis](https://github.com/rshipp/awesome-malware-analysis#readme) - Defund the Police.
 - [Malware Persistence](https://github.com/Karneades/awesome-malware-persistence#readme) - Techniques that adversaries use to keep access to systems across restarts.
 - [Memory Forensics](https://github.com/digitalisx/awesome-memory-forensics#readme) - Forensic analysis of a computer's memory dump.
+- [OSX Security](https://github.com/kai5263499/osx-security-awesome#readme) - OSX vulnerability List.
 - [Object Capabilities and Capability-based Security](https://github.com/dckc/awesome-ocap#readme) - patterns of cooperation without vulnerability
 - [OSINT](https://github.com/jivoi/awesome-osint#readme) - Open source intelligence.
 - [Penetration Testing](https://github.com/enaqx/awesome-pentest#readme) - penetration testing resources, tools and other shiny things
@@ -1169,6 +1172,12 @@ non-english and regional lists
 
 ## To Sort
 
+- All
+	- [all-human-knowledge](https://github.com/emijrp/all-human-knowledge#readme) - The catalogue of catalogues...
+- Computer management
+	- [awesome-awesomewm](https://github.com/atsepkov/awesome-awesome-wm#readme) - A curated list of awesome tools/scripts/configs for Awesome Window Manager.
+- Data processing
+	- [awesome-storage](https://github.com/okhosting/awesome-storage/#readme) - A curated list of storage open source tools. Backups, redundancy, sharing, distribution, encryption, etc.
 - General
     - [XMPP: Ejabberd](https://github.com/shantanu-deshmukh/awesome-ejabberd#readme) - A curated list of all awesome stuff of the ejabberd ecosystem.
     - [Vim: by @matteocrippa](https://github.com/matteocrippa/awesome-vim#readme) - A collaborative list of awesome vim resources. Feel free to contribute!.
@@ -1255,8 +1264,20 @@ non-english and regional lists
     - [Algolia](https://github.com/algolia/awesome-algolia#readme) - 🔍👋  START HERE! A curated list of Algolia libraries, resources and projects.
     - [Agile](https://github.com/lorabv/awesome-agile#readme) - Awesome List of resources on Agile Software Development.
     - [Accessibility: by @a11yproject](https://github.com/a11yproject/a11yproject.com#readme) - The A11Y Project is a community-driven effort to make digital accessibility easier.
+- Other
+	- [awesome-snips](https://github.com/snipsco/awesome-snips#readme) - A curated list of Snips assistants and resources.
+	- [awesome-os](https://github.com/jubalh/awesome-os#readme) - A curated list of operating systems and their design.
+	- [awesome-opendata](https://github.com/emijrp/awesome-opendata#readme) - A curated list of awesome opendata repositories.
+	- [awesome-nostalgia](https://github.com/emijrp/awesome-nostalgia#readme) - Nostalgia trigger links.
+	- [awesome-movies](https://github.com/emijrp/awesome-movies#readme) - Not yet! Do it yourself!.
+	- [awesome-cryptocurrencies](https://github.com/kasketis/awesome-cryptocurrencies#readme) - A curated list of awesome cryptocurrencies 🎩.
 - Programming Languages Package Manager
     - [Package-Manager](https://github.com/damon-kwok/awesome-package-manager#readme) - ☘ Awesome package manager resources.
+- Sciences
+	- [awesome-molecular-dynamics](https://github.com/ipudu/awesome-molecular-dynamics#readme) - A curated list of awesome Molecular Dynamics libraries, tools and software. .
+	- [awesome-materials-informatics](https://github.com/tilde-lab/awesome-materials-informatics#readme) - Curated list of known efforts in materials informatics.
+- Websites
+	- [awesome-wikipedia](https://github.com/emijrp/awesome-wikipedia#readme) - Datasets, frameworks, libraries and other software related to Wikipedia.
 - nothing here
 
 <!-- vi:set noet: -->
