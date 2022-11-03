@@ -121,10 +121,10 @@ class ListInfo:
     code: int = 0
     error: str = ''
     ver: int = 0
-    owner: str = ''  # ignored
+    owner: str = ''  # ignored - old
     head: str = ''  # ignored - old
-    links: list[str] = field(default_factory=list)  # links to lists
-    
+    links: list = None  # ignored - old
+
     # not stored, only for sort+fixup
     indent = ''
     alts = None
@@ -158,8 +158,8 @@ class ListInfo:
             head = f'{self.title}'
 
         if self.alts:
-            for alt in self.links:
-                out += ['\nalt:', *get_list_info(alt)]
+            for alt in self.alts:
+                out.append(('alt', '\n' + indent(str(alt), '    ')))
 
         return head + ':\n' + '\n'.join('%7s: %s' % i for i in out)
 
@@ -331,7 +331,7 @@ def main():
     
     log('IDone')
     
-def parse_args():
+def parse_args(argv=None):
     global args
 
     from argparse import ArgumentParser
@@ -366,7 +366,7 @@ def parse_args():
     p.add_argument('-m', '--mirror', action='store_true', help='(re-)mirror all steps')
     p.add_argument('-i', '--info', action='store_true', help='print PR info')
 
-    args = p.parse_args()
+    args = p.parse_args(argv or sys.argv[1:])
 
 def login():
     global gh, db
@@ -1076,16 +1076,30 @@ def parse_line(line: str, topic: list[str]) -> ListInfo:
     if not m:
         return None
 
-    info = list_info(m[3], desc=m[4], title=m[2], topic=': '.join(topic))
+    topic = ': '.join(topic)
+    info = list_info(m[3], desc=m[4], title=m[2], topic=topic)
     info.indent = m[1]
     info.alts = []
+    if not info.desc:
+        info.desc = ''
 
     # extract alt-links
-    for alt in re.finditer('.*' + PAT_LINK, info.desc):
-        info.alts.append(list_info(alt[2], title=m[1]))
+    for alt in re.finditer('.*' + PAT_LINK, info.desc, flags=re.X):
+        info.alts.append(list_info(alt[2], title=m[1], desc='', topic=topic))
 
     return info
-        
+    
+
+def test_parse_line():
+    line = '- [Ansible](https://blah#readme) - Stuff. Also by [@jdauphant](https://blah2).'
+
+    parse_args(['-v'])
+    login()
+
+    info = parse_line(line, ['topic'])
+    print(info)
+
+    assert info.alts
 
 def _url_key(url: str):
     if m := re.match(r'https?://([^#?]+)', url):
@@ -1117,7 +1131,7 @@ def list_info(url, *, desc, title, topic) -> ListInfo:
     if not key:
         return ListInfo(
             url=url,
-            desc=desc,
+            desc=desc or '',
             title=title,
             topic=topic,
             status='bad',
@@ -1145,7 +1159,10 @@ def list_info(url, *, desc, title, topic) -> ListInfo:
         out.title = title
     if topic:
         out.topic = topic
-    
+  
+    if not isinstance(out.desc, str) or out.desc.startswith('Https'):
+        out.desc = ''
+
     if not redo:
         return out
 
@@ -1165,7 +1182,7 @@ def list_info(url, *, desc, title, topic) -> ListInfo:
             out.stars = target.stars
             out.size = target.size
             
-            if not out.desc:
+            if target.desc and not out.desc:
                 out.desc = target.desc
 
             branch = cache('repo/branch', 1, _get_branch, m[1], m[2], target.branch)
@@ -1209,6 +1226,9 @@ TO_REMOVE_DESC = [
     'A collection about',
     'all awesome stuff of',
     'awesome',
+    'amazing',
+    'this is about useful',
+    'useful resources',
     'list of',
     '[\U0001F600-\U0001F64F]',  # emoticons
     '[\U0001F300-\U0001F5FF]',  # symbols & pictographs
@@ -1229,15 +1249,17 @@ def clean_desc(desc):
         desc = re.sub(junk, ' ', desc, re.I)
 
     desc = desc.strip()
+    if not desc:
+        desc = 'EMPTY'
 
     return desc[0].upper() + desc[1:] + '.' + extra
 
 def test_clean_desc():
     assert clean_desc('A collection about awesome blockchains') \
-        == 'blockchains'
+        == 'Blockchains.'
     
-    assert clean_desc('tools and software.') \
-        == 'tools and software.'
+    assert clean_desc('tools and software. .') \
+        == 'Tools and software. .'
 
 def _get_repo(owner, repo):
     rec = gh.repos.get(owner, repo)
@@ -1381,7 +1403,7 @@ def cache(name, ver, func, *params):
 def fetch_url(url):
     try:
         r = sess.head(url, stream=False, allow_redirects=True)
-    except HTTPError as e:
+    except (HTTPError, requests.exceptions.ConnectionError) as e:
         return Record(error=str(e))
 
     return Record(
