@@ -22,10 +22,11 @@ Mirror PR number 10:
 For more help use `-h` flag and comments in this file.
 """
 
-import yaml, json, sys, re, os, logging
+import yaml, json, sys, re, os, logging, shutil
 import sqlite3
 import requests
 
+from collections import defaultdict
 from dataclasses import dataclass, field, fields, asdict
 from time import sleep
 from pprint import pprint
@@ -203,7 +204,9 @@ class PullInfo:
     def __str__(self):
         out = f'   pull: {self.pull}'
         out += f'\ncreated: {_format_time(self.created)}'
-       
+      
+        counts = defaultdict(int)
+
         if self.head:
             out += f'\n  head: {self.head}'
 
@@ -211,7 +214,13 @@ class PullInfo:
             out += f'\n  extra: {line}'
         
         for link in self.links:
-            out += '\n\n' + str(get_list_info(link))
+            info = get_list_info(link)
+            counts[info.status] += 1
+
+            if info.status != 'dup' or args.dups:
+                out += '\n\n' + str(info)
+
+        out += '  counts: ' + ' '.join(f'{k}={v}' for k,v in counts.items())
 
         return out
 
@@ -219,7 +228,7 @@ class PullInfo:
 ###############################################################
 # Globals
 
-WORKDIR = Path('./work')
+WORKDIR = Path('./work~')
 
 DEST_REPO = Repo(owner="0ex", repo="more-awesome")
 
@@ -266,6 +275,7 @@ def main():
         WORKDIR.mkdir(exists_ok=True, parents=True)
         sh('git clone . work')
 
+    shutil.copyfile('.git/config', WORKDIR / '.git/config')
     os.chdir(WORKDIR)
 
     src_repo = SRC_REPOS[args.src]
@@ -326,6 +336,8 @@ def parse_args():
     p.add_argument('-t', '--tag', action='store_true', help='tag repos')
     p.add_argument('-T', '--throttle', type=int, default=0, help='throttle')
     p.add_argument('-B', '--brief', action='store_true')
+    p.add_argument('--max', type=int, default=0, help='stop after max links')
+    p.add_argument('--dups', action='store_true', help='no not skip dups')
     
     # repo operations
     p.add_argument('-s', '--scan', type=str, help='scan: ALL or page number')
@@ -551,7 +563,7 @@ def add_link(info: ListInfo):
                 pass
             elif found_topic:
                 # look for alphabetical location
-                m = re.match(r'- *(?:\[([^][]+)\]|([\w ]+))', line)
+                m = re.match(r'[-*] *(?:\[([^][]+)\]|([\w ]+))', line)
                 if m:
                     pos = m[1] or m[2]
                     found_item = True
@@ -658,12 +670,18 @@ def show_diff(srcpr):
 def copy_ghpr(srcpr):
     """Copy pull description and comments."""
     print('\nCOPY GHPR:\n')
+    
+    if srcpr.repo == DEST_REPO:
+        log('WPullCopy', 'not copying into same repo')
+        write_pull_desc(srcpr)
+        return
+
     destpr = copy_pull_desc(srcpr)
     copy_issue_comments(srcpr, destpr)
     copy_review_comments(srcpr, destpr)
     
-    DEST_REPO = gh.pulls.get(**destpr.gh)
-    log('IPullCopy', DEST_REPO.html_url)
+    dest = gh.pulls.get(**destpr.gh)
+    log('IPullCopy', dest.html_url)
 
 def get_destpr(srcpr) -> Pull:
     """Return {num=PR number}."""
@@ -672,6 +690,36 @@ def get_destpr(srcpr) -> Pull:
 
     rec = db.get(f'branch/{srcpr.branch}/pull')
     return Pull(DEST_REPO, rec['num'])
+        
+def write_pull_desc(srcpr):
+    """Create pull description for existing PR."""
+    pull = gh.pulls.get(**srcpr.gh)
+   
+    body = ''
+
+    for line in str(build_pull_info(srcpr)).strip().splitlines():
+        body += line + '\n'
+
+    body = strip_junk(body)
+    body = clean_body(srcpr, body, tag_repos=args.tag, pull_desc=args.tag)
+    
+    # copy original PR description above line
+    above = ''
+    for line in pull.body.splitlines():
+        if line == '---':
+            break
+        else:
+            above += line + '\n'
+
+    body = above + '\n---\n\n' + body
+
+    log('IPull', 'updating PR', pull.number)
+    gh.pulls.update(
+        **DEST_REPO.gh,
+        pull_number=srcpr.num,
+        body=body,
+    )
+
 
 def copy_pull_desc(srcpr) -> Pull:
     """Create or update PR in github, except comments."""
@@ -994,7 +1042,7 @@ def test_strip_junk():
 def parse_line(line: str, topic: list[str]) -> ListInfo:
     """Parse list from line."""
     m = re.match(r"""
-        (\s*)-\s*
+        (\s*)[-*]\s*  # space, dash/star, space
         \[([^][]+)\]
         \s*
         \((https?://[^()]+)\)
@@ -1164,31 +1212,40 @@ def build_pull_info(srcpr) -> PullInfo:
         diff = ret.splitlines()
 
         for line in diff:
+            if args.max and len(out.links) > args.max:
+                break
+
+            line = line.rstrip()
+            log('DLine', line)
+            
+            if re.match(r'(---|\+\+\+)', line):
+                # skip file headers
+                continue
+
             # dedent
             if m := re.match(r'[+ ](\s*)', line):
                 while indents and len(indents[-1]) >= len(m[1]):
+                    log('DTopicEnd', topic[-1])
                     topic.pop()
                     indents.pop()
 
-            if line[0] == '+':
-                info = parse_line(line[1:], topic)
-                if info:
-                    out.links.append(info.url)
-
-            elif m := re.match(r'[+ ]#+ *(.*)', line):
-                # capture heading
+            if m := re.match(r'[+ ]#+ *(.*)', line):
+                log('DSection', m[1])
                 topic = [m[1]]
                 indents = []
-            elif re.match(r'(---|\+\+\+)', line):
-                # skip file headers
-                continue
+            elif line[0] == '+':
+                info = parse_line(line[1:], topic)
+                if info:
+                    log('DLink', info.title, 'topic=', topic)
+                    out.links.append(info.url)
             elif re.match(r'[-+]', line):
-                out.extra.append(line.strip())
+                out.extra.append(line)
 
-            # topic can be "- topic" or "- [topic]..."
-            if m := re.match(r'[+ ](\s*)- (?:([\w ]+)|\[([^][]+)\])', line):
+            # topic can be "- topic" or "- [topic]...", or with star
+            if m := re.match(r'[+ ](\s*)[-*] (?:([^][()]+)|\[([^][]+)\])', line):
                 topic.append(m[2] or m[3])
                 indents.append(m[1])
+                log('DTopicAdd', topic[-1])
 
     except HTTPError as e:
         error = str(e)
@@ -1224,7 +1281,6 @@ def _check_dup(out):
 def cache(name, ver, func, *params):
     """Generic caching function."""
     key = f'cache/{name}/' + '/'.join(_url_key(a) for a in params)
-    print('cache', key)
     if raw := db.get(key):
         rec = Record(key=key, **raw)
     else:
@@ -1255,7 +1311,6 @@ def fetch_url(url):
     except HTTPError as e:
         return Record(error=str(e))
 
-    print('RET', r.url)
     return Record(
         code=r.status_code,
         url=r.url,

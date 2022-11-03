@@ -43,7 +43,8 @@ The goals of this *list of lists* are:
 The following lists serve as the basis for this list, as they are the best other top-level lists I could find. I have incorporated their links after checking the quality and gone through their rejected links for missing gems.
 
 - [sindresorhus/awesome](https://github.com/sindresorhus/awesome) - A high quality, but picky list with several arbitrary requirements. Does not allow alternatives for one topic. Public Domain.
-- [bayandin/awesome-awesomeness](https://github.com/bayandin/awesome-awesomeness) - A very tech-focused list with no descriptions, light requirements and duplicates. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) License.
+- [bayandin/awesome-awesomeness](https://github.com/bayandin/awesome-awesomeness) - A very tech-focused list with no descriptions, light requirements and duplicates. [CC-BY](https://creativecommons.org/licenses/by/4.0/).
+- [emijrp/awesome-awesome](https://github.com/emijrp/awesome-awesome) - A small list. Public Domain.
 
 You can also find more resource lists by browsing the Github topics 
 [awesome](https://github.com/topics/awesome),
