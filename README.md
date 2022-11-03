@@ -1221,7 +1221,6 @@ non-english and regional lists
     - [iOS: Cocoa Controls](https://github.com/v-braun/awesome-cocoa#readme) - Cocoa controls for iOS, watchOS and macOS.
     - [Internationalization](https://github.com/jpomykala/awesome-i18n#readme) - 🌍 A curated list of i18n resources for all kind of languages and frameworks.
     - [Images](https://github.com/heyalexej/awesome-images#readme) - A curated list of amazingly awesome free (stock) photo resources inspired by all the other awesomes.
-    - [Styleguides](https://github.com/RichardLitt/awesome-styleguides#readme) - A list of styleguides.
     - [Gradient Boosting Papers](https://github.com/benedekrozemberczki/awesome-gradient-boosting-papers#readme) - A curated list of gradient boosting research papers with implementations.
     - [GitHub](https://github.com/Kikobeats/awesome-github#readme) - An exquisite list of awesome secrets.
     - [Git](https://github.com/dictcp/awesome-git#readme) - A curated list of amazingly awesome Git tools, resources and shiny things.

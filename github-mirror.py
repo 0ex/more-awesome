@@ -123,13 +123,18 @@ class ListInfo:
     ver: int = 0
     owner: str = ''  # ignored
     head: str = ''  # ignored - old
+    links: list[str] = field(default_factory=list)  # links to lists
     
+    # not stored, only for sort+fixup
+    indent = ''
+    alts = None
+
     def build_link(self, prefix=None):
         title = self.title
         if prefix:
             title = ': '.join([*prefix, title])
 
-        link = f'- [{title}]({self.url})'
+        link = f'{self.indent}- [{title}]({self.url})'
         if self.desc:
             link += f' - {self.desc}'
 
@@ -151,6 +156,10 @@ class ListInfo:
             head = f'{self.title} from @{m[1]}'
         else:
             head = f'{self.title}'
+
+        if self.alts:
+            for alt in self.links:
+                out += ['\nalt:', *get_list_info(alt)]
 
         return head + ':\n' + '\n'.join('%7s: %s' % i for i in out)
 
@@ -341,6 +350,7 @@ def parse_args():
     
     # repo operations
     p.add_argument('-s', '--scan', type=str, help='scan: ALL or page number')
+    p.add_argument('--list', action='store_true', help='list links')
     p.add_argument('--sort', action='store_true', help='sort readme')
     p.add_argument('--fixup', action='store_true', help='fixup while sorting')
     p.add_argument('--untagged', action='store_true', help='list untagged PRs')
@@ -390,7 +400,7 @@ def sort_readme():
                     topic = False
                     lines += sorted(topic_parts, key=lambda p: p.lower())
                     lines += ['\n']
-                elif line[0] == '-':
+                elif line.strip().startswith('-'):
                     # extract title, url, desc
                     info = parse_line(line, [topic])
                     if info:
@@ -401,10 +411,18 @@ def sort_readme():
                         else:
                             seen.add(info.key)
 
+                        if args.info:
+                            print(indent(str(info), '  '), '\n')
+
                         if args.fixup:
                             line = info.build_link() + '\n'
 
-                    topic_parts.append(line)
+                    # we don't sort second-level entries
+                    if line[0] == '-':
+                        topic_parts.append(line)
+                    else:
+                        topic_parts[-1] = topic_parts[-1] + line
+
                 elif not topic_parts:
                     # leading blank lines and text
                     lines.append(line)
@@ -1039,13 +1057,17 @@ def test_strip_junk():
         \\[ boilerplate snipped \\]
     ''').strip()
 
+PAT_LINK = r"""
+\[([^][]+)\]
+\s*
+\((https?://[^()]+)\)
+"""
+
 def parse_line(line: str, topic: list[str]) -> ListInfo:
     """Parse list from line."""
-    m = re.match(r"""
+    m = re.match(fr"""
         (\s*)[-*]\s*  # space, dash/star, space
-        \[([^][]+)\]
-        \s*
-        \((https?://[^()]+)\)
+        {PAT_LINK}
         (?:\s*-\s*(.*))?
         """,
         line,
@@ -1054,8 +1076,16 @@ def parse_line(line: str, topic: list[str]) -> ListInfo:
     if not m:
         return None
 
-    return list_info(m[3], desc=m[4], title=m[2],
-        topic=': '.join(topic))
+    info = list_info(m[3], desc=m[4], title=m[2], topic=': '.join(topic))
+    info.indent = m[1]
+    info.alts = []
+
+    # extract alt-links
+    for alt in re.finditer('.*' + PAT_LINK, info.desc):
+        info.alts.append(list_info(alt[2], title=m[1]))
+
+    return info
+        
 
 def _url_key(url: str):
     if m := re.match(r'https?://([^#?]+)', url):
@@ -1176,8 +1206,10 @@ TO_REMOVE_DESC = [
     'A collaborative list of '
     'resources on',
     'collection of',
+    'A collection about',
     'all awesome stuff of',
     'awesome',
+    'list of',
     '[\U0001F600-\U0001F64F]',  # emoticons
     '[\U0001F300-\U0001F5FF]',  # symbols & pictographs
     '[\U0001F680-\U0001F6FF]',  # transport & map symbols
@@ -1187,16 +1219,25 @@ TO_REMOVE_DESC = [
 ]
     
 def clean_desc(desc):
-    # always period
-    if not desc.endswith('.'):
-        desc = desc + '.'
+    # avoid mangling alternative links after period.
+    if '.' in desc:
+        desc, extra = desc.strip().split('.', 1)
+    else:
+        extra = ''
 
     for junk in TO_REMOVE_DESC:
         desc = re.sub(junk, ' ', desc, re.I)
 
     desc = desc.strip()
 
-    return desc[0].upper() + desc[1:]
+    return desc[0].upper() + desc[1:] + '.' + extra
+
+def test_clean_desc():
+    assert clean_desc('A collection about awesome blockchains') \
+        == 'blockchains'
+    
+    assert clean_desc('tools and software.') \
+        == 'tools and software.'
 
 def _get_repo(owner, repo):
     rec = gh.repos.get(owner, repo)
