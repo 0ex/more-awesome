@@ -1,7 +1,7 @@
 # More Awesome
 
 This is a curated list of "awesome" lists, which contain starting points and resources for
-discovering all about any topic people care about. It aims to be the most complete and carefully maintained [top-level list](#meta).
+discovering more on any topic. It aims to be the most complete and carefully maintained [top-level list](#meta).
 
 Contributions are welcome; if you have a list that's on a new topic or better than the current link, please submit a [pull request](https://github.com/0ex/more-awesome/edit/main/README.md). Suggest the most appropriate category and a one-line description of the topic (not of the list itself).
 
