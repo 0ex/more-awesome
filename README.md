@@ -3,7 +3,7 @@
 This is a curated list of other "awesome" lists, which contain starting points and resources to
 facilitate discovery on particular topics. It aims to be the most complete and carefully maintained [list of lists](#meta).
 
-Contributions are welcome. Have a list on a topic not covered below or a better list than I have linked? Please submit an [pull request](https://github.com/0ex/more-awesome/edit/main/README.md). Suggest the most appropriate category and add a one-line description of the target topic (not of the list itself).
+Contributions are welcome. Have a list on a new topic or a better list? Please submit a [pull request](https://github.com/0ex/more-awesome/edit/main/README.md). Suggest the most appropriate category and a one-line description of the target topic (not of the list itself).
 
 **Topics**
 
