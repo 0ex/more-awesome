@@ -51,7 +51,7 @@ The following lists serve as the basis for this list, as they are the best top-l
 - [emijrp/awesome-awesome](https://github.com/emijrp/awesome-awesome#readme) - A small list, with occasional updates. Public Domain.
 - [erichs/awesome-awesome](https://github.com/erichs/awesome-awesome) - Small list, updated 2020.
 - [sindresorhus/awesome](https://github.com/sindresorhus/awesome#readme) - A high quality, but picky list with several arbitrary requirements. Does not allow alternatives for one topic. Public Domain.
-- [jnv/lists](https://github.com/jnv/lists) - an active list, also in CSV. Public domain.
+- [jnv/lists](https://github.com/jnv/lists) - a large, active list, also in CSV. Public domain.
 - [coopermaa/awesome-awesome](https://github.com/coopermaa/awesome-awesome) - medium list from 2019.
 
 You can also find lists by browsing the Github topics 
