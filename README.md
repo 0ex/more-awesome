@@ -1,12 +1,11 @@
 # More Awesome
 
-This is a curated list of other "awesome" lists, which contain starting points and resources to
-facilitate discovery on particular topics. It aims to be the most complete and carefully maintained [list of lists](#meta).
+This is a curated list of "awesome" lists, which contain starting points and resources for
+discovering more on any topic. It aims to be the most complete and carefully maintained [top-level list](#meta).
 
-If you have know of a list on a topic not covered below or a better list than I have linked,
-please submit an [pull request](https://github.com/0ex/more-awesome/edit/main/README.md). Suggest the most appropriate category and add a one-line description of the target topic (not of the list itself).
+Contributions are welcome; if you have a list that's on a new topic or better than the current link, please submit a [pull request](https://github.com/0ex/more-awesome/edit/main/README.md). Suggest the most appropriate category and a one-line description of the topic (not of the list itself).
 
-**Topics**
+**Categories**
 
 Coding:
 [Programming](#programming)
@@ -28,25 +27,31 @@ Life: [Culture](#culture) | [Work](#work) | [Media](#media) | [Local](#local) | 
 
 ## Meta
 
-Each linked list pertains to some particular topic, broad or specific.
-They are useful for discovering resources on a particular topic, for example
-open source projects, tutorials, papers, tools, books, websites, libraries, etc.
+"Awesome" lists are curated collections of resources on some particular topic, which can
+be broad like "Math" or very specific like "Quantum Machine Learning".
 
-The goals of this *list of lists* are:
-- to be very extensive, covering every topic which someone cares enough about that they created a decent list.
-- to have no irrelevant requirements for submission, like specific formatting.
-- to highlight the best maintained list on each topic; our suggested starting point.
-- to include alternatives at the end of each description, for those who seek more pointers.
+They are useful for as starting points for beginners and to help experts discover the
+landscape of available resources, which can be
+tutorials, papers, tools, books, websites, libraries, software, products,
+open source projects, etc.
+
+This is a top-level list, which means it contains links to other "awesome" lists.
+The goals of *this* top-level list are:
+
+- be extensive: cover every topic which someone cared enough about to create a good list.
+- be inclusive: no irrelevant requirements for submission, like specific formatting.
+- highlight the best maintained list on each topic; our suggested starting point.
+- include alternatives at the end of each description, for those digging deeper.
 
 **Other Top-level Lists**
 
-The following lists serve as the basis for this list, as they are the best other top-level lists I could find. I have incorporated their links after checking the quality and gone through their rejected links for missing gems.
+The following lists serve as the basis for this list, as they are the best top-level lists I could find. Everything from them is incorporated here unless a better replacement is available. In addition, I have gone through their rejected links for missing gems.
 
 - [bayandin/awesome-awesomeness](https://github.com/bayandin/awesome-awesomeness#readme) - A very tech-focused list with no descriptions, light requirements and duplicates. [CC-BY](https://creativecommons.org/licenses/by/4.0/).
 - [emijrp/awesome-awesome](https://github.com/emijrp/awesome-awesome#readme) - A small list. Public Domain.
 - [sindresorhus/awesome](https://github.com/sindresorhus/awesome#readme) - A high quality, but picky list with several arbitrary requirements. Does not allow alternatives for one topic. Public Domain.
 
-You can also find more resource lists by browsing the Github topics 
+You can also find lists by browsing the Github topics 
 [awesome](https://github.com/topics/awesome),
 [lists](https://github.com/topics/awesome-list),
 [lists](https://github.com/topics/lists),
@@ -812,8 +817,7 @@ Graphics, Design, Movies, Books, etc.
 - [Book Authoring](https://github.com/TalAter/awesome-book-authoring#readme) - Resources for technical book authors.
 - [Colorful](https://github.com/Siddharth11/Colorful#readme) - Choose your next color scheme.
 - [Design Principles](https://github.com/robinstickel/awesome-design-principles#readme) - Create better and more consistent designs and experiences.
-- [Design Systems](https://github.com/alexpate/awesome-design-systems#readme) - Popular design systems, pattern libraries, and design documentation.
-- [Design systems](https://github.com/klaufel/awesome-design-systems#readme) - Collection of reusable components, guided by rules that ensure consistency and speed.
+- [Design Systems](https://github.com/alexpate/awesome-design-systems#readme) - Collection of reusable components, guided by rules that ensure consistency and speed. Also by [@klaufel](https://github.com/klaufel/awesome-design-systems#readme).
 - [Figma](https://github.com/react-figma/awesome-figma#readme) - The collaborative interface design tool.
 - [Framer](https://github.com/podo/awesome-framer#readme) - Prototyping interactive UI designs.
 - [Lorem Ipsum](https://github.com/templeman/awesome-ipsum#readme) - Lorem ipsum generators.
@@ -920,8 +924,7 @@ School, tutorials, etc.
 - [Silverstripe CMS](https://github.com/wernerkrauss/awesome-silverstripe-cms#readme) - PHP MVC framework that serves as a classic or headless CMS.
 - [Sitecore](https://github.com/MartinMiles/Awesome-Sitecore#readme) - EMPTY
 - [Textpattern](https://github.com/drmonkeyninja/awesome-textpattern#readme) - Lightweight PHP-based CMS.
-- [Umbraco](https://github.com/leekelleher/awesome-umbraco#readme) - ASP.NET CMS
-- [Umbraco](https://github.com/umbraco-community/awesome-umbraco#readme) - Umbraco packages, resources and tools.
+- [Umbraco](https://github.com/umbraco-community/awesome-umbraco#readme) - ASP.NET CMS
 - [Wagtail](https://github.com/springload/awesome-wagtail#readme) - Django CMS focused on flexibility and user experience.
 - [Wordpress](https://github.com/miziomon/awesome-wordpress#readme) - Very popular PHP-based CMS.
 	- [WordPress Snippets](https://github.com/theandersonn/wp-snippets#readme) - Code Snippet Library for WordPress.
