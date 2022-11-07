@@ -53,6 +53,9 @@ The following lists serve as the basis for this list, as they are the best top-l
 - [sindresorhus/awesome](https://github.com/sindresorhus/awesome#readme) - A high quality, but picky list with several arbitrary requirements. Does not allow alternatives for one topic. Public Domain.
 - [jnv/lists](https://github.com/jnv/lists) - a large, active list, also in CSV. Public domain.
 - [coopermaa/awesome-awesome](https://github.com/coopermaa/awesome-awesome) - medium list from 2019.
+- [delightful](https://codeberg.org/teaserbot-labs/delightful) - focus on highlighting open source, data, science.
+- [cuuupid/awesome-lists](https://github.com/cuuupid/awesome-lists) - long list from 2018.
+
 
 You can also find lists by browsing the Github topics 
 [awesome](https://github.com/topics/awesome),
@@ -68,6 +71,7 @@ and [resources](https://github.com/topics/resources).
 - [Awesome Viewer](https://awesome.digitalbunker.dev) - A visualizer for all of the above Awesome lists.
 - [StumbleUponAwesome](https://github.com/basharovV/StumbleUponAwesome#readme) - Discover random pages from the Awesome dataset using a browser extension.
 - [Track Awesome List](https://www.trackawesomelist.com) - View the latest updates of Awesome lists.
+- [getAwesomeness](https://github.com/panzhangwang/getAwesomeness) - broken
 
 ## Platforms
 
