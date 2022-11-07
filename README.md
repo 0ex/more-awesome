@@ -1193,53 +1193,45 @@ non-english and regional lists
 
 ## To Sort
 
-- 
+- Unknown Category
 	- [Awesome-AVR](https://github.com/fffaraz/awesome-avr#readme) - AVR tools, libraries, resources, and shiny things. Inspired by awesome-... stuff.
-- 
 	- [Awesome-Cloud](https://github.com/JStumpp/awesome-cloud#readme) - Delightful cloud services.
-- 
 	- [Awesome-Github](https://github.com/fffaraz/awesome-github#readme) - GitHub tools, libraries, resources, and shiny things.
-- 
 	- [Awesome-Yii](https://github.com/iJackUA/awesome-yii#readme) - ORIGINAL LIST MOVED TO.
-- 
 	- [Awesome-Luvit](https://github.com/luvit/awesome-luvit#readme) - Luvit frameworks, libraries and software.
-- 
 	- [Awesome-Grails](https://github.com/hitenpratap/awesome-grails#readme) - Grails resources, books and tutorials.
-- 
 	- [Awesome-Drupal](https://github.com/mrsinguyen/awesome-drupal#readme) - Ly Drupal open source, resources and shiny things.
-- 
 	- [Awesome-Django-CMS](https://github.com/mishbahr/awesome-django-cms#readme) - Django-cms add-ons. You should also checkout: https://marketplace.django-cms.org/en/
-- 
 	- [Awesome-Activeadmin](https://github.com/serradura/awesome-activeadmin#readme) - Activeadmin resources, extensions, posts and utilities.
-- 
 	- [Awesome-Sass](https://github.com/KittyGiraudel/awesome-sass#readme) - Sass.
 - Artificial Intelligence
 	- [awesome-nlp](https://github.com/keon/awesome-nlp#readme) - Resources dedicated to Natural Language Processing (NLP).
 	- [awesome-machine-learning-cn](https://github.com/jobbole/awesome-machine-learning-cn#readme) - 机器学习资源大全中文版，包括机器学习领域的框架、库以及软件.
 	- [awesome-AI-books](https://github.com/zslucky/awesome-AI-books#readme) - Some AI related books and pdfs for learning and downloading, also apply some playground models for learning.
-- [Awesome-Yii](https://github.com/awesome-yii/list#readme) - PHP Framework.
-- [Awesome-Webservice](https://github.com/wapmorgan/awesome-webservice#readme) - Web services.
-- [Awesome-Volt](https://github.com/heri/awesome-volt#readme) - Things regarding Volt ecosystem.
-- [Awesome-Quant](https://github.com/wilsonfreitas/awesome-quant#readme) - Insanely libraries, packages and resources for Quants (Quantitative Finance).
-- [Awesome-Persian](https://github.com/fffaraz/awesome-persian#readme) - Ly Persian supporting tools, fonts, and development resources.
-- [Awesome-Ninja](https://github.com/kevincasey1222/awesome-ninja#readme)
-- [Awesome-Network-Embedding](https://github.com/chihming/awesome-network-embedding#readme) - Network embedding techniques.
-- [Awesome-Luvit](https://github.com/luvit/awesome-luvit#readme) - Luvit frameworks, libraries and software.
-- [Awesome-Grails](https://github.com/hitenpratap/awesome-grails#readme) - Grails resources, books and tutorials.
-- [Awesome-Github](https://github.com/fffaraz/awesome-github#readme) - GitHub tools, libraries, resources, and shiny things.
-- [Awesome-Emacs](https://github.com/tacticiankerala/awesome-emacs#readme) - Emacs packages.
-- [Awesome-Drupal](https://github.com/mrsinguyen/awesome-drupal#readme) - Ly Drupal open source, resources and shiny things.
-- [Awesome-Django-CMS](https://github.com/mishbahr/awesome-django-cms#readme) - Django-cms add-ons. You should also checkout: https://marketplace.django-cms.org/en/
-- [Awesome-DevTools](https://github.com/moimikey/awesome-devtools#readme) - 🤖 in-browser bookmarklets, tools, and resources for modern full-stack software engineers.
-- [Awesome-DDD](https://github.com/wkjagt/awesome-ddd#readme) - Domain Driven Design resources inspired by Awesome PHP and Awesome Sysadmin.
-- [Awesome-Datasets](https://github.com/viisar/awesome-datasets#readme) - Datasets for papers/experiments/validation.
-- [Awesome-Data-Science](https://github.com/MStumpp/awesome-data-science#readme) - Ly open source data science resources.
-- [Awesome-Cloud](https://github.com/JStumpp/awesome-cloud#readme) - Delightful cloud services.
-- [Awesome-AVR](https://github.com/fffaraz/awesome-avr#readme) - AVR tools, libraries, resources, and shiny things. Inspired by awesome-... stuff.
-- [Awesome-AutoIt](https://j2team.github.io/awesome-AutoIt/)
-- [Awesome-Arabic](https://github.com/OthmanAba/awesome-arabic#readme) - Ly Arabic supporting tools, fonts, and development resources.
-- [Awesome-Angular](https://github.com/hugoleodev/awesome-angular#readme) - Angular plugins, libraries and software.
-- [Awesome-Activeadmin](https://github.com/serradura/awesome-activeadmin#readme) - Activeadmin resources, extensions, posts and utilities.
+- Misc
+	- [Awesome-Yii](https://github.com/awesome-yii/list#readme) - PHP Framework.
+	- [Awesome-Webservice](https://github.com/wapmorgan/awesome-webservice#readme) - Web services.
+	- [Awesome-Volt](https://github.com/heri/awesome-volt#readme) - Things regarding Volt ecosystem.
+	- [Awesome-Quant](https://github.com/wilsonfreitas/awesome-quant#readme) - Insanely libraries, packages and resources for Quants (Quantitative Finance).
+	- [Awesome-Persian](https://github.com/fffaraz/awesome-persian#readme) - Ly Persian supporting tools, fonts, and development resources.
+	- [Awesome-Ninja](https://github.com/kevincasey1222/awesome-ninja#readme)
+	- [Awesome-Network-Embedding](https://github.com/chihming/awesome-network-embedding#readme) - Network embedding techniques.
+	- [Awesome-Luvit](https://github.com/luvit/awesome-luvit#readme) - Luvit frameworks, libraries and software.
+	- [Awesome-Grails](https://github.com/hitenpratap/awesome-grails#readme) - Grails resources, books and tutorials.
+	- [Awesome-Github](https://github.com/fffaraz/awesome-github#readme) - GitHub tools, libraries, resources, and shiny things.
+	- [Awesome-Emacs](https://github.com/tacticiankerala/awesome-emacs#readme) - Emacs packages.
+	- [Awesome-Drupal](https://github.com/mrsinguyen/awesome-drupal#readme) - Ly Drupal open source, resources and shiny things.
+	- [Awesome-Django-CMS](https://github.com/mishbahr/awesome-django-cms#readme) - Django-cms add-ons. You should also checkout: https://marketplace.django-cms.org/en/
+	- [Awesome-DevTools](https://github.com/moimikey/awesome-devtools#readme) - 🤖 in-browser bookmarklets, tools, and resources for modern full-stack software engineers.
+	- [Awesome-DDD](https://github.com/wkjagt/awesome-ddd#readme) - Domain Driven Design resources inspired by Awesome PHP and Awesome Sysadmin.
+	- [Awesome-Datasets](https://github.com/viisar/awesome-datasets#readme) - Datasets for papers/experiments/validation.
+	- [Awesome-Data-Science](https://github.com/MStumpp/awesome-data-science#readme) - Ly open source data science resources.
+	- [Awesome-Cloud](https://github.com/JStumpp/awesome-cloud#readme) - Delightful cloud services.
+	- [Awesome-AVR](https://github.com/fffaraz/awesome-avr#readme) - AVR tools, libraries, resources, and shiny things. Inspired by awesome-... stuff.
+	- [Awesome-AutoIt](https://j2team.github.io/awesome-AutoIt/)
+	- [Awesome-Arabic](https://github.com/OthmanAba/awesome-arabic#readme) - Ly Arabic supporting tools, fonts, and development resources.
+	- [Awesome-Angular](https://github.com/hugoleodev/awesome-angular#readme) - Angular plugins, libraries and software.
+	- [Awesome-Activeadmin](https://github.com/serradura/awesome-activeadmin#readme) - Activeadmin resources, extensions, posts and utilities.
 - Big Data
 	- [Hadoop Ecosystem Table](https://hadoopecosystemtable.github.io/)
 - Cloud Computing
@@ -1379,29 +1371,18 @@ non-english and regional lists
 	- [awesome-devops](https://github.com/AcalephStorage/awesome-devops#readme) - Resources for Devops.
 - Web Back-end
 	- [api-development-tools](https://github.com/yosriady/api-development-tools#readme) - For building RESTful HTTP+JSON APIs.
-- Web Back-end
 	- [awesome-rack](https://github.com/coopermaa/awesome-rack#readme) - Ruby rack, middlewares, frameworks and web servers.
-- Web Back-end
 	- [awesome-sinatra](https://github.com/coopermaa/awesome-sinatra#readme) - Projects made or inspired with Sinatra.
 - Web Front-end
 	- [awesome-frontend](https://github.com/JingwenTian/awesome-frontend#readme) - Ly frontend libraries, resources and shiny things.
-- Web Front-end
 	- [angularjs](https://github.com/gianarb/awesome-angularjs#readme) - A AngularJs services, directives, utilities and resources.
-- Web Front-end
 	- [bootstrap: awesome-bootstrap](https://startbootstrap.com/bootstrap-resources/)
-- Web Front-end
 	- [bootstrap: awesome-bootstrap](https://bootsnipp.com/resources)
-- Web Front-end
 	- [frontdesk](https://github.com/miripiruni/frontdesk#readme) - Community driven useful things for Front End Developers.
-- Web Front-end
 	- [font-awesome](https://github.com/FortAwesome/Font-Awesome#readme) - The iconic SVG, font, and CSS toolkit.
-- Web Front-end
 	- [Master-List-of-HTML5-JS-CSS-Resources](https://github.com/gloparco/Master-List-of-HTML5-JS-CSS-Resources#readme)
-- Web Front-end
 	- [Static-Site-Generators](https://github.com/pinceladasdaweb/Static-Site-Generators#readme) - A definitive tools for generating static websites.
-- Web Front-end
 	- [Static-Site-Generators: staticgen](https://github.com/netlify/staticgen#readme) - StaticGen.com, A leaderboard of top open-source static site generators
-- Web Front-end
 	- [Static-Site-Generators: awesome-static-generators](https://github.com/myles/awesome-static-generators#readme) - Static web site generators.
 - awesome of awesome
 	- [awesome-awesomes](https://github.com/fleveque/awesome-awesomes#readme) - Awesome s of libraries, tools, frameworks and software for any programming language :D.
