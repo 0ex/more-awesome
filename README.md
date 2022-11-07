@@ -593,7 +593,7 @@ and [resources](https://github.com/topics/resources).
 - [Citizen Science](https://github.com/dylanrees/citizen-science#readme) - For community-based and non-institutional scientists.
 - [Cytodata](https://github.com/cytodata/awesome-cytodata#readme) - Image-based profiling of biological phenotypes for computational biologists.
 - [Earth](https://github.com/philsturgeon/awesome-earth#readme) - Find ways to resolve the climate crisis.
-- [Jupyter](https://github.com/markusschanta/awesome-jupyter#readme) - Create and share documents that contain code, equations, visualizations and narrative text.
+- [Jupyter](https://github.com/markusschanta/awesome-jupyter#readme) - Create and share documents that contain code, equations, visualizations and narrative text. Also by [@adebar](https://github.com/adebar/awesome-jupyter) and [@postpdm](https://github.com/postpdm/awesome-jupyter).
 	- [Notebooks](https://github.com/jupyter-naas/awesome-notebooks#readme) - Ready to use data science templates.
 - [LaTeX](https://github.com/egeerardyn/awesome-LaTeX#readme) - Typesetting language.
 - [Math](https://github.com/rossant/awesome-math#readme) - Mathematics resources.
@@ -651,6 +651,7 @@ and [resources](https://github.com/topics/resources).
 
 ## Gaming
 
+- [Programming Games](https://github.com/readyready15728/awesome-programming-games) - playable games with coding as mechanic.
 - [Board Games](https://github.com/edm00se/awesome-board-games#readme) - Table-top gaming fun for all.
 - [Chess](https://github.com/mbiesiad/awesome-chess#readme) - An old game. [@hkirat](https://github.com/hkirat/awesome-chess#readme)
 - [CHIP-8](https://github.com/tobiasvl/awesome-chip-8#readme) - Virtual computer game machine from the 70s.
@@ -1157,6 +1158,8 @@ System Engineering, DevOps, Power User Tools
 
 non-english and regional lists
 
+- Earth
+	- [Open Source by Country](https://github.com/slowernews/awesome-open-source-by-country-or-region) - Open Source projects by country or region.
 - Bosnia
 	- [Bosnia](https://github.com/inputsh/awesome-bosnia#readme) - Things specific to Bosnia & Herzegovina region.
 - Brazil
