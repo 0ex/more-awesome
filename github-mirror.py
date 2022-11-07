@@ -206,7 +206,7 @@ class PullInfo:
     def branch(self):
         """Return local branch name for this PR."""
         # use head if a local PR
-        if self.remote == 'more':
+        if self.remote == 'origin':
             return self.head.split(':')[1]
         else:
             return f'pull/{self.remote}/{self.num}'
@@ -249,7 +249,7 @@ WORKDIR = Path('./work~')
 DEST_REPO = Repo(owner="0ex", repo="more-awesome")
 
 REMOTES = dict(
-    more=DEST_REPO,
+    origin=DEST_REPO,
     sind=Repo(owner="sindresorhus", repo="awesome"),
     emijrp=Repo(owner="emijrp", repo="awesome-awesome"),
 )
@@ -292,8 +292,10 @@ def main():
         WORKDIR.mkdir(exists_ok=True, parents=True)
         sh('git clone . work')
 
+    # start in a predictable state
     shutil.copyfile('.git/config', WORKDIR / '.git/config')
     os.chdir(WORKDIR)
+    sh('git co main && git pull')
 
     if args.scan is not None:
         scan_pulls(args.src, args.scan)
@@ -356,7 +358,7 @@ def parse_args(argv=None):
     p.add_argument('--fixup', action='store_true', help='fixup while sorting')
     p.add_argument('--untagged', action='store_true', help='list untagged PRs')
     p.add_argument('-S', '--src', type=str,
-                   default='more', choices=list(REMOTES), help='source repo')
+                   default='origin', choices=list(REMOTES), help='source repo')
 
     # PR operations
     p.add_argument('prnum', type=int, nargs='*', help='pull requests')
@@ -372,7 +374,7 @@ def login():
 
     db = DB()
 
-    path = os.getenv('GITHUB_TOKEN_PATH', '~/.private/github-token')
+    path = os.getenv('GITHUB_TOKEN_PATH', None) or '~/.private/github-token'
 
     cfg = Path(path).expanduser()
     with open(cfg) as f:
@@ -723,7 +725,7 @@ def copy_pull_desc(srcpr) -> Pull:
 
     else:
         log('DCached', key, rec)
-        return Pull('more', rec['num']) 
+        return Pull('origin', rec['num']) 
 
     # do not remove tags once added
     rec['tag'] = rec['tag'] or args.tag
@@ -765,7 +767,7 @@ def copy_pull_desc(srcpr) -> Pull:
             base="main",
         )
         throttle()
-        destpr = Pull('more', pr.number)
+        destpr = Pull('origin', pr.number)
 
     rec['num'] = destpr.num
     rec['ver'] = ver
@@ -783,7 +785,7 @@ def get_destpr(prinfo: PullInfo):
         direction='desc',
     )
     if pulls:
-        return Pull('more', pulls[0].number)
+        return Pull('origin', pulls[0].number)
 
 def copy_issue_comments(srcpr, destpr):
     ver = 3
