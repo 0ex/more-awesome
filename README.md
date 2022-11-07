@@ -197,6 +197,7 @@ and [resources](https://github.com/topics/resources).
 - [Crystal](https://github.com/veelenga/awesome-crystal#readme) - Crystal libraries, tools, frameworks and software.
 - [D](https://github.com/dlang-community/awesome-d#readme) - D documents, frameworks, libraries and software.
 - [Dart](https://github.com/yissachar/awesome-dart#readme) - Dart frameworks, libraries, and software.
+- [Delphi](https://github.com/Fr0sT-Brutal/awesome-delphi#readme) - Archived version of curated list of awesome Delphi frameworks, libraries, resources, and shiny things. Deprecated in favor of awesome-pascal.
 - [Dhall-lang](https://github.com/dhall-lang/awesome-dhall#readme) - A configuration language guaranteed to terminate.
 - [Education](https://github.com/quobit/awesome-python-in-education#readme) - Resources for Python teaching and self-learning.
 - [Elm](https://github.com/sporto/awesome-elm#readme) - Useful Elm tutorials, libraries and software.
@@ -308,6 +309,7 @@ and [resources](https://github.com/topics/resources).
 - [Scheme](https://github.com/theodesp/awesome-scheme#readme) - Minimalistic prophet and pioneer programming language.
 - [Solidity](https://github.com/bkrem/awesome-solidity#readme) - Object-oriented, high-level language for implementing Ethereum smart contracts.
 - [Swift](https://github.com/matteocrippa/awesome-swift#readme) - Apple's compiled programming language that is secure, modern, programmer-friendly, and fast. Also by [@edubits](https://awesome-swift.zeef.com/robin.eggenkamp). Also by [@Wolg](https://github.com/Wolg/awesome-swift#readme). Also by [@MaxChen](https://github.com/MaxChen/awesome-swift-and-tutorial-resources#readme).
+	- [by @Wolg](https://github.com/Wolg/awesome-swift#readme) - A curated list of awesome Swift frameworks, libraries and software.
 	- [Education](https://github.com/hsavit1/Awesome-Swift-Education#readme) - Learn some Swift.
 	- [Playgrounds](https://github.com/uraimo/Awesome-Swift-Playgrounds#readme) - A List of Awesome Swift Playgrounds.
 - [TypeScript](https://github.com/dzharii/awesome-typescript#readme) - Resources for client-side and server-side development. Also by [@ellerbrock](https://github.com/ellerbrock/awesome-typescript#readme). Also by [@brookshi](https://github.com/brookshi/awesome-typescript-projects#readme).
@@ -1177,10 +1179,60 @@ non-english and regional lists
 
 ## To Sort
 
+- 
+	- [Awesome-Yii](https://github.com/iJackUA/awesome-yii#readme) - ORIGINAL LIST MOVED TO.
+- 
+	- [Awesome-Webservice](https://github.com/wapmorgan/awesome-webservice#readme) - Web services.
+- 
+	- [Awesome-Volt](https://github.com/heri/awesome-volt#readme) - Things regarding Volt ecosystem.
+- 
+	- [Awesome-Quant](https://github.com/wilsonfreitas/awesome-quant#readme) - Insanely libraries, packages and resources for Quants (Quantitative Finance).
+- 
+	- [Awesome-Persian](https://github.com/fffaraz/awesome-persian#readme) - Ly Persian supporting tools, fonts, and development resources.
+- 
+	- [Awesome-Ninja](https://github.com/kevincasey1222/awesome-ninja#readme)
+- 
+	- [Awesome-Network-Embedding](https://github.com/chihming/awesome-network-embedding#readme) - Network embedding techniques.
+- 
+	- [Awesome-Luvit](https://github.com/luvit/awesome-luvit#readme) - Luvit frameworks, libraries and software.
+- 
+	- [Awesome-Grails](https://github.com/hitenpratap/awesome-grails#readme) - Grails resources, books and tutorials.
+- 
+	- [Awesome-Github](https://github.com/fffaraz/awesome-github#readme) - GitHub tools, libraries, resources, and shiny things.
+- 
+	- [Awesome-Emacs](https://github.com/tacticiankerala/awesome-emacs#readme) - Emacs packages.
+- 
+	- [Awesome-Drupal](https://github.com/mrsinguyen/awesome-drupal#readme) - Ly Drupal open source, resources and shiny things.
+- 
+	- [Awesome-Django-CMS](https://github.com/mishbahr/awesome-django-cms#readme) - Django-cms add-ons. You should also checkout: https://marketplace.django-cms.org/en/
+- 
+	- [Awesome-DevTools](https://github.com/moimikey/awesome-devtools#readme) - 🤖 in-browser bookmarklets, tools, and resources for modern full-stack software engineers.
+- 
+	- [Awesome-DDD](https://github.com/wkjagt/awesome-ddd#readme) - Domain Driven Design resources inspired by Awesome PHP and Awesome Sysadmin.
+- 
+	- [Awesome-Datasets](https://github.com/viisar/awesome-datasets#readme) - Datasets for papers/experiments/validation.
+- 
+	- [Awesome-Data-Science](https://github.com/MStumpp/awesome-data-science#readme) - Ly open source data science resources.
+- 
+	- [Awesome-Cloud](https://github.com/JStumpp/awesome-cloud#readme) - Delightful cloud services.
+- 
+	- [Awesome-AVR](https://github.com/fffaraz/awesome-avr#readme) - AVR tools, libraries, resources, and shiny things. Inspired by awesome-... stuff.
+- 
+	- [Awesome-AutoIt](https://j2team.github.io/awesome-AutoIt/)
+- 
+	- [Awesome-Arabic](https://github.com/OthmanAba/awesome-arabic#readme) - Ly Arabic supporting tools, fonts, and development resources.
+- 
+	- [Awesome-Angular](https://github.com/hugoleodev/awesome-angular#readme) - Angular plugins, libraries and software.
+- 
+	- [Awesome-Activeadmin](https://github.com/serradura/awesome-activeadmin#readme) - Activeadmin resources, extensions, posts and utilities.
 - All
+- Computer management
+	- [awesome-docker-compose](https://github.com/iedmrc/awesome-docker-compose#readme) - Awesome Docker Compose files. Run a well-prepared applications stack with just a single command.
 - Data processing
+	- [awesome-bigdata](https://github.com/newTendermint/awesome-bigdata#readme) - Big data frameworks, resources and other awesomeness.
 	- [Storage](https://github.com/okhosting/awesome-storage/#readme) - Storage open source tools. Backups, redundancy, sharing, distribution, encryption, etc.
 - General
+	- [Analytics](https://github.com/newTendermint/awesome-analytics#readme) - A curated list of analytics frameworks, software and other tools.
     - [XMPP: Ejabberd](https://github.com/shantanu-deshmukh/awesome-ejabberd#readme) - The ejabberd ecosystem.
     - [Vim: by @matteocrippa](https://github.com/matteocrippa/awesome-vim#readme) - A collaborative vim resources. Feel free to contribute!.
     - [Vim: by @akrawchyk](https://github.com/akrawchyk/awesome-vim#readme) - The Vim plugin shortlist.
@@ -1262,6 +1314,7 @@ non-english and regional lists
     - [Agile](https://github.com/lorabv/awesome-agile#readme) - Awesome List of resources on Agile Software Development.
     - [Accessibility: by @a11yproject](https://github.com/a11yproject/a11yproject.com#readme) - The A11Y Project is a community-driven effort to make digital accessibility easier.
 - Other
+	- [awesome-jsonschema](https://github.com/jviotti/awesome-jsonschema#readme) - JSON Schema resources, tutorials, tools, and more.
 	- [Snips](https://github.com/snipsco/awesome-snips#readme) - Snips assistants and resources.
 	- [OS](https://github.com/jubalh/awesome-os#readme) - Operating systems and their design.
 	- [Cryptocurrencies](https://github.com/kasketis/awesome-cryptocurrencies#readme) - Cryptocurrencies.
