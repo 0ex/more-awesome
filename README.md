@@ -54,7 +54,7 @@ The following lists serve as the basis for this list, as they are the best top-l
 - [jnv/lists](https://github.com/jnv/lists) - a large, active list, also in CSV. Public domain.
 - [coopermaa/awesome-awesome](https://github.com/coopermaa/awesome-awesome) - medium list from 2019.
 - [delightful](https://codeberg.org/teaserbot-labs/delightful) - focus on highlighting open source, data, science.
-- [cuuupid/awesome-lists](https://github.com/cuuupid/awesome-lists) - long list from 2018.
+- [cuuupid/awesome-lists](https://github.com/cuuupid/awesome-lists) - long list from 2018. Includes a bot, like this list.
 
 
 You can also find lists by browsing the Github topics 
