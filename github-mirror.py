@@ -59,7 +59,7 @@ class Repo:
 @dataclass
 class Pull:
     """Github Pull Request Reference."""
-    repo: Repo
+    remote: str
     num: int
 
     @property
@@ -72,15 +72,15 @@ class Pull:
         )
 
     @property
-    def branch(self):
-        """Only valid for srcpr."""
-        return f'pull/{self.num}'
-
+    def repo(self):
+        return REMOTES[self.remote]
+    
     def __str__(self):
         return f'{self.repo}#{self.num}'
 
+    @property
     def key(self):
-        return f'{self.repo}/pull/{self.num}'
+        return f'pull/{self.repo}/{self.num}'
 
 class Record:
     """Generic DB Record."""
@@ -166,6 +166,7 @@ class ListInfo:
 @dataclass
 class PullInfo:
     """Github Pull Request Info."""
+    remote: str = ''
     num: int = 0  # srcpr.num
     ver: int = 0
     pull: str = ''
@@ -186,28 +187,29 @@ class PullInfo:
     @property
     def ref(self):
         """Return best ref for this PR."""
-        # use head if a local PR
-        if self.head and self.head.startswith(DEST_REPO.owner):
-            return self.head.split(':')[1]
-
         # use local ref if available
-        if 0 == sh_code(f'git rev-parse --verify pull/{self.num} >/dev/null 2>&1'):
-            ref = f'pull/{self.num}'
-        else:
-            ref = f'remotes/up/pull/{self.num}/head'
-            if 0 != sh_code(f'git rev-parse --verify {ref} >/dev/null 2>&1'):
-                sh(f'git fetch -q up refs/pull/{self.num}/head:{ref}')
+        if 0 == sh_code(f'git rev-parse --verify {self.branch} >/dev/null 2>&1'):
+            return f'{self.branch}'
 
-        return ref
+        # fallback to special github remote pull branch
+        if 0 != sh_code(f'git rev-parse --verify {self.remote_ref} >/dev/null 2>&1'):
+            sh(f'git fetch -q {self.remote} refs/pull/{self.num}/head:{self.remote_ref}')
+
+        return self.remote_ref
+    
+    @property
+    def remote_ref(self):
+        """Remote ref for PR."""
+        return f'remotes/{self.remote}/pull/{self.num}/head'
     
     @property
     def branch(self):
         """Return local branch name for this PR."""
         # use head if a local PR
-        if self.head and self.head.startswith(DEST_REPO.owner):
+        if self.remote == 'more':
             return self.head.split(':')[1]
         else:
-            return f'pull/{self.num}'
+            return f'pull/{self.remote}/{self.num}'
 
 
     def __str__(self):
@@ -221,15 +223,20 @@ class PullInfo:
 
         for line in self.extra:
             out += f'\n  extra: {line}'
+       
+        links = []
+
+        for url in self.links:
+            link = get_list_info(url)
+            counts[link.status] += 1
+
+            if link.status != 'dup' or args.dups:
+                links.append('List ' + str(link))
+
+        out += '\n  counts: ' + ' '.join(f'{k}={v}' for k,v in counts.items())
         
-        for link in self.links:
-            info = get_list_info(link)
-            counts[info.status] += 1
-
-            if info.status != 'dup' or args.dups:
-                out += '\n\n' + str(info)
-
-        out += '  counts: ' + ' '.join(f'{k}={v}' for k,v in counts.items())
+        for link in links:
+            out += '\n\n' + link
 
         return out
 
@@ -241,9 +248,10 @@ WORKDIR = Path('./work~')
 
 DEST_REPO = Repo(owner="0ex", repo="more-awesome")
 
-SRC_REPOS = dict(
-    sind=Repo(owner="sindresorhus", repo="awesome"),
+REMOTES = dict(
     more=DEST_REPO,
+    sind=Repo(owner="sindresorhus", repo="awesome"),
+    emijrp=Repo(owner="emijrp", repo="awesome-awesome"),
 )
 
 FETCH_BRANCH_VER = 8
@@ -287,10 +295,8 @@ def main():
     shutil.copyfile('.git/config', WORKDIR / '.git/config')
     os.chdir(WORKDIR)
 
-    src_repo = SRC_REPOS[args.src]
-
     if args.scan is not None:
-        scan_pulls(src_repo, args.scan)
+        scan_pulls(args.src, args.scan)
         return
     
     if args.sort:
@@ -306,20 +312,15 @@ def main():
         return
        
     for prnum in args.prnum:
-        srcpr = Pull(src_repo, prnum)
+        srcpr = Pull(args.src, prnum)
 
         if args.mirror:
-            fetch_branch(srcpr)
+            info = build_pull_info(srcpr)
+            fetch_branch(info)
             copy_ghpr(srcpr)
 
         if args.info:
             show_info(srcpr, long=True, diff=not args.brief)
-
-        if args.fetch:
-            fetch_branch(srcpr)
-
-        if args.copy:
-            copy_ghpr(srcpr)
         
         if args.rebase:
             semantic_merge(srcpr)
@@ -355,15 +356,13 @@ def parse_args(argv=None):
     p.add_argument('--fixup', action='store_true', help='fixup while sorting')
     p.add_argument('--untagged', action='store_true', help='list untagged PRs')
     p.add_argument('-S', '--src', type=str,
-                   default='more', choices=list(SRC_REPOS), help='source repo')
+                   default='more', choices=list(REMOTES), help='source repo')
 
     # PR operations
     p.add_argument('prnum', type=int, nargs='*', help='pull requests')
-    p.add_argument('-f', '--fetch', action='store_true', help='fetch branch')
     p.add_argument('-b', '--rebase', action='store_true', help='rebase pr with main')
-    p.add_argument('-c', '--copy', action='store_true', help='copy github PR')
     p.add_argument('-a', '--accept', action='store_true', help='accept pr')
-    p.add_argument('-m', '--mirror', action='store_true', help='(re-)mirror all steps')
+    p.add_argument('-m', '--mirror', action='store_true', help='copy branch and create pr')
     p.add_argument('-i', '--info', action='store_true', help='print PR info')
 
     args = p.parse_args(argv or sys.argv[1:])
@@ -445,7 +444,8 @@ def sort_readme():
 
     log('ISorted')
 
-def scan_pulls(repo, page):
+def scan_pulls(remote, page):
+    repo = REMOTES[remote]
     args = dict(
         **repo.gh,
         state='closed',
@@ -459,20 +459,20 @@ def scan_pulls(repo, page):
         pulls = gh.pulls.list(**args, page=page, per_page=20)
 
     for pr in pulls:
-        srcpr = Pull(repo, pr.number)
+        srcpr = Pull(remote, pr.number)
 
         show_info(srcpr, ghpr=pr)
 
 def list_untagged():
     """List PRs which are merged but untagged."""
-    for rec in db.scan('branch/pull/%'):
+    for rec in db.scan('pull/%'):
         tag = rec.get('tag')
         if not tag:
-            destpr = Pull(DEST_REPO, rec.num)
+            srcpr = PullInfo(**rec)
+            destpr = get_destpr(srcpr)
             dest = gh.pulls.get(**destpr.gh)
             if dest.merged:
-                srcpr_num = re.match(r'branch/pull/(\d+)/', rec.key)[1]
-                print(srcpr_num)
+                print(rec['key'])
 
 def show_info(srcpr, ghpr=None, long=False, diff=True):
     """Summarize PR."""
@@ -484,21 +484,15 @@ def show_info(srcpr, ghpr=None, long=False, diff=True):
         status = 'merged'
     elif srcpr.repo == DEST_REPO:
         status = 'local'
+    elif ghpr.user.login == srcpr.repo.owner:
+        # internal PRs
+        status = 'self'
     else:
-        # Pull from another repo
-        rec = get_fetch_branch(srcpr)
-
-        if ghpr.user.login == srcpr.repo.owner:
-            # internal PRs
-            status = 'self'
-        elif rec and rec.get('ver', 0) >= FETCH_BRANCH_VER:
-            status = 'synced'
-        else:
-            status = None
+        status = None
 
     if not status or long:
-        sum = build_pull_info(srcpr)
-        status = sum.status
+        info = build_pull_info(srcpr)
+        status = info.status
 
     print(
         color(status, '#%-5d %7s %20.20s' % (srcpr.num, status, ghpr.head.label)),
@@ -506,45 +500,23 @@ def show_info(srcpr, ghpr=None, long=False, diff=True):
 
     if long or status in ['new', 'bad']:
         print()
-        print(indent(str(sum), '  '))
+        print(indent(str(info), '  '))
         print()
 
         if diff:
-            diff = sh_out(f'git diff -U1 --color=always --merge-base main {sum.ref} | tail -n +5')
+            diff = sh_out(f'git diff -U1 --color=always --merge-base main {info.ref} | tail -n +5')
             print('\nDIFF:\n\n', indent(diff, '   ')) 
 
-def get_fetch_branch(srcpr):
-    key = f'branch/{srcpr.num}/create'
-    return db.get(key)
-
-def fetch_branch(srcpr):
+def fetch_branch(info: PullInfo):
     """Fetch branch from upstream into origin."""
     print('\nFETCH:\n')
-    ver = FETCH_BRANCH_VER
-    key = f'branch/{srcpr.num}/create'
-    rec = db.get(key)
-    
-    if not rec:
-        rec = dict(ver=0, branch=f'pull/{srcpr.num}')
-        redo = 'new'
-    elif rec['ver'] < ver:
-        redo = 'update'
-    elif 'branch' in args.redo:
-        redo = 'force'
-    else:
-        log('DGot', key, rec)
-        return rec
-    
-    log('ICalc', redo, key, rec)
-    branch = rec['branch']
 
-    verify = sh_code(f'git rev-parse --verify {branch} >/dev/null 2>&1')
+    verify = sh_code(f'git rev-parse --verify {info.branch} >/dev/null 2>&1')
     if verify == 0:
-        log('WExists', 'branch already exists')
-    else:
-        sh(f'git fetch -q up refs/pull/{srcpr.num}/head:{branch}')
+        log('WExists', f'{info.branch} already exists')
+        return
 
-    sh(f'git checkout --no-guess -q {branch}')
+    sh(f'git checkout --no-guess -q -b {info.branch} {info.ref}')
     
     # remove junk commits
     ret = sh_out('git rev-list --grep="Meta tweaks" main..')
@@ -555,11 +527,7 @@ def fetch_branch(srcpr):
         except Exception as e:
             log('WRevert', str(e))
  
-    sh(f'git checkout -q main && git push -q -u origin {branch}')
-
-    rec['ver'] = ver
-    db.set(key, rec)
-    return rec
+    sh('git checkout -q main')
 
 def add_link(info: ListInfo):
     """Add link to README."""
@@ -645,14 +613,14 @@ def semantic_merge(srcpr):
     especially if a .gitattributes file specifies `driver=union`.
     """
     print('SEMANTIC_MERGE:\n')
-    destpr = get_destpr(srcpr)
-    sum = build_pull_info(srcpr)
+    info = build_pull_info(srcpr)
+    destpr = get_destpr(info)
 
-    sh(f'git checkout --no-guess -q {sum.branch}')
+    sh(f'git checkout --no-guess -q {info.branch}')
 
     log('DMerge', 'attempting semantic merge')
     
-    if sum.error:
+    if info.error:
         log('WExtra', 'cannot manage PRs with errors')
         sh('git merge --abort')
         return
@@ -663,25 +631,24 @@ def semantic_merge(srcpr):
     sh('test -f readme.md && git rm readme.md', check=False)
     sh(f'git checkout main {OUT_PATH}')
    
-    for link in sum.links:
-        info = get_list_info(link)
-        if info.status == 'new':
-            add_link(info)
+    for url in info.links:
+        link = get_list_info(url)
+        if link.status == 'new':
+            add_link(link)
   
     if 0 == sh_code('git diff --quiet'):
         log('WMerge', 'no differences')
-        return
 
-    msg = quote(f'Merge {destpr} ({sum.title}) with main')
+    msg = quote(f'Merge {destpr} {info.title}')
     
     sh(f'git commit -m {msg} -a')
-    sh(f'git checkout -q main && git push -q -u origin {sum.branch}')
+    sh(f'git checkout -q main && git push -q -u origin {info.branch}')
     
     log('IMerge', 'done')
 
 def show_diff(srcpr):
-    sum = build_pull_info(srcpr)
-    diff = sh_out(f'git diff -U1 --color=always main..{sum.branch} | tail -n +5')
+    info = build_pull_info(srcpr)
+    diff = sh_out(f'git diff -U1 --color=always main..{info.branch} | tail -n +5')
     print('\nDIFF:\n\n', indent(diff, '  ')) 
 
 
@@ -701,13 +668,6 @@ def copy_ghpr(srcpr):
     dest = gh.pulls.get(**destpr.gh)
     log('IPullCopy', dest.html_url)
 
-def get_destpr(srcpr) -> Pull:
-    """Return {num=PR number}."""
-    if srcpr.repo == DEST_REPO:
-        return srcpr
-
-    rec = db.get(f'branch/{srcpr.branch}/pull')
-    return Pull(DEST_REPO, rec['num'])
         
 def write_pull_desc(srcpr):
     """Create pull description for existing PR."""
@@ -740,9 +700,12 @@ def write_pull_desc(srcpr):
 
 
 def copy_pull_desc(srcpr) -> Pull:
-    """Create or update PR in github, except comments."""
-    ver = 5
-    key = f'branch/{srcpr.branch}/pull'
+    """Create or update PR in github, except comments.
+
+    Return destpr.
+    """
+    ver = 6
+    key = f'copy/{srcpr.key}'
     rec = db.get(key)
     
     if not rec:
@@ -760,7 +723,7 @@ def copy_pull_desc(srcpr) -> Pull:
 
     else:
         log('DCached', key, rec)
-        return Pull(DEST_REPO, rec['num']) 
+        return Pull('more', rec['num']) 
 
     # do not remove tags once added
     rec['tag'] = rec['tag'] or args.tag
@@ -769,51 +732,58 @@ def copy_pull_desc(srcpr) -> Pull:
     
     orig = gh.pulls.get(**srcpr.gh)
     
-    body = f'Pull request from @{orig.user.login}.\n'
-   
-    for line in str(build_pull_info(srcpr)).strip().splitlines():
+    body = f'**Pull request** from @{orig.user.login}:\n\n'
+    info = build_pull_info(srcpr)
+
+    for line in str(info).strip().splitlines():
         body += line + '\n'
 
     if orig.body:
-        body += '\n' + orig.body.strip()
+        body += '\n---\n' + orig.body.strip()
 
     body = strip_junk(body)
     body = clean_body(srcpr, body, tag_repos=rec['tag'], pull_desc=rec['tag'])
 
-    # find existing
-    pulls = gh.pulls.list(
-        **DEST_REPO.gh,
-        state='all',
-        head=f'{DEST_REPO.owner}:{srcpr.branch}',
-        sort='created',
-        direction='desc',
-    )
+    destpr = get_destpr(info)
 
-    if pulls:
-        pr = pulls[0]
-        log('IPull', 'updating PR', pr.number)
+    if destpr:
+        log('IPull', 'updating PR', destpr.num)
         gh.pulls.update(
-            **DEST_REPO.gh,
-            pull_number=pr.number,
+            **destpr.gh,
             title=orig.title,
             body=body,
         )
     else:
-        log('IPull', 'creating new PR', srcpr.branch)
+        log('IPull', 'creating new PR', info.branch)
+        sh(f'git push -q -u origin {info.branch}')
+
         pr = gh.pulls.create(
             **DEST_REPO.gh,
             title=orig.title,
             body=body,
-            head=srcpr.branch,  # "rajee-a:patch-1",
+            head=info.branch,  # "rajee-a:patch-1",
             base="main",
         )
         throttle()
+        destpr = Pull('more', pr.number)
 
-    rec['num'] = pr.number
+    rec['num'] = destpr.num
     rec['ver'] = ver
     db.set(key, rec)
 
-    return Pull(DEST_REPO, rec['num']) 
+    return destpr
+
+def get_destpr(prinfo: PullInfo):
+    """Find existing destpr for srcpr."""
+    pulls = gh.pulls.list(
+        **DEST_REPO.gh,
+        state='all',
+        head=f'{DEST_REPO.owner}:{prinfo.branch}',
+        sort='created',
+        direction='desc',
+    )
+    if pulls:
+        return Pull('more', pulls[0].number)
 
 def copy_issue_comments(srcpr, destpr):
     ver = 3
@@ -1096,10 +1066,10 @@ def test_parse_line():
     parse_args(['-v'])
     login()
 
-    info = parse_line(line, ['topic'])
-    print(info)
+    link = parse_line(line, ['topic'])
+    print(link)
 
-    assert info.alts
+    assert link.alts
 
 def _url_key(url: str):
     if m := re.match(r'https?://([^#?]+)', url):
@@ -1274,9 +1244,10 @@ def _get_branch(owner, repo, branch):
     rec = gh.repos.get_branch(owner, repo, branch)
     return Record(updated=rec.commit.commit.committer.date)
 
+
 def build_pull_info(srcpr) -> PullInfo:
     ver = 14
-    key = f'{srcpr.key()}/summary'
+    key = f'info/{srcpr.key}'
     rec = db.get(key)
     
     if not rec:
@@ -1296,6 +1267,7 @@ def build_pull_info(srcpr) -> PullInfo:
     out = PullInfo(num=srcpr.num, head=pr.head.label)
     out.pull = pr.html_url
     out.created = pr.created_at
+    out.remote = srcpr.remote
 
     error = None
     topic = []
@@ -1311,6 +1283,9 @@ def build_pull_info(srcpr) -> PullInfo:
                 break
 
             line = line.rstrip()
+            if not line:
+                continue
+
             log('DLine', line)
             
             if re.match(r'(---|\+\+\+)', line):
@@ -1329,10 +1304,10 @@ def build_pull_info(srcpr) -> PullInfo:
                 topic = [m[1]]
                 indents = []
             elif line[0] == '+':
-                info = parse_line(line[1:], topic)
-                if info:
-                    log('DLink', info.title, 'topic=', topic)
-                    out.links.append(info.url)
+                link = parse_line(line[1:], topic)
+                if link:
+                    log('DLink', link.title, 'topic=', topic)
+                    out.links.append(link.url)
             elif re.match(r'[-+]', line):
                 out.extra.append(line)
 
@@ -1436,13 +1411,13 @@ def _check_url(out):
 def accept_pull(srcpr):
     """Semantic Merge PR and prompt to accept."""
     srcinfo = build_pull_info(srcpr)
-    destpr = get_destpr(srcpr)
+    destpr = get_destpr(srcinfo)
     dest = gh.pulls.get(**destpr.gh)
     if(dest.merged):
         log('IMerged', 'already merged', srcpr)
         return
 
-    sh('git checkout -q main')
+    sh('git checkout -q main && git pull -q')
 
     can_ff = 0 == sh_code(f'git merge-base --is-ancestor main {srcinfo.branch}')
     if can_ff:
