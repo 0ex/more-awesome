@@ -59,7 +59,7 @@ The following lists serve as the basis for this list, as they are the best top-l
 
 You can also find lists by browsing the Github topics 
 [awesome](https://github.com/topics/awesome),
-[lists](https://github.com/topics/awesome-list),
+[awesome-list](https://github.com/topics/awesome-list),
 [lists](https://github.com/topics/lists),
 and [resources](https://github.com/topics/resources).
 
