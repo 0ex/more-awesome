@@ -263,7 +263,6 @@ and [resources](https://github.com/topics/resources).
 - [Lua](https://github.com/LewisJEllis/awesome-lua#readme) - Quality Lua packages and resources. Also by [@forhappy](https://github.com/forhappy/awesome-lua#readme).
 - [Markdown](https://github.com/BubuAnabelas/awesome-markdown#readme) - Markup language.
 - [MATLAB](https://github.com/mikecroucher/awesome-MATLAB#readme) - MATLAB toolboxes, applications, software and resources.
-- [MicroPython](https://github.com/ikuamike/Awesome_Micropython#readme) - Python 3 implementation optimized for microcontrollers.
 - [Motoko](https://github.com/motoko-unofficial/awesome-motoko#readme) - Modern type safe language for the blockchain.
 - [Nim](https://github.com/ringabout/awesome-nim#readme) - A statically typed compiled systems programming language. Also by [@VPashkov](https://github.com/VPashkov/awesome-nim#readme).
 - [OCaml](https://github.com/ocaml-community/awesome-ocaml#readme) - A functional programming language.
@@ -290,6 +289,7 @@ and [resources](https://github.com/topics/resources).
 - [Prolog](https://github.com/klaudiosinani/awesome-prolog#readme) - A logic-based programming language.
 - [PureScript](https://github.com/passy/awesome-purescript#readme) - PureScript libraries, resources, etc.
 - [Python](https://github.com/vinta/awesome-python#readme) - General-purpose programming language designed for readability. Also by [@trekhleb](https://github.com/trekhleb/learn-python#readme). Also by [@svaksha](https://github.com/svaksha/pythonidae#readme). Also by [@kirang89](https://github.com/kirang89/pycrumbs#readme).
+	- [MicroPython](https://github.com/ikuamike/Awesome_Micropython#readme) - Python 3 implementation optimized for microcontrollers.
 	- [Python Security](https://github.com/guardrailsio/awesome-python-security#readme) - Python Security resources.
 	- [Python Books](https://github.com/Junnplus/awesome-python-books#readme) - Directory of Python books.
 	- [Asyncio](https://github.com/timofurrer/awesome-asyncio#readme) - Asynchronous I/O in Python 3.
@@ -300,6 +300,7 @@ and [resources](https://github.com/topics/resources).
 	- [Typing](https://github.com/typeddjango/awesome-python-typing#readme) - Optional static typing for Python.
 	- [MicroPython](https://github.com/mcauser/awesome-micropython#readme) - A lean and efficient implementation of Python 3 for microcontrollers.
 	- [Sphinx](https://github.com/yoloseem/awesome-sphinxdoc#readme) - Python Documentation Generator.
+	- [PDM](https://github.com/pdm-project/awesome-pdm#readme) - Python packager like NPM.
 - [Q#](https://github.com/ebraminio/awesome-qsharp#readme) - Domain-specific programming language used for expressing quantum algorithms.
 - [R](https://github.com/qinwf/awesome-R#readme) - Functional programming language and environment for statistical computing and graphics.
 	- [R Learning](https://github.com/iamericfletcher/awesome-r-learning-resources#readme) - A curated free resources to help deepen your understanding of the R programming language. Updated regularly. Contributions encouraged via pull request (see contributing.md).
