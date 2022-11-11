@@ -289,6 +289,7 @@ and [resources](https://github.com/topics/resources).
 - [Prolog](https://github.com/klaudiosinani/awesome-prolog#readme) - A logic-based programming language.
 - [PureScript](https://github.com/passy/awesome-purescript#readme) - PureScript libraries, resources, etc.
 - [Python](https://github.com/vinta/awesome-python#readme) - General-purpose programming language designed for readability. Also by [@trekhleb](https://github.com/trekhleb/learn-python#readme). Also by [@svaksha](https://github.com/svaksha/pythonidae#readme). Also by [@kirang89](https://github.com/kirang89/pycrumbs#readme).
+	- [pyproject](https://github.com/carlosperate/awesome-pyproject#readme) - pyproject.toml is the new standard for python packaging.
 	- [MicroPython](https://github.com/ikuamike/Awesome_Micropython#readme) - Python 3 implementation optimized for microcontrollers.
 	- [Python Security](https://github.com/guardrailsio/awesome-python-security#readme) - Python Security resources.
 	- [Python Books](https://github.com/Junnplus/awesome-python-books#readme) - Directory of Python books.
