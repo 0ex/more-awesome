@@ -951,6 +951,7 @@ School, tutorials, etc.
 
 ## Hardware
 
+- [KiCAD](https://github.com/joanbono/awesome-kicad#readme) - Circuit Board (PCB) design software.
 - [3D-Printing](https://github.com/adius/awesome-3d-printing#readme) - 3D printing resources.
 - [Adafruit IO](https://github.com/adafruit/awesome-adafruitio#readme) - Visualize and store data from any device.
 - [Bluetooth Beacons](https://github.com/rabschi/awesome-beacon#readme) - Bluetooth beacon software and tools.
