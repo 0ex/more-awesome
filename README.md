@@ -451,6 +451,7 @@ and [resources](https://github.com/topics/resources).
 - [AdonisJS](https://github.com/adonisjs-community/awesome-adonisjs#readme) - MVC Framework For Node.js
 - [Apache Wicket](https://github.com/PhantomYdn/awesome-wicket#readme) - Java web app framework.
 - [Caddy](https://github.com/caddy-book/awesome-caddy#readme) - Caddy resources.
+- [Celery](https://github.com/svfat/awesome-celery) - Celery task queue.
 - [CDK](https://github.com/kolomied/awesome-cdk#readme) - Open-source software development framework for defining cloud infrastructure in code.
 - [Dash](https://github.com/ucg8j/awesome-dash#readme) - Python web app framework.
 - [Django](https://github.com/wsvincent/awesome-django#readme) - Python web app framework. Also by [@shahraizali](https://github.com/shahraizali/awesome-django#readme).
