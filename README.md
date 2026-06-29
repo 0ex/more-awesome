@@ -678,6 +678,7 @@ and [resources](https://github.com/topics/resources).
 - [LÖVE](https://github.com/love2d-community/awesome-love2d#readme) - Game engine.
 - [Minecraft](https://github.com/bs-community/awesome-minecraft#readme) - Sandbox video game.
 - [Open Source Games](https://github.com/michelpereira/awesome-open-source-games#readme) - Collection of Games that have the source code available on GitHub. Also by [@leereilly](https://github.com/leereilly/games).
+- [Awesome Meccha Chameleon Hide Spots](https://github.com/zlc000190/awesome-meccha-chameleon-hide-spots) - Community-curated hiding spots, map references, and camouflage notes for the paint-based hide-and-seek game Meccha Chameleon.
 - [Opensource ASCII Games](https://github.com/ligurio/awesome-ttygames#readme) - Games that use only text.
 - [PICO-8](https://github.com/pico-8/awesome-PICO-8#readme) - Fantasy console.
 - [PlayCanvas](https://github.com/playcanvas/awesome-playcanvas#readme) - Game engine.
