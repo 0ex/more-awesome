@@ -480,6 +480,7 @@ and [resources](https://github.com/topics/resources).
 - [Scalability](https://github.com/binhnguyennus/awesome-scalability#readme) - Selected readings for Design Patterns in Back-end Development.
 - [Serverless Framework](https://github.com/pmuens/awesome-serverless#readme) - Serverless computing and serverless architectures.
 - [Service Mesh](https://github.com/Festum/awesome-servicemesh#readme) - Next generation service mesh for serverless apps.
+- [System Design](https://github.com/donnemartin/system-design-primer#readme) - Learn how to design large-scale systems, with Anki flashcards and interview preparation.
 - [Terraform](https://github.com/shuaibiyy/awesome-terraform#readme) - Tool for building, changing, and versioning infrastructure.
 - [Useful `.htaccess` Snippets](https://github.com/phanan/htaccess#readme) - ✂useful.htaccess snippets.
 - [Vagrant](https://github.com/iJackUA/awesome-vagrant#readme) - Automation virtual machine environment.
