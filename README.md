@@ -1063,6 +1063,7 @@ Communication, Protocols
 - [Bitcoin](https://github.com/igorbarinov/awesome-bitcoin#readme) - Bitcoin services and tools for software developers.
 - [Blockchain AI](https://github.com/steven2358/awesome-blockchain-ai#readme) - Blockchain projects for artificial intelligence and machine learning.
 - [Corda](https://github.com/chainstack/awesome-corda#readme) - Open source blockchain platform designed for business.
+- [Crypto MCP Servers](https://github.com/hive-intel/awesome-crypto-mcp-servers#readme) - Model Context Protocol servers for crypto, Web3, DeFi, wallets, trading, on-chain data, and AI agents.
 - [Cryptocurrency](https://github.com/Zheaoli/awesome-coins#readme) - Digital currency where encryption is used.
 - [EOSIO](https://github.com/DanailMinchev/awesome-eosio#readme) - A decentralized operating system supporting industrial-scale apps.
 - [Ethereum](https://github.com/ttumiel/Awesome-Ethereum#readme) - Distributed computing platform for smart contract development.
