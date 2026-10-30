@@ -82,6 +82,7 @@ and [resources](https://github.com/topics/resources).
 - [Cloudflare](https://github.com/irazasyed/awesome-cloudflare#readme) - CDN, DNS, DDoS protection, and security for your site.
 - [Clubhouse](https://github.com/ehsanghaffar/awesome-clubhouse#readme) - Social network based on voice.
 - [Deno](https://github.com/denolib/awesome-deno#readme) - A secure runtime for JavaScript and TypeScript build on V8.
+- [Digital Signage](https://github.com/awesome-digital-signage/awesome-digital-signage) - Technologies for creating, managing, scheduling, and displaying digital content across networked screens.
 - [DigitalOcean](https://github.com/jonleibowitz/awesome-digitalocean#readme) - Cloud computing platform designed for developers.
 - [Electron](https://github.com/sindresorhus/awesome-electron#readme) - Cross-platform native desktop apps using JavaScript/HTML/CSS.
 - [ESP](https://github.com/agucova/awesome-esp#readme) - Low-cost microcontrollers with WiFi and broad IoT applications.
