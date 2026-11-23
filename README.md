@@ -661,6 +661,7 @@ and [resources](https://github.com/topics/resources).
 - [Chess](https://github.com/mbiesiad/awesome-chess#readme) - An old game. [@hkirat](https://github.com/hkirat/awesome-chess#readme)
 - [CHIP-8](https://github.com/tobiasvl/awesome-chip-8#readme) - Virtual computer game machine from the 70s.
 - [Construct 2](https://github.com/ConstructCommunity/awesome-construct#readme) - Game engine.
+- [Daily Browser Puzzles](https://github.com/bestdailygames/bestdailygames#readme) ([web edition](https://bestdaily.games/)) - Word, logic, geography, music, and trivia games with a new shared puzzle each day.
 - [Discord](https://github.com/jacc/awesome-discord#readme) - Chat platform for gamers.
 	- [Discord Communities](https://github.com/mhxion/awesome-discord-communities#readme) - Chat with friends and communities.
 - [Esports](https://github.com/strift/awesome-esports#readme) - Video games played as a sport.
